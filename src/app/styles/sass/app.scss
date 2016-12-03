@@ -1,4 +1,4 @@
-//  @import "../../../../node_modules/bootstrap/dist/css/bootstrap.css";
+// @import "../../../../node_modules/bootstrap/scss/bootstrap.css";
 
 $topnav-background-color: #222;
 .user-avatar {
@@ -136,7 +136,7 @@ a:hover{
             background: darken($topnav-background-color, 5%);
         }
         .panel-collapse{
-            border-radious :0;
+            border-radius :0;
             border : none;
             .panel-body{
                 .list-group-item{

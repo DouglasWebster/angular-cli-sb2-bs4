@@ -1,0 +1,54 @@
+<div class="container-fluid">
+  <!-- Page Heading -->
+  <div class="row">
+    <div class="col-xl-12">
+      <h2 class="page-header">
+        Charts
+      </h2>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <i class="fa fa-fw fa-dashboard"></i>
+          <a [routerLink]="['/dashboard/home']"> Dashboard</a>
+        </li>
+        <li class="breadcrumb-item active">
+          <i class="fa fa-fw fa-bar-chart-o"></i> High Chart
+        </li>
+      </ol>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xl-6">
+      <div class="card card-block">
+        <div id="container" style="margin: 0 auto">
+          <canvas baseChart [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions" [legend]="lineChartLegend"
+            [chartType]="lineChartType" [colors]="chartColors" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-6">
+      <div class="card card-block">
+        <div id="area-chart" style="margin: 0 auto">
+          <canvas baseChart [datasets]="areaChartData" [labels]="areaChartLabels" [options]="areaChartOptions" [legend]="areaChartLegend"
+            [chartType]="areaChartType" [colors]="chartColors" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+        </div>
+      </div>
+    </div>
+    <h1>&nbsp;</h1>
+    <div class="col-xl-6">
+      <div class="card card-block">
+        <div id="total-fruit" style="margin: 0 auto">
+          <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [legend]="barChartLegend"
+            [chartType]="barChartType" [colors]="chartColors" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+        </div>
+      </div>
+    </div>
+    <div class="col-xl-6">
+      <div class="card card-block">
+        <div id="snow-depth" style="margin: 0 auto">
+          <canvas baseChart [datasets]="timeChartData" [options]="timeChartOptions" [legend]="timeChartLegend"
+            [chartType]="timeChartType" [colors]="chartColors" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
