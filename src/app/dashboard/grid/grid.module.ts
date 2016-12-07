@@ -2,13 +2,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
-import { TablesComponent } from './tables.component';
+import { GridComponent } from './grid.component';
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule
   ],
-  declarations: [TablesComponent]
+  declarations: [GridComponent]
 })
-export class TablesModule { }
+export class GridModule { }

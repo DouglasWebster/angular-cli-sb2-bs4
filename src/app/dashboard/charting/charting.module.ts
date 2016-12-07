@@ -15,9 +15,6 @@ import 'chart.js/dist/Chart.js';
   ],
   declarations: [
     ChartingComponent
-  ],
-  exports: [
-    ChartingComponent
   ]
 })
 export class ChartingModule { }

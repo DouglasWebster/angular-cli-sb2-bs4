@@ -9,7 +9,6 @@ import { FormsComponent } from './forms.component';
     CommonModule,
     RouterModule
   ],
-  declarations: [FormsComponent],
-  exports: [ FormsComponent]
+  declarations: [FormsComponent]
 })
 export class FormsModule { }

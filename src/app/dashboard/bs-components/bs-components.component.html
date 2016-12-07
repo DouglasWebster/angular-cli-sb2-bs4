@@ -1,0 +1,216 @@
+<!-- Page Heading -->
+<div class="row">
+  <div class="col-xl-12">
+    <h2 class="page-header">
+      Bootstrap Grid
+    </h2>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <i class="fa fa-dashboard"></i>
+        <a routerLink="/dashboard/home">Dashboard</a>
+      </li>
+      <li class="active breadcrumb-item">
+        <i class="fa fa-th-list"></i> Component
+      </li>
+    </ol>
+  </div>
+</div>
+<!-- Large modal -->
+<div class="row">
+  <div class="col-sm-12">
+    <div class="card card-block">
+      <h4 class="card-title">Modal</h4>
+      <button class="btn btn-primary" (click)="lgModal.show()">Large modal</button>
+      <div bsModal #lgModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" (click)="lgModal.hide()" aria-label="Close">
+			                    <span aria-hidden="true">&times;</span>
+			                </button>
+              <h5 class="modal-title">Large modal</h5>
+            </div>
+            <div class="modal-body">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque beatae accusantium maiores, placeat, quasi laborum in vitae
+              accusamus veritatis inventore nulla et quibusdam debitis ipsam consectetur eum, velit ea praesentium! Lorem
+              ipsum dolor sit amet, consectetur adipisicing elit. Harum nostrum a velit esse est, voluptatum quam eos ipsum
+              laudantium facere iusto. Provident deleniti non temporibus ex tenetur, assumenda labore eos!
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Alert -->
+<div class="row">
+  <div class="col-lg-12">
+    <div class="card card-block">
+      <h4 class="card-title">Alert</h4>
+      <alert *ngFor="let alert of alerts;let i = index" [type]="alert.type" dismissible="true" (close)="closeAlert(i)">
+        {{ alert?.msg }}
+      </alert>
+
+      <alert dismissOnTimeout="3000">This alert will dismiss in 3s</alert>
+
+      <button type="button" class='btn btn-primary' (click)="addAlert()">Add Alert</button>
+    </div>
+  </div>
+</div>
+<!-- Buttons -->
+<div class="row">
+  <div class="col-lg-6">
+    <div class="card card-block">
+      <h4 class="card-title">Single toggle</h4>
+      <pre class="card card-block card-header">{{singleModel}}</pre>
+      <button type="button" class="btn btn-primary" [(ngModel)]="singleModel" btnCheckbox btnCheckboxTrue="1" btnCheckboxFalse="0">
+        Single Toggle
+      </button>
+    </div>
+    <h4 class="card-title">Radio &amp; Uncheckable Radio</h4>
+    <pre class="card card-block card-header">{{radioModel || 'null'}}</pre>
+    <div class="btn-group">
+      <label class="btn btn-primary" [(ngModel)]="radioModel" btnRadio="Left">Left</label>
+      <label class="btn btn-primary" [(ngModel)]="radioModel" btnRadio="Middle">Middle</label>
+      <label class="btn btn-primary" [(ngModel)]="radioModel" btnRadio="Right">Right</label>
+    </div>
+    <div class="btn-group">
+      <label class="btn btn-success" [(ngModel)]="radioModel" btnRadio="Left" uncheckable>Left</label>
+      <label class="btn btn-success" [(ngModel)]="radioModel" btnRadio="Middle" uncheckable>Middle</label>
+      <label class="btn btn-success" [(ngModel)]="radioModel" btnRadio="Right" uncheckable>Right</label>
+    </div>
+  </div>
+  <div class="col-lg-6">
+    <div class="card card-block">
+      <h4 class="card-title">Checkbox</h4>
+      <pre class="card card-block card-header"> Model via JsonPipe: {{checkModel | json}}</pre>
+      <pre class="card card-block card-header">Left: {{checkModel.left}} | Middle: {{checkModel.middle}} | Right: {{checkModel.right}}</pre>
+      <!--<pre class="card card-block card-header">Results: {{checkResults}}</pre>-->
+      <div class="btn-group">
+        <label class="btn btn-primary" [(ngModel)]="checkModel.left" btnCheckbox>Left</label>
+        <label class="btn btn-primary" [(ngModel)]="checkModel.middle" btnCheckbox>Middle</label>
+        <label class="btn btn-primary" [(ngModel)]="checkModel.right" btnCheckbox>Right</label>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Dropdowns -->
+<div class="row">
+  <div class="col-sm-12">
+    <div class="card card-block">
+      <h4 class="card-title">Dropdowns</h4>
+      <div (click)="$event.preventDefault()">
+        <!-- Simple dropdown -->
+        <span dropdown (onToggle)="toggled($event)">
+    <a href id="simple-dropdown" dropdownToggle>
+      Click me for a dropdown, yo!
+    </a>
+    <ul class="dropdown-menu" dropdownMenu aria-labelledby="simple-dropdown">
+      <li *ngFor="let choice of items">
+        <a class="dropdown-item" href="#">{{choice}}</a>
+      </li>
+    </ul>
+  </span>
+
+        <!-- Single button -->
+        <div class="btn-group" dropdown [(isOpen)]="status.isopen">
+          <button id="single-button" type="button" class="btn btn-primary" dropdownToggle [disabled]="disabled">
+      Button dropdown <span class="caret"></span>
+    </button>
+          <ul dropdownMenu role="menu" aria-labelledby="single-button">
+            <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
+            <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
+            <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
+            <li class="divider dropdown-divider"></li>
+            <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a></li>
+          </ul>
+        </div>
+
+        <!-- Split button -->
+        <div class="btn-group" dropdown>
+          <button id="split-button" type="button" class="btn btn-danger">Action</button>
+          <button type="button" class="btn btn-danger dropdown-toggle-split" dropdownToggle>
+      <span class="caret"></span>
+      <span class="sr-only">Split button!</span>
+    </button>
+          <ul class="dropdown-menu" dropdownMenu role="menu" aria-labelledby="split-button">
+            <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
+            <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
+            <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
+            <li class="divider dropdown-divider"></li>
+            <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a></li>
+          </ul>
+        </div>
+
+        <hr/>
+        <p>
+          <button type="button" class="btn btn-primary btn-sm" (click)="toggleDropdown($event)">Toggle button dropdown
+    </button>
+          <button type="button" class="btn btn-warning btn-sm" (click)="disabled = !disabled">Enable/Disable</button>
+        </p>
+
+        <hr>
+        <!-- Single button with keyboard nav -->
+        <div class="btn-group" dropdown keyboardNav="true">
+          <button id="simple-btn-keyboard-nav" type="button" class="btn btn-primary" dropdownToggle>
+      Dropdown with keyboard navigation <span class="caret"></span>
+    </button>
+          <ul class="dropdown-menu" dropdownMenu role="menu" aria-labelledby="simple-btn-keyboard-nav">
+            <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
+            <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
+            <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
+            <li class="divider dropdown-divider"></li>
+            <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a></li>
+          </ul>
+        </div>
+
+        <hr />
+        <!-- Single button using append-to-body -->
+        <div class="btn-group" dropdown dropdown-append-to-body>
+          <button id="btn-append-to-body" type="button" class="btn btn-primary" dropdownToggle>
+      Dropdown on Body <span class="caret"></span>
+    </button>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="btn-append-to-body">
+            <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
+            <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
+            <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
+            <li class="divider dropdown-divider"></li>
+            <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Pagination -->
+<div class="row">
+  <div class="col-sm-12">
+    <div class="card card-block">
+      <h4 class="card-title">Pagination</h4>
+      <div class="row">
+        <div class="col-lg-6" style="margin-top: 10px;">
+          <h4>Default</h4>
+          <pagination [totalItems]="totalItems" [(ngModel)]="currentPage" (pageChanged)="pageChanged($event)"></pagination>
+          <pagination [boundaryLinks]="true" [totalItems]="totalItems" [(ngModel)]="currentPage" class="pagination-sm" previousText="&lsaquo;"
+            nextText="&rsaquo;" firstText="&laquo;" lastText="&raquo;"></pagination>
+          <pagination [directionLinks]="false" [boundaryLinks]="true" [totalItems]="totalItems" [(ngModel)]="currentPage"></pagination>
+          <pagination [directionLinks]="false" [totalItems]="totalItems" [(ngModel)]="currentPage" (numPages)="smallnumPages = $event"></pagination>
+          <pre class="card card-block card-header">The selected page no: {{currentPage}}/{{smallnumPages}}</pre>
+          <button type="button" class="btn btn-info" (click)="setPage(3)">Set current page to: 3</button>
+        </div>
+        <hr class="visible-md visible-xs hidden-lg-up">
+        <div class="col-lg-6" style="margin-top: 10px;">
+          <h4>Pager</h4>
+          <pager [totalItems]="totalItems" [(ngModel)]="currentPage" (pageChanged)="pageChanged($event)" pageBtnClass="btn"></pager>
+
+          <hr/>
+          <h4>Limit the maximum visible buttons</h4>
+          <pagination [totalItems]="bigTotalItems" [(ngModel)]="bigCurrentPage" [maxSize]="maxSize" class="pagination-sm" [boundaryLinks]="true"></pagination>
+          <pagination [totalItems]="bigTotalItems" [(ngModel)]="bigCurrentPage" [maxSize]="maxSize" class="pagination-sm" [boundaryLinks]="true"
+            [rotate]="false" (numPages)="numPages = $event"></pagination>
+          <pre class="card card-block card-header">Page: {{bigCurrentPage}} / {{numPages}}</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

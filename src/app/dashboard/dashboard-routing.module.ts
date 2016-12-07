@@ -7,6 +7,9 @@ import { HomeComponent } from './home/home.component';
 import { ChartingComponent } from './charting/charting.component';
 import { TablesComponent } from './tables/tables.component';
 import { FormsComponent } from './forms/forms.component';
+import { BsElementsComponent } from './bs-elements/bs-elements.component';
+import { GridComponent } from './grid/grid.component';
+import { BsComponentsComponent } from './bs-components/bs-components.component';
 
 
 
@@ -17,7 +20,10 @@ const loginRoutes: Routes = [
             { path: 'home', component: HomeComponent },
             { path: 'chart', component: ChartingComponent },
             { path: 'tables', component: TablesComponent },
-            { path: 'forms', component: FormsComponent}
+            { path: 'forms', component: FormsComponent},
+            { path: 'element', component: BsElementsComponent},
+            { path: 'grid', component: GridComponent},
+            { path: 'components', component: BsComponentsComponent}
         ]
     }
 ];

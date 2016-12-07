@@ -2,13 +2,13 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
-import { TablesComponent } from './tables.component';
+import { BsElementsComponent } from './bs-elements.component';
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule
   ],
-  declarations: [TablesComponent]
+  declarations: [BsElementsComponent]
 })
-export class TablesModule { }
+export class BsElementsModule { }

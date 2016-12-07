@@ -11,6 +11,9 @@ import { HomeModule } from './home/home.module';
 import { ChartingModule } from './charting/charting.module';
 import { TablesModule } from './tables/tables.module';
 import { FormsModule } from './forms/forms.module';
+import { BsElementsModule } from './bs-elements/bs-elements.module';
+import { GridModule } from './grid/grid.module';
+import { BsComponentModule } from './bs-components/bs-components.module';
 
 import { DashboardComponent } from './dashboard.component';
 
@@ -25,7 +28,10 @@ import { DashboardComponent } from './dashboard.component';
     HomeModule,
     ChartingModule,
     TablesModule,
-    FormsModule
+    FormsModule,
+    BsElementsModule,
+    GridModule,
+    BsComponentModule
   ],
   declarations: [
     DashboardComponent
