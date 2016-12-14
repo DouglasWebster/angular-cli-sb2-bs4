@@ -99,24 +99,24 @@
   <div class="col-sm-12">
     <div class="card card-block">
       <h4 class="card-title">Dropdowns</h4>
+      <!-- Simple dropdown -->
       <div (click)="$event.preventDefault()">
-        <!-- Simple dropdown -->
         <span dropdown (onToggle)="toggled($event)">
-    <a href id="simple-dropdown" dropdownToggle>
-      Click me for a dropdown, yo!
-    </a>
-    <ul class="dropdown-menu" dropdownMenu aria-labelledby="simple-dropdown">
-      <li *ngFor="let choice of items">
-        <a class="dropdown-item" href="#">{{choice}}</a>
-      </li>
-    </ul>
-  </span>
+          <a href id="simple-dropdown" dropdownToggle>
+           Click me for a dropdown, yo!
+          </a>
+          <ul class="dropdown-menu" dropdownMenu aria-labelledby="simple-dropdown">
+            <li *ngFor="let choice of items">
+              <a class="dropdown-item" href="#">{{choice}}</a>
+            </li>
+          </ul>
+        </span>
 
         <!-- Single button -->
         <div class="btn-group" dropdown [(isOpen)]="status.isopen">
           <button id="single-button" type="button" class="btn btn-primary" dropdownToggle [disabled]="disabled">
-      Button dropdown <span class="caret"></span>
-    </button>
+            Button dropdown <span class="caret"></span>
+          </button>
           <ul dropdownMenu role="menu" aria-labelledby="single-button">
             <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
             <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
@@ -130,9 +130,9 @@
         <div class="btn-group" dropdown>
           <button id="split-button" type="button" class="btn btn-danger">Action</button>
           <button type="button" class="btn btn-danger dropdown-toggle-split" dropdownToggle>
-      <span class="caret"></span>
-      <span class="sr-only">Split button!</span>
-    </button>
+            <span class="caret"></span>
+            <span class="sr-only">Split button!</span>
+          </button>
           <ul class="dropdown-menu" dropdownMenu role="menu" aria-labelledby="split-button">
             <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
             <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
@@ -145,7 +145,7 @@
         <hr/>
         <p>
           <button type="button" class="btn btn-primary btn-sm" (click)="toggleDropdown($event)">Toggle button dropdown
-    </button>
+          </button>
           <button type="button" class="btn btn-warning btn-sm" (click)="disabled = !disabled">Enable/Disable</button>
         </p>
 
@@ -153,8 +153,9 @@
         <!-- Single button with keyboard nav -->
         <div class="btn-group" dropdown keyboardNav="true">
           <button id="simple-btn-keyboard-nav" type="button" class="btn btn-primary" dropdownToggle>
-      Dropdown with keyboard navigation <span class="caret"></span>
-    </button>
+            Dropdown with keyboard navigation 
+            <span class="caret"></span>
+          </button>
           <ul class="dropdown-menu" dropdownMenu role="menu" aria-labelledby="simple-btn-keyboard-nav">
             <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
             <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
@@ -168,8 +169,8 @@
         <!-- Single button using append-to-body -->
         <div class="btn-group" dropdown dropdown-append-to-body>
           <button id="btn-append-to-body" type="button" class="btn btn-primary" dropdownToggle>
-      Dropdown on Body <span class="caret"></span>
-    </button>
+            Dropdown on Body <span class="caret"></span>
+          </button>
           <ul class="dropdown-menu" role="menu" aria-labelledby="btn-append-to-body">
             <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
             <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
@@ -204,11 +205,137 @@
           <pager [totalItems]="totalItems" [(ngModel)]="currentPage" (pageChanged)="pageChanged($event)" pageBtnClass="btn"></pager>
 
           <hr/>
-          <h4>Limit the maximum visible buttons</h4>
+          <h4>Limit the maximum visible buttons {{bigCurrentPage}}</h4>
           <pagination [totalItems]="bigTotalItems" [(ngModel)]="bigCurrentPage" [maxSize]="maxSize" class="pagination-sm" [boundaryLinks]="true"></pagination>
           <pagination [totalItems]="bigTotalItems" [(ngModel)]="bigCurrentPage" [maxSize]="maxSize" class="pagination-sm" [boundaryLinks]="true"
             [rotate]="false" (numPages)="numPages = $event"></pagination>
           <pre class="card card-block card-header">Page: {{bigCurrentPage}} / {{numPages}}</pre>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Progress Bar-->
+<div class="row">
+  <div class="col-sm-12">
+    <div class="card card-block">
+      <h4 class="card-title">Progress Bar</h4>
+      <h5><em>In bootstrap 4 progress has a different concept, no inner text, no default transition animation</em></h5>
+      <h4>Static</h4>
+      <div class="row">
+        <div class="col-sm-4">
+          <progress class="progress" value="55" max="100"></progress>
+        </div>
+        <div class="col-sm-4">
+          <progress class="progress progress-striped" value="22" max="100" type="warning">22%</progress>
+        </div>
+        <div class="col-sm-4">
+          <progress class="progress progress-striped active" max="200" value="166" type="danger"><i>166 / 200</i></progress>
+        </div>
+      </div>
+
+      <h4>Dynamic <button type="button" class="btn btn-sm btn-primary" (click)="random()">Randomize</button></h4>
+      <progress class="progress progress-striped progress-animated" [max]="max" [value]="dynamic">
+        <span style="color:white; white-space:nowrap;">{{dynamic}} / {{max}}</span>
+      </progress>
+
+      <small><em>No animation</em></small>
+      <progress class="progress progress-success" [value]="dynamic" [max]="100"><b>{{dynamic}}%</b></progress>
+
+      <small><em>Object (changes type based on value)</em></small>
+      <progress class="progress progress-striped progress-animated active progress-{{ type }}" [value]="dynamic" [max]="max">
+        {{type}} <i *ngIf="showWarning">!!! Watch out !!!</i>
+      </progress>
+
+      <hr />
+      <h4>Stacked <button type="button" class="btn btn-sm btn-primary" (click)="randomStacked()">Randomize</button></h4>
+      <div class="row col-lg-12">
+        <!-- todo: implement as component -->
+        <progress *ngFor="let baz of stacked" class="progress progress-{{ baz?.type }}" style="float: left;" [ngStyle]="{width: baz.value + '%'}"
+          [value]="baz.value" [max]="baz.max">
+          <span *ngIf="baz.value > 3">{{baz?.value}}%</span>
+        </progress>
+        <!-- gray background -->
+        <progress class="progress" value="0" max="100" style="width: 100%;"></progress>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Ratings -->
+<div class="row">
+  <div class="col-sm-12">
+    <div class="card card-block">
+      <h4 class="card-title">Ratings</h4>
+      <h4>Default</h4>
+      <rating [(ngModel)]="rate" [max]="maxRating" [readonly]="isReadonly" (onHover)="hoveringOver($event)" (onLeave)="resetStar($event)"
+        [titles]="['one','two','three']" stateOn="fa fa-star" stateOff="fa fa-star-o"></rating>
+      <span class="label" [ngClass]="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}"
+        [ngStyle]="{display: (overStar && isReadonly) ? 'inline' : 'none'}">{{percent}}%</span>
+
+      <pre class="card card-block card-header" style="margin:15px 0;">Rate: <b>{{rate}}</b> - Readonly is: <i>{{isReadonly}}</i> - Hovering over: <b>{{overStar || "none"}}</b></pre>
+
+      <button type="button" class="btn btn-sm btn-danger" (click)="rate = 0" [disabled]="isReadonly">Clear</button>
+      <button type="button" class="btn btn-sm btn-primary" (click)="isReadonly = ! isReadonly">Toggle Readonly</button>
+      <hr/>
+
+      <h4>Custom icons</h4>
+      <div>
+        <rating [(ngModel)]="x" max="15" stateOn="fa fa-check-circle" stateOff="fa fa-check-circle-o"></rating>
+        <b>(<i>Rate:</i> {{x}})</b>
+      </div>
+      <div>
+        <rating [(ngModel)]="y" [ratingStates]="ratingStates"></rating>
+        <b>(<i>Rate:</i> {{y}})</b>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Tabs -->
+<div class="row">
+  <div class="col-sm-12">
+    <div class="card card-block">
+      <h4 class="card-title">Tabs</h4>
+      <div (click)="$event.preventDefault()">
+        <div class="row">
+          <div class="col-lg-6" style="margin-top: 10px;">
+            <p>Select a tab by setting active binding to true:</p>
+            <p>
+              <button type="button" class="btn btn-primary btn-sm" (click)="tabs[0].active = true">Select second tab</button>
+              <button type="button" class="btn btn-primary btn-sm" (click)="tabs[1].active = true" [disabled]="selectThirdTabBtnEnabled">Select third tab</button>
+            </p>
+            <p>
+              <button type="button" class="btn btn-primary btn-sm" (click)="enableThirdTab()">Enable / Disable third tab</button>
+            </p>
+            <hr />
+            <tabset>
+              <tab heading="Static title">Static content</tab>
+              <tab *ngFor="let tabz of tabs" [heading]="tabz.title" [active]="tabz.active" (select)="tabz.active = true" (deselect)="tabz.active = false"
+                [disabled]="tabz.disabled" [removable]="tabz.removable" (removed)="removeTabHandler(tabz)" [customClass]="tabz.customClass">
+                {{tabz?.content}}
+              </tab>
+              <tab (select)="alertMe()">
+                <template tabHeading>
+                  <i class="fa fa-bell"></i> Alert!
+                </template>
+                I've got an HTML heading, and a select callback. Pretty cool!
+              </tab>
+            </tabset>
+          </div>
+          <div class="col-lg-6" style="margin-top: 10px;">
+            <tabset [vertical]="true" type="pills">
+              <tab heading="Vertical 1">Vertical content 1</tab>
+              <tab heading="Vertical 2">Vertical content 2</tab>
+            </tabset>
+
+            <hr />
+
+            <p><i>Bootstrap 4 doesn't have justified classes</i></p>
+            <tabset [justified]="true">
+              <tab heading="Justified">Justified content</tab>
+              <tab heading="SJ">Short Labeled Justified content</tab>
+              <tab heading="Long Justified">Long Labeled Justified content</tab>
+            </tabset>
+          </div>
         </div>
       </div>
     </div>

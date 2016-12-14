@@ -44,11 +44,6 @@ export class ChartingComponent implements OnInit {
     }
   ];
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
   // lineChart
   public lineChartData: Array<any> = [
     { data: [502, 635, 809, 947, 1402, 3634, 5268], label: 'Asia', lineTension: 0 },
@@ -237,7 +232,7 @@ export class ChartingComponent implements OnInit {
     },
     scales: {
       xAxes: [{
-        type: "time",
+        type: 'time',
         time: {
           unit: 'month',
           displayFormats: {
@@ -268,6 +263,11 @@ export class ChartingComponent implements OnInit {
 
   public timeChartLegend: boolean = true;
   public timeChartType: string = 'line';
+
+  constructor() { }
+
+  ngOnInit() {
+  }
 
   // events
   public chartClicked(e: any): void {

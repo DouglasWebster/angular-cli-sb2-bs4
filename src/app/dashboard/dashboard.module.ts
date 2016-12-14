@@ -5,7 +5,7 @@ import { DashboardRoutingModule } from './dashboard-routing.module';
 
 import { DropdownModule } from 'ng2-bootstrap';
 import { ModalModule } from 'ng2-bootstrap';
-import { SidebarModule } from '../shared/sidebar/sidebar.module'
+import { SidebarModule } from '../shared/sidebar/sidebar.module';
 import { TopnavModule } from '../shared/topnav/topnav.module';
 import { HomeModule } from './home/home.module';
 import { ChartingModule } from './charting/charting.module';

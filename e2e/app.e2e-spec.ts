@@ -1,10 +1,10 @@
-import { SBAdBS4Ng2Page } from './app.po';
+import { SbadBs4Ng2Page } from './app.po';
 
 describe('sbad-bs4-ng2 App', function() {
-  let page: SBAdBS4Ng2Page;
+  let page: SbadBs4Ng2Page;
 
   beforeEach(() => {
-    page = new SBAdBS4Ng2Page();
+    page = new SbadBs4Ng2Page();
   });
 
   it('should display message saying app works', () => {
