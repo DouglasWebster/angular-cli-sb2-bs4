@@ -65,7 +65,7 @@ export class BsComponentsComponent {
   public percent: number;
 
   // Tabs
-  public selectThirdTabBtnEnabled: boolean = true;
+  public selectThirdTabBtnDisabled: boolean = true;
   public tabs: Array<any> = [
     { title: 'Dynamic Title 1', content: 'Dynamic content 1' },
     { title: 'Dynamic Title 2', content: 'Dynamic content 2', disabled: true },
@@ -176,7 +176,7 @@ export class BsComponentsComponent {
   };
 
   public enableThirdTab(): void {
-    this.selectThirdTabBtnEnabled = ! this.selectThirdTabBtnEnabled;
+    this.selectThirdTabBtnDisabled = ! this.selectThirdTabBtnDisabled;
     this.tabs[1].disabled = ! this.tabs[1].disabled;
   }
 
