@@ -22,16 +22,17 @@ import { BsComponentsComponent } from './bs-components.component';
   imports: [
     CommonModule,
     RouterModule,
-    AlertModule,
-    ButtonsModule,
-    DropdownModule,
-    PaginationModule,
-    ProgressbarModule,
-    RatingModule,
-    TabsModule,
-    TooltipModule,
-    ModalModule,
-    TypeaheadModule
+    FormsModule,
+    AlertModule.forRoot(),
+    ButtonsModule.forRoot(),
+    DropdownModule.forRoot(),
+    PaginationModule.forRoot(),
+    ProgressbarModule.forRoot(),
+    RatingModule.forRoot(),
+    TabsModule.forRoot(),
+    TooltipModule.forRoot(),
+    ModalModule.forRoot(),
+    TypeaheadModule.forRoot()
   ],
   declarations: [BsComponentsComponent]
 })

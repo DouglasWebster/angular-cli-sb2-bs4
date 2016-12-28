@@ -3,8 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { DashboardRoutingModule } from './dashboard-routing.module';
 
-import { DropdownModule } from 'ng2-bootstrap';
-import { ModalModule } from 'ng2-bootstrap';
+import { DropdownModule } from 'ng2-bootstrap/dropdown';
+import { ModalModule } from 'ng2-bootstrap/modal';
 import { SidebarModule } from '../shared/sidebar/sidebar.module';
 import { TopnavModule } from '../shared/topnav/topnav.module';
 import { HomeModule } from './home/home.module';
@@ -21,8 +21,8 @@ import { DashboardComponent } from './dashboard.component';
   imports: [
     CommonModule,
     DashboardRoutingModule,
-    DropdownModule,
-    ModalModule,
+    DropdownModule.forRoot(),
+    ModalModule.forRoot(),
     SidebarModule,
     TopnavModule,
     HomeModule,
