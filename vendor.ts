@@ -1,6 +1,6 @@
 /*********************
  * 
- * This is needed to get moment.js working and this the file is
+ * This is needed to get moment.js working and this file is
  * included in the angular-cli.json file in the scripts
  * section.
  * See https://github.com/angular/angular-cli/issues/2141
