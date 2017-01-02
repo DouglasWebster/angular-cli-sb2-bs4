@@ -1,14 +1,17 @@
 
 // the following is a workround so that ng2-bootstrap uses a font-awesome icon
 // instead of the Glyphicons Halflings one as bootstrap V4 is dropping support for .glyphicon.
-// if anybody know a better way to do it please let me know.
+// if anybody knows a better way to do it please let me know.
 
+// redifine the glyphicons font family to font-awesome
 @font-face {
   font-family: 'Glyphicons Halflings';
 
    src: url('/node-modules/font-awesome/fonts/fontawesome-webfont.eot?v=4.7.0');
   src: url('/node-modules/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('/node-modules/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('/node-modules/font-awesome/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('/node-modules/font-awesome/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('/node-modules/font-awesome/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
 }
+
+// redifine .glyphicon
 .glyphicon {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -17,6 +20,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+// point glyphicon-remove-circle icon to the neareset font-awesome equivalent
 .glyphicon-remove-circle:before {
   content: "\f05c";
 }
