@@ -1,6 +1,7 @@
 {
   "name": "sbad-bs4-ng2",
   "version": "0.0.0",
+  "author": "Douglas Webster",
   "license": "MIT",
   "angular-cli": {},
   "scripts": {
