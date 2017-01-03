@@ -57,8 +57,7 @@ Run ng e2e to execute the end-to-end tests via Protractor. Before running the te
 
 To get more help on the angular-cli use ng help or go check out the Angular-CLI README.
 
-Directory Structure
-
+### **Directory Structure**
 ```
 ├── e2e
 │   ├── app.e2e-spec.ts   <-- simple e2e test
@@ -193,3 +192,54 @@ Directory Structure
 ├── README.md
 ├── tslint.json                <-- tslint configuration
 └── vendor.ts                  <-- hack to get moments into webpack
+```
+----------
+### **Notes**
+- **Look and Feel**
+    The ng2-bootstrap package is used to implement most of the bootstrap functionality and much of the look and feel is based on [NG2 Demo](http://valor-software.com/ng2-bootstrap/#/).  Ng2-bootstrap is designed to work with both Bootstrap 3 and Bootstrap 4 whilst this project is developed using Bootstrap 4 only.  As Bootstrap 4 is dropping support for glyphicons I chose to use font-awesome throughout the project so you may notice differences between icons on the  ng2-bootstrap demo pages and this projects demo pages. 
+       
+- **Charting**
+   
+   The original StartBootstrap SB2 uses jQuery charting plugins, Flot Charts and Morris.js and the StartAngular version uses Highcharts.  This implementation uses ng2-charts which is based on the chart.js.   
+   
+   The primary reason for this is that chart.js and ng2-charts are free open source whilst Highcharts requires a licence for commercial use. Being unsure how possible downstream use of this project would impact licensing issues I decided to change the charting package used.  A secondary consideration was that ng2-charts is an angular 2 module which should make implementation easier.  However, ng2-charts is still in development so breaking changes may occur if the package is updated.
+
+- **Navigation**
+   
+    .htaccess is included in the root directory of the app for inclusion in the build.  This is to allow navigation without using *HashLocationStrategy* in the my local Apache http test server.  
+   
+    I haven't tried navigation in anything other than the default angular-cli server implementation and the Apache http server so I cannot guarantee navigation will work without a similar workaround.
+    It took me quite a while to find out what the problem was with navigating in Apache until I came across this solution [Angular2 routing / deep linking not working with Apache 404](http://stackoverflow.com/questions/34816025/angular2-routing-deep-linking-not-working-with-apache-404) on stackoverflow - hopefully the link will help with others of you who, like me, aren't familiar enough with Apache to set up a local test server correctly to allow html5 navigation. 
+    
+    *(I realise that this has generated a big discussion on the angular site regarding front-end or back-end configuration responsibility but as angular seems to favour html5 routing this is the one I've gone with.  The framework is still relatively shallow as far as routing is concerned so it shouldn't be too onerous to change it to # routing if you so require).* 
+
+- **Style Sheets**
+
+    The style sheets have all been included by reference in the angular-cli.json styles section.  I did consider extracting the stylesheets and including them in one common styles folder and referencing them in the root styles.css file.  However, I seem to have problems loading style sheets via styles.css so use the current method.
+
+    For the bootstrap and font-awesome css files the current method seems to me to be the correct one as any updates in the future are automatically catered for.  The inclusion of  app.css in this was does seem wrong to me though and this may change in the future if I can discover where my mistake is.
+    
+- **Testing**
+
+   For unit testing all but the root testing module is skipped - hopefully these should be implemented soon once I get my head around the pitfalls of unit testing with routed components.  The testing sub folder with the router-stubs.ts file is my initial stab at this.
+    
+ ----------
+### **Hacks**
+Thankfully there aren't too many of these considering the very fluid nature of the angular scene at the moment.  The following are the ones I have had to use to get the application running.
+
+- **app.css**
+   
+   As mentioned in the Look and Feel section glyphicons are not included in the package.  However ng2-bootstrap does use the .glyphicon-remove-circle as the close symbol in the tabs module.
+   Not having the glyphicon file loaded meant that the close behaviour didn't work as there was no icon to click on.  To overcome this the first section of app.css first redefines the glyphicon halfings font family to point to the font-awesome font files, then redefines .glyphicon to FontAwesome and finally points .glyphicon-remove-circle to the nearest font-awesome icon.
+   This seems far from ideal and if anyone has a better solution I'm always willing to implement it.
+- **bs-component**
+    
+    This is a large (probably too large) component that demonstrates most of the ng2-bootstrap functionality. Having all the different modules on one page did highlight one problem though and that was the inclusion of the *changeDetectionStrategy.OnPush*.
+
+    This seems to be needed to prevent errors when enabling or clicking on a disabled tab.  However, it also seems to give rise to synchronising errors in other modules.  This manifested itself in the pagination module where the pagination didn't update until a second mouse click occurred and the alert module where the timed alert didn't clear until a mouse click occurred after the time out.  I have removed the reference to changedDetectionStrategy but that meant that special care is needed to ensure the tab is enabled at the correct time.  
+    
+    *To see the problem uncomment the two comments at the start of bs-component.component.ts file.*
+
+## **Acknowledgements**
+
+I would like to say thank you to the people at valour-software for some excellent packages that made implementing this project far easier than it would have been using the basic chart.js and bootstrap packages.  Also, the people at StartAngular for putting SB2 out there.   
