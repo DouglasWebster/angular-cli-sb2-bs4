@@ -25,7 +25,7 @@ $ npm install -g angular-cli
 
 **In order to start the seed use:**
 ```bash
-$ git clone https://github.com/DouglasWebster/SBADBS4NG2
+$ git clone https://github.com/DouglasWebster/Angular_cli-SB2-BS4
 $ cd SBADBS4NG2
 # install the project dependencies
 $ npm install
