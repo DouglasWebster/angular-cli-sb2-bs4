@@ -1,7 +1,7 @@
 {
   "project": {
     "version": "1.0.0-beta.24",
-    "name": "sbad-bs4-ng2"
+    "name": "Angular-cli SB2 BS4"
   },
   "apps": [
     {
