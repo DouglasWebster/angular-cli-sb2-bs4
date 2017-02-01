@@ -3,12 +3,14 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
-  styleUrls: ['./sidebar.component.css']
+  styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
 
-  isActive = false;
-  showMenu: string = '';
+  public sidebarCollapsed: boolean = true;
+  public subMenu1Collapsed: boolean = true;
+
+  // showMenu: string = '';
 
   constructor() { }
 
@@ -16,14 +18,13 @@ export class SidebarComponent implements OnInit {
   }
 
   eventCalled() {
-    this.isActive = !this.isActive;
   }
 
-  addExpandClass(element: any) {
-    if (element === this.showMenu) {
-      this.showMenu = '0';
-    } else {
-      this.showMenu = element;
-    }
-  }
+  // addExpandClass(element: any) {
+  //   if (element === this.showMenu) {
+  //     this.showMenu = '0';
+  //   } else {
+  //     this.showMenu = element;
+  //   }
+  // }
 }
