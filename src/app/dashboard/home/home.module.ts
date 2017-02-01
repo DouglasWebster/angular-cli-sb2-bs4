@@ -9,7 +9,7 @@ import { TimelineComponent, ChatComponent, NotificationComponent } from './home.
 @NgModule({
     imports: [
         CommonModule,
-        CarouselModule.forRoot(),
+        CarouselModule,
         AlertModule.forRoot()
     ],
     declarations: [
