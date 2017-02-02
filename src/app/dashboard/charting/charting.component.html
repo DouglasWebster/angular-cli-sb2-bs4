@@ -16,38 +16,29 @@
       </ol>
     </div>
   </div>
-  <div class="row">
+  <div class="row no-gutters">
     <div class="col-xl-6">
-      <div class="card card-block">
-        <div id="container" style="margin: 0 auto">
-          <canvas baseChart [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions" [legend]="lineChartLegend"
-            [chartType]="lineChartType" [colors]="chartColors" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
-        </div>
+      <div class="card card-block card-outline-primary">
+        <canvas baseChart [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions" [legend]="lineChartLegend"
+          [chartType]="lineChartType" [colors]="chartColors" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
       </div>
     </div>
     <div class="col-xl-6">
-      <div class="card card-block">
-        <div id="area-chart" style="margin: 0 auto">
-          <canvas baseChart [datasets]="areaChartData" [labels]="areaChartLabels" [options]="areaChartOptions" [legend]="areaChartLegend"
-            [chartType]="areaChartType" [colors]="chartColors" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
-        </div>
-      </div>
-    </div>
-    <h1>&nbsp;</h1>
-    <div class="col-xl-6">
-      <div class="card card-block">
-        <div id="total-fruit" style="margin: 0 auto">
-          <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [legend]="barChartLegend"
-            [chartType]="barChartType" [colors]="chartColors" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
-        </div>
+      <div class="card card-block card-outline-success">
+        <canvas baseChart [datasets]="areaChartData" [labels]="areaChartLabels" [options]="areaChartOptions" [legend]="areaChartLegend"
+          [chartType]="areaChartType" [colors]="chartColors" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
       </div>
     </div>
     <div class="col-xl-6">
-      <div class="card card-block">
-        <div id="snow-depth" style="margin: 0 auto">
-          <canvas baseChart [datasets]="timeChartData" [options]="timeChartOptions" [legend]="timeChartLegend"
-            [chartType]="timeChartType" [colors]="chartColors" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
-        </div>
+      <div class="card card-block card-outline-warning">
+        <canvas baseChart [datasets]="barChartData" [labels]="barChartLabels" [options]="barChartOptions" [legend]="barChartLegend"
+          [chartType]="barChartType" [colors]="chartColors" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+      </div>
+    </div>
+    <div class="col-xl-6">
+      <div class="card card-block card-outline-danger">
+        <canvas baseChart [datasets]="timeChartData" [options]="timeChartOptions" [legend]="timeChartLegend" [chartType]="timeChartType"
+          [colors]="chartColors" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
       </div>
     </div>
   </div>
