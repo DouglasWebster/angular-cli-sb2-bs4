@@ -1,0 +1,19 @@
+@import "../../../node_modules/bootstrap/scss/_variables";
+@import "../../../node_modules/bootstrap/scss/_mixins";
+
+.main-container{
+    @include media-breakpoint-down(md) {
+        margin-left: 0;
+    }
+    margin: 50px 0 0 225px;
+    padding: 10px;
+    -ms-overflow-x: hidden;
+    overflow-x: hidden;
+    position: relative;
+}
+
+// @media screen and (max-width: 991px) {
+//     .main-container{
+//         margin-left : 0;
+//     }
+// }

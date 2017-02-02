@@ -4,7 +4,10 @@ import { CommonModule } from '@angular/common';
 import { DashboardRoutingModule } from './dashboard-routing.module';
 
 import { DropdownModule } from 'ng2-bootstrap/dropdown';
+import { CollapseModule } from 'ng2-bootstrap/collapse';
 import { ModalModule } from 'ng2-bootstrap/modal';
+import { CarouselModule } from 'ng2-bootstrap/carousel';
+import { AccordionModule } from 'ng2-bootstrap/accordion';
 import { SidebarModule } from '../shared/sidebar/sidebar.module';
 import { TopnavModule } from '../shared/topnav/topnav.module';
 import { HomeModule } from './home/home.module';
@@ -22,7 +25,9 @@ import { DashboardComponent } from './dashboard.component';
     CommonModule,
     DashboardRoutingModule,
     DropdownModule.forRoot(),
-    ModalModule.forRoot(),
+    CollapseModule.forRoot(),
+    CarouselModule.forRoot(),
+    AccordionModule.forRoot(),
     SidebarModule,
     TopnavModule,
     HomeModule,

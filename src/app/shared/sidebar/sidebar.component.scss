@@ -1,0 +1,86 @@
+@import "../../../../node_modules/bootstrap/scss/_variables";
+@import "../../../../node_modules/bootstrap/scss/_mixins";
+@import "../../../../node_modules/bootstrap/scss/_navbar";
+@import "../../../../node_modules/bootstrap/scss/_nav";
+
+$link-padding-top:    1rem;
+$link-padding-right:  1rem;
+$link-padding-bottom: 1rem;
+$link-padding-left:   1.5rem;
+
+$side-link-padding: $link-padding-top $link-padding-right $link-padding-bottom $link-padding-left;
+
+.navbar-toggler-left{
+  position: fixed;
+  top: 8px;
+  z-index: $zindex-modal;
+}
+
+.navbar-toggler-right{
+  position: fixed;
+  top: 8px;
+  z-index: $zindex-modal;
+}
+
+.sidebar-collapse{
+  @include media-breakpoint-down(md) {
+      display: none;
+  }
+  @include media-breakpoint-up(lg) {
+    display: block !important;
+  }
+  position: fixed;
+  z-index: $zindex-modal;
+  top: 50px;
+  width: 225px;
+  bottom: 0px;
+  border-radius: 0;
+  border: none;
+  border-radius: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding-bottom: 40px;
+  height: 100%;
+  min-height: 100%;
+}
+
+.side-item {
+  @extend .nav-item;
+  padding: 8px 0px;
+}
+
+.sidebar {
+  height: 100%;
+  overflow-y: auto;
+  padding: $side-link-padding;
+  margin-bottom: 0;
+  .side-item {
+    .side-link {
+      text-decoration: none;
+    }
+  }
+}
+
+.sidebar-light-nav {
+  @extend .sidebar;
+  .side-item {
+    .side-link {
+      color: $navbar-light-color;
+      @include hover-focus {
+        color: $navbar-light-hover-color;
+      }
+    }
+  }
+}
+
+.sidebar-inverse-nav {
+  @extend .sidebar;
+  .side-item {
+    .side-link {
+      color: $navbar-inverse-color;
+      @include hover-focus {
+        color: $navbar-inverse-hover-color;
+      }
+    }
+  }
+}

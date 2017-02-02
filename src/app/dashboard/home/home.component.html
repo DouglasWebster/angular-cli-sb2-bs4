@@ -2,7 +2,7 @@
     <h2 class="text-muted">Dashboard <small>Statistics Overview</small></h2>
     <div class="row">
         <div class="col-md-12">
-            <carousel [interval]="myInterval" [noWrap]="noWrapSlides">
+            <carousel>
                 <slide *ngFor="let slidez of slides;let index=index" [active]="slidez.active">
                     <img [src]="slidez.image">
                     <div class="carousel-caption">
@@ -10,8 +10,6 @@
                         <p>{{slidez.text}}</p>
                     </div>
                 </slide>
-                <i class="fa fa-chevron-left left carousel-control"></i>
-                <i class="fa fa-chevron-right right carousel-control"></i>
             </carousel>
         </div>
     </div>
