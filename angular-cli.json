@@ -25,11 +25,7 @@
         "../node_modules/font-awesome/css/font-awesome.css"
       ],
       "scripts": [
-        "../node_modules/jquery/dist/jquery.js",
         "../vendor.ts",
-        "../node_modules/tether/dist/js/tether.js",
-        "../node_modules/bootstrap/dist/js/bootstrap.js",
-
         "../node_modules/chart.js/dist/Chart.js"
         ],
       "environments": {
