@@ -5,7 +5,7 @@ import { ModalDirective } from 'ng2-bootstrap/modal/modal.component';
   selector: 'app-bs-component',
   // changeDetection: ChangeDetectionStrategy.OnPush,  // <-- this does not seem to be needed any more
   templateUrl: './bs-components.component.html',
-  styleUrls: ['./bs-components.component.css']
+  styleUrls: ['./bs-components.component.scss']
 })
 export class BsComponentsComponent {
 

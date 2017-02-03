@@ -5,7 +5,7 @@ declare var $: any;
 @Component({
     selector: 'app-topnav',
     templateUrl: './topnav.component.html',
-    styleUrls: ['./topnav.component.css']
+    styleUrls: ['./topnav.component.scss']
 })
 export class TopnavComponent implements OnInit {
 
@@ -29,32 +29,4 @@ export class TopnavComponent implements OnInit {
         this.status.isopen = !this.status.isopen;
     }
 
-
-    /****************************************************
-     * the following code is from the original and 
-     * seem to be for implementing theme colour changes
-     * and swtiching the position of the sidebar.
-     * It is not implemented in this version but the code
-     * has been left in for completeness
-     * **************************************************
-     
-    changeTheme(color: string): void {
-    var link: any = $('<link>');
-    link
-    .appendTo('head')
-    .attr({ type: 'text/css', rel: 'stylesheet' })
-    .attr('href', 'themes/app-' + color + '.css');
-    }
-    
-    rtl(): void {
-    var body: any = $('body');
-    body.toggleClass('rtl');
-    }
-    
-    sidebarToggler(): void {
-    var sidebar: any = $('#sidebar');
-    var mainContainer: any = $('.main-container');
-    sidebar.toggleClass('sidebar-left-zero');
-    mainContainer.toggleClass('main-container-ml-zero');
-    }*/
 }

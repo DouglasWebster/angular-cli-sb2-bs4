@@ -20,13 +20,13 @@ Both Angular-cli and the generated project have dependencies that require Node 4
 
 Angular-cli requires global installation by:
 ```bash
-$ npm install -g angular-cli
+$ npm install -g @angular/cli
 ```
 
 **In order to start the seed use:**
 ```bash
 $ git clone https://github.com/DouglasWebster/Angular_cli-SB2-BS4
-$ cd SBADBS4NG2
+$ cd Angular_cli-SB2-BS4
 # install the project dependencies
 $ npm install
 ```
@@ -67,52 +67,52 @@ To get more help on the angular-cli use ng help or go check out the Angular-CLI 
 │    ├── app
 │    │   ├── dashboard                          <-- main page for the application
 │    │   │   ├── bs-components                          <-- demonstration of Bootstrap components
-│    │   │   │   ├── bs-components.component.css
+│    │   │   │   ├── bs-components.component.scss
 │    │   │   │   ├── bs-components.component.html
 │    │   │   │   ├── bs-components.component.spec.ts
 │    │   │   │   ├── bs-components.component.ts
 │    │   │   │   └── bs-components.module.ts
 │    │   │   ├── bs-elements                          <-- demonstration of Bootstrap elements
-│    │   │   │   ├── bs-elements.component.css
+│    │   │   │   ├── bs-elements.component.scss
 │    │   │   │   ├── bs-elements.component.html
 │    │   │   │   ├── bs-elements.component.spec.ts
 │    │   │   │   ├── bs-elements.component.ts
 │    │   │   │   └── bs-elements.module.ts
 │    │   │   ├── charting                          <-- demonstration of ng-charts
-│    │   │   │   ├── charting.component.css
+│    │   │   │   ├── charting.component.scss
 │    │   │   │   ├── charting.component.html
 │    │   │   │   ├── charting.component.spec.ts
 │    │   │   │   ├── charting.component.ts
 │    │   │   │   └── charting.module.ts
 │    │   │   ├── forms                          <-- demonstration of forms
-│    │   │   │   ├── forms.component.css
+│    │   │   │   ├── forms.component.scss
 │    │   │   │   ├── forms.component.html
 │    │   │   │   ├── forms.component.spec.ts
 │    │   │   │   ├── forms.component.ts
 │    │   │   │   └── forms.module.ts
 │    │   │   ├── grid                          <-- demonstration of grid layouts
-│    │   │   │   ├── grid.component.css
+│    │   │   │   ├── grid.component.scss
 │    │   │   │   ├── grid.component.html
 │    │   │   │   ├── grid.component.spec.ts
 │    │   │   │   ├── grid.component.ts
 │    │   │   │   └── grid.module.ts
 │    │   │   ├── home                          <-- home component SB layout
 │    │   │   │   ├── chat.html                 <-- additional chat boilerplate
-│    │   │   │   ├── home.component.css
+│    │   │   │   ├── home.component.scss
 │    │   │   │   ├── home.component.html
 │    │   │   │   ├── home.component.spec.ts
 │    │   │   │   ├── home.component.ts
 │    │   │   │   ├── home.module.ts
 │    │   │   │   ├── notification.html         <-- additional notification boilerplate
 │    │   │   │   ├── timeline.html             <-- additional timeline boilerplate
-│    │   │   │   └── timeline.css
+│    │   │   │   └── timeline.scss
 │    │   │   ├── tables                          <-- demonstration of tables
-│    │   │   │   ├── tables.component.css
+│    │   │   │   ├── tables.component.scss
 │    │   │   │   ├── tables.component.html
 │    │   │   │   ├── tables.component.spec.ts
 │    │   │   │   ├── tables.component.ts
 │    │   │   │   └── tables.module.ts
-│    │   │   ├── dashboard.component.css
+│    │   │   ├── dashboard.component.scss
 │    │   │   ├── dashboard.component.html
 │    │   │   ├── dashboard.component.spec.ts
 │    │   │   ├── dashboard.component.ts
@@ -120,7 +120,7 @@ To get more help on the angular-cli use ng help or go check out the Angular-CLI 
 │    │   │   ├── dashboard-routing.module.ts
 │    │   │   └── index.ts
 │    │   ├── login                           <-- boilerplate login page
-│    │   │   ├── login.component.css
+│    │   │   ├── login.component.scss
 │    │   │   ├── login.component.html
 │    │   │   ├── login.component.spec.ts
 │    │   │   ├── login.component.ts
@@ -131,20 +131,20 @@ To get more help on the angular-cli use ng help or go check out the Angular-CLI 
 │    │   │   │   ├── name-list.service.spec.ts
 │    │   │   │   └── name-list.service.ts
 │    │   │   ├── sidebar                          <-- page sidebar component
-│    │   │   │   ├── sidebar.component.css
+│    │   │   │   ├── sidebar.component.scss
 │    │   │   │   ├── sidebar.component.html
 │    │   │   │   ├── sidebar.component.spec.ts
 │    │   │   │   ├── sidebar.component.ts
 │    │   │   │   └── sidebar.module.ts
 │    │   │   ├── topnav                          <-- page topnav component
-│    │   │   │   ├── topnav.component.css
+│    │   │   │   ├── topnav.component.scss
 │    │   │   │   ├── topnav.component.html
 │    │   │   │   ├── topnav.component.spec.ts
 │    │   │   │   ├── topnav.component.ts
 │    │   │   │   └── topnav.module.ts
 │    │   │   └── shared.module.ts
 │    │   ├── signup                           <-- boilerplate signup page
-│    │   │   ├── signup.component.css
+│    │   │   ├── signup.component.scss
 │    │   │   ├── signup.component.html
 │    │   │   ├── signup.component.spec.ts
 │    │   │   ├── signup.component.ts
@@ -179,7 +179,7 @@ To get more help on the angular-cli use ng help or go check out the Angular-CLI 
 │    ├── index.html                 <-- app startup page
 │    ├── main.ts                    <-- app entry point
 │    ├── polyfills.ts
-│    ├── stylels.css                <-- global styles
+│    ├── stylels.scss                <-- global styles
 │    ├── test.ts                    <-- karma test environment
 │    ├── tsconfig.json              <-- typescript settings
 │    └── typings.d.ts               <-- additonal type definition 
@@ -215,9 +215,9 @@ To get more help on the angular-cli use ng help or go check out the Angular-CLI 
 
 - **Style Sheets**
 
-    The style sheets have all been included by reference in the angular-cli.json styles section.  I did consider extracting the stylesheets and including them in one common styles folder and referencing them in the root styles.css file.  However, I seem to have problems loading style sheets via styles.css so use the current method.
+    The style sheets have all been included by reference in the angular-cli.json styles section.  I did consider extracting the stylesheets and including them in one common styles folder and referencing them in the root styles.scss file.  However, I seem to have problems loading style sheets via styles.scss so use the current method.
 
-    For the bootstrap and font-awesome css files the current method seems to me to be the correct one as any updates in the future are automatically catered for.  The inclusion of  app.css in this was does seem wrong to me though and this may change in the future if I can discover where my mistake is.
+    For the bootstrap and font-awesome css files the current method seems to me to be the correct one as any updates in the future are automatically catered for.  The inclusion of  app.scss in this was does seem wrong to me though and this may change in the future if I can discover where my mistake is.
     
 - **Testing**
 
@@ -227,10 +227,10 @@ To get more help on the angular-cli use ng help or go check out the Angular-CLI 
 ### **Hacks**
 Thankfully there aren't too many of these considering the very fluid nature of the angular scene at the moment.  The following are the ones I have had to use to get the application running.
 
-- **app.css**
+- **app.scss**
    
    As mentioned in the Look and Feel section glyphicons are not included in the package.  However ng2-bootstrap does use the .glyphicon-remove-circle as the close symbol in the tabs module.
-   Not having the glyphicon file loaded meant that the close behaviour didn't work as there was no icon to click on.  To overcome this the first section of app.css first redefines the glyphicon halfings font family to point to the font-awesome font files, then redefines .glyphicon to FontAwesome and finally points .glyphicon-remove-circle to the nearest font-awesome icon.
+   Not having the glyphicon file loaded meant that the close behaviour didn't work as there was no icon to click on.  To overcome this the first section of app.scss first redefines the glyphicon halfings font family to point to the font-awesome font files, then redefines .glyphicon to FontAwesome and finally points .glyphicon-remove-circle to the nearest font-awesome icon.
    This seems far from ideal and if anyone has a better solution I'm always willing to implement it.
 - **bs-component**
     

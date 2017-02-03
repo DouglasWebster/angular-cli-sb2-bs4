@@ -5,7 +5,7 @@ import * as moment from 'moment';
 @Component({
   selector: 'app-charts',
   templateUrl: './charting.component.html',
-  styleUrls: ['./charting.component.css']
+  styleUrls: ['./charting.component.scss']
 })
 export class ChartingComponent implements OnInit {
 
