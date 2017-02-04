@@ -13,7 +13,7 @@ export class TimelineComponent { }
   templateUrl: './chat.html'
 })
 export class ChatComponent {
-  public disabled: boolean = false;
+  public disabled = false;
  }
 
 @Component({
@@ -31,9 +31,9 @@ export class NotificationComponent { }
 export class HomeComponent implements OnInit {
 
   /* Carousel Variable */
-  noWrapSlides: boolean = false;
-  myInterval: number = 5000;
-  index: number = 0;
+  noWrapSlides = false;
+  myInterval = 5000;
+  index = 0;
   slides: Array<any> = [];
   imgUrl: Array<any> = [
     `assets/img/slider1.jpg`,
@@ -74,7 +74,7 @@ export class HomeComponent implements OnInit {
 
   /* Carousel */
   addSlide() {
-    let i = this.slides.length;
+    const i = this.slides.length;
     this.slides.push({
       image: this.imgUrl[i],
       text: `${['Dummy ', 'Dummy ', 'Dummy ', 'Dummy '][this.slides.length % 4]}
