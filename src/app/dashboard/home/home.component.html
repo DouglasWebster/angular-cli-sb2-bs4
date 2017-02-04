@@ -1,17 +1,18 @@
 <div class="container-fluid">
     <h2 class="text-muted">Dashboard <small>Statistics Overview</small></h2>
-    <div class="row">
-        <div class="col-md-12">
-            <carousel>
-                <slide *ngFor="let slidez of slides;let index=index" [active]="slidez.active">
-                    <img [src]="slidez.image">
-                    <div class="carousel-caption">
-                        <h4>Slide {{index}}</h4>
-                        <p>{{slidez.text}}</p>
-                    </div>
-                </slide>
+    <div class="container">
+        <carousel [interval]="myInterval"
+            [noWrap]="noWrapSlides"
+            [(activeSlide)]="activeSlideIndex">
+            <slide *ngFor="let slide of slides; let index=index">
+                <img [src]="slide.image">
+
+                <div class="carousel-caption">
+                    <h4>Slide {{index}}</h4>
+                    <p>{{slide.text}}</p>
+                </div>
+            </slide>
             </carousel>
-        </div>
     </div>
     <hr>
     <div class="row">
@@ -51,11 +52,12 @@
                     </div>
                 </div>
                 <div class="card-footer card-green">
-                    <a class="text-success" href="javascript:void(0);">
+                    <a class="text-success"
+                        href="javascript:void(0);">
                         <span class="pull-xs-left">View Details</span>
                         <span class="pull-xs-right"><i class="fa fa-arrow-circle-right"></i></span>
                         <div class="clearfix"></div>
-                    </a>
+                        </a>
                 </div>
             </div>
         </div>
@@ -73,11 +75,12 @@
                     </div>
                 </div>
                 <div class="card-footer card-yellow">
-                    <a  class="text-warning" href="javascript:void(0);">
+                    <a class="text-warning"
+                        href="javascript:void(0);">
                         <span class="pull-xs-left">View Details</span>
                         <span class="pull-xs-right"><i class="fa fa-arrow-circle-right"></i></span>
                         <div class="clearfix"></div>
-                    </a>
+                        </a>
                 </div>
             </div>
         </div>
@@ -95,46 +98,50 @@
                     </div>
                 </div>
                 <div class="card-footer card-red">
-                    <a class="text-danger" href="javascript:void(0);">
+                    <a class="text-danger"
+                        href="javascript:void(0);">
                         <span class="pull-xs-left">View Details</span>
                         <span class="pull-xs-right"><i class="fa fa-arrow-circle-right"></i></span>
                         <div class="clearfix"></div>
-                    </a>
+                        </a>
                 </div>
             </div>
         </div>
     </div>
-    <alert *ngFor="let alert of alerts; let i = index" [type]="alert.type" dismissible="true" (close)="closeAlert(i)">
+    <alert *ngFor="let alert of alerts; let i = index"
+        [type]="alert.type"
+        dismissible="true"
+        (close)="closeAlert(i)">
         {{ alert?.msg }}
-    </alert>
-    <div class="row">
-        <div class="col-lg-8">
-        <div class="card card-default">
-        <div class="card-header">
-                    <i class="fa fa-clock-o fa-fw"></i> Responsive Timeline
+        </alert>
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="card card-default">
+                    <div class="card-header">
+                        <i class="fa fa-clock-o fa-fw"></i> Responsive Timeline
+                    </div>
+                    <!-- /.card-header -->
+                    <app-timeline-cmp></app-timeline-cmp>
+                    <!-- /.card-body -->
                 </div>
-                <!-- /.card-header -->
-                <app-timeline-cmp></app-timeline-cmp>
-                <!-- /.card-body -->
+                <!-- /.card -->
             </div>
-            <!-- /.card -->
-        </div>
-        <!-- /.col-lg-8 -->
-        <div class="col-lg-4">
-        <div class="card card-default">
-        <div class="card-header">
-        <i class="fa fa-bell fa-fw"></i> Notifications card
+            <!-- /.col-lg-8 -->
+            <div class="col-lg-4">
+                <div class="card card-default">
+                    <div class="card-header">
+                        <i class="fa fa-bell fa-fw"></i> Notifications card
+                    </div>
+                    <!-- /.card-header -->
+                    <app-notifications-cmp></app-notifications-cmp>
+                    <!-- /.card-body -->
                 </div>
-                <!-- /.card-header -->
-                <app-notifications-cmp></app-notifications-cmp>
-                <!-- /.card-body -->
-            </div>
-            <!-- /.card -->
+                <!-- /.card -->
 
-            <app-chat-cmp></app-chat-cmp>
-            <!-- /.card .chat-card -->
+                <app-chat-cmp></app-chat-cmp>
+                <!-- /.card .chat-card -->
+            </div>
+            <!-- /.col-lg-4 -->
         </div>
-        <!-- /.col-lg-4 -->
-    </div>
 
 </div>

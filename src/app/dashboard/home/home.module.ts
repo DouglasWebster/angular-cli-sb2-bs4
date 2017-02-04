@@ -10,7 +10,7 @@ import { TimelineComponent, ChatComponent, NotificationComponent } from './home.
     imports: [
         CommonModule,
         CarouselModule,
-        AlertModule.forRoot()
+        AlertModule
     ],
     declarations: [
         HomeComponent,

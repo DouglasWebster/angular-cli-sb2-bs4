@@ -1,19 +1,15 @@
 @import "../../../node_modules/bootstrap/scss/_variables";
 @import "../../../node_modules/bootstrap/scss/_mixins";
+@import "../../../node_modules/bootstrap/scss/_grid";
 
 .main-container{
     @include media-breakpoint-down(md) {
         margin-left: 0;
     }
-    margin: 50px 0 0 225px;
-    padding: 10px;
+    margin-left: 225px;
+    margin-top: 60px;
+    margin-right: 0;
     -ms-overflow-x: hidden;
     overflow-x: hidden;
     position: relative;
 }
-
-// @media screen and (max-width: 991px) {
-//     .main-container{
-//         margin-left : 0;
-//     }
-// }
