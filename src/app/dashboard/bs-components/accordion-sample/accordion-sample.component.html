@@ -1,0 +1,34 @@
+<div class="content-header">
+  <h1>Accordion
+    <a target="_blank" href="http://valor-software.com/ng2-bootstrap/#/accordion">
+      <img alt="" src="assets/img//link-doc.png">
+    </a>
+  </h1>
+</div>
+<div class="content-box" id="content">
+  <div class="section" id="example">
+    <div class="item">
+      <p>Displays collapsible content panels for presenting information in a limited amount of space</p>
+      <p>The <strong>accordion component</strong> builds on top of the collapse directive to provide a list of items, with collapsible
+        bodies that are collapsed or expanded by clicking on the item's header.</p>
+    </div>
+  </div>
+</div>
+<accordion>
+  <accordion-group heading="Static Header, initially expanded">
+    This content is straight in the template.
+  </accordion-group>
+  <accordion-group #group>
+    <div accordion-heading>
+      I can have markup, too!
+      <i class="pull-right float-xs-right glyphicon" [ngClass]="{'glyphicon-chevron-down': group?.isOpen, 'glyphicon-chevron-right': !group?.isOpen}"></i>
+    </div>
+    This is just some content to illustrate fancy headings.
+  </accordion-group>
+  <accordion-group heading="Content 1">
+    <p>Content 1</p>
+  </accordion-group>
+  <accordion-group heading="Content 2">
+    <p>Content 2</p>
+  </accordion-group>
+</accordion>

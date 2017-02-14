@@ -1,0 +1,33 @@
+<h1>Timepicker
+  <a target="_blank" href="http://valor-software.com/ng2-bootstrap/#/timepicker">
+    <img alt="" src="assets/img//link-doc.png">
+  </a>
+</h1>
+<p>A lightweight & configurable timepicker directive.</p>
+<p><em>This relies on the <strong>.hidden</strong> attribute which is no longer used in bootstrap 4 so </em>
+<code>.hidden {{'{'}}  display: none !important;}</code>
+<em>has to be included the styles path.</em></p>
+<hr>
+<h3>
+  Examples
+</h3>
+<div class="row">
+  <div class="col-xs-6 col-md-4">
+    <h4>Timepicker:</h4>
+    <timepicker [(ngModel)]="tpMytime"></timepicker>
+    <pre class="alert alert-info">Time is: {{tpMytime}}</pre>
+  </div>
+  <div class="col-md-4">
+    <h4>Meridian:</h4>
+    <timepicker [(ngModel)]="mMytime" [showMeridian]="mIsmeridian"></timepicker>
+    <pre class="alert alert-info">Time is: {{mMytime}}</pre>
+    <hr>
+    <button type="button" class="btn btn-info" (click)="mToggleMode()">12H / 24H</button>
+  </div>
+  <div class="col-md-4">
+    <h4>Disabled:</h4>
+    <timepicker [(ngModel)]="dMytime" [showMeridian]="true" [readonlyInput]="!dIsEnabled"></timepicker>
+    <hr>
+    <button type="button" class="btn btn-info" (click)="dIsEnabled=!dIsEnabled">Enable / Disable input</button>
+  </div>
+</div>

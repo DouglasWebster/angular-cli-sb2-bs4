@@ -1,0 +1,35 @@
+<h1>Tooltip
+  <a target="_blank" href="http://valor-software.com/ng2-bootstrap/#/tooltip">
+    <img alt="" src="assets/img//link-doc.png">
+  </a>
+</h1>
+<p>Inspired by the excellent Tipsy jQuery plugin written by Jason Frame. Tooltips are an updated version, which don’t rely on
+  images, uses CSS3 for animations, and much more.</p>
+<hr>
+<h3>
+  Examples
+</h3>
+<div class="row">
+  <div class="col-xs-6 col-md-4">
+    <h4>Simple:</h4>
+    <button type="button" class="btn btn-primary" tooltip="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+      Simple demo
+    </button>
+  </div>
+  <div class="col-md-4">
+    <h4>Dismiss on next click:</h4>
+    <button type="button" class="btn btn-success" tooltip="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." triggers="focus">
+      Dismissible tooltip
+    </button>
+  </div>
+  <div class="col-md-4">
+    <h4>Dynamic Content</h4>
+    <button type="button" class="btn btn-info" [tooltip]="content">
+      Simple binding
+    </button>
+    <template #tolTemplate>Just another: {{content}}</template>
+    <button type="button" class="btn btn-warning" [tooltip]="tolTemplate">
+      TemplateRef binding
+    </button>
+  </div>
+</div>

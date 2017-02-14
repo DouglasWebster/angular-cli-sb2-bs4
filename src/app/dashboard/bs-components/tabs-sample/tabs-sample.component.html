@@ -1,0 +1,56 @@
+<h1>Tabs
+  <a target="_blank" href="http://valor-software.com/ng2-bootstrap/#/tabs">
+    <img alt="" src="assets/img//link-doc.png">
+  </a>
+</h1>
+<p>Add quick, dynamic tab functionality to transition through panes of local content, even via dropdown menus. <strong>Nested tabs are not supported.</strong></p>
+<hr>
+<h3>
+  Examples
+</h3>
+<div class="row">
+  <div class="col-xs-6 col-md-3">
+    <h4>Static tabs:</h4>
+    <tabset>
+      <tab heading="Static title">Static content</tab>
+      <tab (select)="alertMe()">
+        <template tabHeading>
+          <i class="fa fa-bell"></i> Alert!
+        </template>
+        I've got an HTML heading, and a select callback. Pretty cool!
+      </tab>
+    </tabset>
+
+  </div>
+  <div class="col-md-6">
+    <h4>Dynamic tabs:</h4>
+    <div (click)="$event.preventDefault()">
+      <p>Select a tab by setting active binding to true:</p>
+      <p>
+        <button type="button" class="btn btn-primary btn-sm" (click)="tabs[0].active = true">Select second tab</button>
+        <button type="button" class="btn btn-primary btn-sm" (click)="tabs[1].active = true">Select third tab</button>
+      </p>
+      <p>
+        <button type="button" class="btn btn-primary btn-sm" (click)="tabs[1].disabled = ! tabs[1].disabled">
+      Enable / Disable third tab
+    </button>
+      </p>
+      <hr/>
+      <tabset>
+        <tab heading="Static title">Static content</tab>
+        <tab *ngFor="let tabz of tabs" [heading]="tabz.title" [active]="tabz.active" (select)="tabz.active = true" (deselect)="tabz.active = false"
+          [disabled]="tabz.disabled" [removable]="tabz.removable" (removed)="removeTabHandler(tabz)" [customClass]="tabz.customClass">
+          {{tabz?.content}}
+          </tab>
+      </tabset>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <h4>Pills:</h4>
+    <tabset type="pills">
+      <tab heading="Pills 1">Pills content 1</tab>
+      <tab heading="Pills 2">Pills content 2</tab>
+    </tabset>
+
+  </div>
+</div>

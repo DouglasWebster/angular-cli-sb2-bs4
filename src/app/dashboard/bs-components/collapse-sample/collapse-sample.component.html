@@ -1,0 +1,19 @@
+<h1>Collapse
+  <a target="_blank" href="http://valor-software.com/ng2-bootstrap/#/collapse">
+    <img alt="" src="assets/img//link-doc.png">
+  </a>
+</h1>
+<p>Collapse component allows you to toggle content on your pages with a bit of JavaScript and some classes. Flexible component that utilizes a handful of classes (from the <strong>required transitions component</strong>(<em>not yet implemented</em>)) for easy toggle behavior.</p>
+<h3>
+  Example with Otional Captions
+</h3>
+<button type="button" class="btn btn-primary"
+        (click)="isCollapsed = !isCollapsed">Toggle collapse
+</button>
+<hr>
+<div (collapsed)="collapsed($event)"
+     (expanded)="expanded($event)"
+     [collapse]="isCollapsed"
+     class="card card-block card-header">
+  <div class="well well-lg">Some content</div>
+</div>

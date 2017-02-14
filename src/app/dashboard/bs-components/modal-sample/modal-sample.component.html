@@ -1,0 +1,89 @@
+<h1>Modals
+  <a target="_blank" href="http://valor-software.com/ng2-bootstrap/#/modals">
+    <img alt="" src="assets/img//link-doc.png">
+  </a>
+</h1>
+<p>Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults.</p>
+<h3>
+  Examples
+</h3>
+<hr>
+<div class="row">
+  <div class="col-sm-2">
+    <h4>Static modal</h4>
+    <button type="button" class="btn btn-primary" (click)="staticModal.show()">Static modal</button>
+    <div class="modal fade" bsModal #staticModal="bs-modal" [config]="{backdrop: 'static'}" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title pull-left">Static modal</h4>
+            <button type="button" class="close pull-right" aria-label="Close" (click)="staticModal.hide()">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            This is static modal, backdrop click will not close it. Click <b>&times;</b> to close modal.
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+<div class="col-sm-3">
+  <h4>Otional sizes</h4>
+  <!--Large modal-->
+  <button class="btn btn-primary" (click)="lgModal.show()">Large modal</button>
+
+  <div bsModal #lgModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title pull-left">Large modal</h4>
+          <button type="button" class="close pull-right" (click)="lgModal.hide()" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Small modal-->
+  <button type="button" class="btn btn-primary" (click)="smModal.show()">Small modal</button>
+
+  <div bsModal #smModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title pull-left">Small modal</h4>
+          <button type="button" class="close pull-right" aria-label="Close" (click)="smModal.hide()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-sm-2">
+  <h4>Child modal</h4>
+  <button type="button" class="btn btn-primary" (click)="showChildModal()">Open child modal</button>
+  <div bsModal #childModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title pull-left">Child modal</h4>
+          <button type="button" class="close pull-right" aria-label="Close" (click)="hideChildModal()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+          I am a child modal, opened from parent component!
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

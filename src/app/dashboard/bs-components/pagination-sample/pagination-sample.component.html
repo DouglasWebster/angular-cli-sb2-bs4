@@ -1,0 +1,53 @@
+<h1>Pagination
+  <a target="_blank" href="http://valor-software.com/ng2-bootstrap/#/pagination">
+    <img alt="" src="assets/img//link-doc.png">
+  </a>
+</h1>
+<p><strong>Pagination</strong> - provide pagination links for your site or app with the multi-page pagination component, or
+  the simpler pager alternative.</p>
+<p><strong>Pager</strong> - quick previous and next links for simple pagination implementations with light markup and styles.
+  It's great for simple sites like blogs or magazines.</p>
+<h3>
+  Examples
+</h3>
+<hr>
+<div class="row">
+  <div class="col-sm-4">
+    <h4>Default</h4>
+    <pagination [totalItems]="totalItems" [(ngModel)]="currentPage" (pageChanged)="pageChanged($event)">
+    </pagination>
+    <pagination [boundaryLinks]="true" [totalItems]="totalItems" [(ngModel)]="currentPage" class="pagination-sm" previousText="&lsaquo;"
+      nextText="&rsaquo;" firstText="&laquo;" lastText="&raquo;">
+      </pagination>
+      <pagination [directionLinks]="false" [boundaryLinks]="true" [totalItems]="totalItems" [(ngModel)]="currentPage">
+      </pagination>
+      <pagination [directionLinks]="false" [totalItems]="totalItems" [(ngModel)]="currentPage" (numPages)="smallnumPages = $event">
+      </pagination>
+      <pre class="col-sm-6 card card-block card-header">The selected page no: {{currentPage}}/{{smallnumPages}}</pre>
+      <br/>
+      <button type="button" class="btn btn-info" (click)="setPage(3)">Set current page to: 3</button>
+  </div>
+  <div class="col-sm-4">
+    <h4>States and Limits</h4>
+    <div class="col-sm-4">
+      <pagination [totalItems]="bigTotalItems" [(ngModel)]="bigCurrentPage" [maxSize]="maxSize" class="pagination-sm" [boundaryLinks]="true"></pagination>
+    </div>
+
+    <div class="col-sm-4">
+      <pagination [totalItems]="bigTotalItems" [(ngModel)]="bigCurrentPage" [maxSize]="maxSize" class="pagination-sm" [boundaryLinks]="true"
+        [rotate]="false" (numPages)="numPages = $event"></pagination>
+    </div>
+    <pre class="col-sm-4 card card-block card-header">Page: {{bigCurrentPage}} / {{numPages}}</pre>
+  </div>
+  <div class="col-sm-4">
+    <h4>Pager</h4>
+    <div style="margin: 20px 0;">
+      <pagination [directionLinks]="false" [totalItems]="totalPagerItems" [(ngModel)]="currentPagerPage" (numPages)="smallnumPagerPages = $event"></pagination>
+    </div>
+
+    <div>
+      <pager [totalItems]="totalPagerItems" [(ngModel)]="currentPagerPage" (pageChanged)="pageChanged($event)" pageBtnClass="btn"
+        itemsPerPage="10"></pager>
+    </div>
+  </div>
+</div>

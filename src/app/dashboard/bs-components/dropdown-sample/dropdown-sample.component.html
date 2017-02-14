@@ -1,0 +1,61 @@
+<h1>Dropdowns
+  <a target="_blank" href="http://valor-software.com/ng2-bootstrap/#/dropdowns">
+    <img alt="" src="assets/img//link-doc.png">
+  </a>
+</h1>
+<p>Dropdowns are toggleable, contextual overlays for displaying lists of links and more. They’re made interactive with the included
+  dropdown directives.</p>
+<h3>
+  Example
+</h3>
+<p>Wrap the dropdown’s toggle (your button or link) and the dropdown menu within <code>dropdown</code>. Dropdowns can be triggered
+  from <code> &lt;a&gt;</code> or <code> &lt;button&gt;</code> elements to better fit your potential needs.</p>
+<hr>
+<h4>Single button dropdowns</h4>
+<p>Any single <code>.btn</code> can be turned into a dropdown toggle with some markup changes. Here’s how you can put them to
+  work with either <code> &lt;button&gt; </code> elements:</p>
+<div class="row">
+  <div class="col-sm-2 btn-group" dropdown>
+    <button id="single-button" type="button" class="btn btn-primary" dropdownToggle>
+    Button dropdown <span class="caret"></span>
+  </button>
+    <ul dropdownMenu role="menu" aria-labelledby="single-button">
+      <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
+      <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
+      <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
+      <li class="divider dropdown-divider"></li>
+      <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a></li>
+    </ul>
+  </div>
+  <div class="col-sm-2">
+    <p>And with <code> &lt;a&gt;</code> elements:</p>
+  </div>
+  <div class="col-sm-2">
+    <span dropdown (onToggle)="toggled($event)">
+      <a href id="simple-dropdown" dropdownToggle>
+        Click me for a dropdown, yo!
+      </a>
+      <ul class="dropdown-menu" dropdownMenu aria-labelledby="simple-dropdown">
+        <li *ngFor="let choice of items">
+          <a class="dropdown-item" href="#">{{choice}}</a>
+        </li>
+      </ul>
+    </span>
+  </div>
+</div>
+<hr>
+<h4>Split button dropdowns</h4>
+<div class="btn-group" dropdown>
+  <button id="split-button" type="button" class="btn btn-danger">Action</button>
+  <button type="button" class="btn btn-danger dropdown-toggle-split" dropdownToggle>
+    <span class="caret"></span>
+    <span class="sr-only">Split button!</span>
+  </button>
+  <ul class="dropdown-menu" dropdownMenu role="menu" aria-labelledby="split-button">
+    <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
+    <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
+    <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
+    <li class="divider dropdown-divider"></li>
+    <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a></li>
+  </ul>
+</div>

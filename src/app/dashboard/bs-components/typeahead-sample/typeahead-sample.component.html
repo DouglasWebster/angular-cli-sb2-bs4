@@ -1,0 +1,29 @@
+<h1>Typeahead
+  <a target="_blank" href="http://valor-software.com/ng2-bootstrap/#/typeahead">
+    <img alt="" src="assets/img//link-doc.png">
+  </a>
+</h1>
+<h3>
+  Examples
+</h3>
+<div class="row" style="min-height: 20rem">
+  <div class="col-xs-6 col-md-4">
+    <h4>Static Array:</h4>
+    <pre class="card card-block card-header">Model: {{saSelected | json}}</pre>
+    <input [(ngModel)]="saSelected" [typeahead]="states" class="form-control">
+  </div>
+  <div class="col-md-4">
+    <h4>Item template:</h4>
+    <template #customItemTemplate let-model="item" let-index="index">
+      <h5>This is: {{model | json}} Index: {{ index }}</h5>
+    </template>
+
+    <pre class="card card-block card-header">Model: {{selected | json}}</pre>
+    <input [(ngModel)]="itSelected" [typeahead]="states" [typeaheadItemTemplate]="customItemTemplate" class="form-control">
+  </div>
+  <div class="col-md-4">
+    <h4>Option field:</h4>
+    <pre class="card card-block card-header">Model: {{customSelected | json}}</pre>
+    <input [(ngModel)]="customSelected" [typeahead]="statesComplex" typeaheadOptionField="name" class="form-control">
+  </div>
+</div>

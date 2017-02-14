@@ -1,0 +1,59 @@
+<h1>Sortable
+  <a target="_blank" href="http://valor-software.com/ng2-bootstrap/#/sortable">
+    <img alt="" src="assets/img//link-doc.png">
+  </a>
+</h1>
+<p>The <strong>sortable component</strong> represents a list of items, with ability to sort them or move to another container
+  via drag&amp;drop. Input collection isn't mutated by the component, so events <code>ngModelChange</code>, <code>onChange</code>  are using new collections.</p>
+<hr>
+<h3>
+  Examples
+</h3>
+<div class="row">
+  <div class="col-xs-6 col-md-4">
+    <h4>String items:</h4>
+    <div class="row">
+      <div class="col-xs-6 col-md-6">
+        <bs-sortable [(ngModel)]="itemStringsLeft" itemClass="sortable-item" itemActiveClass="sortable-item-active" placeholderItem="Drag here"
+          placeholderClass="placeholderStyle" wrapperClass="sortable-wrapper"></bs-sortable>
+          <pre>model: {{ itemStringsLeft | json }}</pre>
+      </div>
+      <div class="col-xs-6 col-md-6">
+        <bs-sortable [(ngModel)]="itemStringsRight" itemClass="sortable-item" itemActiveClass="sortable-item-active" placeholderItem="Drag here"
+          placeholderClass="placeholderStyle" wrapperClass="sortable-wrapper"></bs-sortable>
+          <pre>model: {{ itemStringsRight | json }}</pre>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <h4>Complex data model:</h4>
+    <div class="row">
+      <div class="col-xs-6 col-md-6">
+        <bs-sortable [(ngModel)]="itemObjectsLeft" fieldName="name" itemClass="sortable-item" itemActiveClass="sortable-item-active"
+          placeholderItem="Drag here" placeholderClass="sortable-item" wrapperClass="sortable-wrapper"></bs-sortable>
+          <pre>{{ itemObjectsLeft | json }}</pre>
+      </div>
+      <div class="col-xs-6 col-md-6">
+        <bs-sortable [(ngModel)]="itemObjectsRight" fieldName="name" itemClass="sortable-item" itemActiveClass="sortable-item-active"
+          placeholderItem="Drag here" placeholderClass="sortable-item" wrapperClass="sortable-wrapper"></bs-sortable>
+          <pre>{{ itemObjectsRight | json }}</pre>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <h4>Custom item template:</h4>
+    <div class="row">
+      <template #itemTemplate let-item="item" let-index="index"><span>{{index}}: {{item.value}}</span></template>
+      <div class="col-xs-6 col-md-6">
+        <bs-sortable [(ngModel)]="itemCuStringsLeft" [itemTemplate]="itemTemplate" itemClass="sortable-item" itemActiveClass="sortable-item-active"
+          placeholderItem="Drag here" placeholderClass="placeholderStyle" wrapperClass="sortable-wrapper"></bs-sortable>
+          <pre>model: {{ itemCuStringsLeft | json }}</pre>
+      </div>
+      <div class="col-xs-6 col-md-6">
+        <bs-sortable [(ngModel)]="itemCuStringsRight" itemClass="sortable-item" itemActiveClass="sortable-item-active" placeholderItem="Drag here"
+          placeholderClass="sortable-item" wrapperClass="sortable-wrapper"></bs-sortable>
+          <pre>model: {{ itemCuStringsRight | json }}</pre>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,22 @@
+<div class="content-header">
+  <h1>Alerts
+    <a target="_blank" href="http://valor-software.com/ng2-bootstrap/#/alerts">
+      <img alt="" src="assets/img//link-doc.png">
+    </a>
+  </h1>
+</div>
+<div class="content-box" id="content">
+  <div class="section" id="example">
+    <div class="item">
+      <p>Provides contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
+    </div>
+  </div>
+  <p>Alerts are available for any length of text, as well as an optional dismiss
+    button. For proper styling, use one of the four <strong>required</strong>
+    contextual classes (e.g., <code>.alert-success</code>). For inline
+    dismissal, use the <code>dismissproperty</code>.</p>
+</div>
+<div *ngFor="let alert of alerts">
+  <alert [type]="alert.type" dismissible="true">{{ alert.msg }}</alert>
+</div>
+<button type="button" class="btn btn-primary" (click)="reset()">Reset</button>
