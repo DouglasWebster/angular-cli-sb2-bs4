@@ -10,16 +10,18 @@ $link-padding-left:   1.5rem;
 
 $side-link-padding: $link-padding-top $link-padding-right $link-padding-bottom $link-padding-left;
 
+$zindex-sidebar: $zindex-sticky;
+
 .navbar-toggler-left{
   position: fixed;
   top: 8px;
-  z-index: $zindex-modal;
+  z-index: $zindex-sidebar;
 }
 
 .navbar-toggler-right{
   position: fixed;
   top: 8px;
-  z-index: $zindex-modal;
+  z-index: $zindex-sidebar;
 }
 
 .sidebar-collapse{
@@ -30,7 +32,7 @@ $side-link-padding: $link-padding-top $link-padding-right $link-padding-bottom $
     display: block !important;
   }
   position: fixed;
-  z-index: $zindex-modal;
+  z-index: $zindex-sidebar;
   top: 50px;
   width: 225px;
   bottom: 0px;
@@ -46,7 +48,11 @@ $side-link-padding: $link-padding-top $link-padding-right $link-padding-bottom $
 
 .side-item {
   @extend .nav-item;
-  padding: 8px 0px;
+  padding: 8px 0px 0px;
+}
+
+.sub-item {
+  @extend .nav-item;
 }
 
 .sidebar {

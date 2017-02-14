@@ -2,74 +2,36 @@
   <button class="navbar-toggler navbar-toggler-left" type="button" (click)="sidebarCollapsed = !sidebarCollapsed" aria-controls="navbarSupportedContent"
     aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
-  </button>
+    </button>
 </nav>
 <div [collapse]="sidebarCollapsed" class="sidebar-collapse">
   <ul class="sidebar-inverse-nav bg-inverse">
-    <li class="side-item">
-      <a [routerLink]="['home']" [routerLinkActive]="['active-link']" class="side-link">
-        <i class="fa fa-fw fa-dashboard"></i> &nbsp; Dashboard
-      </a>
-    </li>
-    <li class="side-item">
-      <a [routerLink]="['chart']" [routerLinkActive]="['active-link']" class="side-link">
-        <i class="fa fa-fw fa-bar-chart-o"></i> &nbsp; Charts
-      </a>
-    </li>
-    <li class="side-item">
-      <a [routerLink]="['tables']" [routerLinkActive]="['router-link-active']" class="side-link">
-        <i class="fa fa-fw fa-table"></i> &nbsp; Tables
-      </a>
-    </li>
-    <li class="side-item">
-      <a [routerLink]="['forms']" [routerLinkActive]="['router-link-active']" class="side-link">
-        <i class="fa fa-fw fa-edit"></i> &nbsp; Forms
-      </a>
-    </li>
-    <li class="side-item">
-      <a [routerLink]="['element']" [routerLinkActive]="['router-link-active']" class="side-link">
-        <i class="fa fa-fw fa-desktop"></i> &nbsp; Bootstrap Elements
-      </a>
-    </li>
-    <li class="side-item">
-      <a [routerLink]="['grid']" [routerLinkActive]="['router-link-active']" class="side-link">
-        <i class="fa fa-fw fa-wrench"></i> &nbsp; Bootstrap Grid
-      </a>
-    </li>
-    <li class="side-item">
-      <a [routerLink]="['components']" [routerLinkActive]="['router-link-active']" class="side-link">
-        <i class="fa fa-th-list"></i> &nbsp; Component
-      </a>
-    </li>
-        <li class="side-item">
-          <a href="javascript:;" class="side-link" (click)="subMenu1Collapsed = !subMenu1Collapsed">
-            <i class="fa fa-plus"></i> &nbsp; Menu
-            <i *ngIf="subMenu1Collapsed" class="fa fa-caret-down float-right" aria-hidden="true"></i>
-            <i *ngIf="!subMenu1Collapsed" class="fa fa-caret-left float-right" aria-hidden="true"></i>
-          </a>
-          <div [collapse]="subMenu1Collapsed">
-            <ul>
-              <li class="side-item">
-                <a href="#" class="side-link">
-                  Submenu 1
-                </a>
-              </li>
-              <li class="side-item">
-                <a href="#" class="side-link">
-                  Submenu 2
-                </a>
-              </li>
-            </ul>
-          </div>
-        </li>
-    <li class="side-item">
-      <a [routerLink]="['blankpage']" [routerLinkActive]="['router-link-active']" class="side-link">
-        <i class="fa fa-file-o"></i> &nbsp; BlankPage
-      </a>
-    </li>
+    <ng-container *ngFor="let item of menuList">
+      <li class="side-item" *ngIf="item.children.length === 0">
+        <a [routerLink]="[item.link]" [routerLinkActive]="['active-link']" class="side-link">
+          <i class="{{item.glyph}}"></i> &nbsp; {{item.name}}
+        </a>
+      </li>
+      <li class="side-item" *ngIf="item.children.length > 0">
+        <a [routerLink]="['components']" [routerLinkActive]="['router-link-active']" class="side-link" (click)="item.collapse = !item.collapse">
+          <i class="fa fa-plus"></i> &nbsp; {{item.name}}
+          <i *ngIf="item.collapse" class="{{subMenuGlyphDown}} float-right" aria-hidden="true"></i>
+          <i *ngIf="!item.collapse" class="{{subMenuGlyphUp}} float-right" aria-hidden="true"></i>
+        </a>
+        <div [collapse]="item.collapse">
+          <ul>
+            <li class="sub-item" *ngFor="let child of item.children">
+              <a [routerLink]="[item.link + '/' + child.link]" [routerLinkActive]="['router-link-active']" class="side-link">
+                <i class="{{child.glyph}}"></i> &nbsp; {{child.name}}
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ng-container>
     <li class="side-item">
       <a class="side-link" href="https://github.com/DouglasWebster/angular-cli-sb2-bs4">
-            GitHub Source
+        GitHub Source
         </a>
     </li>
   </ul>
