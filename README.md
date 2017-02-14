@@ -66,7 +66,16 @@ To get more help on the angular-cli use ng help or go check out the Angular-CLI 
 ├── src                        <- source code of the application
 │    ├── app
 │    │   ├── dashboard                          <-- main page for the application
-│    │   │   ├── bs-components                          <-- demonstration of Bootstrap components
+│    │   │   ├── bs-components                  <-- demonstration of NG2-Bootstrap components
+│    │   │   │   ├── accordion-sample
+│    │   │   │   │   ├── accordion-sample.component.scss
+│    │   │   │   │   ├──        --- || ---
+│    │   │   │   │   └── accordion-sample.component.ts
+│    │   │   │   ├──            --- || ---              <-- various NG2-Bootstrap components    
+│    │   │   │   ├── typeahead-sample
+│    │   │   │   │   ├── typeahead-sample.component.scss
+│    │   │   │   │   ├──        --- || ---
+│    │   │   │   │   └── typeahead-sample.component.ts
 │    │   │   │   ├── bs-components.component.scss
 │    │   │   │   ├── bs-components.component.html
 │    │   │   │   ├── bs-components.component.spec.ts
@@ -229,17 +238,15 @@ Thankfully there aren't too many of these considering the very fluid nature of t
 
 - **app.scss**
    
-   As mentioned in the Look and Feel section glyphicons are not included in the package.  However ng2-bootstrap does use the .glyphicon-remove-circle as the close symbol in the tabs module.
-   Not having the glyphicon file loaded meant that the close behaviour didn't work as there was no icon to click on.  To overcome this the first section of app.scss first redefines the glyphicon halfings font family to point to the font-awesome font files, then redefines .glyphicon to FontAwesome and finally points .glyphicon-remove-circle to the nearest font-awesome icon.
+   As mentioned in the Look and Feel section glyphicons are not included in the package.  However ng2-bootstrap does use the .glyphicon-remove-circle as the close symbol in the tabs module and .glyphicon-chevron-up/down in the timepicker module.
+   Not having the glyphicon file loaded meant that the close behaviour didn't work as there was no icon to click on.  To overcome this the first section of app.scss first redefines the glyphicon halfings font family to point to the font-awesome font files, then redefines .glyphicon to FontAwesome and finally points .glyphicon-xxx to the nearest font-awesome icon.
    This seems far from ideal and if anyone has a better solution I'm always willing to implement it.
 - **bs-component**
     
-    This is a large (probably too large) component that demonstrates most of the ng2-bootstrap functionality. Having all the different modules on one page did highlight one problem though and that was the inclusion of the *changeDetectionStrategy.OnPush*.
+    This component has a large (probably too large) number of children that demonstrates most of the ng2-bootstrap functionality. This component initially had all the different modules on one page and this did highlight one problem with the inclusion of the *changeDetectionStrategy.OnPush* required by the tabs component.
 
-    This seems to be needed to prevent errors when enabling or clicking on a disabled tab.  However, it also seems to give rise to synchronising errors in other modules.  This manifested itself in the pagination module where the pagination didn't update until a second mouse click occurred and the alert module where the timed alert didn't clear until a mouse click occurred after the time out.  I have removed the reference to changedDetectionStrategy but that meant that special care is needed to ensure the tab is enabled at the correct time.  
-    
-    *To see the problem uncomment the two comments at the start of bs-component.component.ts file.*
-
+    If the *changeDetectionStrategy.OnPush* is included with the Pager module then the pager display is on click behind the actual number of clicks.  This is only a problem when the Tabs module and the Pagination module are required on the same page.  
+ 
 ## **Acknowledgements**
 
 I would like to say thank you to the people at valour-software for some excellent packages that made implementing this project far easier than it would have been using the basic chart.js and bootstrap packages.  Also, the people at StartAngular for putting SB2 out there.   
