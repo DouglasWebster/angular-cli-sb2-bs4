@@ -5,6 +5,8 @@ import { RouterModule } from '@angular/router';
 
 import { CollapseModule } from 'ng2-bootstrap/collapse';
 
+import { SidebarService } from './sidebar.service';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -12,6 +14,7 @@ import { CollapseModule } from 'ng2-bootstrap/collapse';
     CollapseModule
   ],
   declarations: [SidebarComponent],
-  exports: [SidebarComponent]
+  exports: [SidebarComponent],
+  providers: [SidebarService]
 })
 export class SidebarModule { }
