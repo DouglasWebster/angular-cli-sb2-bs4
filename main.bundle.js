@@ -279,8 +279,23 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var CarouselSampleComponent = (function () {
     function CarouselSampleComponent() {
+        this.myInterval = 1500;
+        this.slides = [];
+        this.noWrapSlides = false;
+        for (var i = 0; i < 4; i++) {
+            this.addSlide();
+        }
     }
     CarouselSampleComponent.prototype.ngOnInit = function () {
+    };
+    CarouselSampleComponent.prototype.addSlide = function () {
+        this.slides.push({
+            image: "assets/img/slider" + this.slides.length % 4 + ".jpg"
+        });
+    };
+    CarouselSampleComponent.prototype.removeSlide = function (index) {
+        var toRemove = index ? index : this.activeSlideIndex;
+        this.slides.splice(toRemove, 1);
     };
     return CarouselSampleComponent;
 }());
@@ -3239,7 +3254,7 @@ module.exports = "<div class=\"content-header\">\n  <h1>Buttons\n    <a target=\
 /***/ 967:
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Carousel\n  <a target=\"_blank\" href=\"http://valor-software.com/ng2-bootstrap/#/carousel\">\n    <img alt=\"\" src=\"assets/img//link-doc.png\">\n  </a>\n</h1>\n<p>A slideshow component for cycling through elements—images or slides of text—like a carousel. <em>Nested carousels are not supported.</em></p>\n<h3>\n  Example with Otional Captions\n</h3>\n<p>Add captions to your slides easily with the <code>.carousel-caption</code> element within any <code>&lt;slide&gt;</code>.\n  Place just about any optional HTML within there and it will be automatically aligned and formatted.</p>\n\n<div class=\"container\">\n  <carousel>\n    <slide>\n      <img src=\"assets/img/slider0.jpg\" alt=\"First slide\">\n      <div class=\"carousel-caption\">\n        <h3>Reception </h3>\n        <p>Modern office reception area.</p>\n      </div>\n    </slide>\n    <slide>\n      <img src=\"assets/img/slider1.jpg\" alt=\"First slide\">\n      <div class=\"carousel-caption\">\n        <h3>Mountains</h3>\n        <p>Here is a stunning mountain scene.</p>\n      </div>\n    </slide>\n    <slide>\n      <img src=\"assets/img/slider2.jpg\" alt=\"First slide\">\n      <div class=\"carousel-caption\">\n        <h3>Rainbow</h3>\n        <p>Idylic home after a shower.</p>\n      </div>\n    </slide>\n    <slide>\n      <img src=\"assets/img/slider3.jpg\" alt=\"First slide\">\n      <div class=\"carousel-caption\">\n        <h3>Golf course</h3>\n        <p>Nice way to relax.</p>\n      </div>\n    </slide>\n  </carousel>\n</div>"
+module.exports = "<h1>Carousel\n  <a target=\"_blank\" href=\"http://valor-software.com/ng2-bootstrap/#/carousel\">\n    <img alt=\"\" src=\"assets/img//link-doc.png\">\n  </a>\n</h1>\n<p>A slideshow component for cycling through elements—images or slides of text—like a carousel. <em>Nested carousels are not supported.</em></p>\n<h3>\n  Examples\n</h3>\n<hr>\n<h4>Optional captions:</h4>\n<p>Add captions to your slides easily with the <code>.carousel-caption</code> element within any <code>&lt;slide&gt;</code>.\n  Place just about any optional HTML within there and it will be automatically aligned and formatted.</p>\n<div class=\"container\">\n  <carousel>\n    <slide>\n      <img src=\"assets/img/slider0.jpg\" alt=\"First slide\">\n      <div class=\"carousel-caption\">\n        <h3>Reception </h3>\n        <p>Modern office reception area.</p>\n      </div>\n    </slide>\n    <slide>\n      <img src=\"assets/img/slider1.jpg\" alt=\"First slide\">\n      <div class=\"carousel-caption\">\n        <h3>Mountains</h3>\n        <p>Here is a stunning mountain scene.</p>\n      </div>\n    </slide>\n    <slide>\n      <img src=\"assets/img/slider2.jpg\" alt=\"First slide\">\n      <div class=\"carousel-caption\">\n        <h3>Rainbow</h3>\n        <p>Idylic home after a shower.</p>\n      </div>\n    </slide>\n    <slide>\n      <img src=\"assets/img/slider3.jpg\" alt=\"First slide\">\n      <div class=\"carousel-caption\">\n        <h3>Golf course</h3>\n        <p>Nice way to relax.</p>\n      </div>\n    </slide>\n  </carousel>\n</div>\n<hr>\n<h4>Dynamic Slides:</h4>\n<div class=\"container\">\n  <carousel [interval]=\"myInterval\" [noWrap]=\"noWrapSlides\" [(activeSlide)]=\"activeSlideIndex\">\n    <slide *ngFor=\"let slide of slides; let index=index\">\n      <img [src]=\"slide.image\">\n\n      <div class=\"carousel-caption\">\n        <h4>Slide {{index}}</h4>\n        <p>{{slide.text}}</p>\n      </div>\n    </slide>\n  </carousel>\n  <br/>\n  <div>\n    <button type=\"button\" class=\"btn btn-info\" (click)=\"addSlide()\">Add Slide\n  </button>\n    <button type=\"button\" class=\"btn btn-info\" (click)=\"removeSlide()\">Remove Current\n  </button>\n    <button type=\"button\" class=\"btn btn-info\" (click)=\"removeSlide(2)\">Remove #3\n  </button>\n  </div>\n  <div>\n    <div class=\"checkbox\">\n      <label><input type=\"checkbox\" [(ngModel)]=\"noWrapSlides\">Disable Slide Looping</label>\n    </div>\n\n    <span>Interval, in milliseconds (Enter a negative number or 0 to stop the interval.): </span>\n    <input type=\"number\" class=\"form-control\" [(ngModel)]=\"myInterval\">\n  </div>\n</div>"
 
 /***/ }),
 
