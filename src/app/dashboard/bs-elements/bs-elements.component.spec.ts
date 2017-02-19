@@ -8,21 +8,23 @@ import { BsElementsComponent } from './bs-elements.component';
 describe('BsElementsComponent', () => {
   let component: BsElementsComponent;
   let fixture: ComponentFixture<BsElementsComponent>;
+  let debugEl: DebugElement;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ BsElementsComponent ]
-    })
-    .compileComponents();
+    });
+   // .compileComponents(); <- not required for webpack
   }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(BsElementsComponent);
     component = fixture.componentInstance;
+    debugEl = fixture.debugElement;
     fixture.detectChanges();
   });
 
-  xit('should create', () => {
+  it('should be created', () => {
     expect(component).toBeTruthy();
   });
 });

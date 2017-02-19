@@ -9,7 +9,7 @@ declare var $: any;
 })
 export class TopnavComponent implements OnInit {
 
-    public topNavCollapsed: boolean = true;
+    public topNavCollapsed = true;
     public status: { isopen: boolean } = { isopen: false };
     public items: Array<string> = ['The first choice!',
         'And another choice for you.', 'but wait! A third!'];

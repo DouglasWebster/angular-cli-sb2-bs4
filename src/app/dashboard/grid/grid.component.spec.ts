@@ -12,8 +12,8 @@ describe('GridComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ GridComponent ]
-    })
-    .compileComponents();
+    });
+   // .compileComponents(); <- not required for webpack
   }));
 
   beforeEach(() => {
@@ -22,7 +22,7 @@ describe('GridComponent', () => {
     fixture.detectChanges();
   });
 
-  xit('should create', () => {
+  xit('should be created', () => {
     expect(component).toBeTruthy();
   });
 });

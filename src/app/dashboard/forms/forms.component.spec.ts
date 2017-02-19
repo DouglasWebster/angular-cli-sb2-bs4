@@ -12,8 +12,8 @@ describe('FormsComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ FormsComponent ]
-    })
-    .compileComponents();
+    });
+   // .compileComponents(); <- not required for webpack
   }));
 
   beforeEach(() => {
@@ -22,7 +22,7 @@ describe('FormsComponent', () => {
     fixture.detectChanges();
   });
 
-  xit('should create', () => {
+  xit('should be created', () => {
     expect(component).toBeTruthy();
   });
 });

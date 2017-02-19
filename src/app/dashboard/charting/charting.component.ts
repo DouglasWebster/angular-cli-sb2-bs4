@@ -9,7 +9,7 @@ import * as moment from 'moment';
 })
 export class ChartingComponent implements OnInit {
 
-  public ptRadius: number = 5;
+  public ptRadius = 5;
 
   public chartColors: Array<any> = [
     { // blue
@@ -77,8 +77,8 @@ export class ChartingComponent implements OnInit {
     }
   };
 
-  public lineChartLegend: boolean = true;
-  public lineChartType: string = 'line';
+  public lineChartLegend = true;
+  public lineChartType = 'line';
 
   // area with negative values
   public areaChartData: Array<any> = [
@@ -110,8 +110,8 @@ export class ChartingComponent implements OnInit {
     }
   };
 
-  public areaChartLegend: boolean = true;
-  public areaChartType: string = 'line';
+  public areaChartLegend = true;
+  public areaChartType = 'line';
 
   // bar chart
   public barChartData: Array<any> = [
@@ -143,8 +143,8 @@ export class ChartingComponent implements OnInit {
     }
   };
 
-  public barChartLegend: boolean = true;
-  public barChartType: string = 'bar';
+  public barChartLegend = true;
+  public barChartType = 'bar';
 
   // time chart
 
@@ -261,8 +261,8 @@ export class ChartingComponent implements OnInit {
     }
   };
 
-  public timeChartLegend: boolean = true;
-  public timeChartType: string = 'line';
+  public timeChartLegend = true;
+  public timeChartType = 'line';
 
   constructor() { }
 

@@ -12,8 +12,8 @@ describe('DropdownSampleComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ DropdownSampleComponent ]
-    })
-    .compileComponents();
+    });
+   // .compileComponents(); <- not required for webpack
   }));
 
   beforeEach(() => {
@@ -22,7 +22,7 @@ describe('DropdownSampleComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should be created', () => {
     expect(component).toBeTruthy();
   });
 });

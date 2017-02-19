@@ -12,8 +12,8 @@ describe('TopnavComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ TopnavComponent ]
-    })
-    .compileComponents();
+    });
+   // .compileComponents(); <- not required for webpack
   }));
 
   beforeEach(() => {
@@ -22,7 +22,7 @@ describe('TopnavComponent', () => {
     fixture.detectChanges();
   });
 
-  xit('should create', () => {
+  xit('should be created', () => {
     expect(component).toBeTruthy();
   });
 });

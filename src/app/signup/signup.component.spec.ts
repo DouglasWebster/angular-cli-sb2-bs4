@@ -12,8 +12,8 @@ describe('SignupComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ SignupComponent ]
-    })
-    .compileComponents();
+    });
+   // .compileComponents(); <- not required for webpack
   }));
 
   beforeEach(() => {
@@ -22,7 +22,7 @@ describe('SignupComponent', () => {
     fixture.detectChanges();
   });
 
-  xit('should create', () => {
+  xit('should be created', () => {
     expect(component).toBeTruthy();
   });
 });

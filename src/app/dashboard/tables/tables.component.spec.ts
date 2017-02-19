@@ -12,8 +12,8 @@ describe('TablesComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ TablesComponent ]
-    })
-    .compileComponents();
+    });
+   // .compileComponents(); <- not required for webpack
   }));
 
   beforeEach(() => {
@@ -22,7 +22,7 @@ describe('TablesComponent', () => {
     fixture.detectChanges();
   });
 
-  xit('should create', () => {
+  xit('should be created', () => {
     expect(component).toBeTruthy();
   });
 });
