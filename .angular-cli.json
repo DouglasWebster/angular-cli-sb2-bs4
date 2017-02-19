@@ -1,6 +1,6 @@
 {
   "project": {
-    "version": "1.0.0-beta.30",
+    "version": "1.0.0-beta.32",
     "name": "angular-cli-sb2-bs4"
   },
   "apps": [
@@ -28,8 +28,8 @@
         "../node_modules/moment/moment.js",
         "../node_modules/chart.js/dist/Chart.js"
       ],
+      "environmentSource": "environments/environment.ts",
       "environments": {
-        "source": "environments/environment.ts",
         "dev": "environments/environment.ts",
         "prod": "environments/environment.prod.ts"
       }
