@@ -33,7 +33,7 @@
             "link": "element",
             "glyph": "fa fa-fw fa-desktop",
             "children": [],
-            "subMenuIndex": 0
+            "collapse": false
         },
         {
             "name": "Components",

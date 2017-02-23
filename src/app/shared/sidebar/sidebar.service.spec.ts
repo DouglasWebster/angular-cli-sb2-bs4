@@ -1,10 +1,12 @@
 /* tslint:disable:no-unused-variable */
 
-import { TestBed, async, fakeAsync, tick, inject } from '@angular/core/testing';
-import { SidebarService } from './sidebar.service';
+import { TestBed, getTestBed, async, fakeAsync, tick, inject } from '@angular/core/testing';
 import { MockBackend, MockConnection } from '@angular/http/testing';
-import { HttpModule, Http, XHRBackend, ResponseOptions, Response, BaseRequestOptions } from '@angular/http';
+import { HttpModule, Http, XHRBackend, ResponseOptions, Response, BaseRequestOptions, RequestMethod } from '@angular/http';
 import { Observable } from 'rxjs/Rx';
+import 'rxjs/add/observable/throw';
+
+import { SidebarService } from './sidebar.service';
 
 // we aren't making any calls so not subscribing to anything so OK to check that it constructs.
 describe('SidebarService', () => {
@@ -22,28 +24,47 @@ describe('SidebarService', () => {
   it('should construct', async(inject([SidebarService], (service) => {
     expect(service).toBeDefined();
   })));
+
+  it('should throw an error when given a bad url', async(inject([SidebarService], (service) => {
+    expect(() => service.getMenu('badUrl').subsribe()).toThrowError();
+  })));
+
 });
 
 // now we are going to subscribe so mock the http calls.
 describe('SidebarService (mocked)', () => {
+  let mockBackend: MockBackend;
 
-  beforeEach(() => {
+  // All heed this block - it is required so that the test injector
+  // is properly set up. Without doing this, you won't get the
+  // fake backend injected into Http.
+
+  // Also, you need to inject MockBackend as a provider before you wire
+  // it to replace XHRBackend with the provide function!  So this is all
+  // extremely important to set up right.
+  beforeEach(async(() => {
     TestBed.configureTestingModule({
-      providers: [{
-        provide: Http, useFactory: (backend, options) => {
-          return new Http(backend, options);
-        },
-        deps: [MockBackend, BaseRequestOptions]
-      },
+      providers: [
+        SidebarService,
         MockBackend,
         BaseRequestOptions,
-        SidebarService
+        {
+          provide: Http,
+          deps: [MockBackend, BaseRequestOptions],
+          useFactory:
+          (backend: XHRBackend, defaultOptions: BaseRequestOptions) => {
+            return new Http(backend, defaultOptions);
+          }
+        }
       ],
-      imports: [HttpModule]
+      imports: [
+        HttpModule
+      ]
     });
-  });
+    mockBackend = getTestBed().get(MockBackend);
+  }));
 
-  it('should construct', async(inject([SidebarService, MockBackend], (service: SidebarService, backend: MockBackend) => {
+  it('should construct', async(inject([SidebarService /*, MockBackend */], (service: SidebarService /*, backend: MockBackend */) => {
     expect(service).toBeTruthy();
   })));
 
@@ -60,25 +81,35 @@ describe('SidebarService (mocked)', () => {
       ]
     };
 
-    it('should querry current service url', fakeAsync(inject([SidebarService, MockBackend],
-      (service: SidebarService, backend: MockBackend) => {
+    it('should querry current service url', async(inject([SidebarService/*, MockBackend*/],
+      (service: SidebarService/*, mockBackend: MockBackend*/) => {
 
-        backend.connections.subscribe(conn => this.lastConnection = conn);
+        mockBackend.connections.subscribe(conn => this.lastConnection = conn);
         service.getMenu();
 
         expect(this.lastConnection).toBeDefined('no http service at all?');
-        expect(this.lastConnection.request.url).toMatch('assets/sideMenu.json', 'url invalid');
+        expect(this.lastConnection.request.url).toMatch('assets/defaultSideMenu.json', 'url invalid');
       })));
 
-    it('should return some menu items', fakeAsync(inject([SidebarService, MockBackend],
-      (service: SidebarService, backend: MockBackend) => {
+    it('should throw an error if the json file is empty', async(inject([SidebarService/*, MockBackend*/],
+      (service: SidebarService/*, mockBackend: MockBackend*/) => {
+        mockBackend.connections.subscribe((conn: MockConnection) => {
+          conn.mockRespond((new Response(new ResponseOptions({ body: '' }))));
+        });
+        expect(() => service.getMenu().subscribe()).toThrow('Unexpected end of JSON input');
+      }))
+    );
 
-        backend.connections.subscribe(conn => {
+    it('should return some menu items', async(inject([SidebarService/*, MockBackend*/],
+      (service: SidebarService/*, mockBackend: MockBackend*/) => {
+
+        mockBackend.connections.subscribe((conn: MockConnection) => {
           conn.mockRespond((new Response(new ResponseOptions({ body: JSON.stringify(mockMenu) }))));
         });
 
         let result;
         service.getMenu().subscribe(menu => result = menu);
+        // console.log('menu returned: ', result);
 
         const expected = mockMenu.data;
 

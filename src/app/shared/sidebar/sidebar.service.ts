@@ -3,22 +3,28 @@ import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
+import 'rxjs/add/observable/throw';
 
 @Injectable()
 export class SidebarService {
 
-  private menuUrl = 'assets/sideMenu.json';  // URL to web API
-
   constructor(private http: Http) { }
-  getMenu(): Observable<string[]> {
-    return this.http.get(this.menuUrl)
+
+  getMenu(menuUrl = 'assets/defaultSideMenu.json'): Observable<string[]> {
+    // console.log(menuUrl);
+    return this.http.get(menuUrl)
       .map(this.extractData)
       .catch(this.handleError);
   }
+
   private extractData(res: Response) {
+    // console.log('response: ', res);
     const body = res.json();
+    // console.log('body: ', body);
+    // console.log('data: ', body.data);
     return body.data || {};
   }
+
   private handleError(error: Response | any) {
     // In a real world app, we might use a remote logging infrastructure
     let errMsg: string;

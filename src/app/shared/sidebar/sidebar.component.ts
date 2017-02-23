@@ -15,8 +15,9 @@ export class SidebarComponent implements OnInit {
   public subMenuGlyphUp = 'fa fa-caret-left';
   public subMenuGlyphDown = 'fa fa-caret-down';
 
-  public menuList = [
-  ];
+  public menuList = [];
+
+  public remoteMenuList = [];
 
   public hardCodedItems = [
     { name: 'Blank Page', link: 'home', glyph: 'fa fa-fw fa-file-o', children: [], collapse: false },
@@ -31,31 +32,52 @@ export class SidebarComponent implements OnInit {
   constructor(private menuService: SidebarService) { }
 
   ngOnInit() {
+    // console.log('Sidebar component initiating');
+    this.setDefaultMenu();
     this.getMenu();
   }
 
-  getMenu() {
-    this.menuService.getMenu()
+  getMenu(url = '') {
+    this.menuService.getMenu(url)
       .subscribe(
       menu => {
-        this.menuList = menu;
+        // console.log('getting menu from server with ', url);
+        this.remoteMenuList = menu;
+        // console.log('menu: ', this.remoteMenuList);
       },
       error => {
         this.errorMessage = <any>error;
-        this.mergeMenus();
+        console.error('error getting data: ', this.errorMessage);
+        this.setDefaultMenu();
       },
       () => {
         this.mergeMenus();
       });
   }
 
-  mergeMenus() {
+  setDefaultMenu() {
+    // console.log(`setting default menu with`, this.hardCodedItems)
+    this.menuList = [];
     this.hardCodedItems.map(x => {
       this.menuList.push(x);
     });
+    // console.log('menu is now ', this.menuList);
   }
 
-  eventCalled() {
+  mergeMenus() {
+    this.menuList = [];
+    
+    this.remoteMenuList.map(x => {
+      this.menuList.push(x);
+    });
+
+    this.hardCodedItems.map(x => {
+      this.menuList.push(x);
+    });
+    // console.log(`menu is now ${this.menuList}`);
   }
+
+  // eventCalled() {
+  // }
 }
 
