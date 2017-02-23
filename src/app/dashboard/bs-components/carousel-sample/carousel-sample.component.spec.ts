@@ -1,33 +1,49 @@
 /* tslint:disable:no-unused-variable */
+
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
+
 import { FormsModule } from '@angular/forms';
 
 import { CarouselModule } from 'ng2-bootstrap/carousel';
+
 import { CarouselSampleComponent } from './carousel-sample.component';
 
 describe('CarouselSampleComponent', () => {
   let component: CarouselSampleComponent;
   let fixture: ComponentFixture<CarouselSampleComponent>;
-  let debugEl: DebugElement;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [FormsModule, CarouselModule.forRoot()],
-      declarations: [ CarouselSampleComponent ]
+      declarations: [CarouselSampleComponent]
     });
-   // .compileComponents(); <- not required for webpack
+    // .compileComponents(); // <- not needed with webpack!
   }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(CarouselSampleComponent);
     component = fixture.componentInstance;
-    debugEl = fixture.debugElement;
-    fixture.detectChanges();
+    // fixture.detectChanges();
   });
 
-  xit('should be created', () => {
+  xit('should create', async () => {
+    fixture.detectChanges();
     expect(component).toBeTruthy();
+  });
+
+  xit('should have the correct number of slides', async () => {
+    fixture.detectChanges();
+    const noOfSlides = component.slides.length;
+    console.log(`Carousel has ${noOfSlides} slides`);
+    expect(component.slides.length).toBe(20);
+  });
+
+  describe('when a slide is removed', () => {
+    xit('should have the correct number of slides', async () => {
+      fixture.detectChanges();
+      expect(component.slides.length).toEqual(4);
+    });
   });
 });

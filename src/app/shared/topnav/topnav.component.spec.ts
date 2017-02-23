@@ -3,6 +3,8 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
+import { CollapseModule } from 'ng2-bootstrap/collapse';
+
 import { TopnavComponent } from './topnav.component';
 
 describe('TopnavComponent', () => {
@@ -11,6 +13,7 @@ describe('TopnavComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [CollapseModule.forRoot()],
       declarations: [ TopnavComponent ]
     });
    // .compileComponents(); <- not required for webpack
@@ -22,7 +25,7 @@ describe('TopnavComponent', () => {
     fixture.detectChanges();
   });
 
-  xit('should be created', () => {
+  it('should be created', () => {
     expect(component).toBeTruthy();
   });
 });

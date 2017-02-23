@@ -123,16 +123,6 @@ describe('SidebarComponent', () => {
     );
   }
 
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      imports: [RouterTestingModule, CollapseModule.forRoot()],
-      declarations: [SidebarComponent],
-      providers: [
-        { provide: SidebarService }
-      ]
-    });
-    // .compileComponents(); <- not required for webpack
-  }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(SidebarComponent);
@@ -148,7 +138,7 @@ describe('SidebarComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should have the default menu list', () => {
+  it('with the hard coded items', () => {
     const deflistLength = component.hardCodedItems.length;
     const defFirstName = component.hardCodedItems[0].name;
     const compListLength = component.menuList.length;
@@ -186,7 +176,7 @@ describe('SidebarComponent', () => {
 
   });
 
-  describe('should create the menu with combined default and remote lists', () => {
+  describe('should create the menu with combined hard coded items and remote items', () => {
     it('when subscribed to with a goodUrl', () => {
       fixture.detectChanges();
       console.log('calling getMenu');

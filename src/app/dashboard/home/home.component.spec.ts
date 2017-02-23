@@ -2,16 +2,23 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { AlertModule } from 'ng2-bootstrap/alert';
+import { RouterTestingModule } from '@angular/router/testing';
 
-import { HomeComponent } from './home.component';
+import { HomeComponent, TimelineComponent, NotificationComponent, ChatComponent } from './home.component';
+
 
 describe('HomeComponent', () => {
   let component: HomeComponent;
   let fixture: ComponentFixture<HomeComponent>;
+  let debugEl: DebugElement;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HomeComponent ]
+      imports: [RouterModule, RouterTestingModule, AlertModule.forRoot() ],
+      declarations: [ HomeComponent, TimelineComponent, NotificationComponent, ChatComponent ],
+      providers: []
     });
    // .compileComponents(); <- not required for webpack
   }));
@@ -19,10 +26,11 @@ describe('HomeComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(HomeComponent);
     component = fixture.componentInstance;
+    debugEl = fixture.debugElement;
     fixture.detectChanges();
   });
 
-  xit('should be created', () => {
+  it('should be created', () => {
     expect(component).toBeTruthy();
   });
 });

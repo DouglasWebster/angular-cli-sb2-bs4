@@ -8,6 +8,7 @@ import { SignupComponent } from './signup.component';
 describe('SignupComponent', () => {
   let component: SignupComponent;
   let fixture: ComponentFixture<SignupComponent>;
+  let debugEl: DebugElement;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -19,10 +20,17 @@ describe('SignupComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(SignupComponent);
     component = fixture.componentInstance;
+    debugEl = fixture.debugElement;
     fixture.detectChanges();
   });
 
-  xit('should be created', () => {
+  it('should be created', () => {
     expect(component).toBeTruthy();
   });
+
+  it(`should have the page header containing 'SB Admin'`, () => {
+    expect(debugEl.query(By.css('h1')).nativeElement.textContent).toContain('SB Admin');
+
+  });
+
 });

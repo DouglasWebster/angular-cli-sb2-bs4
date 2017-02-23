@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { AlertModule } from 'ng2-bootstrap';
+import { AlertModule } from 'ng2-bootstrap/alert';
 
 import { HomeComponent } from './home.component';
 
@@ -10,7 +10,7 @@ import { TimelineComponent, ChatComponent, NotificationComponent } from './home.
 @NgModule({
     imports: [
         CommonModule,
-        AlertModule,
+        AlertModule.forRoot(),
         RouterModule
     ],
     declarations: [

@@ -8,6 +8,7 @@ import { TablesComponent } from './tables.component';
 describe('TablesComponent', () => {
   let component: TablesComponent;
   let fixture: ComponentFixture<TablesComponent>;
+  let debugEl: DebugElement;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -19,10 +20,18 @@ describe('TablesComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(TablesComponent);
     component = fixture.componentInstance;
+    debugEl = fixture.debugElement;
     fixture.detectChanges();
   });
 
-  xit('should be created', () => {
+  it('should be created', () => {
     expect(component).toBeTruthy();
   });
+
+  it(`should have the page header 'Tables'`, () => {
+    expect(debugEl.query(By.css('.page-header')).nativeElement.textContent).toContain('Tables');
+
+  });
+
 });
+
