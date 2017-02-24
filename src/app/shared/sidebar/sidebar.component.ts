@@ -37,8 +37,8 @@ export class SidebarComponent implements OnInit {
     this.getMenu();
   }
 
-  getMenu(url = '') {
-    this.menuService.getMenu(url)
+  getMenu() {
+    this.menuService.getMenu()
       .subscribe(
       menu => {
         // console.log('getting menu from server with ', url);
@@ -74,7 +74,7 @@ export class SidebarComponent implements OnInit {
     this.hardCodedItems.map(x => {
       this.menuList.push(x);
     });
-    // console.log(`menu is now ${this.menuList}`);
+    console.log(`menu is now ${this.menuList}`);
   }
 
   // eventCalled() {

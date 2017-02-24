@@ -11,17 +11,17 @@ export class SidebarService {
   constructor(private http: Http) { }
 
   getMenu(menuUrl = 'assets/defaultSideMenu.json'): Observable<string[]> {
-    // console.log(menuUrl);
+    console.log('url: ', menuUrl);
     return this.http.get(menuUrl)
       .map(this.extractData)
       .catch(this.handleError);
   }
 
   private extractData(res: Response) {
-    // console.log('response: ', res);
+    console.log('response: ', res);
     const body = res.json();
-    // console.log('body: ', body);
-    // console.log('data: ', body.data);
+    console.log('body: ', body);
+    console.log('data: ', body.data);
     return body.data || {};
   }
 
@@ -35,7 +35,7 @@ export class SidebarService {
     } else {
       errMsg = error.message ? error.message : error.toString();
     }
-    console.error(errMsg);
+    // console.error(errMsg);
     return Observable.throw(errMsg);
   }
 }

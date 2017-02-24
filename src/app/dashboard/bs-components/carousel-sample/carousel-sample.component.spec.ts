@@ -18,8 +18,8 @@ describe('CarouselSampleComponent', () => {
     TestBed.configureTestingModule({
       imports: [FormsModule, CarouselModule.forRoot()],
       declarations: [CarouselSampleComponent]
-    });
-    // .compileComponents(); // <- not needed with webpack!
+    })
+    .compileComponents(); // <- not needed with webpack!
   }));
 
   beforeEach(() => {
@@ -28,20 +28,20 @@ describe('CarouselSampleComponent', () => {
     // fixture.detectChanges();
   });
 
-  xit('should create', async () => {
+  it('should create', async () => {
     fixture.detectChanges();
-    expect(component).toBeTruthy();
+    expect(component).not.toBeTruthy();
   });
 
-  xit('should have the correct number of slides', async () => {
+  it('should have the correct number of slides', async () => {
     fixture.detectChanges();
     const noOfSlides = component.slides.length;
     console.log(`Carousel has ${noOfSlides} slides`);
-    expect(component.slides.length).toBe(20);
+    expect(component.slides.length).toEqual(20);
   });
 
   describe('when a slide is removed', () => {
-    xit('should have the correct number of slides', async () => {
+    it('should have the correct number of slides', async () => {
       fixture.detectChanges();
       expect(component.slides.length).toEqual(4);
     });
