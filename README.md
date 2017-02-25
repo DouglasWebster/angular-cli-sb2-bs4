@@ -3,7 +3,7 @@ Framework for a simple dashboard app using angular 2 and Bootstrap 4
 
 This project is a port of the famous Free Admin Bootstrap Theme [SB Admin v2.0](https://startbootstrap.com/template-overviews/sb-admin-2/) to Angular2 Theme and relies heavily on the [start-angular](http://rawgit.com/start-angular/SB-Admin-BS4-Angular-2/master/dist/prod/) port of SB Admin 2 for it's look and feel. 
  
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
+This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.32.3.
 
 ## SB Admin Bootstrap 4 provides the following features:
 - Project built using Angular-cli.
@@ -11,7 +11,7 @@ This project was generated with [angular-cli](https://github.com/angular/angular
 - Production and development builds.
 - Ahead-of-Time compilation support.
 - Sample unit tests with Jasmine and Karma including code coverage via istanbul.
-- End-to-end tests with Protractor.
+- End-to-end tests with Protractor (not yet implemented).
 - Following the best practices for your application’s structure as determined by Angular-cli
 - Has autoprefixer and css-lint support.
 
@@ -193,7 +193,7 @@ To get more help on the angular-cli use ng help or go check out the Angular-CLI 
 │    ├── tsconfig.json              <-- typescript settings
 │    └── typings.d.ts               <-- additonal type definition 
 ├── .editorconfig              <-- configuration for the ide editor
-├── angular-cli.json           <-- configuration for the angular-cli applicaton
+├── .angular-cli.json           <-- configuration for the angular-cli applicaton
 ├── karma.conf.js              <-- configuration for the test runner
 ├── licence.txt
 ├── package.json               <-- dependencies of the project
@@ -228,9 +228,9 @@ To get more help on the angular-cli use ng help or go check out the Angular-CLI 
 
     For the bootstrap and font-awesome css files the current method seems to me to be the correct one as any updates in the future are automatically catered for.  The inclusion of  app.scss in this was does seem wrong to me though and this may change in the future if I can discover where my mistake is.
     
-- **Testing**
+- **Unit Testing**
 
-   For unit testing all but the root testing module is skipped - hopefully these should be implemented soon once I get my head around the pitfalls of unit testing with routed components.  The testing sub folder with the router-stubs.ts file is my initial stab at this.
+   There are full full set test suites.  Some are bare bone implementations only and do little else than assert that a component has been created.  Others do a rather better job of component and service testing and implent the use of such things as mocking services and use mock backend features.
     
  ----------
 ### **Hacks**

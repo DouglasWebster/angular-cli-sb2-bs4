@@ -1,3 +1,10 @@
+## 1.1.3
+
+* **Unit Testing**  
+
+   1. Implemented uint testing on througout the projec.
+
+
 ## 1.1.2
 
 * **bs-components**  
