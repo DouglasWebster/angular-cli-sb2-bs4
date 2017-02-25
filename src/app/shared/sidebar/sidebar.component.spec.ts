@@ -78,7 +78,7 @@ describe('SidebarComponent', () => {
         // TODO - simplify - when match fails it is null
         console.log(`in the mockBackendFunctions with /${connection.request.url}/ of length ${connection.request.url.length}`);
 
-        const isGoodURL = connection.request.url &&
+        const isGoodUrl = connection.request.url &&
           connection.request.method === RequestMethod.Get &&
           connection.request.url.match(/goodUrl/) &&
           connection.request.url.match(/goodUrl/).length === 1 ? true : false;
@@ -86,7 +86,7 @@ describe('SidebarComponent', () => {
         const isEmptyUrl = connection.request.method === RequestMethod.Get &&
           connection.request.url.length === 0 ? true : false;
 
-        const isBadURL = connection.request.url &&
+        const isBadUrl = connection.request.url &&
           connection.request.method === RequestMethod.Get &&
           connection.request.url.match(/badUrl/) &&
           connection.request.url.match(/badUrl/).length === 1 ? true : false;
@@ -96,8 +96,8 @@ describe('SidebarComponent', () => {
           connection.request.url.match(/badData/) &&
           connection.request.url.match(/badData/).length === 1 ? true : false;
 
-        if (isGoodURL || isEmptyUrl) {
-
+        if (isGoodUrl || isEmptyUrl) {
+          console.log(`Mock Backend Funtions called with `, isGoodUrl ? 'Good Url' : 'Empty Url');
           connection.mockRespond(new Response(
             new ResponseOptions({
               body: JSON.stringify(mockMenu)
@@ -105,7 +105,8 @@ describe('SidebarComponent', () => {
           ));
         }
 
-        if (isBadURL) {
+        if (isBadUrl) {
+          console.log(`Mock Backend Funtions called with Bad Url`);
           const body = JSON.stringify({ body: 'msg: Bad url' });
           const opts = { type: ResponseType.Error, status: 404, body: body };
           const responseOpts = new ResponseOptions(opts);
@@ -113,6 +114,8 @@ describe('SidebarComponent', () => {
         }
 
         if (isBadData) {
+          console.log(`Mock Backend Funtions called with Bad Data`);
+
           connection.mockRespond(new Response(
             new ResponseOptions({
               body: ''
@@ -150,7 +153,7 @@ describe('SidebarComponent', () => {
   describe('should create the menu with just the hard coded items', () => {
     it('when subscribed to with a bad url', () => {
       fixture.detectChanges();
-      console.log('calling getMenu');
+      console.log('calling getMenu with bad Url');
       component.getMenu('badUrl');
 
       const deflistLength = component.hardCodedItems.length;

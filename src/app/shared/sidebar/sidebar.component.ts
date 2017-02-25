@@ -37,8 +37,8 @@ export class SidebarComponent implements OnInit {
     this.getMenu();
   }
 
-  getMenu() {
-    this.menuService.getMenu()
+  getMenu(url?) {
+    this.menuService.getMenu(url)
       .subscribe(
       menu => {
         // console.log('getting menu from server with ', url);
