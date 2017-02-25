@@ -88,7 +88,7 @@ describe('SidebarService (mocked)', () => {
         service.getMenu();
 
         expect(this.lastConnection).toBeDefined('no http service at all?');
-        expect(this.lastConnection.request.url).toMatch('assets/defaultSideMenu.json', 'url invalid');
+        expect(this.lastConnection.request.url).toMatch(service.defaultURL, 'url invalid');
       })));
 
     it('should throw an error if the json file is empty', async(inject([SidebarService/*, MockBackend*/],

@@ -8,9 +8,11 @@ import 'rxjs/add/observable/throw';
 @Injectable()
 export class SidebarService {
 
+  defaultURL = 'assets/defaultSideMenu.json';
+
   constructor(private http: Http) { }
 
-  getMenu(menuUrl = 'assets/defaultSideMenu.json'): Observable<string[]> {
+  getMenu(menuUrl = this.defaultURL): Observable<string[]> {
     console.log('url: ', menuUrl);
     return this.http.get(menuUrl)
       .map(this.extractData)
