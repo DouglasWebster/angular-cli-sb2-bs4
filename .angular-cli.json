@@ -22,8 +22,8 @@
       "prefix": "app",
       "styles": [
         "styles.scss",
+        "glyphicon-override.scss",
         "../node_modules/bootstrap/scss/bootstrap.scss",
-        "app/styles/sass/app.scss",
         "../node_modules/font-awesome/scss/font-awesome.scss"
       ],
       "scripts": [
