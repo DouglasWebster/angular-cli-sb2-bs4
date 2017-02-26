@@ -6780,11 +6780,20 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 @media print {
   .hidden-print {
     display: none !important; } }
-@font-face {
-  font-family: 'Glyphicons Halflings';
-  src: url("/node-modules/font-awesome/fonts/fontawesome-webfont.eot?v=4.7.0");
-  src: url("/node-modules/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0") format("embedded-opentype"), url("/node-modules/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0") format("woff2"), url("/node-modules/font-awesome/fonts/fontawesome-webfont.woff?v=4.7.0") format("woff"), url("/node-modules/font-awesome/fonts/fontawesome-webfont.ttf?v=4.7.0") format("truetype"), url("/node-modules/font-awesome/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular") format("svg"); }
-
+/************************************
+* the following doesn't seem to be needed so has been commented output
+*  redifine the glyphicons font family to font-awesome 
+*  @font-face {
+*    font-family: 'Glyphicons Halflings';
+*
+*    src: url('/node-modules/font-awesome/fonts/fontawesome-webfont.eot?v=4.7.0');
+*    src: url('/node-modules/font-awesome/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
+*          url('/node-modules/font-awesome/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
+*          url('/node-modules/font-awesome/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),
+*          url('/node-modules/font-awesome/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
+*          url('/node-modules/font-awesome/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+*  }
+**************************************/
 .glyphicon {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
@@ -6813,8 +6822,8 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
  * -------------------------- */
 @font-face {
   font-family: 'FontAwesome';
-  src: url(fontawesome-webfont.eot);
-  src: url(fontawesome-webfont.eot?#iefix&v=4.7.0) format("embedded-opentype"), url(fontawesome-webfont.woff2) format("woff2"), url(fontawesome-webfont.woff) format("woff"), url(fontawesome-webfont.ttf) format("truetype"), url(fontawesome-webfont.svg#fontawesomeregular) format("svg");
+  src: url(fontawesome-webfont.674f50d287a8c48dc19b.eot);
+  src: url(fontawesome-webfont.674f50d287a8c48dc19b.eot?#iefix&v=4.7.0) format("embedded-opentype"), url(fontawesome-webfont.af7ae505a9eed503f8b8.woff2) format("woff2"), url(fontawesome-webfont.fee66e712a8a08eef580.woff) format("woff"), url(fontawesome-webfont.b06871f281fee6b241d6.ttf) format("truetype"), url(fontawesome-webfont.912ec66d7572ff821749.svg#fontawesomeregular) format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -9130,4 +9139,4 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   overflow: visible;
   clip: auto; }
 
-/*# sourceMappingURL=styles.bundle.map*/
+/*# sourceMappingURL=styles.bundle.css.map*/
