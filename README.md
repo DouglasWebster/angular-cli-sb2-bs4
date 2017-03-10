@@ -1,4 +1,6 @@
 # **SB Admin rewritten in Angular 2 and Bootstrap 4 using Angular-cli**
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/DouglasWebster/angular-cli-sb2-bs4.svg)](https://greenkeeper.io/)
 Framework for a simple dashboard app using angular 2 and Bootstrap 4
 
 This project is a port of the famous Free Admin Bootstrap Theme [SB Admin v2.0](https://startbootstrap.com/template-overviews/sb-admin-2/) to Angular2 Theme and relies heavily on the [start-angular](http://rawgit.com/start-angular/SB-Admin-BS4-Angular-2/master/dist/prod/) port of SB Admin 2 for it's look and feel. 
