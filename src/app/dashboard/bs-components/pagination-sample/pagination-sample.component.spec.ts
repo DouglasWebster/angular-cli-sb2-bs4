@@ -27,7 +27,12 @@ describe('PaginationSampleComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should be created', () => {
+  it('should be created with the initial page set to default', () => {
+    
     expect(component).toBeTruthy();
+    let pageShown = debugEl.query(By.css('.card-header')).nativeElement.textContent;
+    console.log(`page message is : ${pageShown}`);
+    expect(pageShown).toContain(`${component.currentPage}/${Math.ceil(component.totalItems / 10)}`);
+
   });
 });
