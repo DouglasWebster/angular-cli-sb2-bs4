@@ -3,7 +3,7 @@ Framework for a simple dashboard app using angular 2 and Bootstrap 4
 
 This project is a port of the famous Free Admin Bootstrap Theme [SB Admin v2.0](https://startbootstrap.com/template-overviews/sb-admin-2/) to Angular2 Theme and relies heavily on the [start-angular](http://rawgit.com/start-angular/SB-Admin-BS4-Angular-2/master/dist/prod/) port of SB Admin 2 for it's look and feel. 
  
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.32.3.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0-rc.1.
 
 ## SB Admin Bootstrap 4 provides the following features:
 - Project built using Angular-cli.
