@@ -1,9 +1,10 @@
 /* tslint:disable:no-unused-variable */
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { async, ComponentFixture, TestBed, fakeAsync, tick } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { DropdownSampleComponent } from './dropdown-sample.component';
+import { DropdownModule } from 'ng2-bootstrap/dropdown';
 
 describe('DropdownSampleComponent', () => {
   let component: DropdownSampleComponent;
@@ -13,6 +14,7 @@ describe('DropdownSampleComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [DropdownModule.forRoot()],
       declarations: [DropdownSampleComponent]
     });
     // .compileComponents(); <- not required for webpack
@@ -31,31 +33,44 @@ describe('DropdownSampleComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should have a button labeled Button Dropdown', () => {
-    let btn;
-    debugEl.queryAll(By.css('.btn')).forEach(el => {
-      if (el.nativeElement.outerText === 'Button dropdown') {
-        btn = el;
-      }
-    });
+  it('should have a dropdown button labeled Button Dropdown', () => {
 
-    expect(btn.nativeElement).toBeDefined('Button Dropdown not defined');
+    expect(debugEl.query(By.css('#single-button')).nativeElement).toBeDefined('Button Dropdown not defined');
 
   });
 
-  it('should have a list containg \'Action\'', () => {
+  it('should have the Dropdown Button dropdown closed by default', () => {
+    fixture.detectChanges();
+    const btn = debugEl.query(By.css('#single-button'));
+    console.log(btn);
 
-    debugEl.queryAll(By.css('.btn')).map(el => {
-      if (el.nativeElement.outerText === 'Button dropdown') {
-        el.nativeElement.click();
-      }
-    });
-    expect(debugEl.query(By.css('.dropdown-item')).nativeElement.textContent).toContain('Action');
+    expect(btn.nativeElement.parentElement.classList).not.toContain('open');
   });
 
-/****************
- * to-do add test to see if the dropdown is opening
- * and closing when a click event occurs
-*****************/
+
+  it('should open and close the Dropdown Button dropdown when the button is repeatedly clicked', () => {
+
+    fixture.detectChanges();
+    const btn = debugEl.query(By.css('#single-button'));
+    btn.nativeElement.click();
+    fixture.detectChanges();
+    expect(btn.nativeElement.parentElement.classList).toContain('open', 'failed to open');
+    btn.nativeElement.click();
+    fixture.detectChanges();
+    expect(btn.nativeElement.parentElement.classList).not.toContain('open', 'failed to close');
+    btn.nativeElement.click();
+    fixture.detectChanges();
+    expect(btn.nativeElement.parentElement.classList).toContain('open', 'failed to reopen');
+  });
+
+
+  it('should have a hyperlink that acts as a dropdown', () => {
+    const btn = debugEl.query(By.css('#simple-dropdown'));
+    console.log('hyperlink button is: ', btn);
+    spyOn(component, 'toggled').and.callThrough();
+    btn.nativeElement.click();
+    expect(component.toggled).toHaveBeenCalledWith(true);
+  });
+
 
 });

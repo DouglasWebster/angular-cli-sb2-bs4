@@ -14,9 +14,9 @@ describe('PopoverSampleComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [PopoverModule.forRoot()],
-      declarations: [ PopoverSampleComponent ]
+      declarations: [PopoverSampleComponent]
     });
-   // .compileComponents(); <- not required for webpack
+    // .compileComponents(); <- not required for webpack
   }));
 
   beforeEach(() => {
@@ -28,5 +28,29 @@ describe('PopoverSampleComponent', () => {
 
   it('should be created', () => {
     expect(component).toBeTruthy();
+  });
+
+  it(`should have a button labled 'Popover on right'`, () => {
+    const btn = debugEl.query(By.css('[popoverTitle = "Popover on right"]'));
+    expect(btn.nativeElement.textContent).toContain('Popover on right');
+  });
+
+  it('should create a popover when the button is clicked', () => {
+    const btn = debugEl.query(By.css('[popoverTitle = "Popover on right"]'));
+    btn.nativeElement.click();
+    fixture.detectChanges();
+    const popEl = debugEl.query(By.css('.popover-title'));
+    console.log('popover: ', popEl);
+    expect(popEl.nativeElement.textContent).toContain('Popover on right');
+  });
+
+  it('should dismiss the popover when the button is clicked again', () => {
+    const btn = debugEl.query(By.css('[popoverTitle = "Popover on right"]'));
+    btn.nativeElement.click();
+    fixture.detectChanges();
+    btn.nativeElement.click();
+    fixture.detectChanges();
+    const popEl = debugEl.query(By.css('.popover-title'));
+    expect(popEl).toBeNull();
   });
 });

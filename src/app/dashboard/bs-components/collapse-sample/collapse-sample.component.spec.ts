@@ -30,31 +30,20 @@ describe('CollapseSampleComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should have a collapse element', () => {
-    const collapseElement = debugEl.nativeElement.querySelector('[aria-hidden]');
-    expect(collapseElement).toBeDefined();
+  it('should have a collapse element in the correct state ', () => {
+    const colEl = debugEl.query(By.css('.collapse'));
+    const currentState = component.isCollapsed ? 'true' : 'false';
+    console.log(colEl);
+    expect(colEl.nativeElement.getAttribute('aria-hidden')).toBe(currentState);
   });
 
-  it('should be in the correct state', () => {
-    const collapseElement = debugEl.nativeElement.querySelector('[aria-hidden]');
-    expect(collapseElement).toBeDefined();
-    expect(collapseElement).not.toBe(component.isCollapsed);
+  it('should toggle the state of the collapse element when button clicked', () => {
+    const colEl = debugEl.query(By.css('.collapse'));
+    const btnEl = debugEl.query(By.css('.btn'));
+    const expectedState: string = !component.isCollapsed ? 'true' : 'false';
+    btnEl.nativeElement.click();
+    fixture.detectChanges();
+    expect(colEl.nativeElement.getAttribute('aria-hidden')).toBe(expectedState);
   });
-
-  it('should be in the correct state when toggled', () => {
-    const button = debugEl.queryAll(By.css('button'))[0].nativeElement;
-    button.click();
-    const collapseElement = debugEl.nativeElement.querySelector('[aria-hidden]');
-    expect(collapseElement).not.toBe(component.isCollapsed);
-  });
-  
-  it('should be in the correct state when toggled back', () => {
-    const button = debugEl.queryAll(By.css('button'))[0].nativeElement;
-    button.click();
-    const collapseElement = debugEl.nativeElement.querySelector('[aria-hidden]');
-    expect(collapseElement).not.toBe(component.isCollapsed);
-  });
-
-
 
 });

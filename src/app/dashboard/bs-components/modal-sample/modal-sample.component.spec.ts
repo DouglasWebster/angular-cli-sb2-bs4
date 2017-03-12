@@ -64,7 +64,7 @@ describe('ModalSampleComponent', () => {
         return true;
       }
     });
-    
+
     btn.nativeElement.click();
     component.hideChildModal();
 
@@ -72,6 +72,4 @@ describe('ModalSampleComponent', () => {
     component.hideChildModal();
     expect(component.hideChildModal).toHaveBeenCalled();
   });
-
-
 });

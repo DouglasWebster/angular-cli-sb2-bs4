@@ -37,11 +37,6 @@ describe('DateSampleComponent', () => {
     expect(debugEl.query(By.css('.card-block')).nativeElement.textContent).toContain(dispDate.format('dddd, MMMM D, YYYY'));
   });
 
-  it('should display the date of the day button clicked', () => {
-    
-  });
-  
-
   it('should display \'Monday, August 24, 2009\' when button labeled 2008-09-24 is pressed', () => {
     const dispDate = moment('2009-08-24');
     const btns = debugEl.queryAll(By.css('.btn'));
