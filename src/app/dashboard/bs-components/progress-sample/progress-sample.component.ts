@@ -47,7 +47,6 @@ export class ProgressSampleComponent implements OnInit {
     } else if (value < 50) {
       type = 'info';
     } else if (value < 75) {
-
       type = 'warning';
     } else {
       type = 'danger';

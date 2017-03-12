@@ -8,8 +8,9 @@
 <h3>
   Examples
 </h3>
-<em>As of this implenetation NG2-bootstrap progress bars are not working correctly for BS4.  I recommend using BS4 progresss bars until this is fixed. </em>
-<p></p>
+<em>As of this implenetation NG2-bootstrap progress bars are not well supported when using BS4. &nbsp; &nbsp;I recommend using BS4 progresss bars until this is fixed. </em>
+<hr>
+<p>This section shows the NG2-bootstrap version of progress bars under BS4</p>
 <div class="row">
   <div class="col-md-4">
     <h4>Static</h4>
@@ -25,7 +26,7 @@
       </div>
     </div>
   </div>
-  <div class="col-md-2">
+  <div class="col-md-4">
     <h4>Dynamic</h4>
     <progress class="progress progress-striped progress-animated" [max]="max" [value]="dynamic" style="height: 15px">
       <span style="color:white; white-space:nowrap;">{{dynamic}} / {{max}}</span>
@@ -48,10 +49,70 @@
       <progress *ngFor="let baz of stacked" class="progress progress-{{ baz?.type }}" style="float: left; height: 1rem" [ngStyle]="{width: baz.value + '%'}"
         [value]="baz.value" [max]="baz.max">
         <span *ngIf="baz.value > 3">{{baz?.value}}%</span>
-        </progress>
-        <!-- gray background -->
-        <progress class="progress" value="0" max="100" style="width: 100%; height: 1rem"></progress>
+      </progress>
     </div>
+    <p></p>
+    <div class="row col-md-12">
+      <button type="button" class="btn btn-sm btn-primary" (click)="randomStacked()">Randomize</button>
+    </div>
+  </div>
+</div>
+<hr>
+<p>This section shows the same style of progress bars using BS4 native components</p>
+<div class="row">
+  <div class="col-md-4">
+    <h4>Static</h4>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 22%" aria-valuenow="22" aria-valuemin="0"
+            aria-valuemax="100"></div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 83%" aria-valuenow="166"
+            aria-valuemin="0" aria-valuemax="200"><i>166 / 200</i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <h4>Dynamic (value: {{dynamic}})</h4>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped progress-bar-animated" [ngStyle]="{width: (dynamic/max*100) + '%'}" style="height: 15px"
+        [attr.aria-valuenow]="(dynamic/max*100)" aria-valuemin="0" [attr.aria-valuemax]="(max)">
+        <span style="color:white">{{dynamic}} / {{max}}</span>
+      </div>
+    </div>
+    <small><em>No animation</em></small>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped bg-success" [ngStyle]="{width: (dynamic) + '%'}" style="height: 15px" [attr.aria-valuenow]="(dynamic)"
+        aria-valuemin="0" [attr.aria-valuemax]="100"><b>{{dynamic}}%</b></div>
+    </div>
+    <small><em>Object (changes type based on value)</em></small>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped progress-bar-animated bg-{{type}}" [ngStyle]="{width: (dynamic) + '%'}" style="height: 15px"
+        [attr.aria-valuenow]="(dynamic)" aria-valuemin="0" [attr.aria-valuemax]="100">
+        {{type}} <i *ngIf="showWarning">!!! Watch out !!!</i>
+      </div>
+    </div>
+    <p></p>
+    <button type="button" class="btn btn-sm btn-primary" (click)="random()">Randomize</button>
+  </div>
+  <div class="col-md-4">
+    <h4>Stacked</h4>
+      <div class="progress">
+        <div *ngFor="let baz of stacked" class="progress-bar bg-{{ baz?.type }}" [ngStyle]="{width: baz.value + '%'}"
+          [attr.aria-valuenow]="baz.value" [attr.aria-max]="baz.max">
+          <span *ngIf="baz.value > 3">{{baz?.value}}%</span>
+        </div>
+      </div>
     <p></p>
     <div class="row col-md-12">
       <button type="button" class="btn btn-sm btn-primary" (click)="randomStacked()">Randomize</button>
