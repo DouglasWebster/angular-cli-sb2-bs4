@@ -11,9 +11,9 @@
 <div class="row">
   <div class="col-md-4">
     <h4>Static rating</h4>
-    <rating [(ngModel)]="rate" [max]="max" [readonly]="isReadonly" stateOn="fa fa-star" stateOff="fa fa-star-o"></rating>
+    <rating [(ngModel)]="rate" [max]="max" [readonly]="isReadonly" stateOn="fa fa-star" stateOff="fa fa-star-o" [titles]="['1']"></rating>
     <div class="card">
-      <pre class="card-block card-text">Rate: <b>7</b></pre>
+      <pre class="card-block card-text">Rate: <b>{{rate}}</b></pre>
     </div>
   </div>
   <div class="col-md-4">
@@ -33,7 +33,7 @@
   <div class="col-md-4">
     <h4>Custom icons</h4>
     <div>
-      <rating [(ngModel)]="x" max="15" stateOn="fa fa-check-circle" stateOff="fa fa-check-circle-o" style="color: #0275d8;"></rating>
+      <rating [(ngModel)]="x" max="15" stateOn="fa fa-check-circle" stateOff="fa fa-check-circle-o" style="color: #0275d8;" [titles]="['1']"></rating>
       <b>(<i>Rate:</i> {{x}})</b>
     </div>
     <div>
