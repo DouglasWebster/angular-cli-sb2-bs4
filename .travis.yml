@@ -17,6 +17,7 @@ before_install:
 branches:
   only:
     - develop
+    - /^greenkeeper/.*$/
 
 before_script:
   - npm install -g @angular/cli
