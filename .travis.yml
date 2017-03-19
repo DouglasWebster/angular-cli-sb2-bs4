@@ -14,16 +14,22 @@ before_install:
   - export DISPLAY=:99.0
   - sh -e /etc/init.d/xvfb start
   - sleep 3
+
 branches:
   only:
     - develop
     - /^greenkeeper/.*$/
+    - codecovTest
 
 before_script:
   - npm install -g @angular/cli
 
 script:
   - ng test -sr
+  - ng test -sr -cc
+
+after_success:
+  - ./node_modules/.bin/codecov
 
 notifications:
   email:
