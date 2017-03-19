@@ -1,0 +1,30 @@
+/*************************
+* the following is a workround so that ng2-bootstrap uses a font-awesome
+* instead of Glyphicons Halflings as bootstrap V4 is dropping support for
+* automatic installation of glypicons.
+* if anybody knows a better way to do it please let me know.
+**************************/
+
+// redifine .glyphicon
+.glyphicon {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// point glyphicon-remove-circle icon to the neareset font-awesome equivalent
+.glyphicon-remove-circle:before {
+  content: "\f05c";
+}
+
+.glyphicon-chevron-down:before {
+  content: "\f078";
+}
+
+.glyphicon-chevron-up:before {
+  content: "\f077";
+}
+

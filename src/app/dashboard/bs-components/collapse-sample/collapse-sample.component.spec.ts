@@ -14,9 +14,9 @@ describe('CollapseSampleComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [CollapseModule.forRoot()],
-      declarations: [ CollapseSampleComponent ]
+      declarations: [CollapseSampleComponent]
     });
-   // .compileComponents(); <- not required for webpack
+    // .compileComponents(); <- not required for webpack
   }));
 
   beforeEach(() => {
@@ -29,4 +29,32 @@ describe('CollapseSampleComponent', () => {
   it('should be created', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have a collapse element', () => {
+    const collapseElement = debugEl.nativeElement.querySelector('[aria-hidden]');
+    expect(collapseElement).toBeDefined();
+  });
+
+  it('should be in the correct state', () => {
+    const collapseElement = debugEl.nativeElement.querySelector('[aria-hidden]');
+    expect(collapseElement).toBeDefined();
+    expect(collapseElement).not.toBe(component.isCollapsed);
+  });
+
+  it('should be in the correct state when toggled', () => {
+    const button = debugEl.queryAll(By.css('button'))[0].nativeElement;
+    button.click();
+    const collapseElement = debugEl.nativeElement.querySelector('[aria-hidden]');
+    expect(collapseElement).not.toBe(component.isCollapsed);
+  });
+  
+  it('should be in the correct state when toggled back', () => {
+    const button = debugEl.queryAll(By.css('button'))[0].nativeElement;
+    button.click();
+    const collapseElement = debugEl.nativeElement.querySelector('[aria-hidden]');
+    expect(collapseElement).not.toBe(component.isCollapsed);
+  });
+
+
+
 });

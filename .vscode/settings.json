@@ -1,6 +1,6 @@
 // Place your settings in this file to overwrite default and user settings.
-{
-    "editor.wrappingColumn": 0,
+{   "editor.wordWrap": "on",
     "typescript.tsdk": "./node_modules/typescript/lib",
-    "tslint.rulesDirectory": "./node_modules/codelyzer"
+    "tslint.rulesDirectory": "./node_modules/codelyzer",
+    "vsicons.presets.angular": true
 }
