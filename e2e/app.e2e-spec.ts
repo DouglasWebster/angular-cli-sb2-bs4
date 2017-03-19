@@ -1,6 +1,6 @@
 import { SbadBs4Ng2Page } from './app.po';
 
-describe('sbad-bs4-ng2 App', function() {
+describe('sbad-bs4-ng2 App', () => {
   let page: SbadBs4Ng2Page;
 
   beforeEach(() => {

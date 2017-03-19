@@ -1,7 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "version": "1.0.0-beta.32",
     "name": "angular-cli-sb2-bs4"
   },
   "apps": [
@@ -22,8 +21,8 @@
       "prefix": "app",
       "styles": [
         "styles.scss",
+        "glyphicon-override.scss",
         "../node_modules/bootstrap/scss/bootstrap.scss",
-        "app/styles/sass/app.scss",
         "../node_modules/font-awesome/scss/font-awesome.scss"
       ],
       "scripts": [

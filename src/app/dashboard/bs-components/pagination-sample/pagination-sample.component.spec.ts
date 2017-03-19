@@ -17,7 +17,7 @@ describe('PaginationSampleComponent', () => {
       imports: [FormsModule, PaginationModule.forRoot()],
       declarations: [PaginationSampleComponent]
     });
-   // .compileComponents(); <- not required for webpack
+    // .compileComponents(); <- not required for webpack
   }));
 
   beforeEach(() => {
@@ -27,7 +27,20 @@ describe('PaginationSampleComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should be created', () => {
+  it('should be created with the initial page set to default', () => {
     expect(component).toBeTruthy();
+    const pageShown = debugEl.query(By.css('.card-header')).nativeElement.textContent;
+    console.log(`page message is : ${pageShown}`);
+    expect(pageShown).toContain(`${component.currentPage}/${component.smallnumPages}`);
   });
+
+  it('should set the page to the page asked for', () => {
+    const pageAsked = 2;
+    component.setPage(pageAsked);
+    fixture.detectChanges();
+    const pageShown = debugEl.query(By.css('.card-header')).nativeElement.textContent;
+    console.log(`page message is : ${pageShown}`);
+    expect(pageShown).toContain(`${pageAsked}/${component.smallnumPages}`);
+  });
+
 });

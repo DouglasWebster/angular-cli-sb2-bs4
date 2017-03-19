@@ -1,0 +1,31 @@
+language: node_js
+node_js:
+  - "6.9"
+
+dist: trusty
+sudo: false
+
+addons:
+  apt:
+    packages:
+      - google-chrome-stable
+
+before_install:
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
+  - sleep 3
+branches:
+  only:
+    - develop
+    - /^greenkeeper/.*$/
+
+before_script:
+  - npm install -g @angular/cli
+
+script:
+  - ng test -sr
+
+notifications:
+  email:
+    on_failure: change
+    on_success: change
