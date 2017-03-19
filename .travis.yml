@@ -24,6 +24,10 @@ before_script:
 
 script:
   - ng test -sr
+  - ng test -sr -cc
+
+after_success:
+  - ./node_modules/.bin/codecov
 
 notifications:
   email:
