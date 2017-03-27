@@ -19,10 +19,10 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/common": "^4.0.0",
-    "@angular/compiler": "^2.4.0",
-    "@angular/forms": "^4.0.0",
     "@angular/core": "^4.0.0",
+    "@angular/forms": "^4.0.0",
+    "@angular/common": "^4.0.0",
+    "@angular/compiler": "^4.0.0",
     "@angular/http": "^2.4.0",
     "@angular/platform-browser": "^4.0.0",
     "bootstrap": "^4.0.0-alpha.6",
