@@ -24,7 +24,7 @@
     "@angular/forms": "^4.0.0",
     "@angular/core": "^4.0.0",
     "@angular/http": "^2.4.0",
-    "@angular/platform-browser-dynamic": "^4.0.0",
+    "@angular/platform-browser": "^4.0.0",
     "bootstrap": "^4.0.0-alpha.6",
     "bootstrap-sass": "^3.3.7",
     "chart.js": "^2.4.0",
