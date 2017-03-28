@@ -56,6 +56,10 @@ export class DateSampleComponent implements OnInit {
     this.dateDisabled = undefined;
   }
 
+  public toggleMin(): void {
+    this.dt = new Date(this.minDate.valueOf());
+  }
+
   ngOnInit() {
   }
 
