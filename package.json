@@ -15,7 +15,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "ghcopy": "cp dist/index.html dist/404.html && cp .gitignore dist/.gitignore && cp README.md dist/README.md",
-    "deploy4gh": "ng build -sm -ec -bh /$npm_package_config_ghroot/ && npm run ghcopy && ngh --silent=false"
+    "deploy4gh": "ng build -sm -ec -bh /$npm_package_config_ghroot/ && npm run ghcopy && ngh"
   },
   "private": true,
   "dependencies": {
