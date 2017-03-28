@@ -1,6 +1,5 @@
-webpackJsonp([0,5],{
-
-/***/ 204:
+webpackJsonp([0,5],Array(46).concat([
+/* 46 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -27,8 +26,8 @@ var TimelineComponent = (function () {
 TimelineComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-timeline-cmp',
-        template: __webpack_require__(838),
-        styles: [__webpack_require__(780)],
+        template: __webpack_require__(488),
+        styles: [__webpack_require__(431)],
     })
 ], TimelineComponent);
 
@@ -41,7 +40,7 @@ var ChatComponent = (function () {
 ChatComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-chat-cmp',
-        template: __webpack_require__(835)
+        template: __webpack_require__(485)
     })
 ], ChatComponent);
 
@@ -53,7 +52,7 @@ var NotificationComponent = (function () {
 NotificationComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-notifications-cmp',
-        template: __webpack_require__(837)
+        template: __webpack_require__(487)
     })
 ], NotificationComponent);
 
@@ -82,8 +81,8 @@ var HomeComponent = (function () {
 HomeComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-home',
-        template: __webpack_require__(836),
-        styles: [__webpack_require__(779)]
+        template: __webpack_require__(486),
+        styles: [__webpack_require__(430)]
     }),
     __metadata("design:paramtypes", [])
 ], HomeComponent);
@@ -91,8 +90,56 @@ HomeComponent = __decorate([
 //# sourceMappingURL=home.component.js.map
 
 /***/ }),
-
-/***/ 339:
+/* 47 */,
+/* 48 */,
+/* 49 */,
+/* 50 */,
+/* 51 */,
+/* 52 */,
+/* 53 */,
+/* 54 */,
+/* 55 */,
+/* 56 */,
+/* 57 */,
+/* 58 */,
+/* 59 */,
+/* 60 */,
+/* 61 */,
+/* 62 */,
+/* 63 */,
+/* 64 */,
+/* 65 */,
+/* 66 */,
+/* 67 */,
+/* 68 */,
+/* 69 */,
+/* 70 */,
+/* 71 */,
+/* 72 */,
+/* 73 */,
+/* 74 */,
+/* 75 */,
+/* 76 */,
+/* 77 */,
+/* 78 */,
+/* 79 */,
+/* 80 */,
+/* 81 */,
+/* 82 */,
+/* 83 */,
+/* 84 */,
+/* 85 */,
+/* 86 */,
+/* 87 */,
+/* 88 */,
+/* 89 */,
+/* 90 */,
+/* 91 */,
+/* 92 */,
+/* 93 */,
+/* 94 */,
+/* 95 */,
+/* 96 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -118,8 +165,8 @@ var AccordionSampleComponent = (function () {
 AccordionSampleComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-accordion-sample',
-        template: __webpack_require__(812),
-        styles: [__webpack_require__(756)]
+        template: __webpack_require__(462),
+        styles: [__webpack_require__(407)]
     }),
     __metadata("design:paramtypes", [])
 ], AccordionSampleComponent);
@@ -127,8 +174,7 @@ AccordionSampleComponent = __decorate([
 //# sourceMappingURL=accordion-sample.component.js.map
 
 /***/ }),
-
-/***/ 340:
+/* 97 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -171,8 +217,8 @@ var AlertSampleComponent = (function () {
 AlertSampleComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-alert-sample',
-        template: __webpack_require__(813),
-        styles: [__webpack_require__(757)]
+        template: __webpack_require__(463),
+        styles: [__webpack_require__(408)]
     }),
     __metadata("design:paramtypes", [])
 ], AlertSampleComponent);
@@ -180,8 +226,7 @@ AlertSampleComponent = __decorate([
 //# sourceMappingURL=alert-sample.component.js.map
 
 /***/ }),
-
-/***/ 341:
+/* 98 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -206,8 +251,8 @@ BsComponentsComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-bs-component',
         // changeDetection: ChangeDetectionStrategy.OnPush,  // <-- this does not seem to be needed any more
-        template: __webpack_require__(814),
-        styles: [__webpack_require__(758)]
+        template: __webpack_require__(464),
+        styles: [__webpack_require__(409)]
     }),
     __metadata("design:paramtypes", [])
 ], BsComponentsComponent);
@@ -215,8 +260,7 @@ BsComponentsComponent = __decorate([
 //# sourceMappingURL=bs-components.component.js.map
 
 /***/ }),
-
-/***/ 342:
+/* 99 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -243,8 +287,8 @@ var ButtonSampleComponent = (function () {
 ButtonSampleComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-button-sample',
-        template: __webpack_require__(815),
-        styles: [__webpack_require__(759)]
+        template: __webpack_require__(465),
+        styles: [__webpack_require__(410)]
     }),
     __metadata("design:paramtypes", [])
 ], ButtonSampleComponent);
@@ -252,8 +296,7 @@ ButtonSampleComponent = __decorate([
 //# sourceMappingURL=button-sample.component.js.map
 
 /***/ }),
-
-/***/ 343:
+/* 100 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -294,8 +337,8 @@ var CarouselSampleComponent = (function () {
 CarouselSampleComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-carousel-sample',
-        template: __webpack_require__(816),
-        styles: [__webpack_require__(760)],
+        template: __webpack_require__(466),
+        styles: [__webpack_require__(411)],
     }),
     __metadata("design:paramtypes", [])
 ], CarouselSampleComponent);
@@ -303,8 +346,7 @@ CarouselSampleComponent = __decorate([
 //# sourceMappingURL=carousel-sample.component.js.map
 
 /***/ }),
-
-/***/ 344:
+/* 101 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -337,8 +379,8 @@ var CollapseSampleComponent = (function () {
 CollapseSampleComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-collapse-sample',
-        template: __webpack_require__(817),
-        styles: [__webpack_require__(761)]
+        template: __webpack_require__(467),
+        styles: [__webpack_require__(412)]
     }),
     __metadata("design:paramtypes", [])
 ], CollapseSampleComponent);
@@ -346,8 +388,7 @@ CollapseSampleComponent = __decorate([
 //# sourceMappingURL=collapse-sample.component.js.map
 
 /***/ }),
-
-/***/ 345:
+/* 102 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -400,26 +441,6 @@ var DateSampleComponent = (function () {
     DateSampleComponent.prototype.disableTomorrow = function () {
         this.dateDisabled = [{ date: this.tomorrow, mode: 'day' }];
     };
-    // todo: implement custom class cases
-    DateSampleComponent.prototype.getDayClass = function (date, mode) {
-        if (mode === 'day') {
-            var dayToCheck = new Date(date).setHours(0, 0, 0, 0);
-            for (var _i = 0, _a = this.events; _i < _a.length; _i++) {
-                var event = _a[_i];
-                var currentDay = new Date(event.date).setHours(0, 0, 0, 0);
-                if (dayToCheck === currentDay) {
-                    return event.status;
-                }
-            }
-        }
-        return '';
-    };
-    DateSampleComponent.prototype.disabled = function (date, mode) {
-        return (mode === 'day' && (date.getDay() === 0 || date.getDay() === 6));
-    };
-    DateSampleComponent.prototype.open = function () {
-        this.opened = !this.opened;
-    };
     DateSampleComponent.prototype.clear = function () {
         this.dt = void 0;
         this.dateDisabled = undefined;
@@ -434,8 +455,8 @@ var DateSampleComponent = (function () {
 DateSampleComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-date-sample',
-        template: __webpack_require__(818),
-        styles: [__webpack_require__(762)]
+        template: __webpack_require__(468),
+        styles: [__webpack_require__(413)]
     }),
     __metadata("design:paramtypes", [])
 ], DateSampleComponent);
@@ -443,8 +464,7 @@ DateSampleComponent = __decorate([
 //# sourceMappingURL=date-sample.component.js.map
 
 /***/ }),
-
-/***/ 346:
+/* 103 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -475,8 +495,8 @@ var DropdownSampleComponent = (function () {
 DropdownSampleComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-dropdown-sample',
-        template: __webpack_require__(819),
-        styles: [__webpack_require__(763)]
+        template: __webpack_require__(469),
+        styles: [__webpack_require__(414)]
     }),
     __metadata("design:paramtypes", [])
 ], DropdownSampleComponent);
@@ -484,13 +504,12 @@ DropdownSampleComponent = __decorate([
 //# sourceMappingURL=dropdown-sample.component.js.map
 
 /***/ }),
-
-/***/ 347:
+/* 104 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap_modal__ = __webpack_require__(509);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ng2_bootstrap_modal__ = __webpack_require__(273);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ModalSampleComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -523,8 +542,8 @@ __decorate([
 ModalSampleComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-modal-sample',
-        template: __webpack_require__(820),
-        styles: [__webpack_require__(764)]
+        template: __webpack_require__(470),
+        styles: [__webpack_require__(415)]
     }),
     __metadata("design:paramtypes", [])
 ], ModalSampleComponent);
@@ -533,8 +552,7 @@ var _a;
 //# sourceMappingURL=modal-sample.component.js.map
 
 /***/ }),
-
-/***/ 348:
+/* 105 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -572,17 +590,13 @@ var PaginationSampleComponent = (function () {
         console.log('Page changed to: ' + event.page);
         console.log('Number items per page: ' + event.itemsPerPage);
     };
-    PaginationSampleComponent.prototype.page2Changed = function (event) {
-        console.log('Page changed to: ' + event.page);
-        console.log('Number items per page: ' + event.itemsPerPage);
-    };
     return PaginationSampleComponent;
 }());
 PaginationSampleComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-pagination-sample',
-        template: __webpack_require__(821),
-        styles: [__webpack_require__(765)]
+        template: __webpack_require__(471),
+        styles: [__webpack_require__(416)]
     }),
     __metadata("design:paramtypes", [])
 ], PaginationSampleComponent);
@@ -590,8 +604,7 @@ PaginationSampleComponent = __decorate([
 //# sourceMappingURL=pagination-sample.component.js.map
 
 /***/ }),
-
-/***/ 349:
+/* 106 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -617,8 +630,8 @@ var PopoverSampleComponent = (function () {
 PopoverSampleComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-popover-sample',
-        template: __webpack_require__(822),
-        styles: [__webpack_require__(766)]
+        template: __webpack_require__(472),
+        styles: [__webpack_require__(417)]
     }),
     __metadata("design:paramtypes", [])
 ], PopoverSampleComponent);
@@ -626,8 +639,7 @@ PopoverSampleComponent = __decorate([
 //# sourceMappingURL=popover-sample.component.js.map
 
 /***/ }),
-
-/***/ 350:
+/* 107 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -692,8 +704,8 @@ var ProgressSampleComponent = (function () {
 ProgressSampleComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-progress-sample',
-        template: __webpack_require__(823),
-        styles: [__webpack_require__(767)]
+        template: __webpack_require__(473),
+        styles: [__webpack_require__(418)]
     }),
     __metadata("design:paramtypes", [])
 ], ProgressSampleComponent);
@@ -701,8 +713,7 @@ ProgressSampleComponent = __decorate([
 //# sourceMappingURL=progress-sample.component.js.map
 
 /***/ }),
-
-/***/ 351:
+/* 108 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -751,8 +762,8 @@ var RatingSampleComponent = (function () {
 RatingSampleComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-rating-sample',
-        template: __webpack_require__(824),
-        styles: [__webpack_require__(768)]
+        template: __webpack_require__(474),
+        styles: [__webpack_require__(419)]
     }),
     __metadata("design:paramtypes", [])
 ], RatingSampleComponent);
@@ -760,8 +771,7 @@ RatingSampleComponent = __decorate([
 //# sourceMappingURL=rating-sample.component.js.map
 
 /***/ }),
-
-/***/ 352:
+/* 109 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -817,8 +827,8 @@ var SortableSampleComponent = (function () {
 SortableSampleComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-sortable-sample',
-        template: __webpack_require__(825),
-        styles: [__webpack_require__(769)]
+        template: __webpack_require__(475),
+        styles: [__webpack_require__(420)]
     }),
     __metadata("design:paramtypes", [])
 ], SortableSampleComponent);
@@ -826,8 +836,7 @@ SortableSampleComponent = __decorate([
 //# sourceMappingURL=sortable-sample.component.js.map
 
 /***/ }),
-
-/***/ 353:
+/* 110 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -870,8 +879,8 @@ TabsSampleComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-tabs-sample',
         changeDetection: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ChangeDetectionStrategy"].OnPush,
-        template: __webpack_require__(826),
-        styles: [__webpack_require__(770)]
+        template: __webpack_require__(476),
+        styles: [__webpack_require__(421)]
     }),
     __metadata("design:paramtypes", [])
 ], TabsSampleComponent);
@@ -879,8 +888,7 @@ TabsSampleComponent = __decorate([
 //# sourceMappingURL=tabs-sample.component.js.map
 
 /***/ }),
-
-/***/ 354:
+/* 111 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -914,8 +922,8 @@ var TimepickerSampleComponent = (function () {
 TimepickerSampleComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-timepicker-sample',
-        template: __webpack_require__(827),
-        styles: [__webpack_require__(771)]
+        template: __webpack_require__(477),
+        styles: [__webpack_require__(422)]
     }),
     __metadata("design:paramtypes", [])
 ], TimepickerSampleComponent);
@@ -923,8 +931,7 @@ TimepickerSampleComponent = __decorate([
 //# sourceMappingURL=timepicker-sample.component.js.map
 
 /***/ }),
-
-/***/ 355:
+/* 112 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -951,8 +958,8 @@ var TooltipSampleComponent = (function () {
 TooltipSampleComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-tooltip-sample',
-        template: __webpack_require__(828),
-        styles: [__webpack_require__(772)]
+        template: __webpack_require__(478),
+        styles: [__webpack_require__(423)]
     }),
     __metadata("design:paramtypes", [])
 ], TooltipSampleComponent);
@@ -960,13 +967,12 @@ TooltipSampleComponent = __decorate([
 //# sourceMappingURL=tooltip-sample.component.js.map
 
 /***/ }),
-
-/***/ 356:
+/* 113 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_observable_of__ = __webpack_require__(849);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_observable_of__ = __webpack_require__(500);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_rxjs_add_observable_of__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TypeaheadSampleComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1030,8 +1036,8 @@ var TypeaheadSampleComponent = (function () {
 TypeaheadSampleComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-typeahead-sample',
-        template: __webpack_require__(829),
-        styles: [__webpack_require__(773)]
+        template: __webpack_require__(479),
+        styles: [__webpack_require__(424)]
     }),
     __metadata("design:paramtypes", [])
 ], TypeaheadSampleComponent);
@@ -1039,8 +1045,7 @@ TypeaheadSampleComponent = __decorate([
 //# sourceMappingURL=typeahead-sample.component.js.map
 
 /***/ }),
-
-/***/ 357:
+/* 114 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1066,8 +1071,8 @@ var BsElementsComponent = (function () {
 BsElementsComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-bs-elements',
-        template: __webpack_require__(830),
-        styles: [__webpack_require__(774)]
+        template: __webpack_require__(480),
+        styles: [__webpack_require__(425)]
     }),
     __metadata("design:paramtypes", [])
 ], BsElementsComponent);
@@ -1075,8 +1080,7 @@ BsElementsComponent = __decorate([
 //# sourceMappingURL=bs-elements.component.js.map
 
 /***/ }),
-
-/***/ 358:
+/* 115 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1351,8 +1355,8 @@ var ChartingComponent = (function () {
 ChartingComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-charts',
-        template: __webpack_require__(831),
-        styles: [__webpack_require__(775)]
+        template: __webpack_require__(481),
+        styles: [__webpack_require__(426)]
     }),
     __metadata("design:paramtypes", [])
 ], ChartingComponent);
@@ -1360,8 +1364,7 @@ ChartingComponent = __decorate([
 //# sourceMappingURL=charting.component.js.map
 
 /***/ }),
-
-/***/ 359:
+/* 116 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1388,8 +1391,8 @@ var DashboardComponent = (function () {
 DashboardComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-dashboard',
-        template: __webpack_require__(832),
-        styles: [__webpack_require__(776)]
+        template: __webpack_require__(482),
+        styles: [__webpack_require__(427)]
     }),
     __metadata("design:paramtypes", [])
 ], DashboardComponent);
@@ -1397,8 +1400,7 @@ DashboardComponent = __decorate([
 //# sourceMappingURL=dashboard.component.js.map
 
 /***/ }),
-
-/***/ 360:
+/* 117 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1424,8 +1426,8 @@ var FormsComponent = (function () {
 FormsComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-forms',
-        template: __webpack_require__(833),
-        styles: [__webpack_require__(777)]
+        template: __webpack_require__(483),
+        styles: [__webpack_require__(428)]
     }),
     __metadata("design:paramtypes", [])
 ], FormsComponent);
@@ -1433,8 +1435,7 @@ FormsComponent = __decorate([
 //# sourceMappingURL=forms.component.js.map
 
 /***/ }),
-
-/***/ 361:
+/* 118 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1460,8 +1461,8 @@ var GridComponent = (function () {
 GridComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-grid',
-        template: __webpack_require__(834),
-        styles: [__webpack_require__(778)]
+        template: __webpack_require__(484),
+        styles: [__webpack_require__(429)]
     }),
     __metadata("design:paramtypes", [])
 ], GridComponent);
@@ -1469,8 +1470,7 @@ GridComponent = __decorate([
 //# sourceMappingURL=grid.component.js.map
 
 /***/ }),
-
-/***/ 362:
+/* 119 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1496,8 +1496,8 @@ var TablesComponent = (function () {
 TablesComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-tables',
-        template: __webpack_require__(839),
-        styles: [__webpack_require__(781)]
+        template: __webpack_require__(489),
+        styles: [__webpack_require__(432)]
     }),
     __metadata("design:paramtypes", [])
 ], TablesComponent);
@@ -1505,8 +1505,7 @@ TablesComponent = __decorate([
 //# sourceMappingURL=tables.component.js.map
 
 /***/ }),
-
-/***/ 363:
+/* 120 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1532,8 +1531,8 @@ var LoginComponent = (function () {
 LoginComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-login',
-        template: __webpack_require__(840),
-        styles: [__webpack_require__(782)]
+        template: __webpack_require__(490),
+        styles: [__webpack_require__(433)]
     }),
     __metadata("design:paramtypes", [])
 ], LoginComponent);
@@ -1541,20 +1540,19 @@ LoginComponent = __decorate([
 //# sourceMappingURL=login.component.js.map
 
 /***/ }),
-
-/***/ 364:
+/* 121 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(316);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(95);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__ = __webpack_require__(851);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__ = __webpack_require__(502);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_catch__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(541);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__ = __webpack_require__(305);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_operator_map__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_observable_throw__ = __webpack_require__(850);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_observable_throw__ = __webpack_require__(501);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_observable_throw___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_observable_throw__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SidebarService; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -1616,8 +1614,7 @@ var _a;
 //# sourceMappingURL=sidebar.service.js.map
 
 /***/ }),
-
-/***/ 365:
+/* 122 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1643,8 +1640,8 @@ var SignupComponent = (function () {
 SignupComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-signup',
-        template: __webpack_require__(843),
-        styles: [__webpack_require__(785)]
+        template: __webpack_require__(493),
+        styles: [__webpack_require__(436)]
     }),
     __metadata("design:paramtypes", [])
 ], SignupComponent);
@@ -1652,8 +1649,205 @@ SignupComponent = __decorate([
 //# sourceMappingURL=signup.component.js.map
 
 /***/ }),
-
-/***/ 559:
+/* 123 */,
+/* 124 */,
+/* 125 */,
+/* 126 */,
+/* 127 */,
+/* 128 */,
+/* 129 */,
+/* 130 */,
+/* 131 */,
+/* 132 */,
+/* 133 */,
+/* 134 */,
+/* 135 */,
+/* 136 */,
+/* 137 */,
+/* 138 */,
+/* 139 */,
+/* 140 */,
+/* 141 */,
+/* 142 */,
+/* 143 */,
+/* 144 */,
+/* 145 */,
+/* 146 */,
+/* 147 */,
+/* 148 */,
+/* 149 */,
+/* 150 */,
+/* 151 */,
+/* 152 */,
+/* 153 */,
+/* 154 */,
+/* 155 */,
+/* 156 */,
+/* 157 */,
+/* 158 */,
+/* 159 */,
+/* 160 */,
+/* 161 */,
+/* 162 */,
+/* 163 */,
+/* 164 */,
+/* 165 */,
+/* 166 */,
+/* 167 */,
+/* 168 */,
+/* 169 */,
+/* 170 */,
+/* 171 */,
+/* 172 */,
+/* 173 */,
+/* 174 */,
+/* 175 */,
+/* 176 */,
+/* 177 */,
+/* 178 */,
+/* 179 */,
+/* 180 */,
+/* 181 */,
+/* 182 */,
+/* 183 */,
+/* 184 */,
+/* 185 */,
+/* 186 */,
+/* 187 */,
+/* 188 */,
+/* 189 */,
+/* 190 */,
+/* 191 */,
+/* 192 */,
+/* 193 */,
+/* 194 */,
+/* 195 */,
+/* 196 */,
+/* 197 */,
+/* 198 */,
+/* 199 */,
+/* 200 */,
+/* 201 */,
+/* 202 */,
+/* 203 */,
+/* 204 */,
+/* 205 */,
+/* 206 */,
+/* 207 */,
+/* 208 */,
+/* 209 */,
+/* 210 */,
+/* 211 */,
+/* 212 */,
+/* 213 */,
+/* 214 */,
+/* 215 */,
+/* 216 */,
+/* 217 */,
+/* 218 */,
+/* 219 */,
+/* 220 */,
+/* 221 */,
+/* 222 */,
+/* 223 */,
+/* 224 */,
+/* 225 */,
+/* 226 */,
+/* 227 */,
+/* 228 */,
+/* 229 */,
+/* 230 */,
+/* 231 */,
+/* 232 */,
+/* 233 */,
+/* 234 */,
+/* 235 */,
+/* 236 */,
+/* 237 */,
+/* 238 */,
+/* 239 */,
+/* 240 */,
+/* 241 */,
+/* 242 */,
+/* 243 */,
+/* 244 */,
+/* 245 */,
+/* 246 */,
+/* 247 */,
+/* 248 */,
+/* 249 */,
+/* 250 */,
+/* 251 */,
+/* 252 */,
+/* 253 */,
+/* 254 */,
+/* 255 */,
+/* 256 */,
+/* 257 */,
+/* 258 */,
+/* 259 */,
+/* 260 */,
+/* 261 */,
+/* 262 */,
+/* 263 */,
+/* 264 */,
+/* 265 */,
+/* 266 */,
+/* 267 */,
+/* 268 */,
+/* 269 */,
+/* 270 */,
+/* 271 */,
+/* 272 */,
+/* 273 */,
+/* 274 */,
+/* 275 */,
+/* 276 */,
+/* 277 */,
+/* 278 */,
+/* 279 */,
+/* 280 */,
+/* 281 */,
+/* 282 */,
+/* 283 */,
+/* 284 */,
+/* 285 */,
+/* 286 */,
+/* 287 */,
+/* 288 */,
+/* 289 */,
+/* 290 */,
+/* 291 */,
+/* 292 */,
+/* 293 */,
+/* 294 */,
+/* 295 */,
+/* 296 */,
+/* 297 */,
+/* 298 */,
+/* 299 */,
+/* 300 */,
+/* 301 */,
+/* 302 */,
+/* 303 */,
+/* 304 */,
+/* 305 */,
+/* 306 */,
+/* 307 */,
+/* 308 */,
+/* 309 */,
+/* 310 */,
+/* 311 */,
+/* 312 */,
+/* 313 */,
+/* 314 */,
+/* 315 */,
+/* 316 */,
+/* 317 */,
+/* 318 */,
+/* 319 */,
+/* 320 */,
+/* 321 */
 /***/ (function(module, exports) {
 
 function webpackEmptyContext(req) {
@@ -1662,20 +1856,19 @@ function webpackEmptyContext(req) {
 webpackEmptyContext.keys = function() { return []; };
 webpackEmptyContext.resolve = webpackEmptyContext;
 module.exports = webpackEmptyContext;
-webpackEmptyContext.id = 559;
+webpackEmptyContext.id = 321;
 
 
 /***/ }),
-
-/***/ 560:
+/* 322 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(651);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(683);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(701);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__ = __webpack_require__(331);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__app_app_module__ = __webpack_require__(334);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__environments_environment__ = __webpack_require__(352);
 
 
 
@@ -1687,16 +1880,24 @@ __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dyna
 //# sourceMappingURL=main.js.map
 
 /***/ }),
-
-/***/ 681:
+/* 323 */,
+/* 324 */,
+/* 325 */,
+/* 326 */,
+/* 327 */,
+/* 328 */,
+/* 329 */,
+/* 330 */,
+/* 331 */,
+/* 332 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_login_module__ = __webpack_require__(694);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__signup_signup_module__ = __webpack_require__(700);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__dashboard_dashboard_module__ = __webpack_require__(688);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_login_module__ = __webpack_require__(345);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__signup_signup_module__ = __webpack_require__(351);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__dashboard_dashboard_module__ = __webpack_require__(339);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppRoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1736,8 +1937,7 @@ AppRoutingModule = __decorate([
 //# sourceMappingURL=app-routing.module.js.map
 
 /***/ }),
-
-/***/ 682:
+/* 333 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1759,25 +1959,24 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-root',
-        template: __webpack_require__(811),
-        styles: [__webpack_require__(755)]
+        template: __webpack_require__(461),
+        styles: [__webpack_require__(406)]
     })
 ], AppComponent);
 
 //# sourceMappingURL=app.component.js.map
 
 /***/ }),
-
-/***/ 683:
+/* 334 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(134);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(24);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(316);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(682);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_routing_module__ = __webpack_require__(681);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_http__ = __webpack_require__(95);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(333);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__app_routing_module__ = __webpack_require__(332);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1816,34 +2015,33 @@ AppModule = __decorate([
 //# sourceMappingURL=app.module.js.map
 
 /***/ }),
-
-/***/ 684:
+/* 335 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bs_components_component__ = __webpack_require__(341);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__accordion_sample_accordion_sample_component__ = __webpack_require__(339);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__alert_sample_alert_sample_component__ = __webpack_require__(340);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__button_sample_button_sample_component__ = __webpack_require__(342);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__carousel_sample_carousel_sample_component__ = __webpack_require__(343);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__collapse_sample_collapse_sample_component__ = __webpack_require__(344);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__date_sample_date_sample_component__ = __webpack_require__(345);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__dropdown_sample_dropdown_sample_component__ = __webpack_require__(346);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__modal_sample_modal_sample_component__ = __webpack_require__(347);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pagination_sample_pagination_sample_component__ = __webpack_require__(348);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__popover_sample_popover_sample_component__ = __webpack_require__(349);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__progress_sample_progress_sample_component__ = __webpack_require__(350);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__rating_sample_rating_sample_component__ = __webpack_require__(351);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__sortable_sample_sortable_sample_component__ = __webpack_require__(352);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__tabs_sample_tabs_sample_component__ = __webpack_require__(353);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__timepicker_sample_timepicker_sample_component__ = __webpack_require__(354);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__tooltip_sample_tooltip_sample_component__ = __webpack_require__(355);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__typeahead_sample_typeahead_sample_component__ = __webpack_require__(356);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22_ng2_bootstrap__ = __webpack_require__(791);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__bs_components_component__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__accordion_sample_accordion_sample_component__ = __webpack_require__(96);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__alert_sample_alert_sample_component__ = __webpack_require__(97);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__button_sample_button_sample_component__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__carousel_sample_carousel_sample_component__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__collapse_sample_collapse_sample_component__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__date_sample_date_sample_component__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__dropdown_sample_dropdown_sample_component__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__modal_sample_modal_sample_component__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pagination_sample_pagination_sample_component__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__popover_sample_popover_sample_component__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__progress_sample_progress_sample_component__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__rating_sample_rating_sample_component__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__sortable_sample_sortable_sample_component__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__tabs_sample_tabs_sample_component__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__timepicker_sample_timepicker_sample_component__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__tooltip_sample_tooltip_sample_component__ = __webpack_require__(112);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__typeahead_sample_typeahead_sample_component__ = __webpack_require__(113);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22_ng2_bootstrap__ = __webpack_require__(442);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BsComponentModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1929,15 +2127,14 @@ BsComponentModule = __decorate([
 //# sourceMappingURL=bs-components.module.js.map
 
 /***/ }),
-
-/***/ 685:
+/* 336 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__bs_elements_component__ = __webpack_require__(357);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__bs_elements_component__ = __webpack_require__(114);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BsElementsModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -1967,18 +2164,17 @@ BsElementsModule = __decorate([
 //# sourceMappingURL=bs-elements.module.js.map
 
 /***/ }),
-
-/***/ 686:
+/* 337 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_charts__ = __webpack_require__(807);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_charts__ = __webpack_require__(457);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_charts___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_ng2_charts__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__charting_component__ = __webpack_require__(358);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_chart_js_dist_Chart_js__ = __webpack_require__(702);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__charting_component__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_chart_js_dist_Chart_js__ = __webpack_require__(353);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_chart_js_dist_Chart_js___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_chart_js_dist_Chart_js__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ChartingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -2014,38 +2210,37 @@ ChartingModule = __decorate([
 //# sourceMappingURL=charting.module.js.map
 
 /***/ }),
-
-/***/ 687:
+/* 338 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dashboard_component__ = __webpack_require__(359);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home_component__ = __webpack_require__(204);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__charting_charting_component__ = __webpack_require__(358);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__tables_tables_component__ = __webpack_require__(362);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__forms_forms_component__ = __webpack_require__(360);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__bs_elements_bs_elements_component__ = __webpack_require__(357);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__grid_grid_component__ = __webpack_require__(361);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__bs_components_bs_components_component__ = __webpack_require__(341);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__bs_components_accordion_sample_accordion_sample_component__ = __webpack_require__(339);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__bs_components_alert_sample_alert_sample_component__ = __webpack_require__(340);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__bs_components_button_sample_button_sample_component__ = __webpack_require__(342);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__bs_components_carousel_sample_carousel_sample_component__ = __webpack_require__(343);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__bs_components_collapse_sample_collapse_sample_component__ = __webpack_require__(344);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__bs_components_date_sample_date_sample_component__ = __webpack_require__(345);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__bs_components_dropdown_sample_dropdown_sample_component__ = __webpack_require__(346);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__bs_components_modal_sample_modal_sample_component__ = __webpack_require__(347);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__bs_components_pagination_sample_pagination_sample_component__ = __webpack_require__(348);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__bs_components_popover_sample_popover_sample_component__ = __webpack_require__(349);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__bs_components_progress_sample_progress_sample_component__ = __webpack_require__(350);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__bs_components_rating_sample_rating_sample_component__ = __webpack_require__(351);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__bs_components_sortable_sample_sortable_sample_component__ = __webpack_require__(352);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__bs_components_tabs_sample_tabs_sample_component__ = __webpack_require__(353);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__bs_components_timepicker_sample_timepicker_sample_component__ = __webpack_require__(354);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__bs_components_tooltip_sample_tooltip_sample_component__ = __webpack_require__(355);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__bs_components_typeahead_sample_typeahead_sample_component__ = __webpack_require__(356);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dashboard_component__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__home_home_component__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__charting_charting_component__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__tables_tables_component__ = __webpack_require__(119);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__forms_forms_component__ = __webpack_require__(117);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__bs_elements_bs_elements_component__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__grid_grid_component__ = __webpack_require__(118);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__bs_components_bs_components_component__ = __webpack_require__(98);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__bs_components_accordion_sample_accordion_sample_component__ = __webpack_require__(96);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__bs_components_alert_sample_alert_sample_component__ = __webpack_require__(97);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__bs_components_button_sample_button_sample_component__ = __webpack_require__(99);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__bs_components_carousel_sample_carousel_sample_component__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__bs_components_collapse_sample_collapse_sample_component__ = __webpack_require__(101);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__bs_components_date_sample_date_sample_component__ = __webpack_require__(102);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__bs_components_dropdown_sample_dropdown_sample_component__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__bs_components_modal_sample_modal_sample_component__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__bs_components_pagination_sample_pagination_sample_component__ = __webpack_require__(105);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__bs_components_popover_sample_popover_sample_component__ = __webpack_require__(106);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__bs_components_progress_sample_progress_sample_component__ = __webpack_require__(107);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__bs_components_rating_sample_rating_sample_component__ = __webpack_require__(108);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__bs_components_sortable_sample_sortable_sample_component__ = __webpack_require__(109);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__bs_components_tabs_sample_tabs_sample_component__ = __webpack_require__(110);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__bs_components_timepicker_sample_timepicker_sample_component__ = __webpack_require__(111);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__bs_components_tooltip_sample_tooltip_sample_component__ = __webpack_require__(112);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__bs_components_typeahead_sample_typeahead_sample_component__ = __webpack_require__(113);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DashboardRoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2134,24 +2329,23 @@ DashboardRoutingModule = __decorate([
 //# sourceMappingURL=dashboard-routing.module.js.map
 
 /***/ }),
-
-/***/ 688:
+/* 339 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dashboard_routing_module__ = __webpack_require__(687);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_sidebar_sidebar_module__ = __webpack_require__(696);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_topnav_topnav_module__ = __webpack_require__(698);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__home_home_module__ = __webpack_require__(691);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__charting_charting_module__ = __webpack_require__(686);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__tables_tables_module__ = __webpack_require__(692);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__forms_forms_module__ = __webpack_require__(689);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__bs_elements_bs_elements_module__ = __webpack_require__(685);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__grid_grid_module__ = __webpack_require__(690);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__bs_components_bs_components_module__ = __webpack_require__(684);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__dashboard_component__ = __webpack_require__(359);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__dashboard_routing_module__ = __webpack_require__(338);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__shared_sidebar_sidebar_module__ = __webpack_require__(347);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__shared_topnav_topnav_module__ = __webpack_require__(349);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__home_home_module__ = __webpack_require__(342);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__charting_charting_module__ = __webpack_require__(337);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__tables_tables_module__ = __webpack_require__(343);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__forms_forms_module__ = __webpack_require__(340);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__bs_elements_bs_elements_module__ = __webpack_require__(336);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__grid_grid_module__ = __webpack_require__(341);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__bs_components_bs_components_module__ = __webpack_require__(335);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__dashboard_component__ = __webpack_require__(116);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DashboardModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2201,15 +2395,14 @@ DashboardModule = __decorate([
 //# sourceMappingURL=dashboard.module.js.map
 
 /***/ }),
-
-/***/ 689:
+/* 340 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__forms_component__ = __webpack_require__(360);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__forms_component__ = __webpack_require__(117);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FormsModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2239,15 +2432,14 @@ FormsModule = __decorate([
 //# sourceMappingURL=forms.module.js.map
 
 /***/ }),
-
-/***/ 690:
+/* 341 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__grid_component__ = __webpack_require__(361);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__grid_component__ = __webpack_require__(118);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return GridModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2277,16 +2469,15 @@ GridModule = __decorate([
 //# sourceMappingURL=grid.module.js.map
 
 /***/ }),
-
-/***/ 691:
+/* 342 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_bootstrap_alert__ = __webpack_require__(489);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__home_component__ = __webpack_require__(204);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ng2_bootstrap_alert__ = __webpack_require__(253);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__home_component__ = __webpack_require__(46);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomeModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2330,15 +2521,14 @@ HomeModule = __decorate([
 //# sourceMappingURL=home.module.js.map
 
 /***/ }),
-
-/***/ 692:
+/* 343 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tables_component__ = __webpack_require__(362);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__tables_component__ = __webpack_require__(119);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TablesModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2368,14 +2558,13 @@ TablesModule = __decorate([
 //# sourceMappingURL=tables.module.js.map
 
 /***/ }),
-
-/***/ 693:
+/* 344 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_component__ = __webpack_require__(363);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_component__ = __webpack_require__(120);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginRoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2408,15 +2597,14 @@ LoginRoutingModule = __decorate([
 //# sourceMappingURL=login-routing.module.js.map
 
 /***/ }),
-
-/***/ 694:
+/* 345 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_routing_module__ = __webpack_require__(693);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__login_component__ = __webpack_require__(363);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login_routing_module__ = __webpack_require__(344);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__login_component__ = __webpack_require__(120);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2448,13 +2636,12 @@ LoginModule = __decorate([
 //# sourceMappingURL=login.module.js.map
 
 /***/ }),
-
-/***/ 695:
+/* 346 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sidebar_service__ = __webpack_require__(364);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sidebar_service__ = __webpack_require__(121);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SidebarComponent; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2531,8 +2718,8 @@ var SidebarComponent = (function () {
 SidebarComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-sidebar',
-        template: __webpack_require__(841),
-        styles: [__webpack_require__(783)]
+        template: __webpack_require__(491),
+        styles: [__webpack_require__(434)]
     }),
     __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__sidebar_service__["a" /* SidebarService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__sidebar_service__["a" /* SidebarService */]) === "function" && _a || Object])
 ], SidebarComponent);
@@ -2541,17 +2728,16 @@ var _a;
 //# sourceMappingURL=sidebar.component.js.map
 
 /***/ }),
-
-/***/ 696:
+/* 347 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sidebar_component__ = __webpack_require__(695);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_bootstrap_collapse__ = __webpack_require__(227);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__sidebar_service__ = __webpack_require__(364);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__sidebar_component__ = __webpack_require__(346);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_bootstrap_collapse__ = __webpack_require__(69);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__sidebar_service__ = __webpack_require__(121);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SidebarModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2586,8 +2772,7 @@ SidebarModule = __decorate([
 //# sourceMappingURL=sidebar.module.js.map
 
 /***/ }),
-
-/***/ 697:
+/* 348 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2625,8 +2810,8 @@ var TopnavComponent = (function () {
 TopnavComponent = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'app-topnav',
-        template: __webpack_require__(842),
-        styles: [__webpack_require__(784)]
+        template: __webpack_require__(492),
+        styles: [__webpack_require__(435)]
     }),
     __metadata("design:paramtypes", [])
 ], TopnavComponent);
@@ -2634,17 +2819,16 @@ TopnavComponent = __decorate([
 //# sourceMappingURL=topnav.component.js.map
 
 /***/ }),
-
-/***/ 698:
+/* 349 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__topnav_component__ = __webpack_require__(697);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_bootstrap_dropdown__ = __webpack_require__(508);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ng2_bootstrap_collapse__ = __webpack_require__(227);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__topnav_component__ = __webpack_require__(348);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_router__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ng2_bootstrap_dropdown__ = __webpack_require__(272);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_ng2_bootstrap_collapse__ = __webpack_require__(69);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TopnavModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2679,14 +2863,13 @@ TopnavModule = __decorate([
 //# sourceMappingURL=topnav.module.js.map
 
 /***/ }),
-
-/***/ 699:
+/* 350 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(18);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__signup_component__ = __webpack_require__(365);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__signup_component__ = __webpack_require__(122);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SignupRoutingModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2719,15 +2902,14 @@ SignupRoutingModule = __decorate([
 //# sourceMappingURL=signup-routing.module.js.map
 
 /***/ }),
-
-/***/ 700:
+/* 351 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__signup_routing_module__ = __webpack_require__(699);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__signup_component__ = __webpack_require__(365);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__(3);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__signup_routing_module__ = __webpack_require__(350);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__signup_component__ = __webpack_require__(122);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SignupModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2759,8 +2941,7 @@ SignupModule = __decorate([
 //# sourceMappingURL=signup.module.js.map
 
 /***/ }),
-
-/***/ 701:
+/* 352 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -2776,11 +2957,63 @@ var environment = {
 //# sourceMappingURL=environment.js.map
 
 /***/ }),
-
-/***/ 755:
+/* 353 */,
+/* 354 */,
+/* 355 */,
+/* 356 */,
+/* 357 */,
+/* 358 */,
+/* 359 */,
+/* 360 */,
+/* 361 */,
+/* 362 */,
+/* 363 */,
+/* 364 */,
+/* 365 */,
+/* 366 */,
+/* 367 */,
+/* 368 */,
+/* 369 */,
+/* 370 */,
+/* 371 */,
+/* 372 */,
+/* 373 */,
+/* 374 */,
+/* 375 */,
+/* 376 */,
+/* 377 */,
+/* 378 */,
+/* 379 */,
+/* 380 */,
+/* 381 */,
+/* 382 */,
+/* 383 */,
+/* 384 */,
+/* 385 */,
+/* 386 */,
+/* 387 */,
+/* 388 */,
+/* 389 */,
+/* 390 */,
+/* 391 */,
+/* 392 */,
+/* 393 */,
+/* 394 */,
+/* 395 */,
+/* 396 */,
+/* 397 */,
+/* 398 */,
+/* 399 */,
+/* 400 */,
+/* 401 */,
+/* 402 */,
+/* 403 */,
+/* 404 */,
+/* 405 */,
+/* 406 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)();
+exports = module.exports = __webpack_require__(2)();
 // imports
 
 
@@ -2794,11 +3027,10 @@ exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":
 module.exports = module.exports.toString();
 
 /***/ }),
-
-/***/ 756:
+/* 407 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)();
+exports = module.exports = __webpack_require__(2)();
 // imports
 
 
@@ -2812,11 +3044,10 @@ exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":
 module.exports = module.exports.toString();
 
 /***/ }),
-
-/***/ 757:
+/* 408 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)();
+exports = module.exports = __webpack_require__(2)();
 // imports
 
 
@@ -2830,11 +3061,10 @@ exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":
 module.exports = module.exports.toString();
 
 /***/ }),
-
-/***/ 758:
+/* 409 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)();
+exports = module.exports = __webpack_require__(2)();
 // imports
 
 
@@ -2848,11 +3078,10 @@ exports.push([module.i, "\n", "", {"version":3,"sources":[],"names":[],"mappings
 module.exports = module.exports.toString();
 
 /***/ }),
-
-/***/ 759:
+/* 410 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)();
+exports = module.exports = __webpack_require__(2)();
 // imports
 
 
@@ -2866,11 +3095,10 @@ exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":
 module.exports = module.exports.toString();
 
 /***/ }),
-
-/***/ 760:
+/* 411 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)();
+exports = module.exports = __webpack_require__(2)();
 // imports
 
 
@@ -2884,11 +3112,10 @@ exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":
 module.exports = module.exports.toString();
 
 /***/ }),
-
-/***/ 761:
+/* 412 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)();
+exports = module.exports = __webpack_require__(2)();
 // imports
 
 
@@ -2902,16 +3129,15 @@ exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":
 module.exports = module.exports.toString();
 
 /***/ }),
-
-/***/ 762:
+/* 413 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)();
+exports = module.exports = __webpack_require__(2)();
 // imports
 
 
 // module
-exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":"","file":"date-sample.component.scss","sourceRoot":""}]);
+exports.push([module.i, ".full button span {\n  background-color: limegreen;\n  border-radius: 32px;\n  color: black; }\n\n.partially button span {\n  background-color: orange;\n  border-radius: 32px;\n  color: black; }\n", "", {"version":3,"sources":["/mnt/Data/DevPackages/SBAdBs4Ng2/src/app/dashboard/bs-components/date-sample/src/app/dashboard/bs-components/date-sample/date-sample.component.scss"],"names":[],"mappings":"AAAE;EACE,4BAA2B;EAC3B,oBAAmB;EACnB,aAAY,EACb;;AAED;EACE,yBAAwB;EACxB,oBAAmB;EACnB,aAAY,EACb","file":"date-sample.component.scss","sourcesContent":["  .full button span {\n    background-color: limegreen;\n    border-radius: 32px;\n    color: black;\n  }\n  \n  .partially button span {\n    background-color: orange;\n    border-radius: 32px;\n    color: black;\n  }"],"sourceRoot":""}]);
 
 // exports
 
@@ -2920,11 +3146,10 @@ exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":
 module.exports = module.exports.toString();
 
 /***/ }),
-
-/***/ 763:
+/* 414 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)();
+exports = module.exports = __webpack_require__(2)();
 // imports
 
 
@@ -2938,11 +3163,10 @@ exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":
 module.exports = module.exports.toString();
 
 /***/ }),
-
-/***/ 764:
+/* 415 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)();
+exports = module.exports = __webpack_require__(2)();
 // imports
 
 
@@ -2956,11 +3180,10 @@ exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":
 module.exports = module.exports.toString();
 
 /***/ }),
-
-/***/ 765:
+/* 416 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)();
+exports = module.exports = __webpack_require__(2)();
 // imports
 
 
@@ -2974,11 +3197,10 @@ exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":
 module.exports = module.exports.toString();
 
 /***/ }),
-
-/***/ 766:
+/* 417 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)();
+exports = module.exports = __webpack_require__(2)();
 // imports
 
 
@@ -2992,11 +3214,10 @@ exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":
 module.exports = module.exports.toString();
 
 /***/ }),
-
-/***/ 767:
+/* 418 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)();
+exports = module.exports = __webpack_require__(2)();
 // imports
 
 
@@ -3010,11 +3231,10 @@ exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":
 module.exports = module.exports.toString();
 
 /***/ }),
-
-/***/ 768:
+/* 419 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)();
+exports = module.exports = __webpack_require__(2)();
 // imports
 
 
@@ -3028,11 +3248,10 @@ exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":
 module.exports = module.exports.toString();
 
 /***/ }),
-
-/***/ 769:
+/* 420 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)();
+exports = module.exports = __webpack_require__(2)();
 // imports
 
 
@@ -3046,11 +3265,10 @@ exports.push([module.i, " ", "", {"version":3,"sources":[],"names":[],"mappings"
 module.exports = module.exports.toString();
 
 /***/ }),
-
-/***/ 770:
+/* 421 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)();
+exports = module.exports = __webpack_require__(2)();
 // imports
 
 
@@ -3064,11 +3282,10 @@ exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":
 module.exports = module.exports.toString();
 
 /***/ }),
-
-/***/ 771:
+/* 422 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)();
+exports = module.exports = __webpack_require__(2)();
 // imports
 
 
@@ -3082,11 +3299,10 @@ exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":
 module.exports = module.exports.toString();
 
 /***/ }),
-
-/***/ 772:
+/* 423 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)();
+exports = module.exports = __webpack_require__(2)();
 // imports
 
 
@@ -3100,11 +3316,10 @@ exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":
 module.exports = module.exports.toString();
 
 /***/ }),
-
-/***/ 773:
+/* 424 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)();
+exports = module.exports = __webpack_require__(2)();
 // imports
 
 
@@ -3118,11 +3333,10 @@ exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":
 module.exports = module.exports.toString();
 
 /***/ }),
-
-/***/ 774:
+/* 425 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)();
+exports = module.exports = __webpack_require__(2)();
 // imports
 
 
@@ -3136,11 +3350,10 @@ exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":
 module.exports = module.exports.toString();
 
 /***/ }),
-
-/***/ 775:
+/* 426 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)();
+exports = module.exports = __webpack_require__(2)();
 // imports
 
 
@@ -3154,11 +3367,10 @@ exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":
 module.exports = module.exports.toString();
 
 /***/ }),
-
-/***/ 776:
+/* 427 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)();
+exports = module.exports = __webpack_require__(2)();
 // imports
 
 
@@ -3172,11 +3384,10 @@ exports.push([module.i, ".container {\n  position: relative;\n  margin-left: aut
 module.exports = module.exports.toString();
 
 /***/ }),
-
-/***/ 777:
+/* 428 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)();
+exports = module.exports = __webpack_require__(2)();
 // imports
 
 
@@ -3190,11 +3401,10 @@ exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":
 module.exports = module.exports.toString();
 
 /***/ }),
-
-/***/ 778:
+/* 429 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)();
+exports = module.exports = __webpack_require__(2)();
 // imports
 
 
@@ -3208,11 +3418,10 @@ exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":
 module.exports = module.exports.toString();
 
 /***/ }),
-
-/***/ 779:
+/* 430 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)();
+exports = module.exports = __webpack_require__(2)();
 // imports
 
 
@@ -3226,11 +3435,10 @@ exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":
 module.exports = module.exports.toString();
 
 /***/ }),
-
-/***/ 780:
+/* 431 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)();
+exports = module.exports = __webpack_require__(2)();
 // imports
 
 
@@ -3244,11 +3452,10 @@ exports.push([module.i, "body {\n  -ms-overflow-x: hidden;\n  overflow-x: hidden
 module.exports = module.exports.toString();
 
 /***/ }),
-
-/***/ 781:
+/* 432 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)();
+exports = module.exports = __webpack_require__(2)();
 // imports
 
 
@@ -3262,11 +3469,10 @@ exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":
 module.exports = module.exports.toString();
 
 /***/ }),
-
-/***/ 782:
+/* 433 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)();
+exports = module.exports = __webpack_require__(2)();
 // imports
 
 
@@ -3280,11 +3486,10 @@ exports.push([module.i, ".login-page {\n  position: absolute;\n  top: 0;\n  left
 module.exports = module.exports.toString();
 
 /***/ }),
-
-/***/ 783:
+/* 434 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)();
+exports = module.exports = __webpack_require__(2)();
 // imports
 
 
@@ -3298,11 +3503,10 @@ exports.push([module.i, ".navbar {\n  position: relative;\n  display: -webkit-bo
 module.exports = module.exports.toString();
 
 /***/ }),
-
-/***/ 784:
+/* 435 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)();
+exports = module.exports = __webpack_require__(2)();
 // imports
 
 
@@ -3316,11 +3520,10 @@ exports.push([module.i, "\n", "", {"version":3,"sources":[],"names":[],"mappings
 module.exports = module.exports.toString();
 
 /***/ }),
-
-/***/ 785:
+/* 436 */
 /***/ (function(module, exports, __webpack_require__) {
 
-exports = module.exports = __webpack_require__(4)();
+exports = module.exports = __webpack_require__(2)();
 // imports
 
 
@@ -3334,227 +3537,240 @@ exports.push([module.i, "", "", {"version":3,"sources":[],"names":[],"mappings":
 module.exports = module.exports.toString();
 
 /***/ }),
-
-/***/ 786:
+/* 437 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./af": 377,
-	"./af.js": 377,
-	"./ar": 383,
-	"./ar-dz": 378,
-	"./ar-dz.js": 378,
-	"./ar-ly": 379,
-	"./ar-ly.js": 379,
-	"./ar-ma": 380,
-	"./ar-ma.js": 380,
-	"./ar-sa": 381,
-	"./ar-sa.js": 381,
-	"./ar-tn": 382,
-	"./ar-tn.js": 382,
-	"./ar.js": 383,
-	"./az": 384,
-	"./az.js": 384,
-	"./be": 385,
-	"./be.js": 385,
-	"./bg": 386,
-	"./bg.js": 386,
-	"./bn": 387,
-	"./bn.js": 387,
-	"./bo": 388,
-	"./bo.js": 388,
-	"./br": 389,
-	"./br.js": 389,
-	"./bs": 390,
-	"./bs.js": 390,
-	"./ca": 391,
-	"./ca.js": 391,
-	"./cs": 392,
-	"./cs.js": 392,
-	"./cv": 393,
-	"./cv.js": 393,
-	"./cy": 394,
-	"./cy.js": 394,
-	"./da": 395,
-	"./da.js": 395,
-	"./de": 397,
-	"./de-at": 396,
-	"./de-at.js": 396,
-	"./de.js": 397,
-	"./dv": 398,
-	"./dv.js": 398,
-	"./el": 399,
-	"./el.js": 399,
-	"./en-au": 400,
-	"./en-au.js": 400,
-	"./en-ca": 401,
-	"./en-ca.js": 401,
-	"./en-gb": 402,
-	"./en-gb.js": 402,
-	"./en-ie": 403,
-	"./en-ie.js": 403,
-	"./en-nz": 404,
-	"./en-nz.js": 404,
-	"./eo": 405,
-	"./eo.js": 405,
-	"./es": 407,
-	"./es-do": 406,
-	"./es-do.js": 406,
-	"./es.js": 407,
-	"./et": 408,
-	"./et.js": 408,
-	"./eu": 409,
-	"./eu.js": 409,
-	"./fa": 410,
-	"./fa.js": 410,
-	"./fi": 411,
-	"./fi.js": 411,
-	"./fo": 412,
-	"./fo.js": 412,
-	"./fr": 415,
-	"./fr-ca": 413,
-	"./fr-ca.js": 413,
-	"./fr-ch": 414,
-	"./fr-ch.js": 414,
-	"./fr.js": 415,
-	"./fy": 416,
-	"./fy.js": 416,
-	"./gd": 417,
-	"./gd.js": 417,
-	"./gl": 418,
-	"./gl.js": 418,
-	"./he": 419,
-	"./he.js": 419,
-	"./hi": 420,
-	"./hi.js": 420,
-	"./hr": 421,
-	"./hr.js": 421,
-	"./hu": 422,
-	"./hu.js": 422,
-	"./hy-am": 423,
-	"./hy-am.js": 423,
-	"./id": 424,
-	"./id.js": 424,
-	"./is": 425,
-	"./is.js": 425,
-	"./it": 426,
-	"./it.js": 426,
-	"./ja": 427,
-	"./ja.js": 427,
-	"./jv": 428,
-	"./jv.js": 428,
-	"./ka": 429,
-	"./ka.js": 429,
-	"./kk": 430,
-	"./kk.js": 430,
-	"./km": 431,
-	"./km.js": 431,
-	"./ko": 432,
-	"./ko.js": 432,
-	"./ky": 433,
-	"./ky.js": 433,
-	"./lb": 434,
-	"./lb.js": 434,
-	"./lo": 435,
-	"./lo.js": 435,
-	"./lt": 436,
-	"./lt.js": 436,
-	"./lv": 437,
-	"./lv.js": 437,
-	"./me": 438,
-	"./me.js": 438,
-	"./mi": 439,
-	"./mi.js": 439,
-	"./mk": 440,
-	"./mk.js": 440,
-	"./ml": 441,
-	"./ml.js": 441,
-	"./mr": 442,
-	"./mr.js": 442,
-	"./ms": 444,
-	"./ms-my": 443,
-	"./ms-my.js": 443,
-	"./ms.js": 444,
-	"./my": 445,
-	"./my.js": 445,
-	"./nb": 446,
-	"./nb.js": 446,
-	"./ne": 447,
-	"./ne.js": 447,
-	"./nl": 449,
-	"./nl-be": 448,
-	"./nl-be.js": 448,
-	"./nl.js": 449,
-	"./nn": 450,
-	"./nn.js": 450,
-	"./pa-in": 451,
-	"./pa-in.js": 451,
-	"./pl": 452,
-	"./pl.js": 452,
-	"./pt": 454,
-	"./pt-br": 453,
-	"./pt-br.js": 453,
-	"./pt.js": 454,
-	"./ro": 455,
-	"./ro.js": 455,
-	"./ru": 456,
-	"./ru.js": 456,
-	"./se": 457,
-	"./se.js": 457,
-	"./si": 458,
-	"./si.js": 458,
-	"./sk": 459,
-	"./sk.js": 459,
-	"./sl": 460,
-	"./sl.js": 460,
-	"./sq": 461,
-	"./sq.js": 461,
-	"./sr": 463,
-	"./sr-cyrl": 462,
-	"./sr-cyrl.js": 462,
-	"./sr.js": 463,
-	"./ss": 464,
-	"./ss.js": 464,
-	"./sv": 465,
-	"./sv.js": 465,
-	"./sw": 466,
-	"./sw.js": 466,
-	"./ta": 467,
-	"./ta.js": 467,
-	"./te": 468,
-	"./te.js": 468,
-	"./tet": 469,
-	"./tet.js": 469,
-	"./th": 470,
-	"./th.js": 470,
-	"./tl-ph": 471,
-	"./tl-ph.js": 471,
-	"./tlh": 472,
-	"./tlh.js": 472,
-	"./tr": 473,
-	"./tr.js": 473,
-	"./tzl": 474,
-	"./tzl.js": 474,
-	"./tzm": 476,
-	"./tzm-latn": 475,
-	"./tzm-latn.js": 475,
-	"./tzm.js": 476,
-	"./uk": 477,
-	"./uk.js": 477,
-	"./uz": 478,
-	"./uz.js": 478,
-	"./vi": 479,
-	"./vi.js": 479,
-	"./x-pseudo": 480,
-	"./x-pseudo.js": 480,
-	"./yo": 481,
-	"./yo.js": 481,
-	"./zh-cn": 482,
-	"./zh-cn.js": 482,
-	"./zh-hk": 483,
-	"./zh-hk.js": 483,
-	"./zh-tw": 484,
-	"./zh-tw.js": 484
+	"./af": 134,
+	"./af.js": 134,
+	"./ar": 141,
+	"./ar-dz": 135,
+	"./ar-dz.js": 135,
+	"./ar-kw": 136,
+	"./ar-kw.js": 136,
+	"./ar-ly": 137,
+	"./ar-ly.js": 137,
+	"./ar-ma": 138,
+	"./ar-ma.js": 138,
+	"./ar-sa": 139,
+	"./ar-sa.js": 139,
+	"./ar-tn": 140,
+	"./ar-tn.js": 140,
+	"./ar.js": 141,
+	"./az": 142,
+	"./az.js": 142,
+	"./be": 143,
+	"./be.js": 143,
+	"./bg": 144,
+	"./bg.js": 144,
+	"./bn": 145,
+	"./bn.js": 145,
+	"./bo": 146,
+	"./bo.js": 146,
+	"./br": 147,
+	"./br.js": 147,
+	"./bs": 148,
+	"./bs.js": 148,
+	"./ca": 149,
+	"./ca.js": 149,
+	"./cs": 150,
+	"./cs.js": 150,
+	"./cv": 151,
+	"./cv.js": 151,
+	"./cy": 152,
+	"./cy.js": 152,
+	"./da": 153,
+	"./da.js": 153,
+	"./de": 156,
+	"./de-at": 154,
+	"./de-at.js": 154,
+	"./de-ch": 155,
+	"./de-ch.js": 155,
+	"./de.js": 156,
+	"./dv": 157,
+	"./dv.js": 157,
+	"./el": 158,
+	"./el.js": 158,
+	"./en-au": 159,
+	"./en-au.js": 159,
+	"./en-ca": 160,
+	"./en-ca.js": 160,
+	"./en-gb": 161,
+	"./en-gb.js": 161,
+	"./en-ie": 162,
+	"./en-ie.js": 162,
+	"./en-nz": 163,
+	"./en-nz.js": 163,
+	"./eo": 164,
+	"./eo.js": 164,
+	"./es": 166,
+	"./es-do": 165,
+	"./es-do.js": 165,
+	"./es.js": 166,
+	"./et": 167,
+	"./et.js": 167,
+	"./eu": 168,
+	"./eu.js": 168,
+	"./fa": 169,
+	"./fa.js": 169,
+	"./fi": 170,
+	"./fi.js": 170,
+	"./fo": 171,
+	"./fo.js": 171,
+	"./fr": 174,
+	"./fr-ca": 172,
+	"./fr-ca.js": 172,
+	"./fr-ch": 173,
+	"./fr-ch.js": 173,
+	"./fr.js": 174,
+	"./fy": 175,
+	"./fy.js": 175,
+	"./gd": 176,
+	"./gd.js": 176,
+	"./gl": 177,
+	"./gl.js": 177,
+	"./gom-latn": 178,
+	"./gom-latn.js": 178,
+	"./he": 179,
+	"./he.js": 179,
+	"./hi": 180,
+	"./hi.js": 180,
+	"./hr": 181,
+	"./hr.js": 181,
+	"./hu": 182,
+	"./hu.js": 182,
+	"./hy-am": 183,
+	"./hy-am.js": 183,
+	"./id": 184,
+	"./id.js": 184,
+	"./is": 185,
+	"./is.js": 185,
+	"./it": 186,
+	"./it.js": 186,
+	"./ja": 187,
+	"./ja.js": 187,
+	"./jv": 188,
+	"./jv.js": 188,
+	"./ka": 189,
+	"./ka.js": 189,
+	"./kk": 190,
+	"./kk.js": 190,
+	"./km": 191,
+	"./km.js": 191,
+	"./kn": 192,
+	"./kn.js": 192,
+	"./ko": 193,
+	"./ko.js": 193,
+	"./ky": 194,
+	"./ky.js": 194,
+	"./lb": 195,
+	"./lb.js": 195,
+	"./lo": 196,
+	"./lo.js": 196,
+	"./lt": 197,
+	"./lt.js": 197,
+	"./lv": 198,
+	"./lv.js": 198,
+	"./me": 199,
+	"./me.js": 199,
+	"./mi": 200,
+	"./mi.js": 200,
+	"./mk": 201,
+	"./mk.js": 201,
+	"./ml": 202,
+	"./ml.js": 202,
+	"./mr": 203,
+	"./mr.js": 203,
+	"./ms": 205,
+	"./ms-my": 204,
+	"./ms-my.js": 204,
+	"./ms.js": 205,
+	"./my": 206,
+	"./my.js": 206,
+	"./nb": 207,
+	"./nb.js": 207,
+	"./ne": 208,
+	"./ne.js": 208,
+	"./nl": 210,
+	"./nl-be": 209,
+	"./nl-be.js": 209,
+	"./nl.js": 210,
+	"./nn": 211,
+	"./nn.js": 211,
+	"./pa-in": 212,
+	"./pa-in.js": 212,
+	"./pl": 213,
+	"./pl.js": 213,
+	"./pt": 215,
+	"./pt-br": 214,
+	"./pt-br.js": 214,
+	"./pt.js": 215,
+	"./ro": 216,
+	"./ro.js": 216,
+	"./ru": 217,
+	"./ru.js": 217,
+	"./sd": 218,
+	"./sd.js": 218,
+	"./se": 219,
+	"./se.js": 219,
+	"./si": 220,
+	"./si.js": 220,
+	"./sk": 221,
+	"./sk.js": 221,
+	"./sl": 222,
+	"./sl.js": 222,
+	"./sq": 223,
+	"./sq.js": 223,
+	"./sr": 225,
+	"./sr-cyrl": 224,
+	"./sr-cyrl.js": 224,
+	"./sr.js": 225,
+	"./ss": 226,
+	"./ss.js": 226,
+	"./sv": 227,
+	"./sv.js": 227,
+	"./sw": 228,
+	"./sw.js": 228,
+	"./ta": 229,
+	"./ta.js": 229,
+	"./te": 230,
+	"./te.js": 230,
+	"./tet": 231,
+	"./tet.js": 231,
+	"./th": 232,
+	"./th.js": 232,
+	"./tl-ph": 233,
+	"./tl-ph.js": 233,
+	"./tlh": 234,
+	"./tlh.js": 234,
+	"./tr": 235,
+	"./tr.js": 235,
+	"./tzl": 236,
+	"./tzl.js": 236,
+	"./tzm": 238,
+	"./tzm-latn": 237,
+	"./tzm-latn.js": 237,
+	"./tzm.js": 238,
+	"./uk": 239,
+	"./uk.js": 239,
+	"./ur": 240,
+	"./ur.js": 240,
+	"./uz": 242,
+	"./uz-latn": 241,
+	"./uz-latn.js": 241,
+	"./uz.js": 242,
+	"./vi": 243,
+	"./vi.js": 243,
+	"./x-pseudo": 244,
+	"./x-pseudo.js": 244,
+	"./yo": 245,
+	"./yo.js": 245,
+	"./zh-cn": 246,
+	"./zh-cn.js": 246,
+	"./zh-hk": 247,
+	"./zh-hk.js": 247,
+	"./zh-tw": 248,
+	"./zh-tw.js": 248
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -3570,249 +3786,280 @@ webpackContext.keys = function webpackContextKeys() {
 };
 webpackContext.resolve = webpackContextResolve;
 module.exports = webpackContext;
-webpackContext.id = 786;
+webpackContext.id = 437;
 
 
 /***/ }),
-
-/***/ 811:
+/* 438 */,
+/* 439 */,
+/* 440 */,
+/* 441 */,
+/* 442 */,
+/* 443 */,
+/* 444 */,
+/* 445 */,
+/* 446 */,
+/* 447 */,
+/* 448 */,
+/* 449 */,
+/* 450 */,
+/* 451 */,
+/* 452 */,
+/* 453 */,
+/* 454 */,
+/* 455 */,
+/* 456 */,
+/* 457 */,
+/* 458 */,
+/* 459 */,
+/* 460 */,
+/* 461 */
 /***/ (function(module, exports) {
 
 module.exports = "<router-outlet></router-outlet>\n"
 
 /***/ }),
-
-/***/ 812:
+/* 462 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"content-header\">\n  <h1>Accordion\n    <a target=\"_blank\" href=\"http://valor-software.com/ng2-bootstrap/#/accordion\">\n      <img alt=\"\" src=\"assets/img//link-doc.png\">\n    </a>\n  </h1>\n</div>\n<div class=\"content-box\" id=\"content\">\n  <div class=\"section\" id=\"example\">\n    <div class=\"item\">\n      <p>Displays collapsible content panels for presenting information in a limited amount of space</p>\n      <p>The <strong>accordion component</strong> builds on top of the collapse directive to provide a list of items, with collapsible\n        bodies that are collapsed or expanded by clicking on the item's header.</p>\n    </div>\n  </div>\n</div>\n<accordion>\n  <accordion-group heading=\"Static Header, initially expanded\">\n    This content is straight in the template.\n  </accordion-group>\n  <accordion-group #group>\n    <div accordion-heading>\n      I can have markup, too!\n      <i class=\"pull-right float-xs-right glyphicon\" [ngClass]=\"{'glyphicon-chevron-down': group?.isOpen, 'glyphicon-chevron-right': !group?.isOpen}\"></i>\n    </div>\n    This is just some content to illustrate fancy headings.\n  </accordion-group>\n  <accordion-group heading=\"Content 1\">\n    <p>Content 1</p>\n  </accordion-group>\n  <accordion-group heading=\"Content 2\">\n    <p>Content 2</p>\n  </accordion-group>\n</accordion>"
 
 /***/ }),
-
-/***/ 813:
+/* 463 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"content-header\">\n  <h1>Alerts\n    <a target=\"_blank\" href=\"http://valor-software.com/ng2-bootstrap/#/alerts\">\n      <img alt=\"\" src=\"assets/img//link-doc.png\">\n    </a>\n  </h1>\n</div>\n<div class=\"content-box\" id=\"content\">\n  <div class=\"section\" id=\"example\">\n    <div class=\"item\">\n      <p>Provides contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>\n    </div>\n  </div>\n  <p>Alerts are available for any length of text, as well as an optional dismiss\n    button. For proper styling, use one of the four <strong>required</strong>\n    contextual classes (e.g., <code>.alert-success</code>). For inline\n    dismissal, use the <code>dismissproperty</code>.</p>\n</div>\n<div *ngFor=\"let alert of alerts\">\n  <alert [type]=\"alert.type\" dismissible=\"true\">{{ alert.msg }}</alert>\n</div>\n<button type=\"button\" class=\"btn btn-primary\" (click)=\"reset()\">Reset</button>\n"
 
 /***/ }),
-
-/***/ 814:
+/* 464 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container-fluid\">\n  <!-- Page Heading -->\n  <div class=\"row\">\n    <div class=\"col-xl-12\">\n      <h2 class=\"page-header\">\n        NG2-Bootstrap\n      </h2>\n      <ol class=\"breadcrumb\">\n        <li class=\"breadcrumb-item\">\n          <i class=\"fa fa-dashboard\"></i>\n          <a routerLink=\"/dashboard/home\">Dashboard</a>\n        </li>\n        <li class=\"active breadcrumb-item\">\n          <i class=\"fa fa-th-list\"></i> ng2-bootstrap\n        </li>\n      </ol>\n    </div>\n  </div>\n  <div class=\"col-sm-12\">\n    <div class=\"card card-block\">\n      <h4 class=\"card-title\">Bootstrap components for Angular </h4>\n      <p class=\"card-text\">\n        A demonstration of the components available in ng2-bootstrap from\n        <a href=\"https://github.com/valor-software/ng2-bootstrap\" target=\"_blank\" class=\"card-link\">valour-software</a>\n      </p>\n      <p>\n        Each component is a minimal sample demonstration only. Whilst I endevour to keep these in sync with the latest versions from\n        valor software the user is strongly encouraged to follow each demos link. This will take you to the relevant ng2-bootstrap\n        page where the full demo, information and usage instructions are provided.\n      </p>\n      <p><em>Note</em>: Bootstrap 4 does not include glyphicons anymore, so if you want to use that font, you will need to add\n        a link to <a href=\"https://github.com/valor-software/ng2-bootstrap/blob/master/demo/src/assets/css/glyphicons.css\"><code>glyphicons.css</code></a>.\n        This package has been built using Font Awesome and all the icons changed to the nearest Font Awesome equivelent.</p>\n\n    </div>\n    <div class=\"card card-block\">\n      <router-outlet></router-outlet>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
-
-/***/ 815:
+/* 465 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"content-header\">\n  <h1>Buttons\n    <a target=\"_blank\" href=\"http://valor-software.com/ng2-bootstrap/#/buttons\">\n      <img alt=\"\" src=\"assets/img//link-doc.png\">\n    </a>\n  </h1>\n</div>\n<div class=\"content-box\" id=\"content\">\n  <div class=\"section\" id=\"example\">\n    <div class=\"item\">\n      <p>There are two directives that can make a group of buttons behave like a set of checkboxes, radio buttons, or a hybrid where radio buttons can be unchecked.</p>\n    </div>\n  </div>\n    <p>Radio buttons with checked/unchecked states.</p>\n</div>\n<pre class=\"card card-block card-header\">{{radioModel || 'null'}}</pre>\n<div class=\"btn-group\">\n  <label class=\"btn btn-primary\" [(ngModel)]=\"radioModel\"\n         btnRadio=\"Left\">Left</label>\n  <label class=\"btn btn-primary\" [(ngModel)]=\"radioModel\" btnRadio=\"Middle\">Middle</label>\n  <label class=\"btn btn-primary\" [(ngModel)]=\"radioModel\"\n         btnRadio=\"Right\">Right</label>\n</div>\n<div class=\"btn-group\">\n  <label class=\"btn btn-success\" [(ngModel)]=\"radioModel\" btnRadio=\"Left\"\n         uncheckable>Left</label>\n  <label class=\"btn btn-success\" [(ngModel)]=\"radioModel\" btnRadio=\"Middle\"\n         uncheckable>Middle</label>\n  <label class=\"btn btn-success\" [(ngModel)]=\"radioModel\" btnRadio=\"Right\"\n         uncheckable>Right</label>\n</div>"
 
 /***/ }),
-
-/***/ 816:
+/* 466 */
 /***/ (function(module, exports) {
 
 module.exports = "<h1>Carousel\n  <a target=\"_blank\" href=\"http://valor-software.com/ng2-bootstrap/#/carousel\">\n    <img alt=\"\" src=\"assets/img//link-doc.png\">\n  </a>\n</h1>\n<p>A slideshow component for cycling through elements—images or slides of text—like a carousel. <em>Nested carousels are not supported.</em></p>\n<h3>\n  Examples\n</h3>\n<hr>\n<h4>Optional captions:</h4>\n<p>Add captions to your slides easily with the <code>.carousel-caption</code> element within any <code>&lt;slide&gt;</code>.\n  Place just about any optional HTML within there and it will be automatically aligned and formatted.</p>\n<div class=\"container\">\n  <carousel>\n    <slide>\n      <img src=\"assets/img/slider0.jpg\" alt=\"First slide\">\n      <div class=\"carousel-caption\">\n        <h3>Reception </h3>\n        <p>Modern office reception area.</p>\n      </div>\n    </slide>\n    <slide>\n      <img src=\"assets/img/slider1.jpg\" alt=\"First slide\">\n      <div class=\"carousel-caption\">\n        <h3>Mountains</h3>\n        <p>Here is a stunning mountain scene.</p>\n      </div>\n    </slide>\n    <slide>\n      <img src=\"assets/img/slider2.jpg\" alt=\"First slide\">\n      <div class=\"carousel-caption\">\n        <h3>Rainbow</h3>\n        <p>Idylic home after a shower.</p>\n      </div>\n    </slide>\n    <slide>\n      <img src=\"assets/img/slider3.jpg\" alt=\"First slide\">\n      <div class=\"carousel-caption\">\n        <h3>Golf course</h3>\n        <p>Nice way to relax.</p>\n      </div>\n    </slide>\n  </carousel>\n</div>\n<hr>\n<h4>Dynamic Slides:</h4>\n<div class=\"container\">\n  <carousel [interval]=\"myInterval\" [noWrap]=\"noWrapSlides\" [(activeSlide)]=\"activeSlideIndex\">\n    <slide *ngFor=\"let slide of slides; let index=index\">\n      <img [src]=\"slide.image\">\n\n      <div class=\"carousel-caption\">\n        <h4>Slide {{index}}</h4>\n        <p>{{slide.text}}</p>\n      </div>\n    </slide>\n  </carousel>\n  <br/>\n  <div>\n    <button type=\"button\" class=\"btn btn-info\" (click)=\"addSlide()\">Add Slide\n  </button>\n    <button type=\"button\" class=\"btn btn-info\" (click)=\"removeSlide()\">Remove Current\n  </button>\n    <button type=\"button\" class=\"btn btn-info\" (click)=\"removeSlide(2)\">Remove #3\n  </button>\n  </div>\n  <div>\n    <div class=\"checkbox\">\n      <label><input type=\"checkbox\" [(ngModel)]=\"noWrapSlides\">Disable Slide Looping</label>\n    </div>\n\n    <span>Interval, in milliseconds (Enter a negative number or 0 to stop the interval.): </span>\n    <input type=\"number\" class=\"form-control\" [(ngModel)]=\"myInterval\">\n  </div>\n</div>"
 
 /***/ }),
-
-/***/ 817:
+/* 467 */
 /***/ (function(module, exports) {
 
 module.exports = "<h1>Collapse\n  <a target=\"_blank\" href=\"http://valor-software.com/ng2-bootstrap/#/collapse\">\n    <img alt=\"\" src=\"assets/img//link-doc.png\">\n  </a>\n</h1>\n<p>Collapse component allows you to toggle content on your pages with a bit of JavaScript and some classes. Flexible component that utilizes a handful of classes (from the <strong>required transitions component</strong>(<em>not yet implemented</em>)) for easy toggle behavior.</p>\n<h3>\n  Example with Otional Captions\n</h3>\n<button type=\"button\" class=\"btn btn-primary\"\n        (click)=\"isCollapsed = !isCollapsed\">Toggle collapse\n</button>\n<hr>\n<div (collapsed)=\"collapsed($event)\"\n     (expanded)=\"expanded($event)\"\n     [collapse]=\"isCollapsed\"\n     class=\"card card-block card-header\">\n  <div class=\"well well-lg\">Some content</div>\n</div>\n"
 
 /***/ }),
-
-/***/ 818:
+/* 468 */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Date Picker\n  <a target=\"_blank\" href=\"http://valor-software.com/ng2-bootstrap/#/datepicker\">\n    <img alt=\"\" src=\"assets/img//link-doc.png\">\n  </a>\n</h1>\n<p>Datepicker is a highly configurable component that adds datepicker functionality to your pages. You can customize the date format and language, restrict the selectable date ranges.</p>\n<h3>\n  Example\n</h3>\n<style>\n  .full button span {\n    background-color: limegreen;\n    border-radius: 32px;\n    color: black;\n  }\n  .partially button span {\n    background-color: orange;\n    border-radius: 32px;\n    color: black;\n  }\n</style>\n \n<div>\n  <pre class=\"card card-block card-header\">Selected date is: <em *ngIf=\"dt\">{{ getDate() | date:'fullDate'}}</em></pre>\n  <h4>Inline</h4>\n  <div style=\"display:inline-block; min-height:290px;\">\n    <datepicker [(ngModel)]=\"dt\" [minDate]=\"minDate\" [showWeeks]=\"true\" [dateDisabled]=\"dateDisabled\"></datepicker>\n  </div>\n \n  <hr />\n  <button type=\"button\" class=\"btn btn-sm btn-info\" (click)=\"today()\">Today</button>\n  <button type=\"button\" class=\"btn btn-sm btn-default btn-secondary\" (click)=\"d20090824();\">2009-08-24</button>\n  <button type=\"button\" class=\"btn btn-sm btn-danger\" (click)=\"clear()\">Clear</button>\n  <button type=\"button\" class=\"btn btn-sm btn-default btn-secondary\" (click)=\"toggleMin()\" tooltip=\"After today restriction\">Min date</button>\n  <button type=\"button\" class=\"btn btn-sm btn-default btn-secondary\" (click)=\"disableTomorrow()\">Disable Tomorrow</button>\n</div>"
+module.exports = "<h1>Date Picker\n  <a target=\"_blank\" href=\"http://valor-software.com/ng2-bootstrap/#/datepicker\">\n    <img alt=\"\" src=\"assets/img//link-doc.png\">\n  </a>\n</h1>\n<p>Datepicker is a highly configurable component that adds datepicker functionality to your pages. You can customize the date\n  format and language, restrict the selectable date ranges.</p>\n<h3>\n  Example\n</h3>\n\n<div>\n  <div class=\"card\">\n    <pre class=\"card-block card-header\">Selected date is: <em *ngIf=\"dt\">{{ getDate() | date:'fullDate'}}</em></pre>\n  </div>\n  <h4>Inline</h4>\n  <div style=\"display:inline-block; min-height:290px;\">\n    <datepicker [(ngModel)]=\"dt\" [minDate]=\"minDate\" [showWeeks]=\"true\" [dateDisabled]=\"dateDisabled\"></datepicker>\n  </div>\n\n  <hr />\n  <button type=\"button\" class=\"btn btn-sm btn-info\" (click)=\"today()\">Today</button>\n  <button type=\"button\" class=\"btn btn-sm btn-default btn-secondary\" (click)=\"d20090824();\">2009-08-24</button>\n  <button type=\"button\" class=\"btn btn-sm btn-danger\" (click)=\"clear()\">Clear</button>\n  <button type=\"button\" class=\"btn btn-sm btn-default btn-secondary\" (click)=\"toggleMin()\" tooltip=\"After today restriction\">Min date</button>\n  <button type=\"button\" class=\"btn btn-sm btn-default btn-secondary\" (click)=\"disableTomorrow()\">Disable Tomorrow</button>\n</div>"
 
 /***/ }),
-
-/***/ 819:
+/* 469 */
 /***/ (function(module, exports) {
 
 module.exports = "<h1>Dropdowns\n  <a target=\"_blank\" href=\"http://valor-software.com/ng2-bootstrap/#/dropdowns\">\n    <img alt=\"\" src=\"assets/img//link-doc.png\">\n  </a>\n</h1>\n<p>Dropdowns are toggleable, contextual overlays for displaying lists of links and more. They’re made interactive with the included\n  dropdown directives.</p>\n<h3>\n  Example\n</h3>\n<p>Wrap the dropdown’s toggle (your button or link) and the dropdown menu within <code>dropdown</code>. Dropdowns can be triggered\n  from <code> &lt;a&gt;</code> or <code> &lt;button&gt;</code> elements to better fit your potential needs.</p>\n<hr>\n<h4>Single button dropdowns</h4>\n<p>Any single <code>.btn</code> can be turned into a dropdown toggle with some markup changes. Here’s how you can put them to\n  work with either <code> &lt;button&gt; </code> elements:</p>\n<div class=\"row\">\n  <div class=\"col-sm-2 btn-group\" dropdown>\n    <button id=\"single-button\" type=\"button\" class=\"btn btn-primary\" dropdownToggle>\n    Button dropdown <span class=\"caret\"></span>\n  </button>\n    <ul dropdownMenu role=\"menu\" aria-labelledby=\"single-button\">\n      <li role=\"menuitem\"><a class=\"dropdown-item\" href=\"#\">Action</a></li>\n      <li role=\"menuitem\"><a class=\"dropdown-item\" href=\"#\">Another action</a></li>\n      <li role=\"menuitem\"><a class=\"dropdown-item\" href=\"#\">Something else here</a></li>\n      <li class=\"divider dropdown-divider\"></li>\n      <li role=\"menuitem\"><a class=\"dropdown-item\" href=\"#\">Separated link</a></li>\n    </ul>\n  </div>\n  <div class=\"col-sm-2\">\n    <p>And with <code> &lt;a&gt;</code> elements:</p>\n  </div>\n  <div class=\"col-sm-2\">\n    <span dropdown (onToggle)=\"toggled($event)\">\n      <a href id=\"simple-dropdown\" dropdownToggle>\n        Click me for a dropdown, yo!\n      </a>\n      <ul class=\"dropdown-menu\" dropdownMenu aria-labelledby=\"simple-dropdown\">\n        <li *ngFor=\"let choice of items\">\n          <a class=\"dropdown-item\" href=\"#\">{{choice}}</a>\n        </li>\n      </ul>\n    </span>\n  </div>\n</div>\n<hr>\n<h4>Split button dropdowns</h4>\n<div class=\"btn-group\" dropdown>\n  <button id=\"split-button\" type=\"button\" class=\"btn btn-danger\">Action</button>\n  <button type=\"button\" class=\"btn btn-danger dropdown-toggle-split\" dropdownToggle>\n    <span class=\"caret\"></span>\n    <span class=\"sr-only\">Split button!</span>\n  </button>\n  <ul class=\"dropdown-menu\" dropdownMenu role=\"menu\" aria-labelledby=\"split-button\">\n    <li role=\"menuitem\"><a class=\"dropdown-item\" href=\"#\">Action</a></li>\n    <li role=\"menuitem\"><a class=\"dropdown-item\" href=\"#\">Another action</a></li>\n    <li role=\"menuitem\"><a class=\"dropdown-item\" href=\"#\">Something else here</a></li>\n    <li class=\"divider dropdown-divider\"></li>\n    <li role=\"menuitem\"><a class=\"dropdown-item\" href=\"#\">Separated link</a></li>\n  </ul>\n</div>"
 
 /***/ }),
-
-/***/ 820:
+/* 470 */
 /***/ (function(module, exports) {
 
 module.exports = "<h1>Modals\n  <a target=\"_blank\" href=\"http://valor-software.com/ng2-bootstrap/#/modals\">\n    <img alt=\"\" src=\"assets/img//link-doc.png\">\n  </a>\n</h1>\n<p>Modals are streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults.</p>\n<h3>\n  Examples\n</h3>\n<hr>\n<div class=\"row\">\n  <div class=\"col-sm-2\">\n    <h4>Static modal</h4>\n    <button type=\"button\" class=\"btn btn-primary\" (click)=\"staticModal.show()\">Static modal</button>\n    <div class=\"modal fade\" bsModal #staticModal=\"bs-modal\" [config]=\"{backdrop: 'static'}\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\"\n      aria-hidden=\"true\">\n      <div class=\"modal-dialog modal-sm\">\n        <div class=\"modal-content\">\n          <div class=\"modal-header\">\n            <h4 class=\"modal-title pull-left\">Static modal</h4>\n            <button type=\"button\" class=\"close pull-right\" aria-label=\"Close\" (click)=\"staticModal.hide()\">\n              <span aria-hidden=\"true\">&times;</span>\n            </button>\n          </div>\n          <div class=\"modal-body\">\n            This is static modal, backdrop click will not close it. Click <b>&times;</b> to close modal.\n          </div>\n        </div>\n      </div>\n  </div>\n</div>\n<div class=\"col-sm-3\">\n  <h4>Otional sizes</h4>\n  <!--Large modal-->\n  <button class=\"btn btn-primary\" (click)=\"lgModal.show()\">Large modal</button>\n\n  <div bsModal #lgModal=\"bs-modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"myLargeModalLabel\" aria-hidden=\"true\">\n    <div class=\"modal-dialog modal-lg\">\n      <div class=\"modal-content\">\n        <div class=\"modal-header\">\n          <h4 class=\"modal-title pull-left\">Large modal</h4>\n          <button type=\"button\" class=\"close pull-right\" (click)=\"lgModal.hide()\" aria-label=\"Close\">\n          <span aria-hidden=\"true\">&times;</span>\n        </button>\n        </div>\n        <div class=\"modal-body\">\n          ...\n        </div>\n      </div>\n    </div>\n  </div>\n  <!--Small modal-->\n  <button type=\"button\" class=\"btn btn-primary\" (click)=\"smModal.show()\">Small modal</button>\n\n  <div bsModal #smModal=\"bs-modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\n    <div class=\"modal-dialog modal-sm\">\n      <div class=\"modal-content\">\n        <div class=\"modal-header\">\n          <h4 class=\"modal-title pull-left\">Small modal</h4>\n          <button type=\"button\" class=\"close pull-right\" aria-label=\"Close\" (click)=\"smModal.hide()\">\n          <span aria-hidden=\"true\">&times;</span>\n        </button>\n        </div>\n        <div class=\"modal-body\">\n          ...\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n<div class=\"col-sm-2\">\n  <h4>Child modal</h4>\n  <button type=\"button\" class=\"btn btn-primary\" (click)=\"showChildModal()\">Open child modal</button>\n  <div bsModal #childModal=\"bs-modal\" class=\"modal fade\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"mySmallModalLabel\" aria-hidden=\"true\">\n    <div class=\"modal-dialog modal-sm\">\n      <div class=\"modal-content\">\n        <div class=\"modal-header\">\n          <h4 class=\"modal-title pull-left\">Child modal</h4>\n          <button type=\"button\" class=\"close pull-right\" aria-label=\"Close\" (click)=\"hideChildModal()\">\n          <span aria-hidden=\"true\">&times;</span>\n        </button>\n        </div>\n        <div class=\"modal-body\">\n          I am a child modal, opened from parent component!\n        </div>\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
-
-/***/ 821:
+/* 471 */
 /***/ (function(module, exports) {
 
 module.exports = "<h1>Pagination\n  <a target=\"_blank\" href=\"http://valor-software.com/ng2-bootstrap/#/pagination\">\n    <img alt=\"\" src=\"assets/img//link-doc.png\">\n  </a>\n</h1>\n<p><strong>Pagination</strong> - provide pagination links for your site or app with the multi-page pagination component, or\n  the simpler pager alternative.</p>\n<p><strong>Pager</strong> - quick previous and next links for simple pagination implementations with light markup and styles.\n  It's great for simple sites like blogs or magazines.</p>\n<h3>\n  Examples\n</h3>\n<hr>\n<div class=\"row\">\n  <div class=\"col-sm-4\">\n    <h4>Default</h4>\n    <pagination [totalItems]=\"totalItems\" [(ngModel)]=\"currentPage\" (pageChanged)=\"pageChanged($event)\">\n    </pagination>\n    <pagination [boundaryLinks]=\"true\" [totalItems]=\"totalItems\" [(ngModel)]=\"currentPage\" class=\"pagination-sm\" previousText=\"&lsaquo;\"\n      nextText=\"&rsaquo;\" firstText=\"&laquo;\" lastText=\"&raquo;\">\n      </pagination>\n      <pagination [directionLinks]=\"false\" [boundaryLinks]=\"true\" [totalItems]=\"totalItems\" [(ngModel)]=\"currentPage\">\n      </pagination>\n      <pagination [directionLinks]=\"false\" [totalItems]=\"totalItems\" [(ngModel)]=\"currentPage\" (numPages)=\"smallnumPages = $event\">\n      </pagination>\n      <pre class=\"col-sm-6 card card-block card-header\">The selected page no: {{currentPage}}/{{smallnumPages}}</pre>\n      <br/>\n      <button type=\"button\" class=\"btn btn-info\" (click)=\"setPage(3)\">Set current page to: 3</button>\n  </div>\n  <div class=\"col-sm-4\">\n    <h4>States and Limits</h4>\n    <div class=\"col-sm-4\">\n      <pagination [totalItems]=\"bigTotalItems\" [(ngModel)]=\"bigCurrentPage\" [maxSize]=\"maxSize\" class=\"pagination-sm\" [boundaryLinks]=\"true\"></pagination>\n    </div>\n\n    <div class=\"col-sm-4\">\n      <pagination [totalItems]=\"bigTotalItems\" [(ngModel)]=\"bigCurrentPage\" [maxSize]=\"maxSize\" class=\"pagination-sm\" [boundaryLinks]=\"true\"\n        [rotate]=\"false\" (numPages)=\"numPages = $event\"></pagination>\n    </div>\n    <pre class=\"col-sm-4 card card-block card-header\">Page: {{bigCurrentPage}} / {{numPages}}</pre>\n  </div>\n  <div class=\"col-sm-4\">\n    <h4>Pager</h4>\n    <div style=\"margin: 20px 0;\">\n      <pagination [directionLinks]=\"false\" [totalItems]=\"totalPagerItems\" [(ngModel)]=\"currentPagerPage\" (numPages)=\"smallnumPagerPages = $event\"></pagination>\n    </div>\n\n    <div>\n      <pager [totalItems]=\"totalPagerItems\" [(ngModel)]=\"currentPagerPage\" (pageChanged)=\"pageChanged($event)\" pageBtnClass=\"btn\"\n        itemsPerPage=\"10\"></pager>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
-
-/***/ 822:
+/* 472 */
 /***/ (function(module, exports) {
 
 module.exports = "<h1>Popover\n  <a target=\"_blank\" href=\"http://valor-software.com/ng2-bootstrap/#/popover\">\n    <img alt=\"\" src=\"assets/img//link-doc.png\">\n  </a>\n</h1>\n<p>Add small overlay content, like those found in iOS, to any element for housing secondary information.</p>\n<hr>\n<h3>\n  Examples\n</h3>\n<div class=\"row\">\n  <div class=\"col-md-6\">\n    <h4>Four directions</h4>\n    <p>\n      Four positioning options are available: top, right, bottom, and left aligned.\n    </p>\n    <button type=\"button\" class=\"btn btn-default btn-secondary\" popover=\"Vivamus sagittis lacus vel augue laoreet rutrum faucibus.\"\n      popoverTitle=\"Popover on right\" placement=\"right\">\n      Popover on right\n      </button>\n\n      <button type=\"button\" class=\"btn btn-default btn-secondary\" popover=\"Vivamus sagittis lacus vel augue laoreet rutrum faucibus.\"\n        popoverTitle=\"Popover on top\" placement=\"top\">\n        Popover on top\n        </button>\n\n        <button type=\"button\" class=\"btn btn-default btn-secondary\" popover=\"Vivamus sagittis lacus vel augue laoreet rutrum faucibus.\"\n          popoverTitle=\"Popover on bottom\" placement=\"bottom\">\n          Popover on bottom\n          </button>\n\n          <button type=\"button\" class=\"btn btn-default btn-secondary\" popover=\"Vivamus sagittis lacus vel augue laoreet rutrum faucibus.\"\n            popoverTitle=\"Popover on left\" placement=\"left\">\n            Popover on left\n            </button>\n  </div>\n  <div class=\"col-md-6\">\n    <h4>Dismiss on next click</h4>\n    <p>Use the <code>focus</code> trigger to dismiss popovers on the next click that the user makes.</p>\n    <button type=\"button\" class=\"btn btn-success\" popover=\"Vivamus sagittis lacus vel augue laoreet rutrum faucibus.\" popoverTitle=\"Dismissible popover\"\n      triggers=\"focus\">\n      Dismissible popover\n      </button>\n  </div>\n</div>"
 
 /***/ }),
-
-/***/ 823:
+/* 473 */
 /***/ (function(module, exports) {
 
 module.exports = "<h1>Progress Bar\n  <a target=\"_blank\" href=\"http://valor-software.com/ng2-bootstrap/#/progressbar\">\n    <img alt=\"\" src=\"assets/img//link-doc.png\">\n  </a>\n</h1>\n<p>Provide up-to-date feedback on the progress of a workflow or action with simple yet flexible progress bars.</p>\n<hr>\n<h3>\n  Examples\n</h3>\n<em>As of this implenetation NG2-bootstrap progress bars are not well supported when using BS4. &nbsp; &nbsp;I recommend using BS4 progresss bars until this is fixed. </em>\n<hr>\n<p>This section shows the NG2-bootstrap version of progress bars under BS4</p>\n<div class=\"row\">\n  <div class=\"col-md-4\">\n    <h4>Static</h4>\n    <div class=\"row\">\n      <div class=\"col-sm-4\">\n        <progress class=\"progress\" value=\"55\" max=\"100\"></progress>\n      </div>\n      <div class=\"col-sm-4\">\n        <progress class=\"progress progress-striped\" value=\"22\" max=\"100\" type=\"warning\">22%</progress>\n      </div>\n      <div class=\"col-sm-4\">\n        <progress class=\"progress progress-striped active\" max=\"200\" value=\"166\" type=\"danger\"><i>166 / 200</i></progress>\n      </div>\n    </div>\n  </div>\n  <div class=\"col-md-4\">\n    <h4>Dynamic</h4>\n    <progress class=\"progress progress-striped progress-animated\" [max]=\"max\" [value]=\"dynamic\" style=\"height: 15px\">\n      <span style=\"color:white; white-space:nowrap;\">{{dynamic}} / {{max}}</span>\n    </progress>\n\n    <small><em>No animation</em></small>\n    <progress class=\"progress progress-success progress-bar-striped\" [value]=\"dynamic\" [max]=\"100\"><b>{{dynamic}}%</b></progress>\n\n    <small><em>Object (changes type based on value)</em></small>\n    <progress class=\"progress progress-striped progress-animated active progress-{{ type }}\" [value]=\"dynamic\" [max]=\"max\">\n      {{type}} <i *ngIf=\"showWarning\">!!! Watch out !!!</i>\n    </progress>\n    <p></p>\n    <button type=\"button\" class=\"btn btn-sm btn-primary\" (click)=\"random()\">Randomize</button>\n  </div>\n  <div class=\"col-md-4\">\n    <h4>Stacked</h4>\n    <div class=\"row col-lg-12\">\n      <!-- todo: implement as component -->\n      <progress *ngFor=\"let baz of stacked\" class=\"progress progress-{{ baz?.type }}\" style=\"float: left; height: 1rem\" [ngStyle]=\"{width: baz.value + '%'}\"\n        [value]=\"baz.value\" [max]=\"baz.max\">\n        <span *ngIf=\"baz.value > 3\">{{baz?.value}}%</span>\n      </progress>\n    </div>\n    <p></p>\n    <div class=\"row col-md-12\">\n      <button type=\"button\" class=\"btn btn-sm btn-primary\" (click)=\"randomStacked()\">Randomize</button>\n    </div>\n  </div>\n</div>\n<hr>\n<p>This section shows the same style of progress bars using BS4 native components</p>\n<div class=\"row\">\n  <div class=\"col-md-4\">\n    <h4>Static</h4>\n    <div class=\"row\">\n      <div class=\"col-sm-4\">\n        <div class=\"progress\">\n          <div class=\"progress-bar\" role=\"progressbar\" style=\"width: 55%\" aria-valuenow=\"55\" aria-valuemin=\"0\" aria-valuemax=\"100\"></div>\n        </div>\n      </div>\n      <div class=\"col-sm-4\">\n        <div class=\"progress\">\n          <div class=\"progress-bar progress-bar-striped bg-warning\" role=\"progressbar\" style=\"width: 22%\" aria-valuenow=\"22\" aria-valuemin=\"0\"\n            aria-valuemax=\"100\"></div>\n        </div>\n      </div>\n      <div class=\"col-sm-4\">\n        <div class=\"progress\">\n          <div class=\"progress-bar progress-bar-striped progress-bar-animated bg-danger\" role=\"progressbar\" style=\"width: 83%\" aria-valuenow=\"166\"\n            aria-valuemin=\"0\" aria-valuemax=\"200\"><i>166 / 200</i></div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"col-md-4\">\n    <h4>Dynamic (value: {{dynamic}})</h4>\n    <div class=\"progress\">\n      <div class=\"progress-bar progress-bar-striped progress-bar-animated\" [ngStyle]=\"{width: (dynamic/max*100) + '%'}\" style=\"height: 15px\"\n        [attr.aria-valuenow]=\"(dynamic/max*100)\" aria-valuemin=\"0\" [attr.aria-valuemax]=\"(max)\">\n        <span style=\"color:white\">{{dynamic}} / {{max}}</span>\n      </div>\n    </div>\n    <small><em>No animation</em></small>\n    <div class=\"progress\">\n      <div class=\"progress-bar progress-bar-striped bg-success\" [ngStyle]=\"{width: (dynamic) + '%'}\" style=\"height: 15px\" [attr.aria-valuenow]=\"(dynamic)\"\n        aria-valuemin=\"0\" [attr.aria-valuemax]=\"100\"><b>{{dynamic}}%</b></div>\n    </div>\n    <small><em>Object (changes type based on value)</em></small>\n    <div class=\"progress\">\n      <div class=\"progress-bar progress-bar-striped progress-bar-animated bg-{{type}}\" [ngStyle]=\"{width: (dynamic) + '%'}\" style=\"height: 15px\"\n        [attr.aria-valuenow]=\"(dynamic)\" aria-valuemin=\"0\" [attr.aria-valuemax]=\"100\">\n        {{type}} <i *ngIf=\"showWarning\">!!! Watch out !!!</i>\n      </div>\n    </div>\n    <p></p>\n    <button type=\"button\" class=\"btn btn-sm btn-primary\" (click)=\"random()\">Randomize</button>\n  </div>\n  <div class=\"col-md-4\">\n    <h4>Stacked</h4>\n      <div class=\"progress\">\n        <div *ngFor=\"let baz of stacked\" class=\"progress-bar bg-{{ baz?.type }}\" [ngStyle]=\"{width: baz.value + '%'}\"\n          [attr.aria-valuenow]=\"baz.value\" [attr.aria-max]=\"baz.max\">\n          <span *ngIf=\"baz.value > 3\">{{baz?.value}}%</span>\n        </div>\n      </div>\n    <p></p>\n    <div class=\"row col-md-12\">\n      <button type=\"button\" class=\"btn btn-sm btn-primary\" (click)=\"randomStacked()\">Randomize</button>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
-
-/***/ 824:
+/* 474 */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Rating\n  <a target=\"_blank\" href=\"http://valor-software.com/ng2-bootstrap/#/rating\">\n    <img alt=\"\" src=\"assets/img//link-doc.png\">\n  </a>\n</h1>\n<p>Rating component that will take care of visualising a star rating bar</p>\n<hr>\n<h3>\n  Examples\n</h3>\n<div class=\"row\">\n  <div class=\"col-md-4\">\n    <h4>Static rating</h4>\n    <rating [(ngModel)]=\"rate\" [max]=\"max\" [readonly]=\"isReadonly\" stateOn=\"fa fa-star\" stateOff=\"fa fa-star-o\"></rating>\n    <div class=\"card\">\n      <pre class=\"card-block card-text\">Rate: <b>7</b></pre>\n    </div>\n  </div>\n  <div class=\"col-md-4\">\n    <h4>Dynamic rating</h4>\n    <rating [(ngModel)]=\"dynRate\" [max]=\"dynMax\" [readonly]=\"dynIsReadonly\" (onHover)=\"hoveringOver($event)\" (onLeave)=\"resetStar()\"\n      [titles]=\"['one','two','three']\" stateOn=\"fa fa-star\" stateOff=\"fa fa-star-o\"></rating>\n      <span class=\"label\" [ngClass]=\"{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}\"\n        [ngStyle]=\"{display: (overStar && !isReadonly) ? 'inline' : 'none'}\">{{percent}}%</span>\n        <div class=\"card\">\n          <pre class=\"card-block card-text\">Rate: <strong>{{dynRate}}</strong>;  Readonly is: <em>{{dynIsReadonly}}</em>;  Hovering over: <strong>{{overStar || \"none\"}}</strong></pre>\n        </div>\n        <p></p>\n\n        <button type=\"button\" class=\"btn btn-sm btn-danger\" (click)=\"dynRate = 0\" [disabled]=\"dynIsReadonly\">Clear</button>\n        <button type=\"button\" class=\"btn btn-sm btn-primary\" (click)=\"dynIsReadonly = ! dynIsReadonly\">Toggle Readonly</button>\n  </div>\n  <div class=\"col-md-4\">\n    <h4>Custom icons</h4>\n    <div>\n      <rating [(ngModel)]=\"x\" max=\"15\" stateOn=\"fa fa-check-circle\" stateOff=\"fa fa-check-circle-o\" style=\"color: #0275d8;\"></rating>\n      <b>(<i>Rate:</i> {{x}})</b>\n    </div>\n    <div>\n      <rating [(ngModel)]=\"y\" [ratingStates]=\"ratingStates\"></rating>\n      <b>(<i>Rate:</i> {{y}})</b>\n    </div>\n  </div>\n</div>"
+module.exports = "<h1>Rating\n  <a target=\"_blank\" href=\"http://valor-software.com/ng2-bootstrap/#/rating\">\n    <img alt=\"\" src=\"assets/img//link-doc.png\">\n  </a>\n</h1>\n<p>Rating component that will take care of visualising a star rating bar</p>\n<hr>\n<h3>\n  Examples\n</h3>\n<div class=\"row\">\n  <div class=\"col-md-4\">\n    <h4>Static rating</h4>\n    <rating [(ngModel)]=\"rate\" [max]=\"max\" [readonly]=\"isReadonly\" stateOn=\"fa fa-star\" stateOff=\"fa fa-star-o\" [titles]=\"['1']\"></rating>\n    <div class=\"card\">\n      <pre class=\"card-block card-text\">Rate: <b>{{rate}}</b></pre>\n    </div>\n  </div>\n  <div class=\"col-md-4\">\n    <h4>Dynamic rating</h4>\n    <rating [(ngModel)]=\"dynRate\" [max]=\"dynMax\" [readonly]=\"dynIsReadonly\" (onHover)=\"hoveringOver($event)\" (onLeave)=\"resetStar()\"\n      [titles]=\"['one','two','three']\" stateOn=\"fa fa-star\" stateOff=\"fa fa-star-o\"></rating>\n      <span class=\"label\" [ngClass]=\"{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}\"\n        [ngStyle]=\"{display: (overStar && !isReadonly) ? 'inline' : 'none'}\">{{percent}}%</span>\n        <div class=\"card\">\n          <pre class=\"card-block card-text\">Rate: <strong>{{dynRate}}</strong>;  Readonly is: <em>{{dynIsReadonly}}</em>;  Hovering over: <strong>{{overStar || \"none\"}}</strong></pre>\n        </div>\n        <p></p>\n\n        <button type=\"button\" class=\"btn btn-sm btn-danger\" (click)=\"dynRate = 0\" [disabled]=\"dynIsReadonly\">Clear</button>\n        <button type=\"button\" class=\"btn btn-sm btn-primary\" (click)=\"dynIsReadonly = ! dynIsReadonly\">Toggle Readonly</button>\n  </div>\n  <div class=\"col-md-4\">\n    <h4>Custom icons</h4>\n    <div>\n      <rating [(ngModel)]=\"x\" max=\"15\" stateOn=\"fa fa-check-circle\" stateOff=\"fa fa-check-circle-o\" style=\"color: #0275d8;\" [titles]=\"['1']\"></rating>\n      <b>(<i>Rate:</i> {{x}})</b>\n    </div>\n    <div>\n      <rating [(ngModel)]=\"y\" [ratingStates]=\"ratingStates\"></rating>\n      <b>(<i>Rate:</i> {{y}})</b>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
-
-/***/ 825:
+/* 475 */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Sortable\n  <a target=\"_blank\" href=\"http://valor-software.com/ng2-bootstrap/#/sortable\">\n    <img alt=\"\" src=\"assets/img//link-doc.png\">\n  </a>\n</h1>\n<p>The <strong>sortable component</strong> represents a list of items, with ability to sort them or move to another container\n  via drag&amp;drop. Input collection isn't mutated by the component, so events <code>ngModelChange</code>, <code>onChange</code>  are using new collections.</p>\n<hr>\n<h3>\n  Examples\n</h3>\n<div class=\"row\">\n  <div class=\"col-xs-6 col-md-4\">\n    <h4>String items:</h4>\n    <div class=\"row\">\n      <div class=\"col-xs-6 col-md-6\">\n        <bs-sortable [(ngModel)]=\"itemStringsLeft\" itemClass=\"sortable-item\" itemActiveClass=\"sortable-item-active\" placeholderItem=\"Drag here\"\n          placeholderClass=\"placeholderStyle\" wrapperClass=\"sortable-wrapper\"></bs-sortable>\n          <pre>model: {{ itemStringsLeft | json }}</pre>\n      </div>\n      <div class=\"col-xs-6 col-md-6\">\n        <bs-sortable [(ngModel)]=\"itemStringsRight\" itemClass=\"sortable-item\" itemActiveClass=\"sortable-item-active\" placeholderItem=\"Drag here\"\n          placeholderClass=\"placeholderStyle\" wrapperClass=\"sortable-wrapper\"></bs-sortable>\n          <pre>model: {{ itemStringsRight | json }}</pre>\n      </div>\n    </div>\n  </div>\n  <div class=\"col-md-4\">\n    <h4>Complex data model:</h4>\n    <div class=\"row\">\n      <div class=\"col-xs-6 col-md-6\">\n        <bs-sortable [(ngModel)]=\"itemObjectsLeft\" fieldName=\"name\" itemClass=\"sortable-item\" itemActiveClass=\"sortable-item-active\"\n          placeholderItem=\"Drag here\" placeholderClass=\"sortable-item\" wrapperClass=\"sortable-wrapper\"></bs-sortable>\n          <pre>{{ itemObjectsLeft | json }}</pre>\n      </div>\n      <div class=\"col-xs-6 col-md-6\">\n        <bs-sortable [(ngModel)]=\"itemObjectsRight\" fieldName=\"name\" itemClass=\"sortable-item\" itemActiveClass=\"sortable-item-active\"\n          placeholderItem=\"Drag here\" placeholderClass=\"sortable-item\" wrapperClass=\"sortable-wrapper\"></bs-sortable>\n          <pre>{{ itemObjectsRight | json }}</pre>\n      </div>\n    </div>\n  </div>\n  <div class=\"col-md-4\">\n    <h4>Custom item template:</h4>\n    <div class=\"row\">\n      <template #itemTemplate let-item=\"item\" let-index=\"index\"><span>{{index}}: {{item.value}}</span></template>\n      <div class=\"col-xs-6 col-md-6\">\n        <bs-sortable [(ngModel)]=\"itemCuStringsLeft\" [itemTemplate]=\"itemTemplate\" itemClass=\"sortable-item\" itemActiveClass=\"sortable-item-active\"\n          placeholderItem=\"Drag here\" placeholderClass=\"placeholderStyle\" wrapperClass=\"sortable-wrapper\"></bs-sortable>\n          <pre>model: {{ itemCuStringsLeft | json }}</pre>\n      </div>\n      <div class=\"col-xs-6 col-md-6\">\n        <bs-sortable [(ngModel)]=\"itemCuStringsRight\" itemClass=\"sortable-item\" itemActiveClass=\"sortable-item-active\" placeholderItem=\"Drag here\"\n          placeholderClass=\"sortable-item\" wrapperClass=\"sortable-wrapper\"></bs-sortable>\n          <pre>model: {{ itemCuStringsRight | json }}</pre>\n      </div>\n    </div>\n  </div>\n</div>"
+module.exports = "<h1>Sortable\n  <a target=\"_blank\" href=\"http://valor-software.com/ng2-bootstrap/#/sortable\">\n    <img alt=\"\" src=\"assets/img//link-doc.png\">\n  </a>\n</h1>\n<p>The <strong>sortable component</strong> represents a list of items, with ability to sort them or move to another container\n  via drag&amp;drop. Input collection isn't mutated by the component, so events <code>ngModelChange</code>, <code>onChange</code>  are using new collections.</p>\n<hr>\n<h3>\n  Examples\n</h3>\n<div class=\"row\">\n  <div class=\"col-xs-6 col-md-4\">\n    <h4>String items:</h4>\n    <div class=\"row\">\n      <div class=\"col-xs-6 col-md-6\">\n        <bs-sortable [(ngModel)]=\"itemStringsLeft\" itemClass=\"sortable-item\" itemActiveClass=\"sortable-item-active\" placeholderItem=\"Drag here\"\n          placeholderClass=\"placeholderStyle\" wrapperClass=\"sortable-wrapper\"></bs-sortable>\n          <pre>model: {{ itemStringsLeft | json }}</pre>\n      </div>\n      <div class=\"col-xs-6 col-md-6\">\n        <bs-sortable [(ngModel)]=\"itemStringsRight\" itemClass=\"sortable-item\" itemActiveClass=\"sortable-item-active\" placeholderItem=\"Drag here\"\n          placeholderClass=\"placeholderStyle\" wrapperClass=\"sortable-wrapper\"></bs-sortable>\n          <pre>model: {{ itemStringsRight | json }}</pre>\n      </div>\n    </div>\n  </div>\n  <div class=\"col-md-4\">\n    <h4>Complex data model:</h4>\n    <div class=\"row\">\n      <div class=\"col-xs-6 col-md-6\">\n        <bs-sortable [(ngModel)]=\"itemObjectsLeft\" fieldName=\"name\" itemClass=\"sortable-item\" itemActiveClass=\"sortable-item-active\"\n          placeholderItem=\"Drag here\" placeholderClass=\"sortable-item\" wrapperClass=\"sortable-wrapper\"></bs-sortable>\n          <pre>{{ itemObjectsLeft | json }}</pre>\n      </div>\n      <div class=\"col-xs-6 col-md-6\">\n        <bs-sortable [(ngModel)]=\"itemObjectsRight\" fieldName=\"name\" itemClass=\"sortable-item\" itemActiveClass=\"sortable-item-active\"\n          placeholderItem=\"Drag here\" placeholderClass=\"sortable-item\" wrapperClass=\"sortable-wrapper\"></bs-sortable>\n          <pre>{{ itemObjectsRight | json }}</pre>\n      </div>\n    </div>\n  </div>\n  <div class=\"col-md-4\">\n    <h4>Custom item template:</h4>\n    <div class=\"row\">\n      <ng-template #itemTemplate let-item=\"item\" let-index=\"index\"><span>{{index}}: {{item.value}}</span></ng-template>\n      <div class=\"col-xs-6 col-md-6\">\n        <bs-sortable [(ngModel)]=\"itemCuStringsLeft\" [itemTemplate]=\"itemTemplate\" itemClass=\"sortable-item\" itemActiveClass=\"sortable-item-active\"\n          placeholderItem=\"Drag here\" placeholderClass=\"placeholderStyle\" wrapperClass=\"sortable-wrapper\"></bs-sortable>\n          <pre>model: {{ itemCuStringsLeft | json }}</pre>\n      </div>\n      <div class=\"col-xs-6 col-md-6\">\n        <bs-sortable [(ngModel)]=\"itemCuStringsRight\" itemClass=\"sortable-item\" itemActiveClass=\"sortable-item-active\" placeholderItem=\"Drag here\"\n          placeholderClass=\"sortable-item\" wrapperClass=\"sortable-wrapper\"></bs-sortable>\n          <pre>model: {{ itemCuStringsRight | json }}</pre>\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
-
-/***/ 826:
+/* 476 */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Tabs\n  <a target=\"_blank\" href=\"http://valor-software.com/ng2-bootstrap/#/tabs\">\n    <img alt=\"\" src=\"assets/img//link-doc.png\">\n  </a>\n</h1>\n<p>Add quick, dynamic tab functionality to transition through panes of local content, even via dropdown menus. <strong>Nested tabs are not supported.</strong></p>\n<hr>\n<h3>\n  Examples\n</h3>\n<div class=\"row\">\n  <div class=\"col-xs-6 col-md-3\">\n    <h4>Static tabs:</h4>\n    <tabset>\n      <tab heading=\"Static title\">Static content</tab>\n      <tab (select)=\"alertMe()\">\n        <template tabHeading>\n          <i class=\"fa fa-bell\"></i> Alert!\n        </template>\n        I've got an HTML heading, and a select callback. Pretty cool!\n      </tab>\n    </tabset>\n\n  </div>\n  <div class=\"col-md-6\">\n    <h4>Dynamic tabs:</h4>\n    <div (click)=\"$event.preventDefault()\">\n      <p>Select a tab by setting active binding to true:</p>\n      <p>\n        <button type=\"button\" class=\"btn btn-primary btn-sm\" (click)=\"tabs[0].active = true\">Select second tab</button>\n        <button type=\"button\" class=\"btn btn-primary btn-sm\" (click)=\"tabs[1].active = true\">Select third tab</button>\n      </p>\n      <p>\n        <button type=\"button\" class=\"btn btn-primary btn-sm\" (click)=\"tabs[1].disabled = ! tabs[1].disabled\">\n      Enable / Disable third tab\n    </button>\n      </p>\n      <hr/>\n      <tabset>\n        <tab heading=\"Static title\">Static content</tab>\n        <tab *ngFor=\"let tabz of tabs\" [heading]=\"tabz.title\" [active]=\"tabz.active\" (select)=\"tabz.active = true\" (deselect)=\"tabz.active = false\"\n          [disabled]=\"tabz.disabled\" [removable]=\"tabz.removable\" (removed)=\"removeTabHandler(tabz)\" [customClass]=\"tabz.customClass\">\n          {{tabz?.content}}\n          </tab>\n      </tabset>\n    </div>\n  </div>\n  <div class=\"col-md-3\">\n    <h4>Pills:</h4>\n    <tabset type=\"pills\">\n      <tab heading=\"Pills 1\">Pills content 1</tab>\n      <tab heading=\"Pills 2\">Pills content 2</tab>\n    </tabset>\n\n  </div>\n</div>"
+module.exports = "<h1>Tabs\n  <a target=\"_blank\" href=\"http://valor-software.com/ng2-bootstrap/#/tabs\">\n    <img alt=\"\" src=\"assets/img//link-doc.png\">\n  </a>\n</h1>\n<p>Add quick, dynamic tab functionality to transition through panes of local content, even via dropdown menus. <strong>Nested tabs are not supported.</strong></p>\n<hr>\n<h3>\n  Examples\n</h3>\n<div class=\"row\">\n  <div class=\"col-xs-6 col-md-3\">\n    <h4>Static tabs:</h4>\n    <tabset>\n      <tab heading=\"Static title\">Static content</tab>\n      <tab (select)=\"alertMe()\">\n        <ng-template tabHeading>\n          <i class=\"fa fa-bell\"></i> Alert!\n        </ng-template>\n        I've got an HTML heading, and a select callback. Pretty cool!\n      </tab>\n    </tabset>\n\n  </div>\n  <div class=\"col-md-6\">\n    <h4>Dynamic tabs:</h4>\n    <div (click)=\"$event.preventDefault()\">\n      <p>Select a tab by setting active binding to true:</p>\n      <p>\n        <button type=\"button\" class=\"btn btn-primary btn-sm\" (click)=\"tabs[0].active = true\">Select second tab</button>\n        <button type=\"button\" class=\"btn btn-primary btn-sm\" (click)=\"tabs[1].active = true\">Select third tab</button>\n      </p>\n      <p>\n        <button type=\"button\" class=\"btn btn-primary btn-sm\" (click)=\"tabs[1].disabled = ! tabs[1].disabled\">\n      Enable / Disable third tab\n    </button>\n      </p>\n      <hr/>\n      <tabset>\n        <tab heading=\"Static title\">Static content</tab>\n        <tab *ngFor=\"let tabz of tabs\" [heading]=\"tabz.title\" [active]=\"tabz.active\" (select)=\"tabz.active = true\" (deselect)=\"tabz.active = false\"\n          [disabled]=\"tabz.disabled\" [removable]=\"tabz.removable\" (removed)=\"removeTabHandler(tabz)\" [customClass]=\"tabz.customClass\">\n          {{tabz?.content}}\n          </tab>\n      </tabset>\n    </div>\n  </div>\n  <div class=\"col-md-3\">\n    <h4>Pills:</h4>\n    <tabset type=\"pills\">\n      <tab heading=\"Pills 1\">Pills content 1</tab>\n      <tab heading=\"Pills 2\">Pills content 2</tab>\n    </tabset>\n\n  </div>\n</div>"
 
 /***/ }),
-
-/***/ 827:
+/* 477 */
 /***/ (function(module, exports) {
 
 module.exports = "<h1>Timepicker\n  <a target=\"_blank\" href=\"http://valor-software.com/ng2-bootstrap/#/timepicker\">\n    <img alt=\"\" src=\"assets/img//link-doc.png\">\n  </a>\n</h1>\n<p>A lightweight & configurable timepicker directive.</p>\n<p><em>This relies on the <strong>.hidden</strong> attribute which is no longer used in bootstrap 4 so </em>\n<code>.hidden {{'{'}}  display: none !important;}</code>\n<em>has to be included the styles path.</em></p>\n<hr>\n<h3>\n  Examples\n</h3>\n<div class=\"row\">\n  <div class=\"col-xs-6 col-md-4\">\n    <h4>Timepicker:</h4>\n    <timepicker [(ngModel)]=\"tpMytime\"></timepicker>\n    <pre class=\"alert alert-info\">Time is: {{tpMytime}}</pre>\n  </div>\n  <div class=\"col-md-4\">\n    <h4>Meridian:</h4>\n    <timepicker [(ngModel)]=\"mMytime\" [showMeridian]=\"mIsmeridian\"></timepicker>\n    <pre class=\"alert alert-info\">Time is: {{mMytime}}</pre>\n    <hr>\n    <button type=\"button\" class=\"btn btn-info\" (click)=\"mToggleMode()\">12H / 24H</button>\n  </div>\n  <div class=\"col-md-4\">\n    <h4>Disabled:</h4>\n    <timepicker [(ngModel)]=\"dMytime\" [showMeridian]=\"true\" [readonlyInput]=\"!dIsEnabled\"></timepicker>\n    <hr>\n    <button type=\"button\" class=\"btn btn-info\" (click)=\"dIsEnabled=!dIsEnabled\">Enable / Disable input</button>\n  </div>\n</div>"
 
 /***/ }),
-
-/***/ 828:
+/* 478 */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Tooltip\n  <a target=\"_blank\" href=\"http://valor-software.com/ng2-bootstrap/#/tooltip\">\n    <img alt=\"\" src=\"assets/img//link-doc.png\">\n  </a>\n</h1>\n<p>Inspired by the excellent Tipsy jQuery plugin written by Jason Frame. Tooltips are an updated version, which don’t rely on\n  images, uses CSS3 for animations, and much more.</p>\n<hr>\n<h3>\n  Examples\n</h3>\n<div class=\"row\">\n  <div class=\"col-xs-6 col-md-4\">\n    <h4>Simple:</h4>\n    <button type=\"button\" class=\"btn btn-primary\" tooltip=\"Vivamus sagittis lacus vel augue laoreet rutrum faucibus.\">\n      Simple demo\n    </button>\n  </div>\n  <div class=\"col-md-4\">\n    <h4>Dismiss on next click:</h4>\n    <button type=\"button\" class=\"btn btn-success\" tooltip=\"Vivamus sagittis lacus vel augue laoreet rutrum faucibus.\" triggers=\"focus\">\n      Dismissible tooltip\n    </button>\n  </div>\n  <div class=\"col-md-4\">\n    <h4>Dynamic Content</h4>\n    <button type=\"button\" class=\"btn btn-info\" [tooltip]=\"content\">\n      Simple binding\n    </button>\n    <template #tolTemplate>Just another: {{content}}</template>\n    <button type=\"button\" class=\"btn btn-warning\" [tooltip]=\"tolTemplate\">\n      TemplateRef binding\n    </button>\n  </div>\n</div>"
+module.exports = "<h1>Tooltip\n  <a target=\"_blank\" href=\"http://valor-software.com/ng2-bootstrap/#/tooltip\">\n    <img alt=\"\" src=\"assets/img//link-doc.png\">\n  </a>\n</h1>\n<p>Inspired by the excellent Tipsy jQuery plugin written by Jason Frame. Tooltips are an updated version, which don’t rely on\n  images, uses CSS3 for animations, and much more.</p>\n<hr>\n<h3>\n  Examples\n</h3>\n<div class=\"row\">\n  <div class=\"col-xs-6 col-md-4\">\n    <h4>Simple:</h4>\n    <button type=\"button\" class=\"btn btn-primary\" tooltip=\"Vivamus sagittis lacus vel augue laoreet rutrum faucibus.\">\n      Simple demo\n    </button>\n  </div>\n  <div class=\"col-md-4\">\n    <h4>Dismiss on next click:</h4>\n    <button type=\"button\" class=\"btn btn-success\" tooltip=\"Vivamus sagittis lacus vel augue laoreet rutrum faucibus.\" triggers=\"focus\">\n      Dismissible tooltip\n    </button>\n  </div>\n  <div class=\"col-md-4\">\n    <h4>Dynamic Content</h4>\n    <button type=\"button\" class=\"btn btn-info\" [tooltip]=\"content\">\n      Simple binding\n    </button>\n    <ng-template #tolTemplate>Just another: {{content}}</ng-template>\n    <button type=\"button\" class=\"btn btn-warning\" [tooltip]=\"tolTemplate\">\n      TemplateRef binding\n    </button>\n  </div>\n</div>"
 
 /***/ }),
-
-/***/ 829:
+/* 479 */
 /***/ (function(module, exports) {
 
-module.exports = "<h1>Typeahead\n  <a target=\"_blank\" href=\"http://valor-software.com/ng2-bootstrap/#/typeahead\">\n    <img alt=\"\" src=\"assets/img//link-doc.png\">\n  </a>\n</h1>\n<h3>\n  Examples\n</h3>\n<div class=\"row\" style=\"min-height: 20rem\">\n  <div class=\"col-xs-6 col-md-4\">\n    <h4>Static Array:</h4>\n    <pre class=\"card card-block card-header\">Model: {{saSelected | json}}</pre>\n    <input [(ngModel)]=\"saSelected\" [typeahead]=\"states\" class=\"form-control\">\n  </div>\n  <div class=\"col-md-4\">\n    <h4>Item template:</h4>\n    <template #customItemTemplate let-model=\"item\" let-index=\"index\">\n      <h5>This is: {{model | json}} Index: {{ index }}</h5>\n    </template>\n\n    <pre class=\"card card-block card-header\">Model: {{selected | json}}</pre>\n    <input [(ngModel)]=\"itSelected\" [typeahead]=\"states\" [typeaheadItemTemplate]=\"customItemTemplate\" class=\"form-control\">\n  </div>\n  <div class=\"col-md-4\">\n    <h4>Option field:</h4>\n    <pre class=\"card card-block card-header\">Model: {{customSelected | json}}</pre>\n    <input [(ngModel)]=\"customSelected\" [typeahead]=\"statesComplex\" typeaheadOptionField=\"name\" class=\"form-control\">\n  </div>\n</div>"
+module.exports = "<h1>Typeahead\n  <a target=\"_blank\" href=\"http://valor-software.com/ng2-bootstrap/#/typeahead\">\n    <img alt=\"\" src=\"assets/img//link-doc.png\">\n  </a>\n</h1>\n<h3>\n  Examples\n</h3>\n<div class=\"row\" style=\"min-height: 20rem\">\n  <div class=\"col-xs-6 col-md-4\">\n    <h4>Static Array:</h4>\n    <pre class=\"card card-block card-header\">Model: {{saSelected | json}}</pre>\n    <input [(ngModel)]=\"saSelected\" [typeahead]=\"states\" class=\"form-control\">\n  </div>\n  <div class=\"col-md-4\">\n    <h4>Item template:</h4>\n    <ng-template #customItemTemplate let-model=\"item\" let-index=\"index\">\n      <h5>This is: {{model | json}} Index: {{ index }}</h5>\n    </ng-template>\n\n    <pre class=\"card card-block card-header\">Model: {{itSelected | json}}</pre>\n    <input [(ngModel)]=\"itSelected\" [typeahead]=\"states\" [typeaheadItemTemplate]=\"customItemTemplate\" class=\"form-control\">\n  </div>\n  <div class=\"col-md-4\">\n    <h4>Option field:</h4>\n    <pre class=\"card card-block card-header\">Model: {{customSelected | json}}</pre>\n    <input [(ngModel)]=\"customSelected\" [typeahead]=\"statesComplex\" typeaheadOptionField=\"name\" class=\"form-control\">\n  </div>\n</div>"
 
 /***/ }),
-
-/***/ 830:
+/* 480 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container-fluid\">\n\n  <!-- Page Heading -->\n  <div class=\"row\">\n    <div class=\"col-lg-12\">\n      <h2 class=\"page-header\">\n        Bootstrap Elements\n      </h2>\n      <ol class=\"breadcrumb\">\n        <li class=\"breadcrumb-item\">\n          <i class=\"fa fa-dashboard\"></i>\n          <a routerLink=\"/dashboard/home\">Dashboard</a>\n        </li>\n        <li class=\"breadcrumb-item active\">\n          <i class=\"fa fa-desktop\"></i> Bootstrap Elements\n        </li>\n      </ol>\n    </div>\n  </div>\n  <!-- /.row -->\n\n  <!-- Main jumbotron for a primary marketing message or call to action -->\n  <div class=\"jumbotron\">\n    <h1 class=\"display-3\">Hello, world!</h1>\n    <p class=\"lead\">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>\n    <hr class=\"my-2\">\n    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>\n    <p class=\"lead\">\n      <a class=\"btn btn-primary btn-lg\" href=\"http://v4-alpha.getbootstrap.com/components/jumbotron/\" role=\"button\">Learn more</a>\n    </p>\n  </div>\n\n  <div class=\"page-header\">\n    <h1>Buttons</h1>\n    <hr>\n  </div>\n  <p>\n    <button type=\"button\" class=\"btn btn-lg btn-secondary\">Default</button>\n    <button type=\"button\" class=\"btn btn-lg btn-primary\">Primary</button>\n    <button type=\"button\" class=\"btn btn-lg btn-success\">Success</button>\n    <button type=\"button\" class=\"btn btn-lg btn-info\">Info</button>\n    <button type=\"button\" class=\"btn btn-lg btn-warning\">Warning</button>\n    <button type=\"button\" class=\"btn btn-lg btn-danger\">Danger</button>\n    <button type=\"button\" class=\"btn btn-lg btn-link\">Link</button>\n  </p>\n  <p>\n    <button type=\"button\" class=\"btn btn-secondary\">Default</button>\n    <button type=\"button\" class=\"btn btn-primary\">Primary</button>\n    <button type=\"button\" class=\"btn btn-success\">Success</button>\n    <button type=\"button\" class=\"btn btn-info\">Info</button>\n    <button type=\"button\" class=\"btn btn-warning\">Warning</button>\n    <button type=\"button\" class=\"btn btn-danger\">Danger</button>\n    <button type=\"button\" class=\"btn btn-link\">Link</button>\n  </p>\n  <p>\n    <button type=\"button\" class=\"btn btn-sm btn-secondary\">Default</button>\n    <button type=\"button\" class=\"btn btn-sm btn-primary\">Primary</button>\n    <button type=\"button\" class=\"btn btn-sm btn-success\">Success</button>\n    <button type=\"button\" class=\"btn btn-sm btn-info\">Info</button>\n    <button type=\"button\" class=\"btn btn-sm btn-warning\">Warning</button>\n    <button type=\"button\" class=\"btn btn-sm btn-danger\">Danger</button>\n    <button type=\"button\" class=\"btn btn-sm btn-link\">Link</button>\n  </p>\n\n  <br>\n\n  <div class=\"page-header\">\n    <h1>Thumbnails</h1>\n    <hr>\n  </div>\n  <img class=\"img-thumbnail\" src=\"http://placehold.it/400x400\" alt=\"\">\n\n  <div class=\"page-header\">\n    <h1>Dropdown menus</h1>\n    <hr>\n  </div>\n  <div class=\"dropdown theme-dropdown clearfix\">\n    <button class=\"btn btn-secondary dropdown-toggle\" type=\"button\" id=\"dropdownMenu1\" data-toggle=\"dropdown\" aria-haspopup=\"true\"\n      aria-expanded=\"false\">\n            Dropdown\n        </button>\n    <div class=\"dropdown-menu\" aria-labelledby=\"dropdownMenu1\">\n      <a class=\"dropdown-item\" href=\"javascript:;\">Action</a>\n      <a class=\"dropdown-item\" href=\"javascript:;\">Another action</a>\n      <a class=\"dropdown-item\" href=\"javascript:;\">Something else here</a>\n    </div>\n  </div>\n\n  <br>\n\n  <div class=\"page-header\">\n    <h1>Navbars</h1>\n  </div>\n\n  <nav class=\"navbar navbar-light bg-faded\">\n    <button class=\"navbar-toggler hidden-sm-up\" type=\"button\" data-toggle=\"collapse\" data-target=\"#exCollapsingNavbar2\">\n            ☰\n        </button>\n    <div class=\"collapse navbar-toggleable-xs\" id=\"exCollapsingNavbar2\">\n      <a class=\"navbar-brand\" href=\"javascript:;\">Responsive navbar</a>\n      <ul class=\"nav navbar-nav\">\n        <li class=\"nav-item-elements nav-item active\">\n          <a class=\"nav-link nav-link-elements\" href=\"javascript:;\">Home <span class=\"sr-only\">(current)</span></a>\n        </li>\n        <li class=\"nav-item-elements nav-item\">\n          <a class=\"nav-link nav-link-elements\" href=\"javascript:;\">Features</a>\n        </li>\n        <li class=\"nav-item-elements nav-item\">\n          <a class=\"nav-link nav-link-elements\" href=\"javascript:;\">Pricing</a>\n        </li>\n        <li class=\"nav-item-elements nav-item\">\n          <a class=\"nav-link nav-link-elements\" href=\"javascript:;\">About</a>\n        </li>\n      </ul>\n    </div>\n  </nav>\n  <br>\n  <nav class=\"navbar navbar-dark bg-inverse\">\n    <button class=\"navbar-toggler hidden-sm-up\" type=\"button\" data-toggle=\"collapse\" data-target=\"#exCollapsingNavbar3\">\n            ☰\n        </button>\n    <div class=\"collapse navbar-toggleable-xs\" id=\"exCollapsingNavbar3\">\n      <a class=\"navbar-brand\" href=\"javascript:;\">Responsive navbar</a>\n      <ul class=\"nav navbar-nav\">\n        <li class=\"nav-item nav-item-elements active\">\n          <a class=\"nav-link nav-link-elements\" href=\"javascript:;\">Home <span class=\"sr-only\">(current)</span></a>\n        </li>\n        <li class=\"nav-item nav-item-elements\">\n          <a class=\"nav-link nav-link-elements\" href=\"javascript:;\">Features</a>\n        </li>\n        <li class=\"nav-item nav-item-elements\">\n          <a class=\"nav-link nav-link-elements\" href=\"javascript:;\">Pricing</a>\n        </li>\n        <li class=\"nav-item nav-item-elements\">\n          <a class=\"nav-link nav-link-elements\" href=\"javascript:;\">About</a>\n        </li>\n      </ul>\n    </div>\n  </nav>\n\n  <div class=\"page-header\">\n    <h1>Alerts</h1>\n    <hr>\n  </div>\n  <div class=\"alert alert-success\">\n    <strong>Well done!</strong> You successfully read this important alert message.\n  </div>\n  <div class=\"alert alert-info\">\n    <strong>Heads up!</strong> This alert needs your attention, but it's not super important.\n  </div>\n  <div class=\"alert alert-warning\">\n    <strong>Warning!</strong> Best check yo self, you're not looking too good.\n  </div>\n  <div class=\"alert alert-danger\">\n    <strong>Oh snap!</strong> Change a few things up and try submitting again.\n  </div>\n\n  <div class=\"page-header\">\n    <h1>Progress bars</h1>\n    <hr>\n  </div>\n  <progress class=\"progress\" value=\"25\" max=\"100\">\n    <div class=\"progress\">\n      <span class=\"progress-bar\" style=\"width: 25%;\">25%</span>\n    </div>\n  </progress>\n  <progress class=\"progress progress-success\" value=\"50\" max=\"100\">\n    <div class=\"progress\">\n      <span class=\"progress-bar\" style=\"width: 50%;\">50%</span>\n    </div>\n  </progress>\n  <progress class=\"progress progress-info\" value=\"65\" max=\"100\">\n    <div class=\"progress\">\n      <span class=\"progress-bar\" style=\"width: 65%;\">65%</span>\n    </div>\n  </progress>\n  <progress class=\"progress progress-warning\" value=\"80\" max=\"100\">\n    <div class=\"progress\">\n      <span class=\"progress-bar\" style=\"width: 80%;\">80%</span>\n    </div>\n  </progress>\n  <progress class=\"progress progress-danger\" value=\"95\" max=\"100\">\n    <div class=\"progress\">\n      <span class=\"progress-bar\" style=\"width: 95%;\">95%</span>\n    </div>\n  </progress>\n  <progress class=\"progress progress-striped progress-animated\" value=\"25\" max=\"100\">25%</progress>\n  <br>\n\n  <div class=\"page-header\">\n    <h1>List groups</h1>\n    <hr>\n  </div>\n  <div class=\"row\">\n    <div class=\"col-sm-4\">\n      <ul class=\"list-group\">\n        <li class=\"list-group-item\">Cras justo odio</li>\n        <li class=\"list-group-item\">Dapibus ac facilisis in</li>\n        <li class=\"list-group-item\">Morbi leo risus</li>\n        <li class=\"list-group-item\">Porta ac consectetur ac</li>\n        <li class=\"list-group-item\">Vestibulum at eros</li>\n      </ul>\n    </div>\n    <!-- /.col-sm-4 -->\n    <div class=\"col-sm-4\">\n      <div class=\"list-group\">\n        <a href=\"javascript:;\" class=\"list-group-item active\">Cras justo odio</a>\n        <a href=\"javascript:;\" class=\"list-group-item\">Dapibus ac facilisis in</a>\n        <a href=\"javascript:;\" class=\"list-group-item\">Morbi leo risus</a>\n        <a href=\"javascript:;\" class=\"list-group-item\">Porta ac consectetur ac</a>\n        <a href=\"javascript:;\" class=\"list-group-item\">Vestibulum at eros</a>\n      </div>\n    </div>\n    <!-- /.col-sm-4 -->\n    <div class=\"col-sm-4\">\n      <div class=\"list-group\">\n        <a href=\"javascript:;\" class=\"list-group-item active\">\n          <h4 class=\"list-group-item-heading\">List group item heading</h4>\n          <p class=\"list-group-item-text\">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>\n        </a>\n        <a href=\"javascript:;\" class=\"list-group-item\">\n          <h4 class=\"list-group-item-heading\">List group item heading</h4>\n          <p class=\"list-group-item-text\">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>\n        </a>\n        <a href=\"javascript:;\" class=\"list-group-item\">\n          <h4 class=\"list-group-item-heading\">List group item heading</h4>\n          <p class=\"list-group-item-text\">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>\n        </a>\n      </div>\n    </div>\n    <!-- /.col-sm-4 -->\n  </div>\n\n  <div class=\"page-header\">\n    <h1>Cards</h1>\n    <hr>\n  </div>\n  <div class=\"row\">\n    <div class=\"col-sm-4\">\n      <div class=\"card\">\n        <div class=\"card-header card-default\">\n          Card title\n        </div>\n        <div class=\"card-block\">\n          Card content\n        </div>\n      </div>\n      <div class=\"card card-primary card-inverse\">\n        <div class=\"card-header card-primary\">\n          Card title\n        </div>\n        <div class=\"card-block bg-white\">\n          Card content\n        </div>\n      </div>\n    </div>\n    <!-- /.col-sm-4 -->\n    <div class=\"col-sm-4\">\n      <div class=\"card card-success card-inverse\">\n        <div class=\"card-header card-success\">\n          Card title\n        </div>\n        <div class=\"card-block bg-white\">\n          Card content\n        </div>\n      </div>\n      <div class=\"card card-info card-inverse\">\n        <div class=\"card-header card-info\">\n          Card title\n        </div>\n        <div class=\"card-block bg-white\">\n          Card content\n        </div>\n      </div>\n    </div>\n    <!-- /.col-sm-4 -->\n    <div class=\"col-sm-4\">\n      <div class=\"card card-warning card-inverse\">\n        <div class=\"card-header card-warning\">\n          Card title\n        </div>\n        <div class=\"card-block bg-white\">\n          Card content\n        </div>\n      </div>\n      <div class=\"card card-danger card-inverse\">\n        <div class=\"card-header card-danger\">\n          Card title\n        </div>\n        <div class=\"card-block bg-white\">\n          Card content\n        </div>\n      </div>\n    </div>\n    <!-- /.col-sm-4 -->\n    <div class=\"col-sm-4\">\n      <div class=\"card card-success card-inverse\">\n        <div class=\"card-header card-success\">\n          Card title\n        </div>\n        <div class=\"card-block bg-white\">\n          Card content\n        </div>\n      </div>\n    </div>\n    <!-- /.col-sm-4 -->\n    <div class=\"col-sm-4\">\n      <div class=\"card card-warning card-inverse\">\n        <div class=\"card-header card-warning\">\n          Card title\n        </div>\n        <div class=\"card-block bg-white\">\n          Card content\n        </div>\n      </div>\n    </div>\n    <!-- /.col-sm-4 -->\n    <div class=\"col-sm-4\">\n      <div class=\"card card-danger card-inverse\">\n        <div class=\"card-header card-danger\">\n          Card title\n        </div>\n        <div class=\"card-block bg-white\">\n          Card content\n        </div>\n      </div>\n    </div>\n    <!-- /.col-sm-4 -->\n  </div>\n\n</div>"
 
 /***/ }),
-
-/***/ 831:
+/* 481 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container-fluid\">\n  <!-- Page Heading -->\n  <div class=\"row\">\n    <div class=\"col-xl-12\">\n      <h2 class=\"page-header\">\n        Charts\n      </h2>\n      <ol class=\"breadcrumb\">\n        <li class=\"breadcrumb-item\">\n          <i class=\"fa fa-fw fa-dashboard\"></i>\n          <a [routerLink]=\"['/dashboard/home']\"> Dashboard</a>\n        </li>\n        <li class=\"breadcrumb-item active\">\n          <i class=\"fa fa-fw fa-bar-chart-o\"></i> NG2-Charts\n        </li>\n      </ol>\n    </div>\n  </div>\n  <div class=\"row no-gutters\">\n    <div class=\"col-xl-6\">\n      <div class=\"card card-block card-outline-primary\">\n        <canvas baseChart [datasets]=\"lineChartData\" [labels]=\"lineChartLabels\" [options]=\"lineChartOptions\" [legend]=\"lineChartLegend\"\n          [chartType]=\"lineChartType\" [colors]=\"chartColors\" (chartHover)=\"chartHovered($event)\" (chartClick)=\"chartClicked($event)\"></canvas>\n      </div>\n    </div>\n    <div class=\"col-xl-6\">\n      <div class=\"card card-block card-outline-success\">\n        <canvas baseChart [datasets]=\"areaChartData\" [labels]=\"areaChartLabels\" [options]=\"areaChartOptions\" [legend]=\"areaChartLegend\"\n          [chartType]=\"areaChartType\" [colors]=\"chartColors\" (chartHover)=\"chartHovered($event)\" (chartClick)=\"chartClicked($event)\"></canvas>\n      </div>\n    </div>\n    <div class=\"col-xl-6\">\n      <div class=\"card card-block card-outline-warning\">\n        <canvas baseChart [datasets]=\"barChartData\" [labels]=\"barChartLabels\" [options]=\"barChartOptions\" [legend]=\"barChartLegend\"\n          [chartType]=\"barChartType\" [colors]=\"chartColors\" (chartHover)=\"chartHovered($event)\" (chartClick)=\"chartClicked($event)\"></canvas>\n      </div>\n    </div>\n    <div class=\"col-xl-6\">\n      <div class=\"card card-block card-outline-danger\">\n        <canvas baseChart [datasets]=\"timeChartData\" [options]=\"timeChartOptions\" [legend]=\"timeChartLegend\" [chartType]=\"timeChartType\"\n          [colors]=\"chartColors\" (chartHover)=\"chartHovered($event)\" (chartClick)=\"chartClicked($event)\"></canvas>\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
-
-/***/ 832:
+/* 482 */
 /***/ (function(module, exports) {
 
 module.exports = "<app-topnav></app-topnav>\n<app-sidebar></app-sidebar>\n<!--<section class=\"main-container\" [ngClass]=\"{sidebarPushRight: isActive}\">\t-->\n<div class=\"main-container\">\n\t\t<router-outlet></router-outlet>\n</div>"
 
 /***/ }),
-
-/***/ 833:
+/* 483 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container-fluid\">\n    <!-- Page Heading -->\n    <div class=\"row\">\n        <div class=\"col-lg-12\">\n            <h2 class=\"page-header\">\n                Forms\n            </h2>\n            <ol class=\"breadcrumb\">\n                <li class=\"breadcrumb-item\">\n                    <i class=\"fa fa-dashboard\"></i>\n                    <a routerLink=\"/dashboard/home\">Dashboard</a>\n                </li>\n                <li class=\"breadcrumb-item active\">\n                    <i class=\"fa fa-edit\"></i> Forms\n                </li>\n            </ol>\n        </div>\n    </div>\n    <!-- /.row -->\n\n    <div class=\"row\">\n        <div class=\"col-lg-6\">\n\n            <form role=\"form\">\n                <fieldset class=\"form-group\">\n                    <label>Text Input</label>\n                    <input class=\"form-control\">\n                    <p class=\"form-text\">Example block-level help text here.</p>\n                </fieldset>\n\n                <fieldset class=\"form-group\">\n                    <label>Text Input with Placeholder</label>\n                    <input class=\"form-control\" placeholder=\"Enter text\">\n                </fieldset>\n\n                <div class=\"form-group\">\n                    <label>Static Control</label>\n                    <p class=\"form-control-static\">email@example.com</p>\n                </div>\n\n                <fieldset class=\"form-group\">\n                    <label for=\"exampleInputFile\">File input</label>\n                    <input type=\"file\" class=\"form-control-file\" id=\"exampleInputFile\">\n                </fieldset>\n\n                <fieldset class=\"form-group\">\n                    <label>Text area</label>\n                    <textarea class=\"form-control\" rows=\"3\"></textarea>\n                </fieldset>\n\n                <div class=\"form-group\">\n                    <label>Checkboxes</label>\n                    <div class=\"checkbox\">\n                        <label>\n                            <input type=\"checkbox\" value=\"\"> Checkbox 1\n                        </label>\n                    </div>\n                    <div class=\"checkbox\">\n                        <label>\n                            <input type=\"checkbox\" value=\"\"> Checkbox 2\n                        </label>\n                    </div>\n                    <div class=\"checkbox\">\n                        <label>\n                            <input type=\"checkbox\" value=\"\"> Checkbox 3\n                        </label>\n                    </div>\n                </div>\n\n                <div class=\"form-group\">\n                    <label>Inline Checkboxes</label>\n                    <label class=\"checkbox-inline\">\n                        <input type=\"checkbox\">1\n                    </label>\n                    <label class=\"checkbox-inline\">\n                        <input type=\"checkbox\">2\n                    </label>\n                    <label class=\"checkbox-inline\">\n                        <input type=\"checkbox\">3\n                    </label>\n                </div>\n\n                <fieldset class=\"form-group\">\n                    <label>Radio Buttons</label>\n                    <div class=\"radio\">\n                        <label>\n                            <input type=\"radio\" name=\"optionsRadios\" id=\"optionsRadios1\" value=\"option1\" checked=\"\"> Radio 1\n                        </label>\n                    </div>\n                    <div class=\"radio\">\n                        <label>\n                            <input type=\"radio\" name=\"optionsRadios\" id=\"optionsRadios2\" value=\"option2\"> Radio 2\n                        </label>\n                    </div>\n                    <div class=\"radio\">\n                        <label>\n                            <input type=\"radio\" name=\"optionsRadios\" id=\"optionsRadios3\" value=\"option3\"> Radio 3\n                        </label>\n                    </div>\n                </fieldset>\n\n                <fieldset class=\"form-group\">\n                    <label>Inline Radio Buttons</label>\n                    <label class=\"radio-inline\">\n                        <input type=\"radio\" name=\"optionsRadiosInline\" id=\"optionsRadiosInline1\" value=\"option1\" checked=\"\">1\n                    </label>\n                    <label class=\"radio-inline\">\n                        <input type=\"radio\" name=\"optionsRadiosInline\" id=\"optionsRadiosInline2\" value=\"option2\">2\n                    </label>\n                    <label class=\"radio-inline\">\n                        <input type=\"radio\" name=\"optionsRadiosInline\" id=\"optionsRadiosInline3\" value=\"option3\">3\n                    </label>\n                </fieldset>\n\n                <div class=\"form-group\">\n                    <label>Selects</label>\n                    <select class=\"form-control\">\n                        <option>1</option>\n                        <option>2</option>\n                        <option>3</option>\n                        <option>4</option>\n                        <option>5</option>\n                    </select>\n                </div>\n\n                <fieldset class=\"form-group\">\n                    <label>Multiple Selects</label>\n                    <select multiple=\"\" class=\"form-control\">\n                        <option>1</option>\n                        <option>2</option>\n                        <option>3</option>\n                        <option>4</option>\n                        <option>5</option>\n                    </select>\n                </fieldset>\n\n                <button type=\"submit\" class=\"btn btn-secondary\">Submit Button</button>\n                <button type=\"reset\" class=\"btn btn-secondary\">Reset Button</button>\n\n            </form>\n\n        </div>\n        <div class=\"col-lg-6\">\n            <h4>Disabled Form States</h4>\n\n            <form role=\"form\">\n\n                <fieldset disabled=\"\">\n\n                    <div class=\"form-group\">\n                        <label for=\"disabledSelect\">Disabled input</label>\n                        <input class=\"form-control\" id=\"disabledInput\" type=\"text\" placeholder=\"Disabled input\" disabled=\"\">\n                    </div>\n\n                    <div class=\"form-group\">\n                        <label for=\"disabledSelect\">Disabled select menu</label>\n                        <select id=\"disabledSelect\" class=\"form-control\">\n                            <option>Disabled select</option>\n                        </select>\n                    </div>\n\n                    <div class=\"checkbox\">\n                        <label>\n                            <input type=\"checkbox\"> Disabled Checkbox\n                        </label>\n                    </div>\n\n                    <button type=\"submit\" class=\"btn btn-primary\">Disabled Button</button>\n\n                </fieldset>\n\n            </form>\n            <br>\n\n            <h4>Form Validation</h4>\n\n            <form role=\"form\">\n\n                <div class=\"form-group has-success\">\n                    <label class=\"form-control-label\" for=\"inputSuccess\">Input with success</label>\n                    <input type=\"text\" class=\"form-control form-control-success\" id=\"inputSuccess\">\n                </div>\n\n                <div class=\"form-group has-warning\">\n                    <label class=\"form-control-label\" for=\"inputWarning\">Input with warning</label>\n                    <input type=\"text\" class=\"form-control form-control-warning\" id=\"inputWarning\">\n                </div>\n\n                <div class=\"form-group has-danger\">\n                    <label class=\"form-control-label\" for=\"inputError\">Input with danger</label>\n                    <input type=\"text\" class=\"form-control form-control-danger\" id=\"inputError\">\n                </div>\n\n            </form>\n\n            <h4>Input Groups</h4>\n\n            <form role=\"form\">\n\n                <div class=\"form-group input-group\">\n                    <span class=\"input-group-addon\">@</span>\n                    <input type=\"text\" class=\"form-control\" placeholder=\"Username\">\n                </div>\n\n                <div class=\"form-group input-group\">\n                    <input type=\"text\" class=\"form-control\">\n                    <span class=\"input-group-addon\">.00</span>\n                </div>\n\n                <div class=\"form-group input-group\">\n                    <span class=\"input-group-addon\"><i class=\"fa fa-eur\"></i></span>\n                    <input type=\"text\" class=\"form-control\" placeholder=\"Font Awesome Icon\">\n                </div>\n\n                <div class=\"form-group input-group\">\n                    <span class=\"input-group-addon\">$</span>\n                    <input type=\"text\" class=\"form-control\">\n                    <span class=\"input-group-addon\">.00</span>\n                </div>\n\n                <div class=\"form-group input-group\">\n                    <input type=\"text\" class=\"form-control\">\n                    <span class=\"input-group-btn\"><button class=\"btn btn-secondary\" type=\"button\"><i class=\"fa fa-search\"></i></button></span>\n                </div>\n\n            </form>\n\n            <p>For complete documentation, please visit <a target=\"_blank\" href=\"http://v4-alpha.getbootstrap.com/components/forms/\">Bootstrap's Form Documentation</a>.</p>\n\n        </div>\n    </div>\n    <!-- /.row -->\n\n</div>"
 
 /***/ }),
-
-/***/ 834:
+/* 484 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container-fluid\">\n\n  <!-- Page Heading -->\n  <div class=\"row\">\n    <div class=\"col-xl-12\">\n      <h2 class=\"page-header\">\n        Bootstrap Grid\n      </h2>\n      <ol class=\"breadcrumb\">\n        <li class=\"breadcrumb-item\">\n          <i class=\"fa fa-dashboard\"></i>\n          <a routerLink=\"/dashboard/home\">Dashboard</a>\n        </li>\n        <li class=\"active breadcrumb-item\">\n          <i class=\"fa fa-wrench\"></i> Bootstrap Grid\n        </li>\n      </ol>\n    </div>\n  </div>\n  <!-- /.row -->\n\n  <div class=\"row\">\n    <div class=\"col-xl-12 text-xs-center\">\n      <div class=\"card card-default\">\n        <div class=\"card-block\">\n          .col-xl-12\n        </div>\n      </div>\n    </div>\n  </div>\n  <!-- /.row -->\n\n  <div class=\"row\">\n    <div class=\"col-xl-6 text-xs-center\">\n      <div class=\"card card-default\">\n        <div class=\"card-block\">\n          .col-xl-6\n        </div>\n      </div>\n    </div>\n    <div class=\"col-xl-6 text-xs-center\">\n      <div class=\"card card-default\">\n        <div class=\"card-block\">\n          .col-xl-6\n        </div>\n      </div>\n    </div>\n  </div>\n  <!-- /.row -->\n\n  <div class=\"row\">\n    <div class=\"col-xl-4 text-xs-center\">\n      <div class=\"card card-default\">\n        <div class=\"card-block\">\n          .col-xl-4\n        </div>\n      </div>\n    </div>\n    <div class=\"col-xl-4 text-xs-center\">\n      <div class=\"card card-default\">\n        <div class=\"card-block\">\n          .col-xl-4\n        </div>\n      </div>\n    </div>\n    <div class=\"col-xl-4 text-xs-center\">\n      <div class=\"card card-default\">\n        <div class=\"card-block\">\n          .col-xl-4\n        </div>\n      </div>\n    </div>\n  </div>\n  <!-- /.row -->\n\n  <div class=\"row\">\n    <div class=\"col-xl-3 text-xs-center\">\n      <div class=\"card card-default\">\n        <div class=\"card-block\">\n          .col-xl-3\n        </div>\n      </div>\n    </div>\n    <div class=\"col-xl-3 text-xs-center\">\n      <div class=\"card card-default\">\n        <div class=\"card-block\">\n          .col-xl-3\n        </div>\n      </div>\n    </div>\n    <div class=\"col-xl-3 text-xs-center\">\n      <div class=\"card card-default\">\n        <div class=\"card-block\">\n          .col-xl-3\n        </div>\n      </div>\n    </div>\n    <div class=\"col-xl-3 text-xs-center\">\n      <div class=\"card card-default\">\n        <div class=\"card-block\">\n          .col-xl-3\n        </div>\n      </div>\n    </div>\n  </div>\n  <!-- /.row -->\n\n  <div class=\"row\">\n    <div class=\"col-xl-2 text-xs-center\">\n      <div class=\"card card-default\">\n        <div class=\"card-block\">\n          .col-xl-2\n        </div>\n      </div>\n    </div>\n    <div class=\"col-xl-2 text-xs-center\">\n      <div class=\"card card-default\">\n        <div class=\"card-block\">\n          .col-xl-2\n        </div>\n      </div>\n    </div>\n    <div class=\"col-xl-2 text-xs-center\">\n      <div class=\"card card-default\">\n        <div class=\"card-block\">\n          .col-xl-2\n        </div>\n      </div>\n    </div>\n    <div class=\"col-xl-2 text-xs-center\">\n      <div class=\"card card-default\">\n        <div class=\"card-block\">\n          .col-xl-2\n        </div>\n      </div>\n    </div>\n    <div class=\"col-xl-2 text-xs-center\">\n      <div class=\"card card-default\">\n        <div class=\"card-block\">\n          .col-xl-2\n        </div>\n      </div>\n    </div>\n    <div class=\"col-xl-2 text-xs-center\">\n      <div class=\"card card-default\">\n        <div class=\"card-block\">\n          .col-xl-2\n        </div>\n      </div>\n    </div>\n  </div>\n  <!-- /.row -->\n\n  <div class=\"row\">\n    <div class=\"col-xl-1 text-xs-center\">\n      <div class=\"card card-default\">\n        <div class=\"card-block\">\n          .col-xl-1\n        </div>\n      </div>\n    </div>\n    <div class=\"col-xl-1 text-xs-center\">\n      <div class=\"card card-default\">\n        <div class=\"card-block\">\n          .col-xl-1\n        </div>\n      </div>\n    </div>\n    <div class=\"col-xl-1 text-xs-center\">\n      <div class=\"card card-default\">\n        <div class=\"card-block\">\n          .col-xl-1\n        </div>\n      </div>\n    </div>\n    <div class=\"col-xl-1 text-xs-center\">\n      <div class=\"card card-default\">\n        <div class=\"card-block\">\n          .col-xl-1\n        </div>\n      </div>\n    </div>\n    <div class=\"col-xl-1 text-xs-center\">\n      <div class=\"card card-default\">\n        <div class=\"card-block\">\n          .col-xl-1\n        </div>\n      </div>\n    </div>\n    <div class=\"col-xl-1 text-xs-center\">\n      <div class=\"card card-default\">\n        <div class=\"card-block\">\n          .col-xl-1\n        </div>\n      </div>\n    </div>\n    <div class=\"col-xl-1 text-xs-center\">\n      <div class=\"card card-default\">\n        <div class=\"card-block\">\n          .col-xl-1\n        </div>\n      </div>\n    </div>\n    <div class=\"col-xl-1 text-xs-center\">\n      <div class=\"card card-default\">\n        <div class=\"card-block\">\n          .col-xl-1\n        </div>\n      </div>\n    </div>\n    <div class=\"col-xl-1 text-xs-center\">\n      <div class=\"card card-default\">\n        <div class=\"card-block\">\n          .col-xl-1\n        </div>\n      </div>\n    </div>\n    <div class=\"col-xl-1 text-xs-center\">\n      <div class=\"card card-default\">\n        <div class=\"card-block\">\n          .col-xl-1\n        </div>\n      </div>\n    </div>\n    <div class=\"col-xl-1 text-xs-center\">\n      <div class=\"card card-default\">\n        <div class=\"card-block\">\n          .col-xl-1\n        </div>\n      </div>\n    </div>\n    <div class=\"col-xl-1 text-xs-center\">\n      <div class=\"card card-default\">\n        <div class=\"card-block\">\n          .col-xl-1\n        </div>\n      </div>\n    </div>\n  </div>\n  <!-- /.row -->\n\n  <div class=\"row\">\n    <div class=\"col-xl-8 text-xs-center\">\n      <div class=\"card card-default\">\n        <div class=\"card-block\">\n          .col-xl-8\n        </div>\n      </div>\n    </div>\n    <div class=\"col-xl-4 text-xs-center\">\n      <div class=\"card card-default\">\n        <div class=\"card-block\">\n          .col-xl-4\n        </div>\n      </div>\n    </div>\n  </div>\n  <!-- /.row -->\n\n  <div class=\"row\">\n    <div class=\"col-xl-3 text-xs-center\">\n      <div class=\"card card-default\">\n        <div class=\"card-block\">\n          .col-xl-3\n        </div>\n      </div>\n    </div>\n    <div class=\"col-xl-6 text-xs-center\">\n      <div class=\"card card-default\">\n        <div class=\"card-block\">\n          .col-xl-6\n        </div>\n      </div>\n    </div>\n    <div class=\"col-xl-3 text-xs-center\">\n      <div class=\"card card-default\">\n        <div class=\"card-block\">\n          .col-xl-3\n        </div>\n      </div>\n    </div>\n  </div>\n  <!-- /.row -->\n\n</div>"
 
 /***/ }),
-
-/***/ 835:
+/* 485 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"chat-panel card card-default\">\n    <div class=\"card-header\">\n        <i class=\"fa fa-comments fa-fw\"></i>\n        Chat\n        <div class=\"float-xs-right\" dropdown>\n            <button id=\"chat-dropdown\" type=\"button\" class=\"btn btn-secondary btn-sm\" dropdownToggle [disabled]=\"disabled\">\n            </button>\n            <ul class=\"dropdown-menu dropdown-menu-right\" role=\"menu\" aria-labelledby=\"chat-dropdown\">\n                <li role=\"menuitem\"><a class=\"dropdown-item\" href=\"#\">\n                    <i class=\"fa fa-refresh fa-fw\"></i> Refresh</a>\n                </li>\n                <li role=\"menuitem\"><a class=\"dropdown-item\" href=\"#\">\n                    <i class=\"fa fa-check-circle fa-fw\"></i> Available</a>\n                </li>\n                <li role=\"menuitem\"><a class=\"dropdown-item\" href=\"#\">\n                    <i class=\"fa fa-times fa-fw\"></i> Busy</a>\n                </li>\n                <li class=\"divider dropdown-divider\"></li>\n                <li role=\"menuitem\">\n                    <a href=\"#\" class=\"dropdown-item\">\n                        <i class=\"fa fa-times fa-fw\"></i> Busy\n                    </a>\n                </li>\n                <li>\n                    <a href=\"#\" class=\"dropdown-item\">\n                        <i class=\"fa fa-clock-o fa-fw\"></i> Away\n                    </a>\n                </li>\n                <li class=\"divider\"></li>\n                <li>\n                  <a href=\"#\" class=\"dropdown-item\">\n                    <i class=\"fa fa-sign-out fa-fw\"></i> Sign Out\n                  </a>\n                </li>\n            </ul>\n        </div>\n    </div>\n    <!-- /.panel-heading -->\n    <div class=\"card-block\">\n    <ul class=\"chat\">\n      <li class=\"left clearfix\">\n                <span class=\"chat-img pull-left\">\n                    <img src=\"http://placehold.it/50/55C1E7/fff\" alt=\"User Avatar\" class=\"img-circle\">\n                </span>\n        <div class=\"chat-body clearfix\">\n          <div class=\"header\">\n            <strong class=\"primary-font\">Jack Sparrow</strong>\n            <small class=\"pull-right text-muted\">\n              <i class=\"fa fa-clock-o fa-fw\"></i> 12 mins ago\n            </small>\n          </div>\n          <p>\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.\n          </p>\n        </div>\n      </li>\n      <li class=\"right clearfix\">\n                <span class=\"chat-img pull-right\">\n                    <img src=\"http://placehold.it/50/FA6F57/fff\" alt=\"User Avatar\" class=\"img-circle\">\n                </span>\n        <div class=\"chat-body clearfix\">\n          <div class=\"header\">\n            <small class=\" text-muted\">\n              <i class=\"fa fa-clock-o fa-fw\"></i> 13 mins ago</small>\n            <strong class=\"pull-right primary-font\">Bhaumik Patel</strong>\n          </div>\n          <p>\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.\n          </p>\n        </div>\n      </li>\n      <li class=\"left clearfix\">\n                <span class=\"chat-img pull-left\">\n                    <img src=\"http://placehold.it/50/55C1E7/fff\" alt=\"User Avatar\" class=\"img-circle\">\n                </span>\n        <div class=\"chat-body clearfix\">\n          <div class=\"header\">\n            <strong class=\"primary-font\">Jack Sparrow</strong>\n            <small class=\"pull-right text-muted\">\n              <i class=\"fa fa-clock-o fa-fw\"></i> 14 mins ago</small>\n          </div>\n          <p>\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.\n          </p>\n        </div>\n      </li>\n      <li class=\"right clearfix\">\n                <span class=\"chat-img pull-right\">\n                    <img src=\"http://placehold.it/50/FA6F57/fff\" alt=\"User Avatar\" class=\"img-circle\">\n                </span>\n        <div class=\"chat-body clearfix\">\n          <div class=\"header\">\n            <small class=\" text-muted\">\n              <i class=\"fa fa-clock-o fa-fw\"></i> 15 mins ago</small>\n            <strong class=\"pull-right primary-font\">Bhaumik Patel</strong>\n          </div>\n          <p>\n            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.\n          </p>\n        </div>\n      </li>\n    </ul>\n  </div>\n  <!-- /.card-body -->\n    <div class=\"card-footer\">\n        <div class=\"input-group\">\n            <input id=\"btn-input\" type=\"text\" class=\"form-control input-sm\" placeholder=\"Type your message here...\">\n            <span class=\"input-group-btn\">\n                <button class=\"btn btn-warning btn-sm\" id=\"btn-chat\">\n                    Send\n                </button>\n            </span>\n        </div>\n    </div>\n  <!-- /.card-footer -->\n</div>"
 
 /***/ }),
-
-/***/ 836:
+/* 486 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container-fluid\">\n    <!-- Page Heading -->\n    <div class=\"row\">\n        <div class=\"col-xl-12\">\n            <h2 class=\"page-header\">\n                Overview\n            </h2>\n            <ol class=\"breadcrumb\">\n                <li class=\"breadcrumb-item\">\n                    <i class=\"fa fa-fw fa-dashboard\"></i>\n                    <a [routerLink]=\"['/dashboard/home']\"> Dashboard</a>\n                </li>\n                <li class=\"breadcrumb-item active\">\n                    <i class=\"fa fa-fw fa-eye\"></i> Overview\n                </li>\n            </ol>\n        </div>\n    </div>\n    <hr>\n    <div>\n        <div class=\"row\">\n            <div class=\"col-xl-3 col-lg-6\">\n                <div class=\"card card-primary card-inverse\">\n                    <div class=\"card-header card-primary\">\n                        <div class=\"row\">\n                            <div class=\"col-xs-3\">\n                                <i class=\"fa fa-comments fa-5x\"></i>\n                            </div>\n                            <div class=\"col-xs-9 text-xs-right\">\n                                <div class=\"huge\">26</div>\n                                <div>New Comments!</div>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card-footer card-default\">\n                        <a href=\"javascript:;\">\n                            <span class=\"pull-xs-left\">View Details</span>\n                            <span class=\"pull-xs-right\"><i class=\"fa fa-arrow-circle-right\"></i></span>\n                            <div class=\"clearfix\"></div>\n                        </a>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-xl-3 col-lg-6\">\n                <div class=\"card card-success card-inverse\">\n                    <div class=\"card-header card-success\">\n                        <div class=\"row\">\n                            <div class=\"col-xs-3\">\n                                <i class=\"fa fa-tasks fa-5x\"></i>\n                            </div>\n                            <div class=\"col-xs-9 text-xs-right\">\n                                <div class=\"huge\">12</div>\n                                <div>New Tasks!</div>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card-footer card-green\">\n                        <a class=\"text-success\" href=\"javascript:void(0);\">\n                            <span class=\"pull-xs-left\">View Details</span>\n                            <span class=\"pull-xs-right\"><i class=\"fa fa-arrow-circle-right\"></i></span>\n                            <div class=\"clearfix\"></div>\n                        </a>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-xl-3 col-lg-6\">\n                <div class=\"card card-warning card-inverse\">\n                    <div class=\"card-header card-warning\">\n                        <div class=\"row\">\n                            <div class=\"col-xs-3\">\n                                <i class=\"fa fa-shopping-cart fa-5x\"></i>\n                            </div>\n                            <div class=\"col-xs-9 text-xs-right\">\n                                <div class=\"huge\">124</div>\n                                <div>New Orders!</div>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card-footer card-yellow\">\n                        <a class=\"text-warning\" href=\"javascript:void(0);\">\n                            <span class=\"pull-xs-left\">View Details</span>\n                            <span class=\"pull-xs-right\"><i class=\"fa fa-arrow-circle-right\"></i></span>\n                            <div class=\"clearfix\"></div>\n                        </a>\n                    </div>\n                </div>\n            </div>\n            <div class=\"col-xl-3 col-lg-6\">\n                <div class=\"card card-danger card-inverse\">\n                    <div class=\"card-header card-danger\">\n                        <div class=\"row\">\n                            <div class=\"col-xs-3\">\n                                <i class=\"fa fa-support fa-5x\"></i>\n                            </div>\n                            <div class=\"col-xs-9 text-xs-right\">\n                                <div class=\"huge\">13</div>\n                                <div>Support Tickets!</div>\n                            </div>\n                        </div>\n                    </div>\n                    <div class=\"card-footer card-red\">\n                        <a class=\"text-danger\" href=\"javascript:void(0);\">\n                            <span class=\"pull-xs-left\">View Details</span>\n                            <span class=\"pull-xs-right\"><i class=\"fa fa-arrow-circle-right\"></i></span>\n                            <div class=\"clearfix\"></div>\n                        </a>\n                    </div>\n                </div>\n            </div>\n        </div>\n        <hr>\n        <alert *ngFor=\"let alert of alerts; let i = index\" [type]=\"alert.type\" dismissible=\"true\" (close)=\"closeAlert(i)\">\n            {{ alert?.msg }}\n        </alert>\n        <div class=\"row\">\n            <div class=\"col-lg-8\">\n                <div class=\"card card-default\">\n                    <div class=\"card-header\">\n                        <i class=\"fa fa-clock-o fa-fw\"></i> Responsive Timeline\n                    </div>\n                    <!-- /.card-header -->\n                    <app-timeline-cmp></app-timeline-cmp>\n                    <!-- /.card-body -->\n                </div>\n                <!-- /.card -->\n            </div>\n            <!-- /.col-lg-8 -->\n            <div class=\"col-lg-4\">\n                <div class=\"card card-default\">\n                    <div class=\"card-header\">\n                        <i class=\"fa fa-bell fa-fw\"></i> Notifications card\n                    </div>\n                    <!-- /.card-header -->\n                    <app-notifications-cmp></app-notifications-cmp>\n                    <!-- /.card-body -->\n                </div>\n                <!-- /.card -->\n\n                <app-chat-cmp></app-chat-cmp>\n                <!-- /.card .chat-card -->\n            </div>\n            <!-- /.col-lg-4 -->\n        </div>\n\n    </div>"
 
 /***/ }),
-
-/***/ 837:
+/* 487 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"panel-body\">\n  <div class=\"list-group\">\n    <a href=\"#\" class=\"list-group-item\">\n      <i class=\"fa fa-comment fa-fw\"></i> New Comment\n            <span class=\"pull-right text-muted small\"><em>4 minutes ago</em>\n            </span>\n    </a>\n    <a href=\"#\" class=\"list-group-item\">\n      <i class=\"fa fa-twitter fa-fw\"></i> 3 New Followers\n            <span class=\"pull-right text-muted small\"><em>12 minutes ago</em>\n            </span>\n    </a>\n    <a href=\"#\" class=\"list-group-item\">\n      <i class=\"fa fa-envelope fa-fw\"></i> Message Sent\n            <span class=\"pull-right text-muted small\"><em>27 minutes ago</em>\n            </span>\n    </a>\n    <a href=\"#\" class=\"list-group-item\">\n      <i class=\"fa fa-tasks fa-fw\"></i> New Task\n            <span class=\"pull-right text-muted small\"><em>43 minutes ago</em>\n            </span>\n    </a>\n    <a href=\"#\" class=\"list-group-item\">\n      <i class=\"fa fa-upload fa-fw\"></i> Server Rebooted\n            <span class=\"pull-right text-muted small\"><em>11:32 AM</em>\n            </span>\n    </a>\n    <a href=\"#\" class=\"list-group-item\">\n      <i class=\"fa fa-bolt fa-fw\"></i> Server Crashed!\n            <span class=\"pull-right text-muted small\"><em>11:13 AM</em>\n            </span>\n    </a>\n    <a href=\"#\" class=\"list-group-item\">\n      <i class=\"fa fa-warning fa-fw\"></i> Server Not Responding\n            <span class=\"pull-right text-muted small\"><em>10:57 AM</em>\n            </span>\n    </a>\n    <a href=\"#\" class=\"list-group-item\">\n      <i class=\"fa fa-shopping-cart fa-fw\"></i> New Order Placed\n            <span class=\"pull-right text-muted small\"><em>9:49 AM</em>\n            </span>\n    </a>\n    <a href=\"#\" class=\"list-group-item\">\n      <i class=\"fa fa-money fa-fw\"></i> Payment Received\n            <span class=\"pull-right text-muted small\"><em>Yesterday</em>\n            </span>\n    </a>\n  </div>\n  <!-- /.list-group -->\n  <a href=\"#\" class=\"btn btn-default btn-block\">View All Alerts</a>\n</div>\n"
 
 /***/ }),
-
-/***/ 838:
+/* 488 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"card-block\">\n  <ul class=\"timeline\">\n    <li>\n      <div class=\"timeline-badge\"><i class=\"fa fa-check\"></i>\n      </div>\n      <div class=\"timeline-panel\">\n        <div class=\"timeline-heading\">\n          <h4 class=\"timeline-title\">Lorem ipsum dolor</h4>\n          <p><small class=\"text-muted\"><i class=\"fa fa-clock-o\"></i> 11 hours ago via Twitter</small>\n          </p>\n        </div>\n        <div class=\"timeline-body\">\n          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero laboriosam dolor perspiciatis omnis exercitationem. Beatae, officia pariatur? Est cum veniam excepturi. Maiores praesentium, porro voluptas suscipit facere rem dicta, debitis.</p>\n        </div>\n      </div>\n    </li>\n    <li class=\"timeline-inverted\">\n      <div class=\"timeline-badge warning\"><i class=\"fa fa-credit-card\"></i>\n      </div>\n      <div class=\"timeline-panel\">\n        <div class=\"timeline-heading\">\n          <h4 class=\"timeline-title\">Lorem ipsum dolor</h4>\n        </div>\n        <div class=\"timeline-body\">\n          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolorem quibusdam, tenetur commodi provident cumque magni voluptatem libero, quis rerum. Fugiat esse debitis optio, tempore. Animi officiis alias, officia repellendus.</p>\n          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maiores odit qui est tempora eos, nostrum provident explicabo dignissimos debitis vel! Adipisci eius voluptates, ad aut recusandae minus eaque facere.</p>\n        </div>\n      </div>\n    </li>\n    <li>\n      <div class=\"timeline-badge danger\"><i class=\"fa fa-bomb\"></i>\n      </div>\n      <div class=\"timeline-panel\">\n        <div class=\"timeline-heading\">\n          <h4 class=\"timeline-title\">Lorem ipsum dolor</h4>\n        </div>\n        <div class=\"timeline-body\">\n          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus numquam facilis enim eaque, tenetur nam id qui vel velit similique nihil iure molestias aliquam, voluptatem totam quaerat, magni commodi quisquam.</p>\n        </div>\n      </div>\n    </li>\n    <li class=\"timeline-inverted\">\n      <div class=\"timeline-panel\">\n        <div class=\"timeline-heading\">\n          <h4 class=\"timeline-title\">Lorem ipsum dolor</h4>\n        </div>\n        <div class=\"timeline-body\">\n          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates est quaerat asperiores sapiente, eligendi, nihil. Itaque quos, alias sapiente rerum quas odit! Aperiam officiis quidem delectus libero, omnis ut debitis!</p>\n        </div>\n      </div>\n    </li>\n    <li>\n      <div class=\"timeline-badge info\"><i class=\"fa fa-save\"></i>\n      </div>\n      <div class=\"timeline-panel\">\n        <div class=\"timeline-heading\">\n          <h4 class=\"timeline-title\">Lorem ipsum dolor</h4>\n        </div>\n        <div class=\"timeline-body\">\n          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis minus modi quam ipsum alias at est molestiae excepturi delectus nesciunt, quibusdam debitis amet, beatae consequuntur impedit nulla qui! Laborum, atque.</p>\n          <hr>\n          <div class=\"btn-group\">\n            <button type=\"button\" class=\"btn btn-primary btn-sm dropdown-toggle\" data-toggle=\"dropdown\">\n              <i class=\"fa fa-gear\"></i>  <span class=\"caret\"></span>\n            </button>\n            <ul class=\"dropdown-menu\" role=\"menu\">\n              <li><a href=\"#\">Action</a>\n              </li>\n              <li><a href=\"#\">Another action</a>\n              </li>\n              <li><a href=\"#\">Something else here</a>\n              </li>\n              <li class=\"divider\"></li>\n              <li><a href=\"#\">Separated link</a>\n              </li>\n            </ul>\n          </div>\n        </div>\n      </div>\n    </li>\n    <li>\n      <div class=\"timeline-panel\">\n        <div class=\"timeline-heading\">\n          <h4 class=\"timeline-title\">Lorem ipsum dolor</h4>\n        </div>\n        <div class=\"timeline-body\">\n          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi fuga odio quibusdam. Iure expedita, incidunt unde quis nam! Quod, quisquam. Officia quam qui adipisci quas consequuntur nostrum sequi. Consequuntur, commodi.</p>\n        </div>\n      </div>\n    </li>\n    <li class=\"timeline-inverted\">\n      <div class=\"timeline-badge success\"><i class=\"fa fa-graduation-cap\"></i>\n      </div>\n      <div class=\"timeline-panel\">\n        <div class=\"timeline-heading\">\n          <h4 class=\"timeline-title\">Lorem ipsum dolor</h4>\n        </div>\n        <div class=\"timeline-body\">\n          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt obcaecati, quaerat tempore officia voluptas debitis consectetur culpa amet, accusamus dolorum fugiat, animi dicta aperiam, enim incidunt quisquam maxime neque eaque.</p>\n        </div>\n      </div>\n    </li>\n  </ul>\n</div>\n"
 
 /***/ }),
-
-/***/ 839:
+/* 489 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"container-fluid\">\n  <!-- Page Heading -->\n  <div class=\"row\">\n    <div class=\"col-xl-12\">\n      <h2 class=\"page-header\">\n        Tables\n      </h2>\n      <ol class=\"breadcrumb\">\n        <li class=\"breadcrumb-item\">\n          <i class=\"fa fa-dashboard\"></i>\n          <a routerLink=\"/dashboard/home\">Dashboard</a>\n        </li>\n        <li class=\"breadcrumb-item active\">\n          <i class=\"fa fa-table\"></i> Tables\n        </li>\n      </ol>\n    </div>\n  </div>\n  <!-- /.row -->\n  <div class=\"row\">\n    <div class=\"col-xl-6 col-lg-12\">\n      <h4>Basic example</h4>\n      <div class=\"card card-block\">\n        <div class=\"table-responsive\">\n          <table class=\"table\">\n            <thead>\n              <tr>\n                <th>#</th>\n                <th>First Name</th>\n                <th>Last Name</th>\n                <th>Username</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <th scope=\"row\">1</th>\n                <td>Mark</td>\n                <td>Otto</td>\n                <td>@mdo</td>\n              </tr>\n              <tr>\n                <th scope=\"row\">2</th>\n                <td>Jacob</td>\n                <td>Thornton</td>\n                <td>@fat</td>\n              </tr>\n              <tr>\n                <th scope=\"row\">3</th>\n                <td>Larry</td>\n                <td>the Bird</td>\n                <td>@twitter</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n      </div>\n      <h4>Table head options</h4>\n      <div class=\"card card-block\">\n        <div class=\"table-responsive\">\n          <table class=\"table\">\n            <thead class=\"thead-inverse\">\n              <tr>\n                <th>#</th>\n                <th>First Name</th>\n                <th>Last Name</th>\n                <th>Username</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <th scope=\"row\">1</th>\n                <td>Mark</td>\n                <td>Otto</td>\n                <td>@mdo</td>\n              </tr>\n              <tr>\n                <th scope=\"row\">2</th>\n                <td>Jacob</td>\n                <td>Thornton</td>\n                <td>@fat</td>\n              </tr>\n              <tr>\n                <th scope=\"row\">3</th>\n                <td>Larry</td>\n                <td>the Bird</td>\n                <td>@twitter</td>\n              </tr>\n            </tbody>\n          </table>\n          <table class=\"table\">\n            <thead class=\"thead-default\">\n              <tr>\n                <th>#</th>\n                <th>First Name</th>\n                <th>Last Name</th>\n                <th>Username</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <th scope=\"row\">1</th>\n                <td>Mark</td>\n                <td>Otto</td>\n                <td>@mdo</td>\n              </tr>\n              <tr>\n                <th scope=\"row\">2</th>\n                <td>Jacob</td>\n                <td>Thornton</td>\n                <td>@fat</td>\n              </tr>\n              <tr>\n                <th scope=\"row\">3</th>\n                <td>Larry</td>\n                <td>the Bird</td>\n                <td>@twitter</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n      </div>\n      <h4>Bordered table</h4>\n      <div class=\"card card-block\">\n        <div class=\"table-responsive\">\n          <table class=\"table table-bordered\">\n            <thead>\n              <tr>\n                <th>#</th>\n                <th>First Name</th>\n                <th>Last Name</th>\n                <th>Username</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <th scope=\"row\">1</th>\n                <td>Mark</td>\n                <td>Otto</td>\n                <td>@mdo</td>\n              </tr>\n              <tr>\n                <th scope=\"row\">2</th>\n                <td>Mark</td>\n                <td>Otto</td>\n                <td>@TwBootstrap</td>\n              </tr>\n              <tr>\n                <th scope=\"row\">3</th>\n                <td>Jacob</td>\n                <td>Thornton</td>\n                <td>@fat</td>\n              </tr>\n              <tr>\n                <th scope=\"row\">4</th>\n                <td colspan=\"2\">Larry the Bird</td>\n                <td>@twitter</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n      </div>\n      <h4>Small table</h4>\n      <div class=\"card card-block\">\n        <table class=\"table table-sm\">\n          <thead>\n            <tr>\n              <th>#</th>\n              <th>First Name</th>\n              <th>Last Name</th>\n              <th>Username</th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr>\n              <th scope=\"row\">1</th>\n              <td>Mark</td>\n              <td>Otto</td>\n              <td>@mdo</td>\n            </tr>\n            <tr>\n              <th scope=\"row\">2</th>\n              <td>Jacob</td>\n              <td>Thornton</td>\n              <td>@fat</td>\n            </tr>\n            <tr>\n              <th scope=\"row\">3</th>\n              <td colspan=\"2\">Larry the Bird</td>\n              <td>@twitter</td>\n            </tr>\n          </tbody>\n        </table>\n      </div>\n    </div>\n    <div class=\"col-xl-6 col-lg-12\">\n      <h4>Inverse table</h4>\n      <div class=\"card card-block\">\n        <div class=\"table-responsive\">\n          <table class=\"table table-inverse\">\n            <thead>\n              <tr>\n                <th>#</th>\n                <th>First Name</th>\n                <th>Last Name</th>\n                <th>Username</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <th scope=\"row\">1</th>\n                <td>Mark</td>\n                <td>Otto</td>\n                <td>@mdo</td>\n              </tr>\n              <tr>\n                <th scope=\"row\">2</th>\n                <td>Jacob</td>\n                <td>Thornton</td>\n                <td>@fat</td>\n              </tr>\n              <tr>\n                <th scope=\"row\">3</th>\n                <td>Larry</td>\n                <td>the Bird</td>\n                <td>@twitter</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n      </div>\n      <h4>Striped Rows</h4>\n      <div class=\"card card-block\">\n        <div class=\"table-responsive\">\n          <table class=\"table table-hover table-striped\">\n            <thead>\n              <tr>\n                <th>Page</th>\n                <th>Visits</th>\n                <th>% New Visits</th>\n                <th>Revenue</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td>/index.html</td>\n                <td>1265</td>\n                <td>32.3%</td>\n                <td>$321.33</td>\n              </tr>\n              <tr>\n                <td>/about.html</td>\n                <td>261</td>\n                <td>33.3%</td>\n                <td>$234.12</td>\n              </tr>\n              <tr>\n                <td>/sales.html</td>\n                <td>665</td>\n                <td>21.3%</td>\n                <td>$16.34</td>\n              </tr>\n              <tr>\n                <td>/blog.html</td>\n                <td>9516</td>\n                <td>89.3%</td>\n                <td>$1644.43</td>\n              </tr>\n              <tr>\n                <td>/404.html</td>\n                <td>23</td>\n                <td>34.3%</td>\n                <td>$23.52</td>\n              </tr>\n              <tr>\n                <td>/services.html</td>\n                <td>421</td>\n                <td>60.3%</td>\n                <td>$724.32</td>\n              </tr>\n              <tr>\n                <td>/blog/post.html</td>\n                <td>1233</td>\n                <td>93.2%</td>\n                <td>$126.34</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n      </div>\n      <h4>Hoverable rows</h4>\n      <div class=\"card card-block\">\n        <table class=\"table table-hover\">\n          <thead>\n            <tr>\n              <th>#</th>\n              <th>First Name</th>\n              <th>Last Name</th>\n              <th>Username</th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr>\n              <th scope=\"row\">1</th>\n              <td>Mark</td>\n              <td>Otto</td>\n              <td>@mdo</td>\n            </tr>\n            <tr>\n              <th scope=\"row\">2</th>\n              <td>Jacob</td>\n              <td>Thornton</td>\n              <td>@fat</td>\n            </tr>\n            <tr>\n              <th scope=\"row\">3</th>\n              <td colspan=\"2\">Larry the Bird</td>\n              <td>@twitter</td>\n            </tr>\n          </tbody>\n        </table>\n      </div>\n      <h4>Contextual classes</h4>\n      <div class=\"card card-block\">\n        <table class=\"table\">\n          <thead>\n            <tr>\n              <th>#</th>\n              <th>First Name</th>\n              <th>Last Name</th>\n              <th>Username</th>\n            </tr>\n          </thead>\n          <tbody>\n            <tr class=\"table-active\">\n              <th scope=\"row\">1</th>\n              <td>Mark</td>\n              <td>Otto</td>\n              <td>@mdo</td>\n            </tr>\n            <tr class=\"table-success\">\n              <th scope=\"row\">2</th>\n              <td>Jacob</td>\n              <td>Thornton</td>\n              <td>@fat</td>\n            </tr>\n            <tr class=\"table-info\">\n              <th scope=\"row\">3</th>\n              <td>Larry</td>\n              <td>the Bird</td>\n              <td>@twitter</td>\n            </tr>\n            <tr class=\"table-warning\">\n              <th scope=\"row\">3</th>\n              <td>Larry</td>\n              <td>the Bird</td>\n              <td>@twitter</td>\n            </tr>\n            <tr class=\"table-danger\">\n              <th scope=\"row\">3</th>\n              <td>Larry</td>\n              <td>the Bird</td>\n              <td>@twitter</td>\n            </tr>\n          </tbody>\n        </table>\n      </div>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
-
-/***/ 840:
+/* 490 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"login-page\">\n\t<div class=\"row\">\n\t\t<div class=\"col-lg-4 offset-lg-4\">\n        \t<img src=\"assets/img/SB-admin.png\" width=\"150px\" class=\"user-avatar\" />\n\t\t\t<h1>SB Admin BS 4 Angular2</h1>\n\t\t\t<form role=\"form\">\n\t\t\t\t<div class=\"form-content\">\n\t\t\t\t\t<div class=\"form-group\">\n\t\t\t\t\t\t<input type=\"text\" ng-model=\"name\" class=\"form-control input-underline input-lg\" id=\"\" placeholder=\"Email\">\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<div class=\"form-group\">\n\t\t\t\t\t\t<input type=\"password\" class=\"form-control input-underline input-lg\" id=\"\" placeholder=\"Password\">\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<a class=\"btn rounded-btn\" routerLink=\"/dashboard/home\"> Log in </a>\t\t\t\t\n\t\t\t\t&nbsp;\n\t\t\t\t<a class=\"btn rounded-btn\" routerLink=\"/signup\">Register</a>\n\t\t\t</form>\n\t\t</div>\t\n\t</div>\n</div>"
 
 /***/ }),
-
-/***/ 841:
+/* 491 */
 /***/ (function(module, exports) {
 
 module.exports = "<nav class=\"navbar-toggleable-md navbar-inverse bg-inverse\">\n  <button class=\"navbar-toggler navbar-toggler-left\" type=\"button\" (click)=\"sidebarCollapsed = !sidebarCollapsed\" aria-controls=\"navbarSupportedContent\"\n    aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n    </button>\n</nav>\n<div [collapse]=\"sidebarCollapsed\" class=\"sidebar-collapse\">\n  <ul class=\"sidebar-inverse-nav bg-inverse\">\n    <ng-container *ngFor=\"let item of menuList\">\n      <li class=\"side-item\" *ngIf=\"item.children.length === 0\">\n        <a [routerLink]=\"[item.link]\" [routerLinkActive]=\"['active-link']\" class=\"side-link\">\n          <i class=\"{{item.glyph}}\"></i> &nbsp; {{item.name}}\n        </a>\n      </li>\n      <li class=\"side-item\" *ngIf=\"item.children.length > 0\">\n        <a [routerLink]=\"['components']\" [routerLinkActive]=\"['router-link-active']\" class=\"side-link\" (click)=\"item.collapse = !item.collapse\">\n          <i class=\"fa fa-plus\"></i> &nbsp; {{item.name}}\n          <i *ngIf=\"item.collapse\" class=\"{{subMenuGlyphDown}} float-right\" aria-hidden=\"true\"></i>\n          <i *ngIf=\"!item.collapse\" class=\"{{subMenuGlyphUp}} float-right\" aria-hidden=\"true\"></i>\n        </a>\n        <div [collapse]=\"item.collapse\">\n          <ul>\n            <li class=\"sub-item\" *ngFor=\"let child of item.children\">\n              <a [routerLink]=\"[item.link + '/' + child.link]\" [routerLinkActive]=\"['router-link-active']\" class=\"side-link\">\n                <i class=\"{{child.glyph}}\"></i> &nbsp; {{child.name}}\n              </a>\n            </li>\n          </ul>\n        </div>\n      </li>\n    </ng-container>\n    <li class=\"side-item\">\n      <a class=\"side-link\" href=\"https://github.com/DouglasWebster/angular-cli-sb2-bs4\">\n        GitHub Source\n        </a>\n    </li>\n  </ul>\n</div>"
 
 /***/ }),
-
-/***/ 842:
+/* 492 */
 /***/ (function(module, exports) {
 
 module.exports = "<nav class=\"navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse topnav\">\n  <button class=\"navbar-toggler navbar-toggler-right\" type=\"button\" (click)=\"topNavCollapsed = !topNavCollapsed\" aria-controls=\"navbarSupportedContent\"\n    aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n    <span class=\"navbar-toggler-icon\"></span>\n  </button>\n  <a class=\"navbar-brand text-center text-lg-left\" href=\"#\">SB Admin BS 4 Angular2</a>\n\n  <div [collapse]=\"topNavCollapsed\" class=\"navbar-collapse\">\n    <ul class=\"navbar-nav mr-auto\">\n    </ul>\n    <ul class=\"navbar-nav\">\n      <li class=\"nav-item\">\n        <a href=\"https://github.com/DouglasWebster/angular_cli-sb2-bs4/archive/master.zip\" class=\"btn btn-outline-secondary\" role=\"button\">\n          Download Now\n        </a>\n      </li>\n      <li class=\"nav-item\" dropdown>\n        <a href id=\"dropdownMenu1\" class=\"nav-link dropdown-toggle\" dropdownToggle>\n          <i class=\"fa fa-envelope\"></i>\n          <b class=\"caret\"></b>\n          <span class=\"sr-only\">(current)</span>\n        </a>\n        <ul class=\"dropdown-menu message-dropdown dropdown-menu-right\" aria-labelledby=\"dropdownMenu1\">\n          <li class=\"message-preview\">\n            <a href=\"javascript:;\" class=\"dropdown-item\">\n              <div class=\"media\">\n                <span class=\"media-left hidden-md-down\">\n                              <img class=\"media-object\" src=\"http://i.huffpost.com/gadgets/slideshows/461162/slide_461162_6224974_sq50.jpg\" alt=\"\">\n                          </span>\n                <div class=\"media-body\">\n                  <h5 class=\"media-heading\"><strong>John Smith</strong>\n                  </h5>\n                  <p class=\"small text-muted\"><i class=\"fa fa-clock-o\"></i> Yesterday at 4:32 PM</p>\n                  <p class=\"last hidden-md-down\"> Lorem ipsum dolor sit amet, consectetur...</p>\n                </div>\n              </div>\n            </a>\n          </li>\n          <hr>\n          <li class=\"message-preview\">\n            <a href=\"javascript:;\" class=\"dropdown-item\">\n              <div class=\"media\">\n                <span class=\"media-left hidden-md-down\">\n                              <img class=\"media-object\" src=\"http://i.huffpost.com/gadgets/slideshows/461162/slide_461162_6224974_sq50.jpg\" alt=\"\">\n                          </span>\n                <div class=\"media-body\">\n                  <h5 class=\"media-heading\"><strong>John Smith</strong>\n                  </h5>\n                  <p class=\"small text-muted\"><i class=\"fa fa-clock-o\"></i> Yesterday at 4:32 PM</p>\n                  <p class=\"last hidden-md-down\"> Lorem ipsum dolor sit amet, consectetur...</p>\n                </div>\n              </div>\n            </a>\n          </li>\n          <hr>\n          <li class=\"message-preview\">\n            <a href=\"javascript:;\" class=\"dropdown-item\">\n              <div class=\"media\">\n                <span class=\"media-left hidden-md-down\">\n                              <img class=\"media-object\" src=\"http://i.huffpost.com/gadgets/slideshows/461162/slide_461162_6224974_sq50.jpg\" alt=\"\">\n                          </span>\n                <div class=\"media-body\">\n                  <h5 class=\"media-heading\"><strong>John Smith</strong>\n                  </h5>\n                  <p class=\"small text-muted\"><i class=\"fa fa-clock-o\"></i> Yesterday at 4:32 PM</p>\n                  <p class=\"last hidden-md-down\"> Lorem ipsum dolor sit amet, consectetur...</p>\n                </div>\n              </div>\n            </a>\n          </li>\n          <hr>\n          <li class=\"dropdown-item message-footer\">\n            <a href=\"javascript:;\" class=\"dropdown-item text-center\">Read All New Messages</a>\n          </li>\n        </ul>\n      </li>\n      <li class=\"nav-item\" dropdown>\n        <a href id=\"dropdownMenu2\" class=\"nav-link dropdown-toggle\" dropdownToggle>\n          <i class=\"fa fa-bell\"></i> <b class=\"caret\"></b><span class=\"sr-only\">(current)</span>\n        </a>\n        <ul class=\"dropdown-menu alert-dropdown dropdown-menu-right\" aria-labelledby=\"dropdownMenu2\">\n          <li>\n            <a href=\"javascript:;\" class=\"dropdown-item\">Alert Name <span class=\"label label-default\"> Alert Badge</span></a>\n          </li>\n          <li>\n            <a href=\"javascript:;\" class=\"dropdown-item\">Alert Name <span class=\"label label-default\"> Alert Badge</span></a>\n          </li>\n          <li>\n            <a href=\"javascript:;\" class=\"dropdown-item\">Alert Name <span class=\"label label-default\"> Alert Badge</span></a>\n          </li>\n          <li class=\"dropdown-divider\"></li>\n          <li>\n            <a href=\"javascript:;\" class=\"dropdown-item\">View All</a>\n          </li>\n        </ul>\n      </li>\n      <li class=\"nav-item\" dropdown>\n        <a href id=\"dropdownMenu3\" class=\"nav-link dropdown-toggle\" dropdownToggle>\n          <i class=\"fa fa-user\"></i> John Smith <b class=\"caret\"></b>\n        </a>\n        <ul class=\"dropdown-menu dropdown-menu-right\" aria-labelledby=\"dropdownMenu3\">\n          <li>\n            <a class=\"dropdown-item\" href=\"javascript:;\"><i class=\"fa fa-fw fa-user\"></i> Profile</a>\n          </li>\n          <li>\n            <a class=\"dropdown-item\" href=\"javascript:;\"><i class=\"fa fa-fw fa-envelope\"></i> Inbox</a>\n          </li>\n          <li>\n            <a class=\"dropdown-item\" href=\"javascript:;\"><i class=\"fa fa-fw fa-gear\"></i> Settings</a>\n          </li>\n          <li class=\"dropdown-divider\"></li>\n          <li>\n            <a class=\"dropdown-item\" href=\"javascript:;\">\n              <i class=\"fa fa-fw fa-power-off\"></i> Log Out\n            </a>\n          </li>\n        </ul>\n      </li>\n    </ul>\n  </div>\n</nav>"
 
 /***/ }),
-
-/***/ 843:
+/* 493 */
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"login-page\">\n\t<div class=\"row\">\n\t\t<div class=\"col-lg-4 offset-lg-4\">\n        \t<img src=\"assets/img/SB-admin.png\" width=\"150px;\" class=\"user-avatar\" />\n\t\t\t<h1>SB Admin BS 4 Angular2</h1>\n\t\t\t<form role=\"form\">\n\t\t\t\t<div class=\"form-content\">\n\t\t\t\t\t<div class=\"form-group\">\n\t\t\t\t\t\t<input type=\"text\" class=\"form-control input-underline input-lg\" id=\"\" placeholder=\"Full Name\">\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<div class=\"form-group\">\n\t\t\t\t\t\t<input type=\"text\" class=\"form-control input-underline input-lg\" id=\"\" placeholder=\"Email\">\n\t\t\t\t\t</div>\n\n\t\t\t\t\t<div class=\"form-group\">\n\t\t\t\t\t\t<input type=\"password\" class=\"form-control input-underline input-lg\" id=\"\" placeholder=\"Password\">\n\t\t\t\t\t</div>\n\t\t\t\t\t<div class=\"form-group\">\n\t\t\t\t\t\t<input type=\"password\" class=\"form-control input-underline input-lg\" id=\"\" placeholder=\"Repeat Password\">\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<a  class=\"btn rounded-btn\" routerLink=\"/dashboard/home\"> Register </a>&nbsp;\n\t\t\t\t<a  class=\"btn rounded-btn\" routerLink=\"/\"> Log in </a>\n\t\t\t</form>\n\t\t</div>\t\n\t</div>\n</div>\n"
 
 /***/ }),
-
-/***/ 877:
+/* 494 */,
+/* 495 */,
+/* 496 */,
+/* 497 */,
+/* 498 */,
+/* 499 */,
+/* 500 */,
+/* 501 */,
+/* 502 */,
+/* 503 */,
+/* 504 */,
+/* 505 */,
+/* 506 */,
+/* 507 */,
+/* 508 */,
+/* 509 */,
+/* 510 */,
+/* 511 */,
+/* 512 */,
+/* 513 */,
+/* 514 */,
+/* 515 */,
+/* 516 */,
+/* 517 */,
+/* 518 */,
+/* 519 */,
+/* 520 */,
+/* 521 */,
+/* 522 */,
+/* 523 */,
+/* 524 */,
+/* 525 */,
+/* 526 */,
+/* 527 */,
+/* 528 */,
+/* 529 */,
+/* 530 */,
+/* 531 */,
+/* 532 */,
+/* 533 */,
+/* 534 */,
+/* 535 */,
+/* 536 */,
+/* 537 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(560);
+module.exports = __webpack_require__(322);
 
 
 /***/ })
-
-},[877]);
+]),[537]);
 //# sourceMappingURL=main.bundle.js.map
