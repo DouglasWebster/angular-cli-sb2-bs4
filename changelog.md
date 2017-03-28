@@ -1,8 +1,19 @@
+## 1.2.0  
+
+* **package.json**  
+
+   1. Updated to Angular 4
+   2. All other dependencies updated to latest version as per Greenkeeper reports.
+
+* **bs-components**  
+
+   1. Added native BS4 examples to progress bars as ng2-bootstrap progress bars not well developed.
+
 ## 1.1.3
 
 * **Unit Testing**  
 
-   1. Implemented uint testing on througout the projec.
+   1. Implemented uint testing on througout the project.
 
 
 ## 1.1.2
@@ -15,7 +26,7 @@
 
 *  **package.json**  
    1. Added angular-cli-ghpages as deploy functionality removed fro angular-cli.  
-   2. Added deplpy4gh task to scripts.  This uses the package **config:ghroot** parameter for the href in index.html.
+   2. Added deploy4gh task to scripts.  This uses the package **config:ghroot** parameter for the href in index.html.
         
 
 ## 1.1.1
