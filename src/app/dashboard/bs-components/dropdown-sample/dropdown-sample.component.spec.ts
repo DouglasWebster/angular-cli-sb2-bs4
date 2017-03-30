@@ -4,7 +4,7 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { DropdownSampleComponent } from './dropdown-sample.component';
-import { DropdownModule } from 'ng2-bootstrap/dropdown';
+import { BsDropdownModule } from 'ng2-bootstrap/dropdown';
 
 describe('DropdownSampleComponent', () => {
   let component: DropdownSampleComponent;
@@ -14,7 +14,7 @@ describe('DropdownSampleComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [DropdownModule.forRoot()],
+      imports: [BsDropdownModule.forRoot()],
       declarations: [DropdownSampleComponent]
     });
     // .compileComponents(); <- not required for webpack
