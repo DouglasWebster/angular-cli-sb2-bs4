@@ -33,44 +33,4 @@ describe('DropdownSampleComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should have a dropdown button labeled Button Dropdown', () => {
-
-    expect(debugEl.query(By.css('#single-button')).nativeElement).toBeDefined('Button Dropdown not defined');
-
-  });
-
-  it('should have the Dropdown Button dropdown closed by default', () => {
-    fixture.detectChanges();
-    const btn = debugEl.query(By.css('#single-button'));
-    console.log(btn);
-
-    expect(btn.nativeElement.parentElement.classList).not.toContain('open');
-  });
-
-
-  it('should open and close the Dropdown Button dropdown when the button is repeatedly clicked', () => {
-
-    fixture.detectChanges();
-    const btn = debugEl.query(By.css('#single-button'));
-    btn.nativeElement.click();
-    fixture.detectChanges();
-    expect(btn.nativeElement.parentElement.classList).toContain('open', 'failed to open');
-    btn.nativeElement.click();
-    fixture.detectChanges();
-    expect(btn.nativeElement.parentElement.classList).not.toContain('open', 'failed to close');
-    btn.nativeElement.click();
-    fixture.detectChanges();
-    expect(btn.nativeElement.parentElement.classList).toContain('open', 'failed to reopen');
-  });
-
-
-  it('should have a hyperlink that acts as a dropdown', () => {
-    const btn = debugEl.query(By.css('#simple-dropdown'));
-    console.log('hyperlink button is: ', btn);
-    spyOn(component, 'toggled').and.callThrough();
-    btn.nativeElement.click();
-    expect(component.toggled).toHaveBeenCalledWith(true);
-  });
-
-
 });
