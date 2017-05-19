@@ -63,5 +63,3 @@
   }
 }
 
-    "karma": "~1.6.0",
-    "jasmine-spec-reporter": "~4.0.0",
