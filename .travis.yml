@@ -26,8 +26,8 @@ before_script:
   - npm install -g @angular/cli
 
 script:
-  - ng test -sr
-  - ng test -sr -cc
+  - ng test --no-progress -sr
+  - ng test --no-progress -sr -cc
 
 after_success:
   - ./node_modules/.bin/codecov
