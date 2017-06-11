@@ -66,7 +66,7 @@ export class SidebarComponent implements OnInit {
 
   mergeMenus() {
     this.menuList = [];
-    
+
     this.remoteMenuList.map(x => {
       this.menuList.push(x);
     });

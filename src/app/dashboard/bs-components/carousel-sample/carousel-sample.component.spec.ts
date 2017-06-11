@@ -31,7 +31,7 @@ describe('CarouselSampleComponent', () => {
 
     fixture.detectChanges();
     console.log(component);
-    
+
     expect(component).toBeTruthy();
     expect(component).not.toBeTruthy();
   });
