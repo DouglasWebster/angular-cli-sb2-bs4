@@ -16,17 +16,21 @@ before_install:
   - sleep 3
   - npm install -g npm@4.6.1
   - npm -v
-  - npm install -g @angular/cli@1.0.6
+  - npm install -g @angular/cli
 
 branches:
   only:
     - develop
     - /^greenkeeper/.*$/
+    - /^feature/.*$/
+    - /^release/.*$/
+    - /^hotfix/.*$/
     - codecovTest
 
 before_script:
 
 script:
+  - ng lint
   - ng test --no-progress -sr
   - ng test --no-progress -sr -cc
 
