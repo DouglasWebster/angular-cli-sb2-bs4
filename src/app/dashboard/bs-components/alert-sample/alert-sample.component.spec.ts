@@ -2,7 +2,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
-import { AlertModule, AlertConfig } from 'ng2-bootstrap/alert';
+import { AlertModule, AlertConfig } from 'ngx-bootstrap/alert';
 
 import { AlertSampleComponent } from './alert-sample.component';
 

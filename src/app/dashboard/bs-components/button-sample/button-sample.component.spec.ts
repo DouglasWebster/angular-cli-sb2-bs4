@@ -5,7 +5,7 @@ import { DebugElement } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 
-import { ButtonsModule } from 'ng2-bootstrap/buttons';
+import { ButtonsModule } from 'ngx-bootstrap/buttons';
 import { ButtonSampleComponent } from './button-sample.component';
 
 describe('ButtonSampleComponent', () => {

@@ -40,7 +40,7 @@ import {
   TimepickerModule,
   TooltipModule,
   TypeaheadModule
-} from 'ng2-bootstrap';
+} from 'ngx-bootstrap';
 
 @NgModule({
   imports: [

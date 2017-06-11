@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { PopoverModule } from 'ng2-bootstrap/popover';
+import { PopoverModule } from 'ngx-bootstrap/popover';
 import { PopoverSampleComponent } from './popover-sample.component';
 
 describe('PopoverSampleComponent', () => {

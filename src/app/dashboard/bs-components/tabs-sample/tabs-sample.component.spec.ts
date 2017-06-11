@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { TabsModule } from 'ng2-bootstrap/tabs';
+import { TabsModule } from 'ngx-bootstrap/tabs';
 import { TabsSampleComponent } from './tabs-sample.component';
 
 describe('TabsSampleComponent', () => {

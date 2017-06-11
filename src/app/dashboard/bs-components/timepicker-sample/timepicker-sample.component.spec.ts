@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { TimepickerModule} from 'ng2-bootstrap/timepicker';
+import { TimepickerModule} from 'ngx-bootstrap/timepicker';
 import { TimepickerSampleComponent } from './timepicker-sample.component';
 
 describe('TimepickerSampleComponent', () => {

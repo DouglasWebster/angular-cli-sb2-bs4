@@ -30,7 +30,7 @@ describe('BsComponentsComponent', () => {
   });
 
   it(`should have the page header 'NG2-Bootstrap'`, () => {
-    expect(debugEl.query(By.css('.page-header')).nativeElement.textContent).toContain('NG2-Bootstrap');
+    expect(debugEl.query(By.css('.page-header')).nativeElement.textContent).toContain('NGX-Bootstrap');
 
   });
 });

@@ -4,7 +4,7 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
-import { RatingModule } from 'ng2-bootstrap/rating';
+import { RatingModule } from 'ngx-bootstrap/rating';
 import { RatingSampleComponent } from './rating-sample.component';
 
 describe('RatingSampleComponent', () => {

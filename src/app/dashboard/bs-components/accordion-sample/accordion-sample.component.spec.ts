@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { AccordionModule } from 'ng2-bootstrap/accordion';
+import { AccordionModule } from 'ngx-bootstrap/accordion';
 
 import { AccordionSampleComponent } from './accordion-sample.component';
 

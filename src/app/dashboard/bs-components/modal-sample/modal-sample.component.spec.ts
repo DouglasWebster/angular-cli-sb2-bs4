@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { ModalModule } from 'ng2-bootstrap/modal';
+import { ModalModule } from 'ngx-bootstrap/modal';
 import { ModalSampleComponent } from './modal-sample.component';
 
 describe('ModalSampleComponent', () => {

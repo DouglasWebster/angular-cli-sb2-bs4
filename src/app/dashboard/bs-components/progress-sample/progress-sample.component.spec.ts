@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { ProgressbarModule } from 'ng2-bootstrap/progressbar';
+import { ProgressbarModule } from 'ngx-bootstrap/progressbar';
 import { ProgressSampleComponent } from './progress-sample.component';
 
 describe('ProgressSampleComponent', () => {

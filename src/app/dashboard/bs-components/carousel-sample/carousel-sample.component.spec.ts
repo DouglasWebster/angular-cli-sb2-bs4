@@ -6,7 +6,7 @@ import { DebugElement } from '@angular/core';
 
 import { FormsModule } from '@angular/forms';
 
-import { CarouselModule } from 'ng2-bootstrap/carousel';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 import { CarouselSampleComponent } from './carousel-sample.component';
 

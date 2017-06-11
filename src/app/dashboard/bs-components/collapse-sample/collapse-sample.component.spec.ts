@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { CollapseModule } from 'ng2-bootstrap/collapse';
+import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { CollapseSampleComponent } from './collapse-sample.component';
 
 describe('CollapseSampleComponent', () => {

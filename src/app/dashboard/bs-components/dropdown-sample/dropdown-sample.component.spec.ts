@@ -4,7 +4,7 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { DropdownSampleComponent } from './dropdown-sample.component';
-import { BsDropdownModule } from 'ng2-bootstrap/dropdown';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 
 describe('DropdownSampleComponent', () => {
   let component: DropdownSampleComponent;

@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 import { FormsModule} from '@angular/forms';
-import { TypeaheadModule } from 'ng2-bootstrap';
+import { TypeaheadModule } from 'ngx-bootstrap';
 import { TypeaheadSampleComponent } from './typeahead-sample.component';
 
 describe('TypeaheadSampleComponent', () => {

@@ -58,12 +58,12 @@ To get more help on the angular-cli use ng help or check out the [Angular-CLI RE
 ├── src                       <- source code of the application
 │    ├── app
 │    │   ├── dashboard              <-- main page for the application
-│    │   │   ├── bs-components         <-- demonstration of NG2-Bootstrap components
+│    │   │   ├── bs-components         <-- demonstration of NGX-Bootstrap components
 │    │   │   │   ├── accordion-sample
 │    │   │   │   │   ├── accordion-sample.component.scss
 │    │   │   │   │   ├──        --- || ---
 │    │   │   │   │   └── accordion-sample.component.ts
-│    │   │   │   ├──            --- || ---              <-- various NG2-Bootstrap components    
+│    │   │   │   ├──            --- || ---              <-- various NGX-Bootstrap components    
 │    │   │   │   ├── typeahead-sample
 │    │   │   │   │   ├── typeahead-sample.component.scss
 │    │   │   │   │   ├──        --- || ---
@@ -200,13 +200,13 @@ To get more help on the angular-cli use ng help or check out the [Angular-CLI RE
 ----------
 ### **Notes**
 - **Look and Feel**
-    The ng2-bootstrap package is used to implement most of the bootstrap functionality and much of the look and feel is based on [NG2 Demo](http://valor-software.com/ng2-bootstrap/#/).  Ng2-bootstrap is designed to work with both Bootstrap 3 and Bootstrap 4 whilst this project is developed using Bootstrap 4 only.  As Bootstrap 4 is dropping support for glyphicons I chose to use font-awesome throughout the project so you may notice differences between icons on the  ng2-bootstrap demo pages and this projects demo pages. 
+    The NGX-bootstrap package is used to implement most of the bootstrap functionality and much of the look and feel is based on [NGX Demo](http://valor-software.com/ngx-bootstrap/#/).  ngx-bootstrap is designed to work with both Bootstrap 3 and Bootstrap 4 whilst this project is developed using Bootstrap 4 only.  As Bootstrap 4 is dropping support for glyphicons I chose to use font-awesome throughout the project so you may notice differences between icons on the  ngx-bootstrap demo pages and this projects demo pages. 
        
 - **Charting**
    
-   The original StartBootstrap SB2 uses jQuery charting plugins, Flot Charts and Morris.js and the StartAngular version uses Highcharts.  This implementation uses ng2-charts which is based on the chart.js.   
+   The original StartBootstrap SB2 uses jQuery charting plugins, Flot Charts and Morris.js and the StartAngular version uses Highcharts.  This implementation uses ngx-charts which is based on the chart.js.   
    
-   The primary reason for this is that chart.js and ng2-charts are free open source whilst Highcharts requires a licence for commercial use. Being unsure how possible downstream use of this project would impact licensing issues I decided to change the charting package used.  A secondary consideration was that ng2-charts is an angular 2 module which should make implementation easier.  However, ng2-charts is still in development so breaking changes may occur if the package is updated.
+   The primary reason for this is that chart.js and ngx-charts are free open source whilst Highcharts requires a licence for commercial use. Being unsure how possible downstream use of this project would impact licensing issues I decided to change the charting package used.  A secondary consideration was that ngx-charts is an angular 2 module which should make implementation easier.  However, ngx-charts is still in development so breaking changes may occur if the package is updated.
 
 - **Navigation**
    
@@ -233,12 +233,12 @@ Thankfully there aren't too many of these considering the very fluid nature of t
 
 - **app.scss**
    
-   As mentioned in the Look and Feel section glyphicons are not included in the package.  However ng2-bootstrap does use the .glyphicon-remove-circle as the close symbol in the tabs module and .glyphicon-chevron-up/down in the timepicker module.
+   As mentioned in the Look and Feel section glyphicons are not included in the package.  However ngx-bootstrap does use the .glyphicon-remove-circle as the close symbol in the tabs module and .glyphicon-chevron-up/down in the timepicker module.
    Not having the glyphicon file loaded meant that the close behaviour didn't work as there was no icon to click on.  To overcome this the first section of app.scss first redefines the glyphicon halfings font family to point to the font-awesome font files, then redefines .glyphicon to FontAwesome and finally points .glyphicon-xxx to the nearest font-awesome icon.
    This seems far from ideal and if anyone has a better solution I'm always willing to implement it.
 - **bs-component**
     
-    This component has a large (probably too large) number of children that demonstrates most of the ng2-bootstrap functionality. This component initially had all the different modules on one page and this did highlight one problem with the inclusion of the *changeDetectionStrategy.OnPush* required by the tabs component.
+    This component has a large (probably too large) number of children that demonstrates most of the ngx-bootstrap functionality. This component initially had all the different modules on one page and this did highlight one problem with the inclusion of the *changeDetectionStrategy.OnPush* required by the tabs component.
 
     If the *changeDetectionStrategy.OnPush* is included with the Pager module then the pager display is on click behind the actual number of clicks.  This is only a problem when the Tabs module and the Pagination module are required on the same page.  
  

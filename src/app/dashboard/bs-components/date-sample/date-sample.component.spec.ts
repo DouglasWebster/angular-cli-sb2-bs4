@@ -5,7 +5,7 @@ import { DebugElement } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import * as moment from 'moment';
 
-import { DatepickerModule } from 'ng2-bootstrap/datepicker';
+import { DatepickerModule } from 'ngx-bootstrap/datepicker';
 import { DateSampleComponent } from './date-sample.component';
 
 describe('DateSampleComponent', () => {
