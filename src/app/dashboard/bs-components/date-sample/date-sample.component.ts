@@ -51,31 +51,6 @@ export class DateSampleComponent implements OnInit {
     this.dateDisabled = [{ date: this.tomorrow, mode: 'day' }];
   }
 
-  // todo: implement custom class cases
-  public getDayClass(date: any, mode: string): string {
-    if (mode === 'day') {
-      const dayToCheck = new Date(date).setHours(0, 0, 0, 0);
-
-      for (const event of this.events) {
-        const currentDay = new Date(event.date).setHours(0, 0, 0, 0);
-
-        if (dayToCheck === currentDay) {
-          return event.status;
-        }
-      }
-    }
-
-    return '';
-  }
-
-  public disabled(date: Date, mode: string): boolean {
-    return (mode === 'day' && (date.getDay() === 0 || date.getDay() === 6));
-  }
-
-  public open(): void {
-    this.opened = !this.opened;
-  }
-
   public clear(): void {
     this.dt = void 0;
     this.dateDisabled = undefined;

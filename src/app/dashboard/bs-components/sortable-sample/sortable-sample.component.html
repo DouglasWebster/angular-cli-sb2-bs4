@@ -1,5 +1,5 @@
 <h1>Sortable
-  <a target="_blank" href="http://valor-software.com/ng2-bootstrap/#/sortable">
+  <a target="_blank" href="http://valor-software.com/ngx-bootstrap/#/sortable">
     <img alt="" src="assets/img//link-doc.png">
   </a>
 </h1>
@@ -43,7 +43,7 @@
   <div class="col-md-4">
     <h4>Custom item template:</h4>
     <div class="row">
-      <template #itemTemplate let-item="item" let-index="index"><span>{{index}}: {{item.value}}</span></template>
+      <ng-template #itemTemplate let-item="item" let-index="index"><span>{{index}}: {{item.value}}</span></ng-template>
       <div class="col-xs-6 col-md-6">
         <bs-sortable [(ngModel)]="itemCuStringsLeft" [itemTemplate]="itemTemplate" itemClass="sortable-item" itemActiveClass="sortable-item-active"
           placeholderItem="Drag here" placeholderClass="placeholderStyle" wrapperClass="sortable-wrapper"></bs-sortable>

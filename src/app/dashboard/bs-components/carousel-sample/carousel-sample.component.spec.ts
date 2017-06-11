@@ -6,7 +6,7 @@ import { DebugElement } from '@angular/core';
 
 import { FormsModule } from '@angular/forms';
 
-import { CarouselModule } from 'ng2-bootstrap/carousel';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
 
 import { CarouselSampleComponent } from './carousel-sample.component';
 
@@ -19,17 +19,20 @@ describe('CarouselSampleComponent', () => {
       imports: [FormsModule, CarouselModule.forRoot()],
       declarations: [CarouselSampleComponent]
     })
-    .compileComponents(); // <- not needed with webpack!
+      .compileComponents(); // <- not needed with webpack!
   }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(CarouselSampleComponent);
     component = fixture.componentInstance;
-    // fixture.detectChanges();
   });
 
   it('should create', async () => {
+
     fixture.detectChanges();
+    console.log(component);
+
+    expect(component).toBeTruthy();
     expect(component).not.toBeTruthy();
   });
 

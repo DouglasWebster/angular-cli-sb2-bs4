@@ -10,7 +10,7 @@ import { MockBackend, MockConnection } from '@angular/http/testing';
 
 import { Observable } from 'rxjs/Rx';
 
-import { CollapseModule } from 'ng2-bootstrap/collapse';
+import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { SidebarComponent } from './sidebar.component';
 
 import { SidebarService } from './sidebar.service';

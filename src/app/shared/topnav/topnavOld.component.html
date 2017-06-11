@@ -18,7 +18,7 @@
                 <a href id="simple-dropdown" dropdownToggle>
                     Click me for a dropdown, yo!
                 </a>
-                <ul class="dropdown-menu" dropdownMenu aria-labelledby="simple-dropdown">
+                <ul class="dropdown-menu" *dropdownMenu aria-labelledby="simple-dropdown">
                     <li *ngFor="let choice of items">
                         <a class="dropdown-item" href="#">{{choice}}</a>
                     </li>
@@ -31,7 +31,7 @@
                     <b class="caret"></b>
                     <span class="sr-only">(current)</span>
                 </a>
-                <ul class="dropdown-menu message-dropdown dropdown-menu-right" dropdownMenu aria-labelledby="dropdownMenu4">
+                <ul class="dropdown-menu message-dropdown dropdown-menu-right" * aria-labelledby="dropdownMenu4">
                     <li class="message-preview">
                         <a href="#" class="dropdown-item">
                             <div class="media">

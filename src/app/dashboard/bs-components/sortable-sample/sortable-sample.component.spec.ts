@@ -4,7 +4,7 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
-import { SortableModule } from 'ng2-bootstrap/sortable';
+import { SortableModule } from 'ngx-bootstrap/sortable';
 import { SortableSampleComponent } from './sortable-sample.component';
 
 describe('SortableSampleComponent', () => {

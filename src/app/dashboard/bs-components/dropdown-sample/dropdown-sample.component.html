@@ -1,5 +1,5 @@
 <h1>Dropdowns
-  <a target="_blank" href="http://valor-software.com/ng2-bootstrap/#/dropdowns">
+  <a target="_blank" href="http://valor-software.com/ngx-bootstrap/#/dropdowns">
     <img alt="" src="assets/img//link-doc.png">
   </a>
 </h1>
@@ -16,26 +16,27 @@
   work with either <code> &lt;button&gt; </code> elements:</p>
 <div class="row">
   <div class="col-sm-2 btn-group" dropdown>
-    <button id="single-button" type="button" class="btn btn-primary" dropdownToggle>
+    <button dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
     Button dropdown <span class="caret"></span>
   </button>
-    <ul dropdownMenu role="menu" aria-labelledby="single-button">
+    <ul *dropdownMenu class="dropdown-menu" role="menu">
       <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
       <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
       <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
       <li class="divider dropdown-divider"></li>
-      <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a></li>
+      <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a>
+      </li>
     </ul>
   </div>
   <div class="col-sm-2">
     <p>And with <code> &lt;a&gt;</code> elements:</p>
   </div>
   <div class="col-sm-2">
-    <span dropdown (onToggle)="toggled($event)">
-      <a href id="simple-dropdown" dropdownToggle>
+    <span dropdown (isOpenChange)="toggled($event)">
+      <a href dropdownToggle (click)="false">
         Click me for a dropdown, yo!
       </a>
-      <ul class="dropdown-menu" dropdownMenu aria-labelledby="simple-dropdown">
+      <ul *dropdownMenu class="dropdown-menu">
         <li *ngFor="let choice of items">
           <a class="dropdown-item" href="#">{{choice}}</a>
         </li>
@@ -46,16 +47,19 @@
 <hr>
 <h4>Split button dropdowns</h4>
 <div class="btn-group" dropdown>
-  <button id="split-button" type="button" class="btn btn-danger">Action</button>
-  <button type="button" class="btn btn-danger dropdown-toggle-split" dropdownToggle>
+  <button type="button" class="btn btn-danger">Action</button>
+  <button type="button" dropdownToggle class="btn btn-danger dropdown-toggle dropdown-toggle-split">
     <span class="caret"></span>
     <span class="sr-only">Split button!</span>
   </button>
-  <ul class="dropdown-menu" dropdownMenu role="menu" aria-labelledby="split-button">
+  <ul *dropdownMenu class="dropdown-menu" role="menu">
     <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
-    <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
-    <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
+    <li role="menuitem"><a class="dropdown-item" href="#">Another action</a>
+    </li>
+    <li role="menuitem"><a class="dropdown-item" href="#">Something else
+      here</a></li>
     <li class="divider dropdown-divider"></li>
-    <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a></li>
+    <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a>
+    </li>
   </ul>
 </div>

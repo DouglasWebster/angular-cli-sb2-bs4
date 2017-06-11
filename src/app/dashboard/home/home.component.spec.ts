@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { AlertModule } from 'ng2-bootstrap/alert';
+import { AlertModule } from 'ngx-bootstrap/alert';
 import { RouterTestingModule } from '@angular/router/testing';
 
 import { HomeComponent, TimelineComponent, NotificationComponent, ChatComponent } from './home.component';

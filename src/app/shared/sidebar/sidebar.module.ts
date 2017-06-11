@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { SidebarComponent } from './sidebar.component';
 import { RouterModule } from '@angular/router';
 
-import { CollapseModule } from 'ng2-bootstrap/collapse';
+import { CollapseModule } from 'ngx-bootstrap/collapse';
 
 import { SidebarService } from './sidebar.service';
 

@@ -3,7 +3,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { TooltipModule } from 'ng2-bootstrap/tooltip';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { TooltipSampleComponent } from './tooltip-sample.component';
 
 describe('TooltipSampleComponent', () => {

@@ -29,7 +29,7 @@ import {
   CarouselModule,
   CollapseModule,
   DatepickerModule,
-  DropdownModule,
+  BsDropdownModule,
   ModalModule,
   PaginationModule,
   PopoverModule,
@@ -40,7 +40,7 @@ import {
   TimepickerModule,
   TooltipModule,
   TypeaheadModule
-} from 'ng2-bootstrap';
+} from 'ngx-bootstrap';
 
 @NgModule({
   imports: [
@@ -53,7 +53,7 @@ import {
     CarouselModule.forRoot(),
     CollapseModule.forRoot(),
     DatepickerModule.forRoot(),
-    DropdownModule.forRoot(),
+    BsDropdownModule.forRoot(),
     ModalModule.forRoot(),
     PaginationModule.forRoot(),
     PopoverModule.forRoot(),

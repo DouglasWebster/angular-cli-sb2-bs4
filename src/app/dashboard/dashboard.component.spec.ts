@@ -5,7 +5,7 @@ import { DebugElement } from '@angular/core';
 import { RouterTestingModule } from '@angular/router/testing';
 import { HttpModule } from '@angular/http';
 
-import { CollapseModule } from 'ng2-bootstrap/collapse';
+import { CollapseModule } from 'ngx-bootstrap/collapse';
 
 import { DashboardComponent } from './dashboard.component';
 import { TopnavComponent } from '../shared/topnav/topnav.component';
