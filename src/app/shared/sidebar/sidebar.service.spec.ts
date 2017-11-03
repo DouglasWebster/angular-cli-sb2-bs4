@@ -3,7 +3,7 @@
 import { TestBed, getTestBed, async, fakeAsync, tick, inject } from '@angular/core/testing';
 import { MockBackend, MockConnection } from '@angular/http/testing';
 import { HttpModule, Http, XHRBackend, ResponseOptions, Response, BaseRequestOptions, RequestMethod } from '@angular/http';
-import { Observable } from 'rxjs/Rx';
+import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/observable/throw';
 
 import { SidebarService } from './sidebar.service';
