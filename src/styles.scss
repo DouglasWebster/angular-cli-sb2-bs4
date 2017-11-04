@@ -1,3 +1,7 @@
+// set up for bootstrap 4
+@import 'variables';
+@import '../node_modules/bootstrap/scss/bootstrap';
+
 /* You can add global styles to this file, and also import other style files */
 .spinner {
   position: fixed !important;
