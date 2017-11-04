@@ -11,34 +11,53 @@
 <div class="row">
   <div class="col-md-4">
     <h4>Static rating</h4>
-    <rating [(ngModel)]="rate" [max]="max" [readonly]="isReadonly" stateOn="fa fa-star" stateOff="fa fa-star-o" [titles]="['1']"></rating>
+    <rating [(ngModel)]="rate" [max]="max" [readonly]="isReadonly"></rating>
     <div class="card">
-      <pre class="card-block card-text">Rate: <b>{{rate}}</b></pre>
+      <pre class="card-block card-header" style="margin:15px 0;">Rate: <b>{{rate}}</b> </pre>
     </div>
   </div>
   <div class="col-md-4">
     <h4>Dynamic rating</h4>
-    <rating [(ngModel)]="dynRate" [max]="dynMax" [readonly]="dynIsReadonly" (onHover)="hoveringOver($event)" (onLeave)="resetStar()"
-      [titles]="['one','two','three']" stateOn="fa fa-star" stateOff="fa fa-star-o"></rating>
-      <span class="label" [ngClass]="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}"
-        [ngStyle]="{display: (overStar && !isReadonly) ? 'inline' : 'none'}">{{percent}}%</span>
-        <div class="card">
-          <pre class="card-block card-text">Rate: <strong>{{dynRate}}</strong>;  Readonly is: <em>{{dynIsReadonly}}</em>;  Hovering over: <strong>{{overStar || "none"}}</strong></pre>
-        </div>
-        <p></p>
+    <rating [(ngModel)]="rate" [max]="max" [readonly]="isReadonly" (onHover)="hoveringOver($event)" (onLeave)="resetStar()" [titles]="['one','two','three']"></rating>
+    <span class="label" [ngClass]="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}"
+      [ngStyle]="{display: (overStar && !isReadonly) ? 'inline' : 'none'}">{{percent}}%</span>
+    <div class="card">
+      <pre class="card-block card-header" style="margin:15px 0;">Rate: <b>{{rate}}</b>;  Readonly is: <i>{{isReadonly}}</i>;  Hovering over: <b>{{overStar || "none"}}</b></pre>
+    </div>
 
-        <button type="button" class="btn btn-sm btn-danger" (click)="dynRate = 0" [disabled]="dynIsReadonly">Clear</button>
-        <button type="button" class="btn btn-sm btn-primary" (click)="dynIsReadonly = ! dynIsReadonly">Toggle Readonly</button>
+    <button type="button" class="btn btn-sm btn-danger" (click)="rate = 0" [disabled]="isReadonly">Clear
+    </button>
+    <button type="button" class="btn btn-sm btn-primary" (click)="isReadonly = ! isReadonly">Toggle Readonly
+    </button>
   </div>
   <div class="col-md-4">
     <h4>Custom icons</h4>
-    <div>
+    <!-- <div>
       <rating [(ngModel)]="x" max="15" stateOn="fa fa-check-circle" stateOff="fa fa-check-circle-o" style="color: #0275d8;" [titles]="['1']"></rating>
-      <b>(<i>Rate:</i> {{x}})</b>
+      <b>(
+        <i>Rate:</i> {{x}})</b>
     </div>
     <div>
       <rating [(ngModel)]="y" [ratingStates]="ratingStates"></rating>
-      <b>(<i>Rate:</i> {{y}})</b>
-    </div>
+      <b>(
+        <i>Rate:</i> {{y}})</b>
+    </div> -->
+    <rating [max]="10" [(ngModel)]="x" [customTemplate]="t" style="color: #0275d8;font-size: 20px;"></rating>
+    <b>(
+      <i>Rate:</i> {{x}})</b>
+    <ng-template #t let-index="index" let-value="value">{{index
+      < value ? '&#9745;' : '&#9744;'}}</ng-template>
+  </div>
+
+  <div>
+    <rating [max]="10" [(ngModel)]="y" [customTemplate]="tt"></rating>
+    <b>(
+      <i>Rate:</i> {{y}})</b>
+    <ng-template #tt let-i="index" let-v="value">
+      <button class="btn btn-{{i < v ? 'warning' : 'default'}}">
+        {{i
+        < v ? '&#9733;' : '&#9734;'}} </button>
+    </ng-template>
+
   </div>
 </div>
