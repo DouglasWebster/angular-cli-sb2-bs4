@@ -11,7 +11,7 @@ import { CarouselSampleComponent } from './carousel-sample/carousel-sample.compo
 import { CollapseSampleComponent } from './collapse-sample/collapse-sample.component';
 import { DateSampleComponent } from './date-sample/date-sample.component';
 import { DropdownSampleComponent } from './dropdown-sample/dropdown-sample.component';
-import { ModalSampleComponent } from './modal-sample/modal-sample.component';
+import { ModalSampleComponent, ModalContentComponent } from './modal-sample/modal-sample.component';
 import { PaginationSampleComponent } from './pagination-sample/pagination-sample.component';
 import { PopoverSampleComponent } from './popover-sample/popover-sample.component';
 import { ProgressSampleComponent } from './progress-sample/progress-sample.component';
@@ -28,7 +28,7 @@ import {
   ButtonsModule,
   CarouselModule,
   CollapseModule,
-  DatepickerModule,
+  BsDatepickerModule,
   BsDropdownModule,
   ModalModule,
   PaginationModule,
@@ -42,6 +42,15 @@ import {
   TypeaheadModule
 } from 'ngx-bootstrap';
 
+import { defineLocale } from 'ngx-bootstrap/bs-moment';
+import {
+  ar, cs, de, enGb, es, esDo, esUs, fr, hi, it, ja, ko, nl, nlBe, pl, ptBr, sv, ru, zhCn, tr
+} from 'ngx-bootstrap/locale';
+
+const locales = [ar, cs, de, enGb, es, esDo, esUs, fr, hi, it, ja, ko, nl, nlBe, pl, ptBr, sv, ru, zhCn, tr];
+
+locales.forEach(locale => defineLocale(locale.abbr, locale));
+
 @NgModule({
   imports: [
     CommonModule,
@@ -52,7 +61,7 @@ import {
     ButtonsModule.forRoot(),
     CarouselModule.forRoot(),
     CollapseModule.forRoot(),
-    DatepickerModule.forRoot(),
+    BsDatepickerModule.forRoot(),
     BsDropdownModule.forRoot(),
     ModalModule.forRoot(),
     PaginationModule.forRoot(),
@@ -75,6 +84,7 @@ import {
     DateSampleComponent,
     DropdownSampleComponent,
     ModalSampleComponent,
+    ModalContentComponent,
     PaginationSampleComponent,
     PopoverSampleComponent,
     ProgressSampleComponent,
@@ -84,6 +94,8 @@ import {
     TimepickerSampleComponent,
     TooltipSampleComponent,
     TypeaheadSampleComponent
-  ]
+  ],
+  exports: [],
+  entryComponents: [ModalContentComponent]
 })
 export class BsComponentModule { }
