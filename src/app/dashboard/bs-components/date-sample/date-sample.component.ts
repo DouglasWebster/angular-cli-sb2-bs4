@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import * as moment from 'moment';
+import { BsDatepickerConfig } from 'ngx-bootstrap/datepicker';
+import { listLocales } from 'ngx-bootstrap/bs-moment';
 
 @Component({
   selector: 'app-date-sample',
@@ -8,57 +9,40 @@ import * as moment from 'moment';
 })
 export class DateSampleComponent implements OnInit {
 
-  public dt: Date = new Date();
-  public minDate: Date = void 0;
-  public events: any[];
-  public tomorrow: Date;
-  public afterTomorrow: Date;
-  public dateDisabled: { date: Date, mode: string }[];
-  public formats: string[] = ['DD-MM-YYYY', 'YYYY/MM/DD', 'DD.MM.YYYY',
-    'shortDate'];
-  public format: string = this.formats[0];
-  public dateOptions: any = {
-    formatYear: 'YY',
-    startingDay: 1
-  };
-  private opened = false;
+  minDate = new Date(2017, 5, 10);
+  maxDate = new Date(2018, 9, 15);
 
-  public constructor() {
-    (this.tomorrow = new Date()).setDate(this.tomorrow.getDate() + 1);
-    (this.afterTomorrow = new Date()).setDate(this.tomorrow.getDate() + 2);
-    (this.minDate = new Date()).setDate(this.minDate.getDate() - 1000);
-    (this.dateDisabled = []);
-    this.events = [
-      { date: this.tomorrow, status: 'full' },
-      { date: this.afterTomorrow, status: 'partially' }
-    ];
+  bsValue: Date = new Date();
+  bsRangeValue: any = [new Date(2017, 7, 4), new Date(2017, 7, 20)];
+
+  colorTheme = 'theme-green';
+
+  locale = 'en';
+  locales = listLocales();
+
+  bsConfig: Partial<BsDatepickerConfig>;
+
+  applyTheme(pop: any) {
+    // create new object on each property change
+    // so Angular can catch object reference change
+    this.bsConfig = Object.assign({}, { containerClass: this.colorTheme });
+    setTimeout(() => {
+      pop.hide();
+      pop.show();
+    });
   }
 
-  public getDate(): number {
-    return this.dt && this.dt.getTime() || new Date().getTime();
+  applyLocale(pop: any) {
+    // create new object on each property change
+    // so Angular can catch object reference change
+    this.bsConfig = Object.assign({}, { locale: this.locale });
+    setTimeout(() => {
+      pop.show();
+    });
   }
 
-  public today(): void {
-    this.dt = new Date();
-  }
+  public constructor() { }
 
-  public d20090824(): void {
-    this.dt = moment('2009-08-24', 'YYYY-MM-DD')
-      .toDate();
-  }
-
-  public disableTomorrow(): void {
-    this.dateDisabled = [{ date: this.tomorrow, mode: 'day' }];
-  }
-
-  public clear(): void {
-    this.dt = void 0;
-    this.dateDisabled = undefined;
-  }
-
-  public toggleMin(): void {
-    this.dt = new Date(this.minDate.valueOf());
-  }
 
   ngOnInit() {
   }
