@@ -9,7 +9,7 @@ export class CarouselSampleComponent implements OnInit {
 
   public myInterval = 1500;
   public slides: any[] = [];
-  public activeSlideIndex: number;
+  public activeSlideIndex = 0;
   public noWrapSlides = false;
 
   public constructor() {
