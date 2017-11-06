@@ -3,24 +3,27 @@
     <img alt="" src="assets/img//link-doc.png">
   </a>
 </h1>
-<p>Add quick, dynamic tab functionality to transition through panes of local content, even via dropdown menus. <strong>Nested tabs are not supported.</strong></p>
+<p>Add quick, dynamic tab functionality to transition through panes of local content, even via dropdown menus.
+  <strong>Nested tabs are not supported.</strong>
+</p>
 <hr>
 <h3>
   Examples
 </h3>
 <div class="row">
-  <div class="col-xs-6 col-md-3">
+  <div class="col-xs-6 col-md-4">
     <h4>Static tabs:</h4>
     <tabset>
-      <tab heading="Static title">Static content</tab>
+      <tab heading="Static title" id="tab1">Static content</tab>
+      <tab heading="Static Title 1">Static content 1</tab>
+      <tab heading="Static Title 2">Static content 2</tab>
       <tab (select)="alertMe()">
         <ng-template tabHeading>
-          <i class="fa fa-bell"></i> Alert!
+          <span class="badge badge-secondary">Click here!</span>
         </ng-template>
         I've got an HTML heading, and a select callback. Pretty cool!
       </tab>
     </tabset>
-
   </div>
   <div class="col-md-6">
     <h4>Dynamic tabs:</h4>
@@ -29,11 +32,9 @@
       <p>
         <button type="button" class="btn btn-primary btn-sm" (click)="tabs[0].active = true">Select second tab</button>
         <button type="button" class="btn btn-primary btn-sm" (click)="tabs[1].active = true">Select third tab</button>
-      </p>
-      <p>
         <button type="button" class="btn btn-primary btn-sm" (click)="tabs[1].disabled = ! tabs[1].disabled">
-      Enable / Disable third tab
-    </button>
+          Enable / Disable third tab
+        </button>
       </p>
       <hr/>
       <tabset>
@@ -41,11 +42,11 @@
         <tab *ngFor="let tabz of tabs" [heading]="tabz.title" [active]="tabz.active" (select)="tabz.active = true" (deselect)="tabz.active = false"
           [disabled]="tabz.disabled" [removable]="tabz.removable" (removed)="removeTabHandler(tabz)" [customClass]="tabz.customClass">
           {{tabz?.content}}
-          </tab>
+        </tab>
       </tabset>
     </div>
   </div>
-  <div class="col-md-3">
+  <div class="col-md-2">
     <h4>Pills:</h4>
     <tabset type="pills">
       <tab heading="Pills 1">Pills content 1</tab>
