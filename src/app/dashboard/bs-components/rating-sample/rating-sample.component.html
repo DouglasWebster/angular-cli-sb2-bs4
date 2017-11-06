@@ -32,16 +32,6 @@
   </div>
   <div class="col-md-4">
     <h4>Custom icons</h4>
-    <!-- <div>
-      <rating [(ngModel)]="x" max="15" stateOn="fa fa-check-circle" stateOff="fa fa-check-circle-o" style="color: #0275d8;" [titles]="['1']"></rating>
-      <b>(
-        <i>Rate:</i> {{x}})</b>
-    </div>
-    <div>
-      <rating [(ngModel)]="y" [ratingStates]="ratingStates"></rating>
-      <b>(
-        <i>Rate:</i> {{y}})</b>
-    </div> -->
     <rating [max]="10" [(ngModel)]="x" [customTemplate]="t" style="color: #0275d8;font-size: 20px;"></rating>
     <b>(
       <i>Rate:</i> {{x}})</b>
