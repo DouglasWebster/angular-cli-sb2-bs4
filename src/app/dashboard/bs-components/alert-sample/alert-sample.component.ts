@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AlertSampleComponent implements OnInit {
 
+  dismissible = true;
+
   public alerts: any = [
     {
       type: 'success',
