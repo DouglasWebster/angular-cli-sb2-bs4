@@ -8,28 +8,40 @@
 <h3>
   Example
 </h3>
-<p>Wrap the dropdown’s toggle (your button or link) and the dropdown menu within <code>dropdown</code>. Dropdowns can be triggered
-  from <code> &lt;a&gt;</code> or <code> &lt;button&gt;</code> elements to better fit your potential needs.</p>
+<p>Wrap the dropdown’s toggle (your button or link) and the dropdown menu within
+  <code>dropdown</code>. Dropdowns can be triggered from
+  <code> &lt;a&gt;</code> or
+  <code> &lt;button&gt;</code> elements to better fit your potential needs.</p>
 <hr>
 <h4>Single button dropdowns</h4>
-<p>Any single <code>.btn</code> can be turned into a dropdown toggle with some markup changes. Here’s how you can put them to
-  work with either <code> &lt;button&gt; </code> elements:</p>
+<p>Any single
+  <code>.btn</code> can be turned into a dropdown toggle with some markup changes. Here’s how you can put them to work with either
+  <code> &lt;button&gt; </code> elements:</p>
 <div class="row">
   <div class="col-sm-2 btn-group" dropdown>
     <button dropdownToggle type="button" class="btn btn-primary dropdown-toggle">
-    Button dropdown <span class="caret"></span>
-  </button>
+      Button dropdown
+      <span class="caret"></span>
+    </button>
     <ul *dropdownMenu class="dropdown-menu" role="menu">
-      <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
-      <li role="menuitem"><a class="dropdown-item" href="#">Another action</a></li>
-      <li role="menuitem"><a class="dropdown-item" href="#">Something else here</a></li>
+      <li role="menuitem">
+        <a class="dropdown-item" href="#">Action</a>
+      </li>
+      <li role="menuitem">
+        <a class="dropdown-item" href="#">Another action</a>
+      </li>
+      <li role="menuitem">
+        <a class="dropdown-item" href="#">Something else here</a>
+      </li>
       <li class="divider dropdown-divider"></li>
-      <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a>
+      <li role="menuitem">
+        <a class="dropdown-item" href="#">Separated link</a>
       </li>
     </ul>
   </div>
   <div class="col-sm-2">
-    <p>And with <code> &lt;a&gt;</code> elements:</p>
+    <p>And with
+      <code> &lt;a&gt;</code> elements:</p>
   </div>
   <div class="col-sm-2">
     <span dropdown (isOpenChange)="toggled($event)">
@@ -45,21 +57,29 @@
   </div>
 </div>
 <hr>
-<h4>Split button dropdowns</h4>
-<div class="btn-group" dropdown>
+<h4>Split button dropup</h4>
+<div class="btn-group" dropdown [dropup]="true">
   <button type="button" class="btn btn-danger">Action</button>
   <button type="button" dropdownToggle class="btn btn-danger dropdown-toggle dropdown-toggle-split">
     <span class="caret"></span>
     <span class="sr-only">Split button!</span>
   </button>
   <ul *dropdownMenu class="dropdown-menu" role="menu">
-    <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
-    <li role="menuitem"><a class="dropdown-item" href="#">Another action</a>
+    <li role="menuitem">
+      <a class="dropdown-item" href="#">Action</a>
     </li>
-    <li role="menuitem"><a class="dropdown-item" href="#">Something else
-      here</a></li>
+    <li role="menuitem">
+      <a class="dropdown-item" href="#">Another action</a>
+    </li>
+    <li role="menuitem">
+      <a class="dropdown-item" href="#">Something else here
+      </a>
+    </li>
     <li class="divider dropdown-divider"></li>
-    <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a>
+    <li role="menuitem">
+      <a class="dropdown-item" href="#">Separated link</a>
     </li>
   </ul>
 </div>
+<p></p>
+<h1>&nbsp;</h1>
