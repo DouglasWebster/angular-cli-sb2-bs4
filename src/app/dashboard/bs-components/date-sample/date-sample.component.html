@@ -1,27 +1,54 @@
-<h1>Date Picker
-  <a target="_blank" href="http://valor-software.com/ngx-bootstrap/#/datepicker">
-    <img alt="" src="assets/img//link-doc.png">
-  </a>
-</h1>
-<p>Datepicker is a highly configurable component that adds datepicker functionality to your pages. You can customize the date
-  format and language, restrict the selectable date ranges.</p>
-<h3>
-  Example
-</h3>
-
-<div>
-  <div class="card">
-    <pre class="card-block card-header">Selected date is: <em *ngIf="dt">{{ getDate() | date:'fullDate'}}</em></pre>
+<div class="container-fluid">
+  <h1>Date Picker
+    <a target="_blank" href="http://valor-software.com/ngx-bootstrap/#/datepicker">
+      <img alt="" src="assets/img//link-doc.png">
+    </a>
+  </h1>
+  <p>Datepicker is a highly configurable component that adds datepicker functionality to your pages. You can customize the date
+    format and language, restrict the selectable date ranges.</p>
+  <p>The new date picker is in active development and the user is strongly encouraged to refer to the base documentation, especially
+    the changelog.</p>
+  <h3>
+    Example
+  </h3>
+  <div class="row">
+    <p>&nbsp;Colour</p>
+    <div class="col-xs-6 col-6 col-md-4 col-lg-4">
+      <select class="custom-select form-control " [(ngModel)]="colorTheme" (ngModelChange)="applyTheme(dp);">
+        <option value="theme-default">default</option>
+        <option value="theme-green">green</option>
+        <option value="theme-blue">blue</option>
+        <option value="theme-dark-blue">dark-blue</option>
+        <option value="theme-red">red</option>
+        <option value="theme-orange">orange</option>
+      </select>
+    </div>
+    <p>&nbsp;Locale</p>
+    <div class="col-xs-4 col-4 col-md-3 col-lg-2 form-group">
+      <select class="custom-select form-control " [(ngModel)]="locale" (ngModelChange)="applyLocale(dp);">
+        <option *ngFor="let loc of locales" [value]="loc">{{ loc }}</option>
+      </select>
+    </div>
   </div>
-  <h4>Inline</h4>
-  <div style="display:inline-block; min-height:290px;">
-    <datepicker [(ngModel)]="dt" [minDate]="minDate" [showWeeks]="true" [dateDisabled]="dateDisabled"></datepicker>
-  </div>
+  <br>
 
-  <hr />
-  <button type="button" class="btn btn-sm btn-info" (click)="today()">Today</button>
-  <button type="button" class="btn btn-sm btn-default btn-secondary" (click)="d20090824();">2009-08-24</button>
-  <button type="button" class="btn btn-sm btn-danger" (click)="clear()">Clear</button>
-  <button type="button" class="btn btn-sm btn-default btn-secondary" (click)="toggleMin()" tooltip="After today restriction">Min date</button>
-  <button type="button" class="btn btn-sm btn-default btn-secondary" (click)="disableTomorrow()">Disable Tomorrow</button>
+  <div class="row">
+    <div class="col-xs-12 col-12 col-md-4 form-group">
+      <input type="text" class="form-control" bsDatepicker [minDate]="minDate" [maxDate]="maxDate" #dp="bsDatepicker" [(bsValue)]="bsValue"
+        [bsConfig]="bsConfig">
+    </div>
+    <div class="col-xs-12 col-12 col-md-3 form-group">
+      <button class="btn btn-success" (click)="dp.toggle()">Date Picker</button>
+    </div>
+  </div>
+  <br>
+
+  <div class="row">
+    <div class="col-xs-12 col-12 col-md-4 form-group">
+      <input class="form-control" #drp="bsDaterangepicker" bsDaterangepicker [(ngModel)]="bsRangeValue" [bsConfig]="bsConfig">
+    </div>
+    <div class="col-xs-12 col-12 col-md-3 form-group">
+      <button class="btn btn-success" (click)="drp.toggle()">Date Range Picker</button>
+    </div>
+  </div>
 </div>

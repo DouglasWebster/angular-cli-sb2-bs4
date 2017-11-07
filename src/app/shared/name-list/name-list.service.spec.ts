@@ -4,7 +4,7 @@ import { BaseRequestOptions, ConnectionBackend, Http, RequestOptions } from '@an
 import { Response, ResponseOptions } from '@angular/http';
 import { MockBackend, MockConnection } from '@angular/http/testing';
 
-import { Observable } from 'rxjs/Rx';
+import { Observable } from 'rxjs/Observable';
 
 
 const nameData = {

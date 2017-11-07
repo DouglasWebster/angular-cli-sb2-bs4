@@ -1,7 +1,8 @@
-@import "../../../../node_modules/bootstrap/scss/_variables";
-@import "../../../../node_modules/bootstrap/scss/_mixins";
-@import "../../../../node_modules/bootstrap/scss/_navbar";
-@import "../../../../node_modules/bootstrap/scss/_nav";
+@import "../../../../node_modules/bootstrap/scss/_functions";
+@import "../../../../node_modules/bootstrap/scss/variables";
+@import "../../../../node_modules/bootstrap/scss/mixins";
+@import "../../../../node_modules/bootstrap/scss/navbar";
+@import "../../../../node_modules/bootstrap/scss/nav";
 
 $link-padding-top:    1rem;
 $link-padding-right:  1rem;
@@ -83,9 +84,9 @@ $zindex-sidebar: $zindex-sticky;
   @extend .sidebar;
   .side-item {
     .side-link {
-      color: $navbar-inverse-color;
+      color: $navbar-dark-color;
       @include hover-focus {
-        color: $navbar-inverse-hover-color;
+        color: $navbar-dark-hover-color;
       }
     }
   }

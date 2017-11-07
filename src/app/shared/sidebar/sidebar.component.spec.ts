@@ -8,7 +8,7 @@ import { async, ComponentFixture, TestBed, getTestBed } from '@angular/core/test
 import { RouterTestingModule } from '@angular/router/testing';
 import { MockBackend, MockConnection } from '@angular/http/testing';
 
-import { Observable } from 'rxjs/Rx';
+import { Observable } from 'rxjs/Observable';
 
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { SidebarComponent } from './sidebar.component';

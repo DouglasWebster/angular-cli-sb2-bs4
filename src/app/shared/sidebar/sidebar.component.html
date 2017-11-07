@@ -1,11 +1,11 @@
-<nav class="navbar-toggleable-md navbar-inverse bg-inverse">
+<nav class="navbar-expand-lg navbar-dark bg-dark">
   <button class="navbar-toggler navbar-toggler-left" type="button" (click)="sidebarCollapsed = !sidebarCollapsed" aria-controls="navbarSupportedContent"
     aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
 </nav>
 <div [collapse]="sidebarCollapsed" class="sidebar-collapse">
-  <ul class="sidebar-inverse-nav bg-inverse">
+  <ul class="sidebar-inverse-nav bg-dark">
     <ng-container *ngFor="let item of menuList">
       <li class="side-item" *ngIf="item.children.length === 0">
         <a [routerLink]="[item.link]" [routerLinkActive]="['active-link']" class="side-link">

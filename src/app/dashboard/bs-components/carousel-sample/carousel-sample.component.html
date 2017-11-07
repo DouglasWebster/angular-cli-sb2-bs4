@@ -1,76 +1,83 @@
-<h1>Carousel
-  <a target="_blank" href="http://valor-software.com/ngx-bootstrap/#/carousel">
-    <img alt="" src="assets/img//link-doc.png">
-  </a>
-</h1>
-<p>A slideshow component for cycling through elements—images or slides of text—like a carousel. <em>Nested carousels are not supported.</em></p>
-<h3>
-  Examples
-</h3>
-<hr>
-<h4>Optional captions:</h4>
-<p>Add captions to your slides easily with the <code>.carousel-caption</code> element within any <code>&lt;slide&gt;</code>.
-  Place just about any optional HTML within there and it will be automatically aligned and formatted.</p>
-<div class="container">
-  <carousel>
-    <slide>
-      <img src="assets/img/slider0.jpg" alt="First slide">
-      <div class="carousel-caption">
-        <h3>Reception </h3>
-        <p>Modern office reception area.</p>
-      </div>
-    </slide>
-    <slide>
-      <img src="assets/img/slider1.jpg" alt="First slide">
-      <div class="carousel-caption">
-        <h3>Mountains</h3>
-        <p>Here is a stunning mountain scene.</p>
-      </div>
-    </slide>
-    <slide>
-      <img src="assets/img/slider2.jpg" alt="First slide">
-      <div class="carousel-caption">
-        <h3>Rainbow</h3>
-        <p>Idylic home after a shower.</p>
-      </div>
-    </slide>
-    <slide>
-      <img src="assets/img/slider3.jpg" alt="First slide">
-      <div class="carousel-caption">
-        <h3>Golf course</h3>
-        <p>Nice way to relax.</p>
-      </div>
-    </slide>
-  </carousel>
-</div>
-<hr>
-<h4>Dynamic Slides:</h4>
-<div class="container">
-  <carousel [interval]="myInterval" [noWrap]="noWrapSlides" [(activeSlide)]="activeSlideIndex">
-    <slide *ngFor="let slide of slides; let index=index">
-      <img [src]="slide.image">
+<div class="container-fluid">
+  <h1>Carousel
+    <a target="_blank" href="http://valor-software.com/ngx-bootstrap/#/carousel">
+      <img alt="" src="assets/img//link-doc.png">
+    </a>
+  </h1>
+  <p>A slideshow component for cycling through elements—images or slides of text—like a carousel.
+    <em>Nested carousels are not supported.</em>
+  </p>
+  <h3>
+    Examples
+  </h3>
+  <hr>
+  <h4>Optional captions:</h4>
+  <p>Add captions to your slides easily with the
+    <code>.carousel-caption</code> element within any
+    <code>&lt;slide&gt;</code>. Place just about any optional HTML within there and it will be automatically aligned and formatted.</p>
+  <div class="container">
+    <carousel>
+      <slide>
+        <img src="assets/img/slider0.jpg" alt="First slide" style="display: block; width: 100%;">
+        <div class="carousel-caption">
+          <h3>Reception </h3>
+          <p>Modern office reception area.</p>
+        </div>
+      </slide>
+      <slide>
+        <img src="assets/img/slider1.jpg" alt="First slide" style="display: block; width: 100%;">
+        <div class="carousel-caption">
+          <h3>Mountains</h3>
+          <p>Here is a stunning mountain scene.</p>
+        </div>
+      </slide>
+      <slide>
+        <img src="assets/img/slider2.jpg" alt="First slide" style="display: block; width: 100%;">
+        <div class="carousel-caption">
+          <h3>Rainbow</h3>
+          <p>Idylic home after a shower.</p>
+        </div>
+      </slide>
+      <slide>
+        <img src="assets/img/slider3.jpg" alt="First slide" style="display: block; width: 100%;">
+        <div class="carousel-caption">
+          <h3>Golf course</h3>
+          <p>Nice way to relax.</p>
+        </div>
+      </slide>
+    </carousel>
+  </div>
+  <hr>
+  <h4>Dynamic Slides:</h4>
+  <div class="container">
+    <carousel [interval]="myInterval" [noWrap]="noWrapSlides" [(activeSlide)]="activeSlideIndex">
+      <slide *ngFor="let slide of slides; let index=index">
+        <img [src]="slide.image" alt="image slide" style="display: block; width: 100%;">
 
-      <div class="carousel-caption">
-        <h4>Slide {{index}}</h4>
-        <p>{{slide.text}}</p>
-      </div>
-    </slide>
-  </carousel>
+        <div class="carousel-caption">
+          <h4>Slide {{index}}</h4>
+          <p>{{slide.text}}</p>
+        </div>
+      </slide>
+    </carousel>
+  </div>
   <br/>
   <div>
     <button type="button" class="btn btn-info" (click)="addSlide()">Add Slide
-  </button>
+    </button>
     <button type="button" class="btn btn-info" (click)="removeSlide()">Remove Current
-  </button>
+    </button>
     <button type="button" class="btn btn-info" (click)="removeSlide(2)">Remove #3
-  </button>
+    </button>
   </div>
   <div>
     <div class="checkbox">
-      <label><input type="checkbox" [(ngModel)]="noWrapSlides">Disable Slide Looping</label>
+      <label>
+        <input type="checkbox" [(ngModel)]="noWrapSlides">Disable Slide Looping</label>
     </div>
 
     <span>Interval, in milliseconds (Enter a negative number or 0 to stop the interval.): </span>
     <input type="number" class="form-control" [(ngModel)]="myInterval">
+    <p></p>
   </div>
 </div>

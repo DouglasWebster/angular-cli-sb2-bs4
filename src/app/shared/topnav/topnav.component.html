@@ -1,9 +1,10 @@
-<nav class="navbar fixed-top navbar-toggleable-md navbar-inverse bg-inverse topnav">
-  <button class="navbar-toggler navbar-toggler-right" type="button" (click)="topNavCollapsed = !topNavCollapsed" aria-controls="navbarSupportedContent"
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <span></span>
+  <span class="navbar-brand" href="#">SB Admin BS4 NG2+</span>
+  <button class="navbar-toggler" type="button" (click)="topNavCollapsed = !topNavCollapsed" aria-controls="navbarSupportedContent"
     aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <a class="navbar-brand text-center text-lg-left" href="#">SB Admin BS 4 Angular2</a>
 
   <div [collapse]="topNavCollapsed" class="navbar-collapse">
     <ul class="navbar-nav mr-auto">
@@ -14,108 +15,124 @@
           Download Now
         </a>
       </li>
-      <li class="nav-item" dropdown>
-        <a href id="dropdownMenu1" class="nav-link dropdown-toggle" dropdownToggle>
+      <div class="nav-item" dropdown>
+        <a href dropdownToggle (click)="false" class="nav-link dropdown-toggle">
           <i class="fa fa-envelope"></i>
           <b class="caret"></b>
-          <span class="sr-only">(current)</span>
         </a>
-        <ul class="dropdown-menu message-dropdown dropdown-menu-right" aria-labelledby="dropdownMenu1">
-          <li class="message-preview">
-            <a href="javascript:;" class="dropdown-item">
+        <ul *dropdownMenu class="dropdown-menu dropdown-menu-right" role="menu">
+          <li role="menuitem">
+            <a class="dropdown-item" href="javascript:;">
               <div class="media">
                 <span class="media-left hidden-md-down">
-                              <img class="media-object" src="http://i.huffpost.com/gadgets/slideshows/461162/slide_461162_6224974_sq50.jpg" alt="">
-                          </span>
+                  <img class="media-object" src="http://i.huffpost.com/gadgets/slideshows/461162/slide_461162_6224974_sq50.jpg" alt="">
+                </span>
                 <div class="media-body">
-                  <h5 class="media-heading"><strong>John Smith</strong>
+                  <h5 class="media-heading">
+                    <strong>John Smith</strong>
                   </h5>
-                  <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                  <p class="small text-muted">
+                    <i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
                   <p class="last hidden-md-down"> Lorem ipsum dolor sit amet, consectetur...</p>
                 </div>
               </div>
             </a>
           </li>
-          <hr>
-          <li class="message-preview">
-            <a href="javascript:;" class="dropdown-item">
+          <li role="menuitem">
+            <a class="dropdown-item" href="javascript:;">
               <div class="media">
                 <span class="media-left hidden-md-down">
-                              <img class="media-object" src="http://i.huffpost.com/gadgets/slideshows/461162/slide_461162_6224974_sq50.jpg" alt="">
-                          </span>
+                  <img class="media-object" src="http://i.huffpost.com/gadgets/slideshows/461162/slide_461162_6224974_sq50.jpg" alt="">
+                </span>
                 <div class="media-body">
-                  <h5 class="media-heading"><strong>John Smith</strong>
+                  <h5 class="media-heading">
+                    <strong>John Smith</strong>
                   </h5>
-                  <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                  <p class="small text-muted">
+                    <i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
                   <p class="last hidden-md-down"> Lorem ipsum dolor sit amet, consectetur...</p>
                 </div>
               </div>
             </a>
           </li>
-          <hr>
-          <li class="message-preview">
-            <a href="javascript:;" class="dropdown-item">
+          <li role="menuitem">
+            <a class="dropdown-item" href="javascript:;">
               <div class="media">
                 <span class="media-left hidden-md-down">
-                              <img class="media-object" src="http://i.huffpost.com/gadgets/slideshows/461162/slide_461162_6224974_sq50.jpg" alt="">
-                          </span>
+                  <img class="media-object" src="http://i.huffpost.com/gadgets/slideshows/461162/slide_461162_6224974_sq50.jpg" alt="">
+                </span>
                 <div class="media-body">
-                  <h5 class="media-heading"><strong>John Smith</strong>
+                  <h5 class="media-heading">
+                    <strong>John Smith</strong>
                   </h5>
-                  <p class="small text-muted"><i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
+                  <p class="small text-muted">
+                    <i class="fa fa-clock-o"></i> Yesterday at 4:32 PM</p>
                   <p class="last hidden-md-down"> Lorem ipsum dolor sit amet, consectetur...</p>
                 </div>
               </div>
             </a>
           </li>
-          <hr>
-          <li class="dropdown-item message-footer">
-            <a href="javascript:;" class="dropdown-item text-center">Read All New Messages</a>
+          <li class="divider dropdown-divider"></li>
+          <li role="menuitem">
+            <a class="dropdown-item" href="javascript:;">
+              Read All New Messages
+            </a>
           </li>
         </ul>
-      </li>
-      <li class="nav-item" dropdown>
-        <a href id="dropdownMenu2" class="nav-link dropdown-toggle" dropdownToggle>
-          <i class="fa fa-bell"></i> <b class="caret"></b><span class="sr-only">(current)</span>
+      </div>
+      <div class="nav-item" dropdown>
+        <a href dropdownToggle (click)="false" class="nav-link dropdown-toggle">
+          <i class="fa fa-bell"></i>
+          <b class="caret"></b>
         </a>
-        <ul class="dropdown-menu alert-dropdown dropdown-menu-right" aria-labelledby="dropdownMenu2">
-          <li>
-            <a href="javascript:;" class="dropdown-item">Alert Name <span class="label label-default"> Alert Badge</span></a>
+        <ul *dropdownMenu class="dropdown-menu dropdown-menu-right" role="menu">
+          <li role="menuItem">
+            <a href="javascript:;" class="dropdown-item">Alert Name
+              <span class="label label-default"> Alert Badge</span>
+            </a>
           </li>
-          <li>
-            <a href="javascript:;" class="dropdown-item">Alert Name <span class="label label-default"> Alert Badge</span></a>
+          <li role="menuItem">
+            <a href="javascript:;" class="dropdown-item">Alert Name
+              <span class="label label-default"> Alert Badge</span>
+            </a>
           </li>
-          <li>
-            <a href="javascript:;" class="dropdown-item">Alert Name <span class="label label-default"> Alert Badge</span></a>
+          <li role="menuItem">
+            <a href="javascript:;" class="dropdown-item">Alert Name
+              <span class="label label-default"> Alert Badge</span>
+            </a>
           </li>
-          <li class="dropdown-divider"></li>
-          <li>
+          <li class="divider dropdown-divider"></li>
+          <li role="menuItem">
             <a href="javascript:;" class="dropdown-item">View All</a>
           </li>
         </ul>
-      </li>
-      <li class="nav-item" dropdown>
-        <a href id="dropdownMenu3" class="nav-link dropdown-toggle" dropdownToggle>
-          <i class="fa fa-user"></i> John Smith <b class="caret"></b>
+      </div>
+      <div class="nav-item" dropdown>
+        <a href dropdownToggle (click)="false" class="nav-link dropdown-toggle">
+          <i class="fa fa-user"></i> John Smith
+          <b class="caret"></b>
         </a>
-        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu3">
-          <li>
-            <a class="dropdown-item" href="javascript:;"><i class="fa fa-fw fa-user"></i> Profile</a>
+        <ul *dropdownMenu class="dropdown-menu dropdown-menu-right" role="menu">
+          <li role="menuItem">
+            <a class="dropdown-item" href="javascript:;">
+              <i class="fa fa-fw fa-user"></i> Profile</a>
           </li>
-          <li>
-            <a class="dropdown-item" href="javascript:;"><i class="fa fa-fw fa-envelope"></i> Inbox</a>
+          <li role="menuItem">
+            <a class="dropdown-item" href="javascript:;">
+              <i class="fa fa-fw fa-envelope"></i> Inbox</a>
           </li>
-          <li>
-            <a class="dropdown-item" href="javascript:;"><i class="fa fa-fw fa-gear"></i> Settings</a>
+          <li role="menuItem">
+            <a class="dropdown-item" href="javascript:;">
+              <i class="fa fa-fw fa-gear"></i> Settings</a>
           </li>
           <li class="dropdown-divider"></li>
-          <li>
-            <a class="dropdown-item" href="javascript:;">
+          <li role="menuItem">
+            <a class="dropdown-item" href="/login">
               <i class="fa fa-fw fa-power-off"></i> Log Out
             </a>
           </li>
         </ul>
-      </li>
+      </div>
     </ul>
   </div>
 </nav>

@@ -1,3 +1,9 @@
+// set up for bootstrap 4
+@import 'variables';
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import '../node_modules/ngx-bootstrap/datepicker/bs-datepicker';
+
+
 /* You can add global styles to this file, and also import other style files */
 .spinner {
   position: fixed !important;
@@ -51,4 +57,14 @@
 
 .hidden {
   display: none !important;
+}
+
+.card.customClass,
+.card.customClass .card-header,
+.panel.customClass {
+  background-color: #5bc0de;
+  color: #fff;
+}
+.panel.customClass .panel-body {
+  background-color: #337aa7;
 }

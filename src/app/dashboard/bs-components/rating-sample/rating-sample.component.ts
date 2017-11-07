@@ -37,7 +37,7 @@ export class RatingSampleComponent implements OnInit {
   public hoveringOver(value: number): void {
     this.overStar = value;
     this.percent = 100 * (value / this.max);
-  };
+  }
 
   public resetStar(): void {
     this.overStar = void 0;

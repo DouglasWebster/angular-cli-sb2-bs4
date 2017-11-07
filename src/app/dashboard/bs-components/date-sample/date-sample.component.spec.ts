@@ -43,7 +43,7 @@ describe('DateSampleComponent', () => {
     btns.forEach(btn => {
       if (btn.nativeElement.textContent === '2009-08-24') {
         btn.nativeElement.click();
-      };
+      }
     });
     fixture.detectChanges();
     expect(debugEl.query(By.css('.card-block')).nativeElement.textContent).toContain(dispDate.format('dddd, MMMM D, YYYY'));
@@ -55,7 +55,7 @@ describe('DateSampleComponent', () => {
     btns.forEach(btn => {
       if (btn.nativeElement.textContent === 'Today') {
         btn.nativeElement.click();
-      };
+      }
     });
     fixture.detectChanges();
     expect(debugEl.query(By.css('.card-block')).nativeElement.textContent).toContain(dispDate.format('dddd, MMMM D, YYYY'));
@@ -68,7 +68,7 @@ describe('DateSampleComponent', () => {
     btns.forEach(btn => {
       if (btn.nativeElement.textContent === 'Disable Tomorrow') {
         btn.nativeElement.click();
-      };
+      }
     });
 
     fixture.detectChanges();
@@ -82,7 +82,7 @@ describe('DateSampleComponent', () => {
     debugEl.queryAll(By.css('.btn')).forEach(btn => {
       if (btn.nativeElement.textContent === 'Clear') {
         btn.nativeElement.click();
-      };
+      }
     });
 
     fixture.detectChanges();

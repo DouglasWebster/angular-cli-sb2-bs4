@@ -1,4 +1,5 @@
-import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy, ViewChild } from '@angular/core';
+import { TabsetComponent } from 'ngx-bootstrap';
 
 @Component({
   selector: 'app-tabs-sample',
@@ -7,6 +8,8 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
   styleUrls: ['./tabs-sample.component.scss']
 })
 export class TabsSampleComponent implements OnInit {
+
+  @ViewChild('staticTabs') staticTabs: TabsetComponent;
 
   public tabs: any[] = [
     { title: 'Dynamic Title 1', content: 'Dynamic content 1' },
@@ -29,8 +32,19 @@ export class TabsSampleComponent implements OnInit {
     this.tabs[index].active = true;
   }
 
-  public removeTabHandler(/*tab:any*/): void {
-    console.log('Remove Tab handler');
+  addNewTab(): void {
+    const newTabIndex = this.tabs.length + 1;
+    this.tabs.push({
+      title: `Dynamic Title ${newTabIndex}`,
+      content: `Dynamic content ${newTabIndex}`,
+      disabled: false,
+      removable: true
+    });
   }
 
+  removeTabHandler(tab: any): void {
+    this.tabs.splice(this.tabs.indexOf(tab), 1);
+    console.log('Remove Tab handler');
+
+  }
 }
