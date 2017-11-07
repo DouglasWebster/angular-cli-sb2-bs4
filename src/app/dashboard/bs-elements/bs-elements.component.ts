@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BsElementsComponent implements OnInit {
 
+  public lightNavCollapsed = true;
+  public darkNavCollapsed = true;
+  public primaryNavCollapsed = true;
+
   constructor() { }
 
   ngOnInit() {
