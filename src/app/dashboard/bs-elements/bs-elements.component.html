@@ -214,12 +214,12 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="javascript:;">Navbar</a>
-    <button class="navbar-toggler" type="button" (click)="darkNavCollapse = !darkNavCollapse" aria-controls="navbarSupportedContent"
+    <button class="navbar-toggler" type="button" (click)="darkNavCollapsed = !darkNavCollapsed" aria-controls="navbarSupportedContent"
       aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div [collapse]="darkNavCollapse" class="navbar-collapse">
+    <div [collapse]="darkNavCollapsed" class="navbar-collapse">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
           <a class="nav-link" href="javascript:;">Home
@@ -304,12 +304,12 @@
   <br>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="javascript:;">Navbar</a>
-    <button class="navbar-toggler" type="button" (click)="lightNavCollapse = !lightNavCollapse" aria-controls="navbarSupportedContent"
+    <button class="navbar-toggler" type="button" (click)="lightNavCollapsed = !lightNavCollapsed" aria-controls="navbarSupportedContent"
       aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div [collapse]="lightNavCollapse" class="navbar-collapse">
+    <div [collapse]="lightNavCollapsed" class="navbar-collapse">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
           <a class="nav-link" href="javascript:;">Home
