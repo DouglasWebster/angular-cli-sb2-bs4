@@ -100,13 +100,13 @@
   </div>
   <div class="col-sm-3">
     <h4>Child modal</h4>
-    <button type="button" class="btn btn-primary" (click)="showChildModal()">Open child modal</button>
+    <button type="button" class="btn btn-primary" (click)="childModal.show()">Open child modal</button>
     <div bsModal #childModal="bs-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
       <div class="modal-dialog modal-sm">
         <div class="modal-content">
           <div class="modal-header">
             <h4 class="modal-title pull-left">Child modal</h4>
-            <button type="button" class="close pull-right" aria-label="Close" (click)="hideChildModal()">
+            <button type="button" class="close pull-right" aria-label="Close" (click)="childModal.hide()">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
