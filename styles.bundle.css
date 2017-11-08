@@ -7268,28 +7268,6 @@ bs-daterangepicker-container {
 
 .panel.customClass .panel-body {
   background-color: #337aa7; }
-/*************************
-* the following is a workround so that ngx-bootstrap uses a font-awesome
-* instead of Glyphicons Halflings as bootstrap V4 is dropping support for
-* automatic installation of glypicons.
-* if anybody knows a better way to do it please let me know.
-**************************/
-.glyphicon {
-  display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  font-size: inherit;
-  text-rendering: auto;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
-
-.glyphicon-remove-circle:before {
-  content: "\F05C"; }
-
-.glyphicon-chevron-down:before {
-  content: "\F078"; }
-
-.glyphicon-chevron-up:before {
-  content: "\F077"; }
 /*!
  * Bootstrap v4.0.0-beta.2 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
