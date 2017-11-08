@@ -1,14 +1,15 @@
 # **SB Admin rewritten in Angular 2 and Bootstrap 4 using Angular-cli**
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/DouglasWebster/angular-cli-sb2-bs4.svg)](https://greenkeeper.io/)
-Framework for a simple dashboard app using angular 2 and Bootstrap 4
+[![Greenkeeper badge](https://badges.greenkeeper.io/DouglasWebster/angular-cli-sb2-bs4.svg)](https://greenkeeper.io/) [![Build Status](https://travis-ci.org/DouglasWebster/angular-cli-sb2-bs4.svg?branch=develop)](https://travis-ci.org/DouglasWebster/angular-cli-sb2-bs4) 
+
+Framework for a simple dashboard app using angular 5+ and Bootstrap 4
 
 This project is a port of the famous Free Admin Bootstrap Theme [SB Admin v2.0](https://startbootstrap.com/template-overviews/sb-admin-2/) to Angular Theme and relies heavily on the [start-angular](http://rawgit.com/start-angular/SB-Admin-BS4-Angular-2/master/dist/prod/) port of SB Admin 2 for it's look and feel. 
  
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
 ## SB Admin Bootstrap 4 provides the following features:
-- Project uses Angular 4.
+- Project uses Angular 5.
 - Project built using Angular-cli.
 - Ready to go, statically typed build system using webpack for working with TypeScript.
 - Production and development builds.
@@ -231,11 +232,6 @@ To get more help on the angular-cli use ng help or check out the [Angular-CLI RE
 ### **Hacks**
 Thankfully there aren't too many of these considering the very fluid nature of the angular scene at the moment.  The following are ones I have had to use to get the application running.
 
-- **app.scss**
-   
-   As mentioned in the Look and Feel section glyphicons are not included in the package.  However ngx-bootstrap does use the .glyphicon-remove-circle as the close symbol in the tabs module and .glyphicon-chevron-up/down in the timepicker module.
-   Not having the glyphicon file loaded meant that the close behaviour didn't work as there was no icon to click on.  To overcome this the first section of app.scss first redefines the glyphicon halfings font family to point to the font-awesome font files, then redefines .glyphicon to FontAwesome and finally points .glyphicon-xxx to the nearest font-awesome icon.
-   This seems far from ideal and if anyone has a better solution I'm always willing to implement it.
 - **bs-component**
     
     This component has a large (probably too large) number of children that demonstrates most of the ngx-bootstrap functionality. This component initially had all the different modules on one page and this did highlight one problem with the inclusion of the *changeDetectionStrategy.OnPush* required by the tabs component.
