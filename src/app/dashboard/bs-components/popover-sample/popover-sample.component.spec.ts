@@ -39,9 +39,8 @@ describe('PopoverSampleComponent', () => {
     const btn = debugEl.query(By.css('[popoverTitle = "Popover on right"]'));
     btn.nativeElement.click();
     fixture.detectChanges();
-    const popEl = debugEl.query(By.css('.popover-title'));
-    console.log('popover: ', popEl);
-    expect(popEl.nativeElement.textContent).toContain('Popover on right');
+    const popEl = fixture.nativeElement.querySelector('popover-container');
+    expect(popEl.querySelector('.popover-title').textContent.trim()).toBe('Popover on right');
   });
 
   it('should dismiss the popover when the button is clicked again', () => {

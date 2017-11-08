@@ -49,13 +49,13 @@ describe('AlertSampleComponent', () => {
 
   it('should have the correct number of alerts when reset is pressed', async(() => {
     const noOfAlerts = component.alerts.length;
-    let button = debugEl.queryAll(By.css('button'))[0].nativeElement;
+    let button = debugEl.queryAll(By.css('alert'))[0].nativeElement;
     button.click();
     fixture.detectChanges();
-    button = debugEl.queryAll(By.css('button'))[2].nativeElement;
+    button = debugEl.queryAll(By.css('button'))[1].nativeElement;
     button.click();
     fixture.detectChanges();
-    expect(debugEl.queryAll(By.css('.alert')).length).toBe(noOfAlerts);
+    expect(debugEl.queryAll(By.css('alert')).length).toBe(noOfAlerts);
 
   }));
 

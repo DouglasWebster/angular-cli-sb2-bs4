@@ -2,6 +2,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
+import { RouterTestingModule } from '@angular/router/testing';
 
 import { FormsComponent } from './forms.component';
 
@@ -12,6 +13,9 @@ describe('FormsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [
+        RouterTestingModule
+      ],
       declarations: [FormsComponent]
     });
     // .compileComponents(); <- not required for webpack
@@ -29,7 +33,7 @@ describe('FormsComponent', () => {
   });
 
   it(`should have the page header 'Forms'`, () => {
-    expect(debugEl.query(By.css('.page-header')).nativeElement.textContent).toContain('Forms');
+    expect(debugEl.query(By.css('h2')).nativeElement.textContent).toContain('Forms');
 
   });
 

@@ -43,7 +43,7 @@ describe('RatingSampleComponent', () => {
     });
 
     it('should have a block displaying the rating selected', () => {
-      const txtDisp = staticSection.query(By.css('.card-text')).nativeElement.innerText;
+      const txtDisp = staticSection.query(By.css('.card-header')).nativeElement.innerText;
       expect(txtDisp).toContain('Rate: 7');
     });
 
@@ -71,7 +71,7 @@ describe('RatingSampleComponent', () => {
     });
 
     it('should have a block displaying the rating selected', () => {
-      const txtDisp = dynamicSection.query(By.css('.card-text')).nativeElement.innerText;
+      const txtDisp = dynamicSection.query(By.css('.card-header')).nativeElement.innerText;
       expect(txtDisp).toContain('Rate: 7');
     });
 

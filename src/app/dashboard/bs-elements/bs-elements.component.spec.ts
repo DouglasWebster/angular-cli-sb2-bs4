@@ -2,6 +2,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
+import { RouterTestingModule } from '@angular/router/testing';
+
+import { CollapseModule, BsDropdownModule } from 'ngx-bootstrap';
 
 import { BsElementsComponent } from './bs-elements.component';
 
@@ -12,7 +15,13 @@ describe('BsElementsComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ BsElementsComponent ]
+      imports: [
+        RouterTestingModule,
+        CollapseModule.forRoot(),
+        BsDropdownModule.forRoot()
+      ],
+      declarations: [ BsElementsComponent ],
+
     });
    // .compileComponents(); <- not required for webpack
   }));

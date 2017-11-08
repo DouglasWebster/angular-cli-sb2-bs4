@@ -35,36 +35,48 @@ describe('ProgressSampleComponent', () => {
     expect(staticEl.nativeElement.textContent).toEqual('Static');
   });
 
-  it(`should have 2 section whose lable starts with 'Dynamic'`, () => {
-    const dynEl = debugEl.queryAll(By.css('h4')).filter(e => e.nativeElement.textContent.startsWith('Dynamic'));
-    expect(dynEl.length).toEqual(2);
+  it(`should have 1 section whose lable starts with 'Dynamic'`, () => {
+    const dynEl = debugEl.queryAll(By.css('h4')).filter(e =>
+      e.nativeElement.textContent.startsWith('Dynamic')
+    );
+    console.log(dynEl);
+
+    expect(dynEl.length).toEqual(1);
   });
 
-  it('should have 3 progress bars in the second Dynamic section', () => {
-    const pBarParent = debugEl.queryAll(By.css('h4')).filter(e => e.nativeElement.textContent.startsWith('Dynamic'))[1].parent;
-    expect(pBarParent.queryAll(By.css('.progress')).length).toEqual(3);
+  it('should have 3 progress bars in the Dynamic section', () => {
+    const pBarParent = debugEl.queryAll(By.css('h4')).filter(e =>   e.nativeElement.textContent.startsWith('Dynamic'))[0].parent;
+    expect(pBarParent.queryAll(By.css('.progress-bar')).length).toEqual(3);
   });
 
-  it(`should have the legend 'value / max' on the first progress bar of the second Dynamic section`, () => {
-    const pBarParent = debugEl.queryAll(By.css('h4')).filter(e => e.nativeElement.textContent.startsWith('Dynamic'))[1].parent;
+  it(`should have the legend 'value / max' on the first progress bar of the Dynamic section`, () => {
+    const pBarParent = debugEl.queryAll(By.css('h4')).filter(e => e.nativeElement.textContent.startsWith('Dynamic'))[0].parent;
     const pBar = pBarParent.query(By.css('.progress-bar'));
     const txtString = component.dynamic.toString() + ' / ' + component.max.toString();
     expect(pBar.nativeElement.textContent).toContain(txtString);
   });
 
-  it(`should have a 'Randomize' button in the second Dynamic Section`, () => {
-    const dynSec = debugEl.queryAll(By.css('h4')).filter(e => e.nativeElement.textContent.startsWith('Dynamic'))[1].parent;
+  it(`should have a 'Randomize' button in the Dynamic Section`, () => {
+    const dynSec = debugEl.queryAll(By.css('h4')).filter(e => e.nativeElement.textContent.startsWith('Dynamic'))[0].parent;
     expect(dynSec.query(By.css('button')).nativeElement.textContent).toContain('Randomize');
   });
 
-  it('should generate new values in the second Dynamic section when the Randomize button is pressed', () => {
-    const dynSec = debugEl.queryAll(By.css('h4')).filter(e => e.nativeElement.textContent.startsWith('Dynamic'))[1].parent;
+  it('should generate new values in the Dynamic section when the Randomize button is pressed', () => {
+    const dynSec = debugEl.queryAll(By.css('h4')).filter(e => e.nativeElement.textContent.startsWith('Dynamic'))[0].parent;
     const rndBtn = dynSec.query(By.css('button'));
-    rndBtn.nativeElement.click();
-    fixture.detectChanges();
     const pBar = dynSec.query(By.css('.progress-bar'));
-    const txtString = component.dynamic.toString() + ' / ' + component.max.toString();
-    expect(pBar.nativeElement.textContent).toContain(txtString);
+    const txtString = component.dynamic.toString();
+    expect(pBar.nativeElement.textContent.trim().startsWith(txtString)).toBeTruthy();
+    let newValue = txtString;
+
+    // don't want test to fail if it generates the same value
+    while (newValue === txtString) {
+      rndBtn.nativeElement.click();
+      fixture.detectChanges();
+      newValue = component.dynamic.toString();
+    }
+
+    expect(pBar.nativeElement.textContent.trim().startsWith(txtString)).toBeFalsy();
   });
 
 });
