@@ -33,14 +33,14 @@ describe('CarouselSampleComponent', () => {
     console.log(component);
 
     expect(component).toBeTruthy();
-    expect(component).not.toBeTruthy();
+    // expect(component).not.toBeTruthy();
   });
 
   it('should have the correct number of slides', async () => {
     fixture.detectChanges();
     const noOfSlides = component.slides.length;
     console.log(`Carousel has ${noOfSlides} slides`);
-    expect(component.slides.length).toEqual(20);
+    expect(component.slides.length).toEqual(4);
   });
 
   describe('when a slide is removed', () => {

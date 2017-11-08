@@ -29,7 +29,7 @@ describe('TablesComponent', () => {
   });
 
   it(`should have the page header 'Tables'`, () => {
-    expect(debugEl.query(By.css('.page-header')).nativeElement.textContent).toContain('Tables');
+    expect(debugEl.query(By.css('h2')).nativeElement.textContent).toContain('Tables');
 
   });
 

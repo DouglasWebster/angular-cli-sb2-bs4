@@ -29,8 +29,33 @@ describe('DropdownSampleComponent', () => {
     fixture.detectChanges();
   });
 
-  xit('should be created', () => {
+  it('should be created', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have a button labled Button dropdown', () => {
+    const dropdownTggl = debugEl.query(By.css('[dropdownToggle')).nativeElement;
+    console.log(dropdownTggl);
+
+    expect(debugEl.query(By.css('[dropdownToggle]')).nativeElement.textContent).toContain('Button dropdown');
+  });
+
+  it('should open the dropdown when the Button dropdown is pressed', () => {
+    const dropdownTggl = debugEl.query(By.css('[dropdownToggle'));
+    dropdownTggl.nativeElement.click();
+    fixture.detectChanges();
+    expect(fixture.nativeElement.querySelector('[dropdown]').classList).toContain('open');
+  });
+
+  it('should close the dropdown when the Button dropdown is pressed again', () => {
+    const dropdownTggl = debugEl.query(By.css('[dropdownToggle'));
+    dropdownTggl.nativeElement.click();
+    fixture.detectChanges();
+    dropdownTggl.nativeElement.click();
+    fixture.detectChanges();
+    expect(fixture.nativeElement.querySelector('[dropdown]').classList).not.toContain('open');
+  });
+
+
 
 });

@@ -2,6 +2,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { TimepickerModule} from 'ngx-bootstrap/timepicker';
 import { TimepickerSampleComponent } from './timepicker-sample.component';
@@ -13,7 +14,9 @@ describe('TimepickerSampleComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [TimepickerModule.forRoot()],
+      imports: [
+        FormsModule,
+        TimepickerModule.forRoot()],
       declarations: [ TimepickerSampleComponent ]
     });
    // .compileComponents(); <- not required for webpack

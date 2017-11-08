@@ -32,6 +32,6 @@ describe('AccordionSampleComponent', () => {
   });
 
   it(`should have an accordion group with heading 'I can have markup'`, () => {
-    expect(debugEl.query(By.css('[accordion-heading]')).nativeElement.textContent).toContain('I can have markup');
+    expect(debugEl.query(By.css('[heading]')).nativeElement.textContent).toContain('Static Header, initially expanded');
   });
 });
