@@ -138,13 +138,12 @@ To get more help on the angular-cli use ng help or check out the [Angular-CLI RE
 │    │   │   │   ├── sidebar.component.spec.ts
 │    │   │   │   ├── sidebar.component.ts
 │    │   │   │   └── sidebar.module.ts
-│    │   │   ├── topnav                <-- page topnav component
-│    │   │   │   ├── topnav.component.scss
-│    │   │   │   ├── topnav.component.html
-│    │   │   │   ├── topnav.component.spec.ts
-│    │   │   │   ├── topnav.component.ts
-│    │   │   │   └── topnav.module.ts
-│    │   │   └── shared.module.ts
+│    │   │   └── topnav                <-- page topnav component
+│    │   │       ├── topnav.component.scss
+│    │   │       ├── topnav.component.html
+│    │   │       ├── topnav.component.spec.ts
+│    │   │       ├── topnav.component.ts
+│    │   │       └── topnav.module.ts
 │    │   ├── signup                    <-- boilerplate signup page
 │    │   │   ├── signup.component.scss
 │    │   │   ├── signup.component.html
