@@ -1,43 +1,41 @@
 import { Injectable } from '@angular/core';
-import { Http, Response } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/operator/catch';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/observable/throw';
+import { catchError, map, tap } from 'rxjs/operators';
+import { of } from 'rxjs/observable/of';
+// import 'rxjs/add/operator/catch';
+// import 'rxjs/add/operator/map';
+// import 'rxjs/add/observable/throw';
+// import { HttpClient } from 'selenium-webdriver/http';
 
 @Injectable()
 export class SidebarService {
 
   defaultURL = 'assets/defaultSideMenu.json';
+  readError = false;
 
-  constructor(private http: Http) { }
+  constructor(private http: HttpClient) { }
 
   getMenu(menuUrl = this.defaultURL): Observable<string[]> {
-    console.log('url: ', menuUrl);
-    return this.http.get(menuUrl)
-      .map(this.extractData)
-      .catch(this.handleError);
+    console.log(`Getting menu from  ${menuUrl}`);
+    return this.http.get<string[]>(menuUrl)
+      .pipe(
+        catchError(this.handleError('getMenu', []))
+      );
   }
 
-  private extractData(res: Response) {
-    console.log('response: ', res);
-    const body = res.json();
-    console.log('body: ', body);
-    console.log('data: ', body.data);
-    return body.data || {};
-  }
+  private handleError<T>(operation = 'operation', result?: T) {
+    return (error: any): Observable<T> => {
 
-  private handleError(error: Response | any) {
-    // In a real world app, we might use a remote logging infrastructure
-    let errMsg: string;
-    if (error instanceof Response) {
-      const body = error.json() || '';
-      const err = body.error || JSON.stringify(body);
-      errMsg = `${error.status} - ${error.statusText || ''} ${err}`;
-    } else {
-      errMsg = error.message ? error.message : error.toString();
-    }
-    // console.error(errMsg);
-    return Observable.throw(errMsg);
+      // TODO: send the error to remote logging infrastructure
+      console.error(error); // log to console instead
+
+      // TODO: better job of transforming error for user consumption
+      console.log(`${operation} failed: ${error.message} status: ${error.status}`);
+      this.readError = true;
+
+      // Let the app keep running by returning an empty result.
+      return of(result as T);
+    };
   }
 }

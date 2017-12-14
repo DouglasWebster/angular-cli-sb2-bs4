@@ -42,8 +42,10 @@ export class SidebarComponent implements OnInit {
       .subscribe(
       menu => {
         // console.log('getting menu from server with ', url);
-        this.remoteMenuList = menu;
-        // console.log('menu: ', this.remoteMenuList);
+        if (menu && (menu.length !== 0)) {
+          this.remoteMenuList = menu['data'];
+          console.log('menu: ', this.remoteMenuList);
+        }
       },
       error => {
         this.errorMessage = <any>error;
