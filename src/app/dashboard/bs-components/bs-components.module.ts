@@ -42,12 +42,17 @@ import {
   TypeaheadModule
 } from 'ngx-bootstrap';
 
-import { defineLocale } from 'ngx-bootstrap/bs-moment';
+import { defineLocale } from 'ngx-bootstrap/chronos';
 import {
-  ar, cs, de, enGb, es, esDo, esUs, fr, hi, it, ja, ko, nl, nlBe, pl, ptBr, sv, ru, zhCn, tr
+  arLocale, csLocale, deLocale, enGbLocale, esLocale, esDoLocale, esUsLocale,
+  frLocale, hiLocale, itLocale, jaLocale, koLocale, nlLocale, nlBeLocale,
+  plLocale, ptBrLocale, svLocale, ruLocale, zhCnLocale, trLocale
 } from 'ngx-bootstrap/locale';
 
-const locales = [ar, cs, de, enGb, es, esDo, esUs, fr, hi, it, ja, ko, nl, nlBe, pl, ptBr, sv, ru, zhCn, tr];
+const locales = [
+  arLocale, csLocale, deLocale, enGbLocale, esLocale, esDoLocale, esUsLocale,
+  frLocale, hiLocale, itLocale, jaLocale, koLocale, nlLocale, nlBeLocale,
+  plLocale, ptBrLocale, svLocale, ruLocale, zhCnLocale, trLocale];
 
 locales.forEach(locale => defineLocale(locale.abbr, locale));
 

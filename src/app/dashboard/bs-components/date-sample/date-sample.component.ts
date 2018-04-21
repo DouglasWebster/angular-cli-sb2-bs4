@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BsDatepickerConfig, BsLocaleService } from 'ngx-bootstrap/datepicker';
-import { listLocales } from 'ngx-bootstrap/bs-moment';
+import { listLocales } from 'ngx-bootstrap/chronos';
 
 @Component({
   selector: 'app-date-sample',
