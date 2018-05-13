@@ -7,10 +7,8 @@ describe('sbad-bs4-ng2 App', () => {
     page = new SbadBs4Ng2Page();
   });
 
-  it('should display message saying SB Admin BS 4 Angular2', done => {
+  it('should display message saying SB Admin BS 4 Angular2', () => {
     page.navigateTo();
-    page.getParagraphText()
-      .then(msg => expect(msg).toEqual('SB Admin BS 4 Angular2'))
-      .then(done, done.fail);
+    expect(page.getParagraphText().toEqual('SB Admin BS 4 Angular2'));
   });
 });
