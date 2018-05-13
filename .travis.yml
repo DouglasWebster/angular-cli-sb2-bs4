@@ -28,7 +28,9 @@ branches:
     - codecovTest
 
 before_script:
-
+    - "sudo chown root /opt/google/chrome/chrome-sandbox"
+    - "sudo chmod 4755 /opt/google/chrome/chrome-sandbox"
+    
 script:
   - ng lint
   - ng test --no-progress --code-coverage --watch=false
