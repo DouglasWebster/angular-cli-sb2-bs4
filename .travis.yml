@@ -16,7 +16,7 @@ before_install:
   - sleep 3
   - npm install -g npm
   - npm -v
-  - npm install -g @angular/cli
+  - yarn global add @angular/cli
 
 branches:
   only:
