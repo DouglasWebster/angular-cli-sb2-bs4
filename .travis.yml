@@ -31,7 +31,7 @@ before_script:
 
 script:
   - ng lint
-  - ng test --no-progress -sr -cc
+  - ng test --no-progress --code-coverage --watch=false
 
 after_success:
   - ./node_modules/.bin/codecov
