@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import 'rxjs/add/observable/of';
+
 
 @Component({
   selector: 'app-typeahead-sample',
