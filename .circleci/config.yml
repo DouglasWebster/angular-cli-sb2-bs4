@@ -13,5 +13,4 @@ jobs:
           key: SBAdBs4Ng2-{{ .Branch }}-{{ checksum "yarn.lock" }}
           paths:
             - "node_modules"
-      - run: yarn run test -- --single-run --no-progress --browser=ChromeHeadlessCI
-      - run: yarn run e2e -- --no-progress --config=protractor-ci.conf.js
+      - run: yarn run test --watch=false --progress==false --browser=ChromeHeadlessCI
