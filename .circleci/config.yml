@@ -8,9 +8,15 @@ jobs:
       - checkout
       - restore_cache:
           key: SBAdBs4Ng2-{{ .Branch }}-{{ checksum "yarn.lock" }}
-      - run: yarn install
+      - run:
+          yarn install
       - save_cache:
           key: SBAdBs4Ng2-{{ .Branch }}-{{ checksum "yarn.lock" }}
           paths:
             - "node_modules"
-      - run: yarn run test --watch=false --progress=false --browsers=ChromeHeadlessCI
+      - run:
+          yarn run test --watch=false --progress=false --browsers=ChromeHeadlessCI
+
+      - run:
+          command: ./node_modules/.bin/codecov
+          when: on_success
