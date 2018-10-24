@@ -1,6 +1,7 @@
 # **SB Admin rewritten in Angular 2 and Bootstrap 4 using Angular-cli**
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/DouglasWebster/angular-cli-sb2-bs4.svg)](https://greenkeeper.io/) [![Build Status](https://travis-ci.org/DouglasWebster/angular-cli-sb2-bs4.svg?branch=develop)](https://travis-ci.org/DouglasWebster/angular-cli-sb2-bs4) [![David badge](https://david-dm.org/DouglasWebster/angular-cli-sb2-bs4.svg)](https://david-dm.org/)  [![CircleCI](https://circleci.com/gh/DouglasWebster/angular-cli-sb2-bs4.svg?style=shield)](https://circleci.com/gh/DouglasWebster/angular-cli-sb2-bs4)
+[![Greenkeeper badge](https://badges.greenkeeper.io/DouglasWebster/angular-cli-sb2-bs4.svg)](https://greenkeeper.io/) [![Build Status](https://travis-ci.org/DouglasWebster/angular-cli-sb2-bs4.svg?branch=develop)](https://travis-ci.org/DouglasWebster/angular-cli-sb2-bs4) [![David badge](https://david-dm.org/DouglasWebster/angular-cli-sb2-bs4.svg)](https://david-dm.org/)  [![CircleCI develop](https://img.shields.io/circleci/project/github/DouglasWebster/angular-cli-sb2-bs4.svg)
+](https://circleci.com/gh/DouglasWebster/angular-cli-sb2-bs4)
 
 Framework for a simple dashboard app using angular 5+ and Bootstrap 4
 
