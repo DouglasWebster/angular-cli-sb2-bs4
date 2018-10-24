@@ -1,6 +1,10 @@
 version: 2
 jobs:
   build:
+    branches:
+      only:
+        - develop
+        - /^greenkeeper/.*$/
     working_directory: ~/SBAdBs4Ng2
     docker:
       - image: circleci/node:8-browsers
