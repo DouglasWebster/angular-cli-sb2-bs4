@@ -1,8 +1,13 @@
 # **SB Admin rewritten in Angular 2 and Bootstrap 4 using Angular-cli**
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/DouglasWebster/angular-cli-sb2-bs4.svg)](https://greenkeeper.io/) [![Build Status](https://travis-ci.org/DouglasWebster/angular-cli-sb2-bs4.svg?branch=develop)](https://travis-ci.org/DouglasWebster/angular-cli-sb2-bs4) [![David badge](https://david-dm.org/DouglasWebster/angular-cli-sb2-bs4.svg)](https://david-dm.org/)  [![CircleCI develop](https://img.shields.io/circleci/project/github/DouglasWebster/angular-cli-sb2-bs4.svg)
-](https://circleci.com/gh/DouglasWebster/angular-cli-sb2-bs4)  [![codecov](https://codecov.io/gh/DouglasWebster/angular-cli-sb2-bs4/branch/develop/graph/badge.svg)](https://codecov.io/gh/DouglasWebster/angular-cli-sb2-bs4)
-
+|Test|Result|  
+|---|-|  
+|Greenkeeper|[![Greenkeeper badge](https://badges.greenkeeper.io/DouglasWebster/angular-cli-sb2-bs4.svg)](https://greenkeeper.io/)  
+|Travis CI|[![Build Status](https://travis-ci.org/DouglasWebster/angular-cli-sb2-bs4.svg?branch=develop)](https://travis-ci.org/DouglasWebster/angular-cli-sb2-bs4)  
+|David Dependency Check|[![David badge](https://david-dm.org/DouglasWebster/angular-cli-sb2-bs4.svg)](https://david-dm.org/)  
+|Circle CI|[![CircleCI develop](https://img.shields.io/circleci/project/github/DouglasWebster/angular-cli-sb2-bs4.svg)](https://circleci.com/gh/DouglasWebster/angular-cli-sb2-bs4)  
+|Code Coverage|[![codecov](https://codecov.io/gh/DouglasWebster/angular-cli-sb2-bs4/branch/develop/graph/badge.svg)](https://codecov.io/gh/DouglasWebster/angular-cli-sb2-bs4)
+||
 Framework for a simple dashboard app using angular 5+ and Bootstrap 4
 
 This project is a port of the famous Free Admin Bootstrap Theme [SB Admin v2.0](https://startbootstrap.com/template-overviews/sb-admin-2/) to Angular Theme and relies heavily on the [start-angular](http://rawgit.com/start-angular/SB-Admin-BS4-Angular-2/master/dist/prod/) port of SB Admin 2 for it's look and feel. 
