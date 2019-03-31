@@ -319,6 +319,11 @@
     semver "5.6.0"
     semver-intersect "1.4.0"
 
+"@types/chart.js@^2.7.48":
+  version "2.7.50"
+  resolved "https://registry.yarnpkg.com/@types/chart.js/-/chart.js-2.7.50.tgz#28043d583e33a5be18c9062ca9ac9c8bab144afa"
+  integrity sha512-n9DUf8WR3eaoW9V2RQWkIjv+Jd9xFV532hLoyULmqes58R7j00UVwsBjxwB5J3cZFLtekMdYZAglZzBbNKI8Lw==
+
 "@types/jasmine@*":
   version "3.3.12"
   resolved "https://registry.yarnpkg.com/@types/jasmine/-/jasmine-3.3.12.tgz#bf282cb540e9ad7a0a04b742082c073b655eab39"
@@ -4817,17 +4822,19 @@ neo-async@^2.5.0:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.5.2.tgz#489105ce7bc54e709d736b195f82135048c50fcc"
   integrity sha512-vdqTKI9GBIYcAEbFAcpKPErKINfPF5zIuz3/niBfq8WUZjpT2tytLlFVrBgWdOtqI4uaA/Rb6No0hux39XXDuw==
 
-ng2-charts@^1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/ng2-charts/-/ng2-charts-1.6.0.tgz#108a2133ff62a8623895240fadbddbea2951f29d"
-  integrity sha512-9w0WH69x5/nuqC1og2WaY39NbaBqTGIP1+5gZaH7/KPN6UEPonNg/pYnsIVklLj1DWPWXKa8+XXIJZ1jy5nLxg==
+ng2-charts@^2.0.0:
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/ng2-charts/-/ng2-charts-2.2.2.tgz#572d2e6df577288dac9505e2f69d7781351670ba"
+  integrity sha512-bDfifUfa3AEUmDKx7VeHdGoSXn/hhrY3IMDdO6G/WNY/lCpPRXyV/h4N9Fryj5636//ECV3HwBpCz1SzHkTelQ==
   dependencies:
-    chart.js "^2.6.0"
+    "@types/chart.js" "^2.7.48"
+    lodash "^4.17.11"
+    tslib "^1.9.0"
 
-ngx-bootstrap@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/ngx-bootstrap/-/ngx-bootstrap-3.0.1.tgz#e98d2fc6340f32a9d358cd08e8fda7dcb23bdab3"
-  integrity sha512-ni91yYtn8ldgf/pxrlwl9lkVcLURGzopSpJnEbbgG1v1EZWTobI8y7J3mx4Kxptkn0EeiQwnLel67G7XJSox4A==
+ngx-bootstrap@^4.0.0:
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/ngx-bootstrap/-/ngx-bootstrap-4.0.0.tgz#1faab7d93a66aed1a49ec5c20c8591cfafd41c38"
+  integrity sha512-xSCurp1pmv7GkictBow53VFmeEoSvobJ/+Js8f2lYbOPSRjmkkBazZsUC52MKWZ/3Dl81LSvrRTsXPFTuvu6Jw==
 
 nice-try@^1.0.4:
   version "1.0.5"
