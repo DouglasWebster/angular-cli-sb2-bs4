@@ -9,7 +9,7 @@ describe('sbad-bs4-ng2 App', () => {
 
   it('should display message saying SB Admin BS 4 Angular2', () => {
     page.navigateTo();
-    expect(page.getParagraphText().toEqual('SB Admin BS 4 Angular2'));
+    expect(page.getParagraphText()).toEqual('SB Admin BS 4 Angular2');
   });
   afterEach(async () => {
     // Assert that there are no errors emitted from the browser
