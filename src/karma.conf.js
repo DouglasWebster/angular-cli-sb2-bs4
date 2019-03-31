@@ -35,8 +35,9 @@ module.exports = function (config) {
     singleRun: false,
     restartOnFileChange: true
   });
+  
+  if (process.env.TRAVIS) {
+    config.browsers = ['ChromeHeadlessCI'];
+  }
 };
 
-if (process.env.TRAVIS) {
-  config.browsers = ['ChromeHeadlessCI'];
-}
