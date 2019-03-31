@@ -30,7 +30,7 @@ describe('SidebarService', () => {
   });
 
   const mockMenu = {
-    'data': [
+    data: [
       { name: 'Blank Page', link: 'home', glyph: 'fa fa-fw fa-file-o', children: [], collapse: false },
       {
         name: 'Dummy Menu', link: 'home', glyph: 'fa fa-fw fa-file-o', children: [
@@ -51,7 +51,7 @@ describe('SidebarService', () => {
     service.getMenu().subscribe();
 
     httpMock.expectOne({
-      url: this.url,
+      url,
       method: 'GET'
     });
   });
