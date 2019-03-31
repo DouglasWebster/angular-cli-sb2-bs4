@@ -32,7 +32,7 @@ module.exports = function (config) {
         flags: ['--no-sandbox']
       },
     },
-    singleRun: false
+    singleRun: false,
     restartOnFileChange: true
   });
 };
