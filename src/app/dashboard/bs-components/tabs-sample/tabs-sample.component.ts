@@ -23,7 +23,7 @@ export class TabsSampleComponent implements OnInit {
   }
 
   public alertMe(): void {
-    setTimeout(function (): void {
+    setTimeout((): void => {
       alert('You\'ve selected the alert tab!');
     });
   }

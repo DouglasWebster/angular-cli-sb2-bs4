@@ -31,7 +31,7 @@ export class NotificationComponent { }
 export class HomeComponent implements OnInit {
 
   /* Alert component */
-  public alerts: Array<Object> = [
+  public alerts: Array<object> = [
     {
       type: 'danger',
       msg: 'Oh snap! Change a few things up and try submitting again.'

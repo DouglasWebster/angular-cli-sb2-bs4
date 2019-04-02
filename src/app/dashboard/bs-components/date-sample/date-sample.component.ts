@@ -33,12 +33,12 @@ export class DateSampleComponent implements OnInit {
   }
 
   applyLocale(pop: any) {
-    this._localeService.use(this.locale);
+    this.bsLocaleService.use(this.locale);
     pop.hide();
     pop.show();
   }
 
-  public constructor(private _localeService: BsLocaleService) { }
+  public constructor(private bsLocaleService: BsLocaleService) { }
 
 
   ngOnInit() {
