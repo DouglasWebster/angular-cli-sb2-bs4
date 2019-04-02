@@ -15,11 +15,11 @@ export class SidebarComponent implements OnInit {
   public subMenuGlyphUp = 'fa fa-caret-left';
   public subMenuGlyphDown = 'fa fa-caret-down';
 
-  public menuList = [];
+  public menuList: object[] = [];
 
-  public remoteMenuList = [];
+  public remoteMenuList: object[] = [];
 
-  public hardCodedItems = [
+  public hardCodedItems: object[] = [
     { name: 'Blank Page', link: 'home', glyph: 'fa fa-fw fa-file-o', children: [], collapse: false },
     {
       name: 'Dummy Menu', link: 'home', glyph: 'fa fa-fw fa-file-o', children: [
@@ -43,12 +43,12 @@ export class SidebarComponent implements OnInit {
       menu => {
         // console.log('getting menu from server with ', url);
         if (menu && (menu.length !== 0)) {
-          this.remoteMenuList = menu['data'];
+          this.remoteMenuList = menu;
           console.log('menu: ', this.remoteMenuList);
         }
       },
       error => {
-        this.errorMessage = <any>error;
+        this.errorMessage = error;
         console.error('error getting data: ', this.errorMessage);
         this.setDefaultMenu();
       },

@@ -15,9 +15,9 @@ export class SidebarService {
 
   constructor(private http: HttpClient) { }
 
-  getMenu(menuUrl = this.defaultURL): Observable<string[]> {
+  getMenu(menuUrl = this.defaultURL): Observable<object[]> {
     console.log(`Getting menu from  ${menuUrl}`);
-    return this.http.get<string[]>(menuUrl)
+    return this.http.get<object[]>(menuUrl)
       .pipe(
         catchError(this.handleError('getMenu', []))
       );
