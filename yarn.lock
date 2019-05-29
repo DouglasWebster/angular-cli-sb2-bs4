@@ -4822,10 +4822,10 @@ neo-async@^2.5.0:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.5.2.tgz#489105ce7bc54e709d736b195f82135048c50fcc"
   integrity sha512-vdqTKI9GBIYcAEbFAcpKPErKINfPF5zIuz3/niBfq8WUZjpT2tytLlFVrBgWdOtqI4uaA/Rb6No0hux39XXDuw==
 
-ng2-charts@^2.0.0:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/ng2-charts/-/ng2-charts-2.2.2.tgz#572d2e6df577288dac9505e2f69d7781351670ba"
-  integrity sha512-bDfifUfa3AEUmDKx7VeHdGoSXn/hhrY3IMDdO6G/WNY/lCpPRXyV/h4N9Fryj5636//ECV3HwBpCz1SzHkTelQ==
+ng2-charts@^2.2.4:
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/ng2-charts/-/ng2-charts-2.2.4.tgz#b05d904f973f1b656c923b8a7c5c49fac3b5e560"
+  integrity sha512-rUT/bBs70S4nbzrrPKaafCDhcPccWp0X9j8kw7Ppjzz5UAdeeI54yT21qrhjjAPqhnLEj4F2C8t8y9WzmGzcQQ==
   dependencies:
     "@types/chart.js" "^2.7.48"
     lodash "^4.17.11"
