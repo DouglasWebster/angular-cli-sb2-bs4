@@ -4831,10 +4831,10 @@ ng2-charts@^2.0.0:
     lodash "^4.17.11"
     tslib "^1.9.0"
 
-ngx-bootstrap@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/ngx-bootstrap/-/ngx-bootstrap-4.0.0.tgz#1faab7d93a66aed1a49ec5c20c8591cfafd41c38"
-  integrity sha512-xSCurp1pmv7GkictBow53VFmeEoSvobJ/+Js8f2lYbOPSRjmkkBazZsUC52MKWZ/3Dl81LSvrRTsXPFTuvu6Jw==
+ngx-bootstrap@^5.2.0:
+  version "5.2.0"
+  resolved "https://registry.yarnpkg.com/ngx-bootstrap/-/ngx-bootstrap-5.2.0.tgz#3b8fc064a2830af014292070066ac6e64749ba14"
+  integrity sha512-fh+OmaEdxCZnVLQFLqexdw4Xv0Lp2Ueq7un52gF26lTENhTAypGWgf2c92HXzbp4W/B0tnwIZ9mzQPwdDMH91w==
 
 nice-try@^1.0.4:
   version "1.0.5"
