@@ -346,10 +346,10 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-11.12.2.tgz#d7f302e74b10e9801d52852137f652d9ee235da8"
   integrity sha512-c82MtnqWB/CqqK7/zit74Ob8H1dBdV7bK+BcErwtXbe0+nUGkgzq5NTDmRW/pAv2lFtmeNmW95b0zK2hxpeklg==
 
-"@types/node@~8.9.4":
-  version "8.9.5"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-8.9.5.tgz#162b864bc70be077e6db212b322754917929e976"
-  integrity sha512-jRHfWsvyMtXdbhnz5CVHxaBgnV6duZnPlQuRSo/dm/GnmikNcmZhxIES4E9OZjUmQ8C+HCl4KJux+cXN/ErGDQ==
+"@types/node@~12.11.0":
+  version "12.11.0"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.11.0.tgz#7f893924970076b20ca0089df50ab9f171088909"
+  integrity sha512-7v0K9WHdjFpE3LMj1rdRan7PDO2d9Qky51T0cYzzk7fWoqoYKu/fZHnrF7OhNZVx0uKwYoQFMZ3dgVD51s/vYA==
 
 "@types/q@^0.0.32":
   version "0.0.32"
